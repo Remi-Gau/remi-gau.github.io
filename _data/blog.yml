@@ -4,7 +4,7 @@
 
 # edit following lines to custom your blog page, make sure name is the same as href but capitalized first letter(except HTML)
 - name: Neuroscience
-  href: /neuro/
+  href: /neuroscience/
 
 - name: Programming
   href: /programming/
@@ -14,6 +14,9 @@
 
 - name: Giraffe
   href: /giraffe/
+
+- name: The Universe and Everything
+  href: /tuae/
 
 # Don't display donation page: change donation to off at file '_config.yml'
 - name: Donate
