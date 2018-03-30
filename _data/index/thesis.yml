@@ -1,0 +1,16 @@
+# chapters section data
+- title: 'Chapter 1: Recursive Boundary Registration'
+  description: A tool for distortion correction
+  id: ch_rbr
+
+- title: 'Chapter 2: Laminar Spatial GLM'
+  description: A way of obtaining laminar (f)MRI signal
+  id: ch_layerglm
+
+- title: 'Chapter 3: Layer-specific Attention'
+  description: An experimental study in a visual attention task
+  id: ch_layatt
+
+- title: 'Chapter 4: Porcupine'
+  description: A tool to visually program your analysis
+  id: ch_porcupine
