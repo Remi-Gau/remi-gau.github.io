@@ -2,5 +2,5 @@
 
 label: Ability
 id : cs
-aspects: GitHub, MATLAB, C++, Java, javascript, html, css, Python, LaTeX, Adobe Tools
-percentage: 100, 90, 85, 45, 65, 75, 45, 70, 85, 80
+aspects: GitHub, MATLAB, C++, Java, javascript, React, html, css, Python, LaTeX, Adobe Tools
+percentage: 100, 90, 85, 45, 70, 75, 75, 45, 70, 85, 80
