@@ -1,25 +1,25 @@
 # Welcome to Jekyll!
 
 # Website settings
-title: Tim van Mourik
-description: Tim's personal website
-keywords: Tim,Mourik,blog
+title: Remi Gau
+description: Remi's personal website
+keywords: Remi,Gau,blog
 baseurl:  # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
-url: https://timvanmourik.github.io  # url should be 'http://<github_username>.github.io/homepage' as before
+url: https://remi-gau.github.io  # url should be 'http://<github_username>.github.io/homepage' as before
 # url: http://127.0.0.1:4000
-img_path: /TimVanMourik.github.io/static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
+img_path: /remi-gau.github.io/static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
 
 # author -- index page "about me" section
 author:  # change following line to your infomation.
-  name: TimVanMourik  # Be used at blog posts' author.
-  first_name: Tim  # Be used at index page about me section.
-  last_name: van Mourik  # Be used at index page about me section.
+  name: RemiGau  # Be used at blog posts' author.
+  first_name: Remi  # Be used at index page about me section.
+  last_name: Gau  # Be used at index page about me section.
   avatar: /static/assets/img/landing/avatar.jpg  # upload your avatar at directory and edit it.
-  github_username: timvanmourik  # Leave blank if you don't have now
-  linkedin_id: timvanmourik # Leave blank if you don't have now
+  github_username: Remi-Gau  # Leave blank if you don't have now
+  linkedin_id:  # Leave blank if you don't have now
   facebook_username:   # Leave blank if you don't have now
-  twitter_username: Tim_van_Mourik  # Leave blank if you don't have now
-  email: timvanmourik@gmail.com  # Leave blank if you don't have now
+  twitter_username: RemiGau  # Leave blank if you don't have now
+  email:   # Leave blank if you don't have now
   cv:  # An online CV can be printed as PDF, leave blank if you don't have now
   # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
   skill_icon1:
@@ -36,8 +36,8 @@ author:  # change following line to your infomation.
 
 # analytics
 ## google analytics
-ga:  # if you wanna this feature, go to https://www.google.com/analytics/ to get your configuration; if not, comment following line.
-  id: UA-116460525-4
+# ga:  # if you wanna this feature, go to https://www.google.com/analytics/ to get your configuration; if not, comment following line.
+  # id: UA-116460525-4
 
 ## google optimize
 # go:
