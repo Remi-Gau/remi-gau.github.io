@@ -3,19 +3,7 @@
   href: /blog/
 
 # edit following lines to custom your blog page, make sure name is the same as href but capitalized first letter(except HTML)
-- name: Science
-  href: /blog/science/
-
-- name: Programming
-  href: /blog/programming/
-
-- name: Porcupine
-  href: /blog/porcupine/
-
-- name: Giraffe
-  href: /blog/giraffe/
-
-- name: The Universe and Everything
+- name: My Blog
   href: /blog/tuae/
 
 # Don't display donation page: change donation to off at file '_config.yml'

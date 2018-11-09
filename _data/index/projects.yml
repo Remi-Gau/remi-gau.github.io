@@ -4,7 +4,7 @@
 - name: advanced fMRI course
   i18n: Markdown
   gh_user: RemiGau
-  repo: Porcupine
+  repo: advanced_fMRI_course
   url: https://github.com/Remi-Gau/advanced_fMRI_course
   img:
   desc: A list of ressource for MRI studies
