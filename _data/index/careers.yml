@@ -2,43 +2,15 @@
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 
 - name:
-    detail: Donders Institute
+    detail: University of Birmingham
     i18n: company_a
   desc:
-    detail: Researcher, Programmer
+    detail: Research
     i18n: company_a_desc
   date:
-    detail: Feb. 2018
+    detail: Jan. 2013
     i18n: company_a_date
   job:
-    detail: PostDoc
+    detail: PhD student
     i18n: company_b_job
-  icon: fa-plus-square
-
-- name:
-    detail: Donders Institute
-    i18n: company_a
-  desc:
-    detail: Researcher
-    i18n: company_a_desc
-  date:
-    detail: Feb. 2014
-    i18n: company_a_date
-  job:
-    detail: PhD Student
-    i18n: company_a_job
-  icon: fa-plus-square
-
-- name:
-    detail: Donders Institute
-    i18n: company_a
-  desc:
-    detail: Researcher
-    i18n: company_a_desc
-  date:
-    detail: Feb. 2012
-    i18n: company_a_date
-  job:
-    detail: Research Assistant
-    i18n: company_a_job
   icon: fa-plus-square

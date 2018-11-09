@@ -1,33 +1,10 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
-- name: Porcupine
-  i18n: C++
-  gh_user: TimVanMourik
+- name: advanced fMRI course
+  i18n: Markdown
+  gh_user: RemiGau
   repo: Porcupine
-  url: https://timvanmourik.github.io/Porcupupine
-  img: /static/assets/img/landing/porcupine.png
-  desc: Porcupine is a visual programming tool for automating analysis creations
-
-- name: OpenFmriAnalysis
-  i18n: MATLAB
-  gh_user: TimVanMourik
-  repo: OpenFmriAnalysis
+  url: https://github.com/Remi-Gau/advanced_fMRI_course
   img:
-  desc: This is a toolbox for (laminar) fMRI analysis
-
-- name: Giraffe
-  i18n: Javascript
-  gh_user: TimVanMourik
-  repo: GiraffeTools
-  url: https://www.giraffe.tools
-  img: /static/assets/img/landing/giraffe_tools.jpg
-  desc: This is project that creates reproducible analysis pipelines
-
-- name: Armadillo
-  i18n: Javascript
-  gh_user: TimVanMourik
-  repo: Armadillo
-  url: https://www.armadillobrain.app
-  img: /static/assets/img/landing/armadillo.jpg
-  desc: Augmented Reality brains
+  desc: A list of ressource for MRI studies
