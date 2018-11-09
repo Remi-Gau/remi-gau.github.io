@@ -13,4 +13,4 @@
   job:
     detail: PhD student
     i18n: company_b_job
-  icon: /static/assets/img/landing/university-logo-filename.jpeg #icon: fa-plus-square
+  icon: fa-plus-square
