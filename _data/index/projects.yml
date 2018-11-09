@@ -6,5 +6,5 @@
   gh_user: RemiGau
   repo: advanced_fMRI_course
   url: https://github.com/Remi-Gau/advanced_fMRI_course
-  img:
+  img: /static/assets/img/landing/fMRI.png
   desc: A list of ressource for MRI studies
