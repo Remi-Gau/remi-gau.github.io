@@ -3,7 +3,7 @@
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
 - name: advanced fMRI course
   i18n: Markdown
-  gh_user: RemiGau
+  gh_user: Remi-Gau
   repo: advanced_fMRI_course
   url: https://github.com/Remi-Gau/advanced_fMRI_course
   img: /static/assets/img/landing/fMRI.png
