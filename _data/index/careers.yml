@@ -15,7 +15,6 @@
     i18n: company_a_job
   icon: fa-plus-square
 
-
 - name:
     detail: Max Planck Institute for biological cybernetics (Tuebingen, Germany)
     i18n: company_a
@@ -30,7 +29,6 @@
     i18n: company_a_job
   icon: fa-plus-square
 
-
   - name:
       detail: Universite Pierre et Marie Curie (Paris, France)
       i18n: company_a
@@ -38,13 +36,12 @@
       detail: Electrophysiology, Pain, Cardiovascular regulations, Serotonin
       i18n: company_a_desc
     date:
-      detail: 2006-2010
+      detail: '2006-2010'
       i18n: company_a_date
     job:
       detail: PhD student
       i18n: company_a_job
     icon: fa-plus-square
-
 
   - name:
       detail: Universite Pierre et Marie Curie (Paris, France)
@@ -53,13 +50,12 @@
       detail: Pain, Cardiovascular regulations, Serotonin
       i18n: company_a_desc
     date:
-      detail: 2005-2006
+      detail: '2005-2006'
       i18n: company_a_date
     job:
       detail: Master student
       i18n: company_a_job
     icon: fa-plus-square
-
 
   - name:
       detail: Universite Paul Sabatier (Toulouse, France)
@@ -68,9 +64,9 @@
       detail: dyslexia, fMRI
       i18n: company_a_desc
     date:
-      detail: 2004-2005
+      detail: '2004-2005'
       i18n: company_a_date
     job:
       detail: Master student
       i18n: company_a_job
-    icon: fa-plus-square    
+    icon: fa-plus-square
