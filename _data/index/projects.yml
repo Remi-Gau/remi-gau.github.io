@@ -14,7 +14,7 @@
   gh_user: Remi-Gau
   repo: spmup
   url: https://github.com/Remi-Gau/spmup
-  img: /static/assets/img/landing/fMRI.png
+  img:
   desc: SPM tools to get the best of mass univariate analyses
 
 - name: SPM RG
@@ -22,8 +22,8 @@
   gh_user: Remi-Gau
   repo: SPM-RG
   url: https://github.com/Remi-Gau/SPM-RG
-  img: /static/assets/img/landing/fMRI.png
-  desc: Some more utilities for SPM: dual coding of statisitical maps and manual coregistration
+  img:
+  desc: Some more utilities for SPM for dual coding of statisitical maps and manual coregistration
 
 - name: BIDS Starter Kit
   i18n: Markdown
@@ -31,4 +31,4 @@
   repo: BIDS-Starter-Kit
   url: https://github.com/Remi-Gau/BIDS-Starter-Kit
   img: /static/assets/img/landing/BIDS_RawDerivativeSource.png
-  desc: A starter kit if you don't know anything about the Brain Imaging Data Structure but wish you did.
+  desc: If you don't know anything about the Brain Imaging Data Structure but wish you did.
