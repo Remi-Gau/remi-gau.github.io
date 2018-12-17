@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "create your website with gitpages"
+date:   2018-12-07
+desc: "create your website with gitpages"
+keywords: "gh-pages, website, blog, easy"
+categories: [Programming]
+tags: [Jalpc,Jekyll]
+icon: icon-html
+---
+
+# Step 1: setup a github account
+
+# Step 2: find a jekyll theme you like and fork it
+
+# Step 3: change some basic parameters to make it your Following
+
+# Step 4: keep tweaking

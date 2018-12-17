@@ -1,0 +1,7 @@
+---
+layout: "post"
+title: "test"
+date: "2018-12-07 22:44"
+---
+
+<span class="__dimensions_badge_embed__" data-pmid=" 26419391" data-hide-zero-citations="true" data-style="small_circle"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
