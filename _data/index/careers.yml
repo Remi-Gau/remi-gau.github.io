@@ -2,6 +2,20 @@
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 
 - name:
+    detail: Cross-modal plasticity lab (université catholigue de Louvain, Louvain la neuve, Belgium)
+    i18n: company_a
+  desc:
+    detail: Laminar fMRI at 7T
+    i18n: company_a_desc
+  date:
+    detail: Jan. 2019
+    i18n: company_a_date
+  job:
+    detail: Post doctoral fellow
+    i18n: company_a_job
+  icon: fa-plus-square
+
+- name:
     detail: University of Birmingham (Birmingham, UK)
     i18n: company_a
   desc:
