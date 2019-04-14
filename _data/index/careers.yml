@@ -2,7 +2,7 @@
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 
 - name:
-    detail: Cross-modal plasticity lab (université catholigue de Louvain, Louvain la neuve, Belgium)
+    detail: Cross-modal perception plasticity lab (université catholigue de Louvain, Louvain la neuve, Belgium)
     i18n: company_a
   desc:
     detail: Laminar fMRI at 7T
