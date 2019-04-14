@@ -28,7 +28,7 @@ author:  # change following line to your infomation.
   skill_icon2:
     - name: fa-linux
     - name: icon-apache
-  desc: Am a cognitive neuroscientist interested in multisensory perception, high-resolution fMRI as well ass open and reproducible science.  # Describe yourself.
+  desc: Am a cognitive neuroscientist interested in multisensory perception, high-resolution fMRI as well as open and reproducible science.  # Describe yourself.
 
 # comment
 disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
