@@ -1,7 +1,7 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
-- name: advanced fMRI course
+- name: online neuroimaging resources
   i18n: Markdown
   gh_user: Remi-Gau
   repo: online_neuroimaging_resources
@@ -17,13 +17,13 @@
   img:
   desc: SPM tools to get the best of mass univariate analyses
 
-- name: SPM RG
+- name: COBIDAS checklist
   i18n: Markdown
   gh_user: Remi-Gau
-  repo: SPM-RG
-  url: https://github.com/Remi-Gau/SPM-RG
-  img:
-  desc: Some more utilities for SPM for dual coding of statisitical maps and manual coregistration
+  repo: COBIDAS_chckls
+  url: https://github.com/Remi-Gau/COBIDAS_chckls
+  img: /static/assets/img/landing/checklist.jpg
+  desc: Working repository to turn the COBIDAS report into a user friendly checklist
 
 - name: BIDS Starter Kit
   i18n: Markdown
