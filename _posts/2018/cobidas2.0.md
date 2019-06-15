@@ -15,6 +15,12 @@ For the past 10 years there have been several papers (or blog posts) pointing ou
 
 poldrack paper
 pernet
+
+
+
+This can be useful for some metascience project: can be a tool to create databasis to investigate changes in reporting across time: e.g multiple comparison before and after the salmon kerfuffle?
+
+
 blog post mri acquisition
 
 The latest and most comprehensive effort is the COBIDAS
@@ -31,3 +37,6 @@ To make it easier to use and facilitate its implementation the report was accomp
 
 
 This report came out ???? years ago
+
+
+COBIDAS checklist: don't redo the same thing over and over again
