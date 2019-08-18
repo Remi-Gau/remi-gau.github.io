@@ -7,8 +7,8 @@
   href: /blog/neuroscience/
 
 # edit following lines to custom your blog page, make sure name is the same as href but capitalized first letter(except HTML)
-- name: About me
-  href: /blog/about_me/
+- name: About
+  href: /blog/about/
 
 # Don't display donation page: change donation to off at file '_config.yml'
 - name: Donate
