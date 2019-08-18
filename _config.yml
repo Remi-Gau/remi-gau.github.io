@@ -23,11 +23,11 @@ author:  # change following line to your infomation.
   cv: https://www.overleaf.com/read/rvwspcgqpytv # An online CV can be printed as PDF, leave blank if you don't have now
   # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
   skill_icon1:
-    # - name: icon-apache
+    - name: fa-biohazard
     - name: fa-biohazard
   skill_icon2:
     - name: fa-biohazard
-  #   - name: icon-apache
+    - name: fa-biohazard
   desc: Am a cognitive neuroscientist interested in multisensory perception, high-resolution fMRI as well as open and reproducible science.  # Describe yourself.
 
 # comment
