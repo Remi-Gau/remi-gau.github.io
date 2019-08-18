@@ -2,5 +2,5 @@
 
 label: Ability
 id : cs
-aspects: GitHub, Git, MATLAB/octave, Python, bash, SPM, CBS tools, Freesurfer, Presentation, PsychToolBox, LaTeX
-percentage: 80, 70, 80, 20, 40, 80, 50, 50, 60, 50, 35
+aspects: GitHub, Git, MATLAB/octave, Python, bash, SPM, CBS tools, Freesurfer, Presentation, PsychToolBox, LaTeX,
+percentage: 75, 75, 75, 30, 40, 75, 50, 40, 70, 75, 30
