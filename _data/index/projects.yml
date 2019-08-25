@@ -9,13 +9,13 @@
   img: /static/assets/img/landing/fMRI.png
   desc: A list of ressource for MRI studies
 
-- name: SPM up
+- name: The hitchhacker's guide to the brain
   i18n: Markdown
   gh_user: Remi-Gau
   repo: spmup
-  url: https://github.com/Remi-Gau/spmup
-  img:
-  desc: SPM tools to get the best of mass univariate analyses
+  url: https://github.com/Remi-Gau/hitchhackers_guide_brain
+  img: /static/assets/img/landing/dont_panic.jpg
+  desc: Doing brain science is complicated but DON'T PANIC
 
 - name: COBIDAS checklist
   i18n: Markdown
