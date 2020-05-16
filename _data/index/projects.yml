@@ -5,7 +5,7 @@
   i18n: Markdown
   gh_user: Remi-Gau
   repo: online_neuroimaging_resources
-  url: https://github.com/Remi-Gau/online_neuroimaging_resources/blob/master/OnlineResources.md
+  url: https://github.com/Remi-Gau/online_neuroimaging_resources
   img: /static/assets/img/landing/fMRI.png
   desc: A list of ressource for MRI studies
 
@@ -29,6 +29,6 @@
   i18n: Markdown
   gh_user: Remi-Gau
   repo: BIDS-Starter-Kit
-  url: https://github.com/Remi-Gau/BIDS-Starter-Kit
+  url: https://github.com/bids-standard/bids-starter-kit
   img: /static/assets/img/landing/bids_logo.png
   desc: If you don't know anything about the Brain Imaging Data Structure but wish you did.
