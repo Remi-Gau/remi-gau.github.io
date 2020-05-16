@@ -18,25 +18,25 @@
   tpl: career.html
   css: timeline
 
-- id: thesis
-  i18n: nav.thesis
-  name: Thesis
-  tpl: thesis.html
-  css: thesis
-
-- id: blog
-  i18n: nav.blog
-  name: Blog
-  tpl: blog.html
-  page: blog/
-  css: testimonials navy-section
+# - id: thesis
+#   i18n: nav.thesis
+#   name: Thesis
+#   tpl: thesis.html
+#   css: thesis
+#
+# - id: blog
+#   i18n: nav.blog
+#   name: Blog
+#   tpl: blog.html
+#   page: blog/
+#   css: testimonials navy-section
 
 - id: skills
   i18n: nav.skills
   name: Skills
   tpl: skills.html
   css: team
-# 
+#
 # - id: links
 #   i18n: nav.link
 #   name: Links
