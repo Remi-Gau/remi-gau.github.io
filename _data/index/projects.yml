@@ -7,28 +7,48 @@
   repo: online_neuroimaging_resources
   url: https://github.com/Remi-Gau/online_neuroimaging_resources
   img: /static/assets/img/landing/fMRI.png
-  desc: A list of ressource for MRI studies
+  desc: A list of resources for neuroimaging
 
 - name: The hitchhacker's guide to the brain
   i18n: Markdown
-  gh_user: Remi-Gau
-  repo: spmup
-  url: https://github.com/Remi-Gau/hitchhackers_guide_brain
+  gh_user: learn-neuroimaging
+  repo: hitchhackers_guide_brain
+  url: https://github.com/learn-neuroimaging/hitchhackers_guide_brain
   img: /static/assets/img/landing/dont_panic.png
   desc: Doing brain science is complicated but DON'T PANIC
 
-- name: COBIDAS checklist
+- name: CPP-SPM
+  i18n: Markdown
+  gh_user: cpp-lln-lab
+  repo: CPP_SPM
+  url: https://github.com/cpp-lln-lab/CPP_SPM
+  img: /static/assets/img/landing/cpp_lab_logo.png
+  desc: A code base to automatically run SPM analyis on BIDS datasets.
+
+- name: eCobidas
   i18n: Markdown
   gh_user: Remi-Gau
-  repo: COBIDAS_chckls
-  url: https://github.com/Remi-Gau/COBIDAS_chckls
+  repo: eCobidas
+  url: https://github.com/Remi-Gau/eCobidas
   img: /static/assets/img/landing/checklist.jpg
-  desc: Working repository to turn the COBIDAS report into a user friendly checklist
+  desc:
+    Working repository to turn the COBIDAS report into a user friendly checklist
+
+- name: BIDS-matlab
+  i18n: Markdown
+  gh_user: bids-standard
+  repo: bids-matlab
+  url: https://github.com/bids-standard/bids-matlab
+  img: /static/assets/img/landing/bids_logo.png
+  desc:
+    Working repository to turn the COBIDAS report into a user friendly checklist
 
 - name: BIDS Starter Kit
   i18n: Markdown
-  gh_user: Remi-Gau
-  repo: BIDS-Starter-Kit
+  gh_user: bids-standard
+  repo: bids-starter-kit
   url: https://github.com/bids-standard/bids-starter-kit
   img: /static/assets/img/landing/bids_logo.png
-  desc: If you don't know anything about the Brain Imaging Data Structure but wish you did.
+  desc:
+    If you don't know anything about the Brain Imaging Data Structure but wish
+    you did.

@@ -9,12 +9,12 @@
   google_scholar: https://scholar.google.com/citations?user=gXOB3q8AAAAJ&hl=en
   research_gate: "https://www.researchgate.net/profile/Remi_Gau"
   bio: |
-    Remi is a postdoctoral fellow in the Crossmodal Perception and Plasticity laboratory (CPP-Lab) of Olivier Collignon at the Université catholique de Louvain (Belgium). 
-    He has a background both in biology and psychology. He did his PhD studying the role of serotoninergic neurons in the interplay between pain and cardio-vascular regulations in rodents. 
-    Rémi then moved on to the field of cognitive neuroimaging to study multisensory integration in humans. 
-    His current work focuses on the perception of motion and uses high-resolution MRI to address this question in blind and sighted controls by investigating the BOLD response at different depths in the cortical sheet. 
-    He is passionate about open science that he sees as 
-    - a) a way to build a more inclusive research community based on sharing and cooperation rather than hoarding and competition, 
-    - b) a way to address some of the replicability and reproducibility issues that are affecting many areas of science by making the sharing of code and data more common, 
-    - c) a set of tools and practices that can reduce inefficiencies in the research process and can benefit the overall community as well as the individual scientists. 
+    Remi is a postdoctoral fellow in the Crossmodal Perception and Plasticity laboratory (CPP-Lab) of Olivier Collignon at the Université catholique de Louvain (Belgium).
+    He has a background both in biology and psychology. He did his PhD studying the role of serotoninergic neurons in the interplay between pain and cardio-vascular regulations in rodents.
+    Rémi then moved on to the field of cognitive neuroimaging to study multisensory integration in humans.
+    His current work focuses on the perception of motion and uses high-resolution MRI to address this question in blind and sighted controls by investigating the BOLD response at different depths in the cortical sheet.
+    He is passionate about open science that he sees as
+    - a) a way to build a more inclusive research community based on sharing and cooperation rather than hoarding and competition,
+    - b) a way to address some of the replicability and reproducibility issues that are affecting many areas of science by making the sharing of code and data more common,
+    - c) a set of tools and practices that can reduce inefficiencies in the research process and can benefit the overall community as well as the individual scientists.
     He is also one of the maintainers of the Brain imaging data structure (BIDS - a standard to help organize and share neuroimaging data; https://bids-specification.readthedocs.io/en/stable/), BIDS-matlab (https://github.com/bids-standard/bids-matlab) and actively involved in COBIDAS (https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=3728) and ARTEM-IS (https://osf.io/pvrn6/), 2 projects aimed at standardizing the reporting of methods and resulting in neuroimaging.
