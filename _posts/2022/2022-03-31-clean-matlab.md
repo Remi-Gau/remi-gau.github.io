@@ -29,6 +29,22 @@ Also figured some other people could benefit so here is a post about this.
 </div>
 </div>
 
+**TOC**
+
+- [Oxymoronic](#oxymoronic)
+- [Getting by](#getting-by)
+    - [Code style](#code-style)
+    - [miss_hit](#miss_hit)
+    - [Only commit clean code](#only-commit-clean-code)
+    - [Testing](#testing)
+    - [Test automation](#test-automation)
+    - [Documentation](#documentation)
+    - [Dependency management](#dependency-management)
+    - [Interoperability and open-source](#interoperability-and-open-source)
+    - [Path management](#path-management)
+- [Template](#template)
+- [Examples and links](#examples-and-links)
+
 ## Oxymoronic
 
 So clean MATLAB🔒 code, hey?
