@@ -1,13 +1,13 @@
 ---
 layout: post
-title: MATLAB_Check-my_code
-date: "2019-09-06 14:58"
+title: "Hey MATLAB! Check my code!"
+date: "2020-05-29 00:00"
 tags: []
 categories: []
 ---
 
 Taken from this
-[twitter thread](https://twitter.com/RemiGau/status/1266388095282434048)
+[twitter thread](https://twitter.com/RemiGau/status/1266388006329552898)
 
 I created a MATLAB function to help me write good code.
 
@@ -32,7 +32,7 @@ At an individual and at a lab level all of this is the fastest way to end with a
 codebase of MATLAB scripts of 1000 lines or above that that have more loose ends
 than a bowl of spaghetti.
 
-![](https://gph.is/1AN298b)
+<iframe src="https://giphy.com/embed/11uoNyauChZR16" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
 There is no official MATLAB guidestyle.
 
@@ -65,8 +65,9 @@ your code with sub-functions for example.
 - [refactoring.guru](https://refactoring.guru/refactoring)
 
 The function will also roughly check if there are enough comments in the files
-to make sure things are not turning into a nightmare to debug or to read,
-[for others or for yourself in 6 months](https://www.tiktok.com/@delaina00moore/video/6827954886370495749)
+to make sure things are not turning into a nightmare to debug or to read, for
+others or
+[for yourself in 6 months](https://www.tiktok.com/@delaina00moore/video/6827954886370495749).
 
 I also wanted to find a way to automate this and make sure this function would
 run regularly so that I would not "forget" to check the quality of my code.
@@ -78,7 +79,7 @@ why do we say that we will clean our code when we are ready to submit our paper
 Because setting up a continuous integration to do that with MATLAB is turning
 out to be...
 
-![](https://gph.is/g/aKeo764)
+<iframe src="https://giphy.com/embed/jxcMNv8wJIlb6Jp9ER" width="480" height="260" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
 So I created a git hook template that just needs to be added into your local
 repository that will check the quality of your code every time you push your

@@ -1,0 +1,49 @@
+.post-content {
+  font-size: 15px;
+  width: 60%;
+  margin-left: 20%;
+
+  h1, h2, h3 {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 150%;
+  }
+
+  p {
+    font-size: 120%;
+  }
+
+  ul{
+    font-size: 100%;
+    ::marker {
+      font-size: 1.2em;
+      content: "- ";
+    }
+
+  }
+
+  blockquote {
+    width: 80%;
+    margin-left: 10%;
+    p {
+      font-size: 90%;
+      font-style: italic;
+    }
+  }
+
+  .language-text, .language-bash, .language-yml, .language-matlab, .language-rst, .language-python{
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .quote-ref{
+    text-align: right;
+    font-size:110%;
+    margin-top: 0px;
+    margin-bottom: 15px
+  }
+
+}
