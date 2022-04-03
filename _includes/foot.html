@@ -1,5 +1,15 @@
-{% include analytics.html %}
+{% include analytics.html %} {% if site.disqus %}
 
-{% if site.disqus %}
-<script id="dsq-count-scr" src="https://{{ site.disqus.name }}.disqus.com/count.js" async></script>
+<div>
+    test
+</div>
+
+
+
+<script
+  id="dsq-count-scr"
+  src="https://{{ site.disqus.name }}.disqus.com/count.js"
+  async
+></script>
 {% endif %}
+

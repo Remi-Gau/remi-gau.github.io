@@ -15,6 +15,12 @@
                         <i class="fa {{ paper.icon }}"></i>
                     </div>
                     <div class="vertical-timeline-content wow {% if loopindex == 1 %} rotateInUpRight {% else %} rotateInUpLeft {% endif %}">
+
+                        {{/*  TODO  */}}
+                        {{/*  add altimetric badges https://api.altmetric.com/embeds.html  */}}
+
+
+
                         <h2><span data-i18n="paper.{{ paper.name.i18n }}">{{ paper.name.detail }}</span></h2>
                         <p><span data-i18n="paper.{{ paper.desc.i18n }}">{{ paper.desc.detail }} </span></p>
                         <span class="vertical-date"><span data-i18n="paper.{{ paper.date.i18n }}"> {{ paper.date.detail }} </span>
