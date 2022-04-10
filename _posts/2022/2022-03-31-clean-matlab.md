@@ -11,7 +11,7 @@ clean MATLAB🔒 code.
 
 So when a confirmed wizard asks you for a advices, you try to forget that you
 feel like an apprentice sorcerer most of the time and you respond with some of
-the things you learned along the way[^1][^2]. 🪄
+the things you learned along the way[^1]<sup>,</sup>[^2]. 🪄
 
 Also figured some other people could benefit so here is a post about this.
 
@@ -33,15 +33,15 @@ Also figured some other people could benefit so here is a post about this.
 
 - [Oxymoronic](#oxymoronic)
 - [Getting by](#getting-by)
-    - [Code style](#code-style)
-    - [miss_hit](#miss_hit)
-    - [Only commit clean code](#only-commit-clean-code)
-    - [Testing](#testing)
-    - [Test automation](#test-automation)
-    - [Documentation](#documentation)
-    - [Dependency management](#dependency-management)
-    - [Interoperability and open-source](#interoperability-and-open-source)
-    - [Path management](#path-management)
+  - [Code style](#code-style)
+  - [miss_hit](#miss_hit)
+  - [Only commit clean code](#only-commit-clean-code)
+  - [Testing](#testing)
+  - [Test automation](#test-automation)
+  - [Documentation](#documentation)
+  - [Dependency management](#dependency-management)
+  - [Interoperability and open-source](#interoperability-and-open-source)
+  - [Path management](#path-management)
 - [Template](#template)
 - [Examples and links](#examples-and-links)
 

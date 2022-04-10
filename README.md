@@ -23,14 +23,14 @@ for Windows folks. Sorry!) Installing the github-pages gem
 
 Run the following command:
 
-```
+```bash
 gem install github-pages
 ```
 
 This will install the github-pages gem and all dependencies (including jekyll).
 Later, to update the gem, type:
 
-```
+```bash
 gem update github-pages
 ```
 
@@ -38,7 +38,7 @@ gem update github-pages
 
 To construct and test your site locally, go into the directory and type
 
-```
+```bash
 jekyll build
 ```
 
@@ -49,7 +49,7 @@ html. (So there’ll be `_site/index.html` and the various `_site/pages/*.html`.
 Type the following in order to “serve” the site. This will first run build, and
 so it does not need to be preceded by jekyll build.
 
-```
+```bash
 jekyll serve
 ```
 
