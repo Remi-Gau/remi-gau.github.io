@@ -1,0 +1,4 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/remi/github/remi-gau.github.io'
+jekyll serve
+make: Leaving directory '/home/remi/github/remi-gau.github.io'
