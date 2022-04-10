@@ -1,7 +1,15 @@
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1200px,
+//   xxl: 1400px
+// );
+
 .post-content {
-  font-size: 130%;
-  width: 60%;
-  margin-left: 20%;
+
+  font-size: 150%;
 
   h1, h2, h3 {
     padding-top: 15px;
@@ -11,7 +19,7 @@
   }
 
   p {
-    font-size: 120%;
+    font-size: 100%;
   }
 
   ul{
@@ -27,13 +35,14 @@
     width: 80%;
     margin-left: 10%;
     p {
-      font-size: 90%;
+      font-size: 100%;
       font-style: italic;
     }
   }
 
   .language-text, .language-bash, .language-yml, .language-matlab, .language-rst, .language-python{
     width: 80%;
+    font-size:90%;
     margin-left: 10%;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -41,9 +50,15 @@
 
   .quote-ref{
     text-align: right;
-    font-size:110%;
+    font-size:100%;
     margin-top: 0px;
     margin-bottom: 15px
   }
 
+}
+
+@media (max-width: 768px) {
+  .post-content {
+    font-size: 120%;
+  }
 }
