@@ -94,6 +94,13 @@ When you reach the end of the alphabet go for `aa`, `ab`...
   extensive use of copy-pasta (turning the whole code base into a spaghetti
   factory),
 
+<div class="row" style="margin-top: 20px;">
+    <div class="col-lg-8 col-lg-offset-2">
+        <img width="100%"
+             src="/static/assets/img/blog/cancer.jpg">
+    </div>
+</div>
+
 - sometimes forgets about
   [Kernighan's law](https://github.com/dwmkerr/hacker-laws#kernighans-law) and
   tries to be overly clever,
