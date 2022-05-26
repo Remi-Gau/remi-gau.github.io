@@ -6,12 +6,19 @@ tags: []
 categories: []
 ---
 
+<div class="row" style="margin-bottom: 50px;">
+    <div class="col-lg-8 col-lg-offset-4">
+        <img width="50%"
+             src="/static/assets/img/blog/cancer.jpeg">
+    </div>
+</div>
+
 Recently, [Anibal Sólon](https://anibalsolon.com/) asked for tips about writing
 clean MATLAB🔒 code.
 
 So when a confirmed wizard asks you for a advices, you try to forget that you
 feel like an apprentice sorcerer most of the time and you respond with some of
-the things you learned along the way[^1]<sup>,</sup>[^2]. 🪄
+the things you learned along the way[^1]<sup>,</sup>[^2].
 
 Also figured some other people could benefit so here is a post about this.
 
@@ -37,8 +44,12 @@ Also figured some other people could benefit so here is a post about this.
   - [miss_hit](#miss_hit)
   - [Only commit clean code](#only-commit-clean-code)
   - [Testing](#testing)
-  - [Test automation](#test-automation)
+    - [Why tests matter](#why-tests-matter)
+    - [Testing in practice](#testing-in-practice)
+    - [Test automation](#test-automation)
   - [Documentation](#documentation)
+  - [Demos](#demos)
+  - [Containerize](#containerize)
   - [Dependency management](#dependency-management)
   - [Interoperability and open-source](#interoperability-and-open-source)
   - [Path management](#path-management)
@@ -49,7 +60,7 @@ Also figured some other people could benefit so here is a post about this.
 
 So clean MATLAB🔒 code, hey?
 
-From most of the MATLAB🔒 code I have read
+From most of the sceintific MATLAB🔒 code I have read
 [or written](https://github.com/Remi-Gau?tab=repositories&q=&type=source&language=matlab&sort=name)
 in my life that "clean MATLAB🔒 code" feels a bit like a contradiction in terms.
 A bit like [civil war](https://www.youtube.com/watch?v=_tsbFbKH0OQ),
@@ -66,7 +77,7 @@ Typical MATLAB🔒 code:
   <span style="word-spacing: 1px;letter-spacing: -2.5px">that you would make
   sardines in a can feel claustrophobic</span>,[^3]
 
-- has an average line-length that must be a significant driver of the demand of
+- has an average line-length that must be a significant driver of the demand on
   the wide-screen market,
 
 - HAS aVeryInconsistent Approach to_the_use of CaSeS
@@ -115,7 +126,7 @@ excellent [The Good Research Code Handbook](https://goodresearch.dev/).
 
 MATLAB🔒 does not really have a lot of tools to help us mitigate this situation
 in an easy and consistent manner. So the best we can do is mostly get by. Very
-often by using tools written in other languages.
+often by using tools written in Python.
 
 ### Code style
 
@@ -163,6 +174,12 @@ If you want a good intros for code style and quality, check the
         Created by Scriberia for The Turing Way community.
     </a>
 </p>
+
+<!--
+Variable names:
+- don't use letters
+- use english
+ -->
 
 ### miss_hit
 
@@ -286,11 +303,60 @@ In general try to write tests for the code you are about to write.
 For a short intro to testing,
 [check the turing way](https://the-turing-way.netlify.app/reproducible-research/testing.html)
 
-To run them I would recommend using the
-[MOxUnit testing framework](https://github.com/MOxUnit/MOxUnit). Works with both
-MATLAB🔒 and Octave🔓. It has a companion toolbox
+#### Why tests matter
+
+If you are unclear as to why tests matter to clean code, let me try an analogy.
+
+Imagine you live in a fully functional house: it does all the things one could
+reasonably expect a house to do. But you would like to redesign it because even
+if you can cook, eat, sleep, wash, relax in it... the set up is not optimum
+("Why is the oven in the garage?", "Should the dishwasher be in the bedroom?").
+
+The problem is that to redesign will require moving some bearing walls: so
+redesigning the house may at any moment turn your fully functional house into a
+pile of bricks. To make things worse, none of your friends can host you while
+you are redesigning your house: so you have to live in it while the work is
+happening. This means that most of the functionalities of the house should be
+retained (because you happen to consider that eating and washing up are not just
+luxuries that one can simply do away with).
+
+Wouldn't it be great if you had some monitoring system that:
+
+- defined what are the expected functionalities of your house,
+- warned you when your house starts losing functionality ?
+
+Now let's go back to clean code.
+
+Have you ever told yourself the following?
+
+> I want to share the code that my results are based on. I will clean it when we
+> are closer to submitting the paper.
+
+But despite your best intentions, you never got to it. It is not that you are
+lazy, but cleaning up often require changes so drastic ("tearing down a bearing
+wall"), that the code start producing results that are different from the ones
+in the paper that is already on its way to the printing press. Those differences
+could be substantial ("You had a house. Here, have a pile of bricks!") or much
+less so ("The garage door does not open anymore."), but either way you have no
+way of knowing and anyone now running this code would get different results from
+the one in your paper.
+
+So what a suite of tests for your code does:
+
+- it says what your code should be doing by defining what results it is expected
+  to produce
+- it will throw an alarm if any of the code stops working as expected.
+
+With a good test suite you can almost carelessly change your code and be
+confident that if something stops working you will know about it.
+
+#### Testing in practice
+
+To make your life easier for writing and running tests I would recommend using
+the [MOxUnit testing framework](https://github.com/MOxUnit/MOxUnit). Works with
+both MATLAB🔒 and Octave🔓. It has a companion toolbox
 ([MOcov](https://github.com/MOcov/MOcov)) to get a code coverage estimate after
-running your tests.
+running your tests[^6].
 
 Don't expect something like `pytest`, but it gets the job done pretty well.
 
@@ -374,7 +440,7 @@ end
 
 ```
 
-### Test automation
+#### Test automation
 
 No point in having tests and not running them regularly. It'd be like believing
 that owning a tooth brush but not using it, is enough to keep cavities away.
@@ -395,7 +461,7 @@ A typical `.yml` file for to run this action would look something like
 
 If your code does not run on Octave🔓, then you can still run your tests using
 the [MATLAB🔒 Github actions](https://github.com/matlab-actions/overview)
-provided that your Github repository is public[^6].
+provided that your Github repository is public[^7].
 
 The project set up like this:
 
@@ -534,7 +600,19 @@ My doc
 
 The only "inconvenient" of this is that Sphinx uses
 [restructuredText](https://docutils.sourceforge.io/rst.html) as a markup
-language which is less forgiving than markdown in its syntax[^7].
+language which is less forgiving than markdown in its syntax[^8].
+
+### Demos
+
+Documenting your code is usually not enough so make sure that you also include
+demos to show how to use your code base.
+
+If you use Octave you can also create those demos in jupyte notebooks and even
+run those demos in the cloud using binder.
+
+<!-- explain -->
+
+### Containerize
 
 ### Dependency management
 
@@ -547,7 +625,7 @@ your code that relies on some external library, add it to your repository:
 
 Do not expect your users (most of them are just you in 1, 2, 6, 12 and 18
 months) to know which version of each library. And even if you do list those in
-your README[^8], it is annoying to have to go and get them manually.
+your README[^9], it is annoying to have to go and get them manually.
 
 ### Interoperability and open-source
 
@@ -607,12 +685,17 @@ If you want actual examples of all this.
     appended to the results and the paper that are based on such code.
 
 [^5]: If so, why are you reading this post?
-[^6]: I think that they won't run on private repos.
-[^7]:
+[^6]:
+    Code coverage tells which part of your code has been executed when you ran
+    the tests. It does not necessarily tell you if the code did what was
+    expected but it can at least tell that it ran without crashing.
+
+[^7]: I think that they won't run on private repos.
+[^8]:
     I have not yet checked, if it is possible to use the more user friendly
     [MyST](https://myst-parser.readthedocs.io/en/latest/syntax/syntax.html) to
     write Sphinx doc for this.
 
-[^8]:
+[^9]:
     You DO have a README that says how to install and use your code, right?
     RIGHT?
