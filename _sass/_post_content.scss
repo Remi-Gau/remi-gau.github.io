@@ -46,6 +46,15 @@
     margin-left: 10%;
     padding-bottom: 10px;
     padding-top: 10px;
+    overflow-x: scroll;
+    white-space: pre;
+    .highlight{
+      overflow-x: scroll;
+      white-space: pre;
+      .code{
+        overflow-x: scroll;
+        white-space: pre;}
+      }
   }
 
   .quote-ref{
