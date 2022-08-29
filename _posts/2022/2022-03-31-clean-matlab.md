@@ -60,7 +60,7 @@ Also figured some other people could benefit so here is a post about this.
 
 So clean MATLAB🔒 code, hey?
 
-From most of the sceintific MATLAB🔒 code I have read
+From most of the scientific MATLAB🔒 code I have read
 [or written](https://github.com/Remi-Gau?tab=repositories&q=&type=source&language=matlab&sort=name)
 in my life that "clean MATLAB🔒 code" feels a bit like a contradiction in terms.
 A bit like [civil war](https://www.youtube.com/watch?v=_tsbFbKH0OQ),
@@ -121,6 +121,14 @@ the intro sentence in [Patrick Mineault](https://twitter.com/patrickmineault)'s
 excellent [The Good Research Code Handbook](https://goodresearch.dev/).
 
 > "[I] hate my code and don’t want to work on it."
+
+And to be clear I am not saying switching to Python, R, Julia (or any other language) 
+will automagically give you cleaner code. 
+One could easily browse github to find examples code written in other languages 
+that have some or all of the defects mentioned above - please don't actually do this: 
+don't code shame unless you are actually going some of your old code as an example.
+But very often other languages either have tools or coding conventions 
+that help writing cleaner code.
 
 ## Getting by
 
