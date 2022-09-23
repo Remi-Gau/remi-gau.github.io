@@ -34,7 +34,7 @@
     "peity": "^3.3.0",
     "purify-css": "^1.1.9",
     "to": "^0.2.9",
-    "update": "^0.4.2",
+    "update": "^0.7.4",
     "wowjs": "^1.1.2"
   },
   "devDependencies": {
