@@ -122,12 +122,12 @@ excellent [The Good Research Code Handbook](https://goodresearch.dev/).
 
 > "[I] hate my code and don’t want to work on it."
 
-And to be clear I am not saying switching to Python, R, Julia (or any other language) 
-will automagically give you cleaner code. 
-One could easily browse github to find examples code written in other languages 
-that have some or all of the defects mentioned above - please don't actually do this: 
+And to be clear I am not saying switching to Python, R, Julia (or any other language)
+will automagically give you cleaner code.
+One could easily browse github to find examples code written in other languages
+that have some or all of the defects mentioned above - please don't actually do this:
 don't code shame unless you are actually going some of your old code as an example.
-But very often other languages either have tools or coding conventions 
+But very often other languages either have tools or coding conventions
 that help writing cleaner code.
 
 ## Getting by
