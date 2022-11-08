@@ -24,7 +24,7 @@
   repo: bidsMReye
   url: https://github.com/cpp-lln-lab/bidsMReye
   desc:
-    BIDS app using deepMReye to decode eye motion for fMRI time series data. 
+    BIDS app using deepMReye to decode eye motion for fMRI time series data.
 
 - name: Octache
   i18n: Markdown
@@ -32,7 +32,7 @@
   repo: Octache
   url: https://github.com/Remi-Gau/Octache
   desc:
-    An Octave implementation of the mustache templating language for Octave that also happen to work with MATLAB.      
+    An Octave implementation of the mustache templating language for Octave that also happen to work with MATLAB.
 
 - name: eCobidas
   i18n: Markdown
@@ -41,7 +41,7 @@
   url: https://github.com/Remi-Gau/eCobidas
   img: /static/assets/img/landing/checklist.jpg
   desc:
-    Working repository to turn the COBIDAS report into a user friendly checklist    
+    Working repository to turn the COBIDAS report into a user friendly checklist
 
 - name: bids2cite
   i18n: Markdown
@@ -49,7 +49,7 @@
   repo: bids2cite
   url: https://github.com/Remi-Gau/bids2cite
   desc:
-    Create a citation file for a BIDS dataset.   
+    Create a citation file for a BIDS dataset.
 
 - name: BIDS Starter Kit
   i18n: Markdown
