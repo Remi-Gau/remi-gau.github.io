@@ -1,6 +1,66 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
+- name: bidspm
+  i18n: Markdown
+  gh_user: cpp-lln-lab
+  repo: bidspm
+  url: https://github.com/cpp-lln-lab/bidspm
+  img: /static/assets/img/landing/cpp_lab_logo.png
+  desc: A code base to automatically run SPM analyis on BIDS datasets.
+
+- name: BIDS-matlab
+  i18n: Markdown
+  gh_user: bids-standard
+  repo: bids-matlab
+  url: https://github.com/bids-standard/bids-matlab
+  img: /static/assets/img/landing/bids_logo.png
+  desc:
+    Working repository to turn the COBIDAS report into a user friendly checklist
+
+- name: bidsMReye
+  i18n: Markdown
+  gh_user: cpp-lln-lab
+  repo: bidsMReye
+  url: https://github.com/cpp-lln-lab/bidsMReye
+  desc:
+    BIDS app using deepMReye to decode eye motion for fMRI time series data. 
+
+- name: Octache
+  i18n: Markdown
+  gh_user: Remi-Gau
+  repo: Octache
+  url: https://github.com/Remi-Gau/Octache
+  desc:
+    An Octave implementation of the mustache templating language for Octave that also happen to work with MATLAB.      
+
+- name: eCobidas
+  i18n: Markdown
+  gh_user: Remi-Gau
+  repo: eCobidas
+  url: https://github.com/Remi-Gau/eCobidas
+  img: /static/assets/img/landing/checklist.jpg
+  desc:
+    Working repository to turn the COBIDAS report into a user friendly checklist    
+
+- name: bids2cite
+  i18n: Markdown
+  gh_user: Remi-Gau
+  repo: bids2cite
+  url: https://github.com/Remi-Gau/bids2cite
+  desc:
+    Create a citation file for a BIDS dataset.   
+
+- name: BIDS Starter Kit
+  i18n: Markdown
+  gh_user: bids-standard
+  repo: bids-starter-kit
+  url: https://github.com/bids-standard/bids-starter-kit
+  img: /static/assets/img/landing/bids_logo.png
+  desc:
+    If you don't know anything about the Brain Imaging Data Structure but wish
+    you did.
+
 - name: Online neuroimaging resources
   i18n: Markdown
   gh_user: Remi-Gau
@@ -16,39 +76,3 @@
   url: https://github.com/learn-neuroimaging/hitchhackers_guide_brain
   img: /static/assets/img/landing/dont_panic.png
   desc: Doing brain science is complicated but DON'T PANIC
-
-- name: CPP-SPM
-  i18n: Markdown
-  gh_user: cpp-lln-lab
-  repo: CPP_SPM
-  url: https://github.com/cpp-lln-lab/CPP_SPM
-  img: /static/assets/img/landing/cpp_lab_logo.png
-  desc: A code base to automatically run SPM analyis on BIDS datasets.
-
-- name: eCobidas
-  i18n: Markdown
-  gh_user: Remi-Gau
-  repo: eCobidas
-  url: https://github.com/Remi-Gau/eCobidas
-  img: /static/assets/img/landing/checklist.jpg
-  desc:
-    Working repository to turn the COBIDAS report into a user friendly checklist
-
-- name: BIDS-matlab
-  i18n: Markdown
-  gh_user: bids-standard
-  repo: bids-matlab
-  url: https://github.com/bids-standard/bids-matlab
-  img: /static/assets/img/landing/bids_logo.png
-  desc:
-    Working repository to turn the COBIDAS report into a user friendly checklist
-
-- name: BIDS Starter Kit
-  i18n: Markdown
-  gh_user: bids-standard
-  repo: bids-starter-kit
-  url: https://github.com/bids-standard/bids-starter-kit
-  img: /static/assets/img/landing/bids_logo.png
-  desc:
-    If you don't know anything about the Brain Imaging Data Structure but wish
-    you did.
