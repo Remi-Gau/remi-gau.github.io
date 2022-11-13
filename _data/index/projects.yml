@@ -7,7 +7,7 @@
   repo: bidspm
   url: https://github.com/cpp-lln-lab/bidspm
   img: /static/assets/img/landing/cpp_lab_logo.png
-  desc: A code base to automatically run SPM analyis on BIDS datasets.
+  desc: A code base to automatically run SPM analysis on BIDS datasets.
 
 - name: BIDS-matlab
   i18n: Markdown

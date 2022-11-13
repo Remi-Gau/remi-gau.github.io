@@ -198,7 +198,7 @@ then you over-estimate my patience.
 To help me, I use the [`miss_hit` python package](https://misshit.org/).
 
 `miss_hit` can check code style, do a certain amount of automatic code
-reformating and prevent the code complexity from getting out of hand by running
+reformatting and prevent the code complexity from getting out of hand by running
 static code analysis.
 
 Static analysis can is a way to measure and track software quality metrics

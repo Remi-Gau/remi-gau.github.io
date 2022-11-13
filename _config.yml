@@ -9,7 +9,7 @@ url: https://remi-gau.github.io # url should be 'http://<github_username>.github
 img_path: /remi-gau.github.io/static/assets/img/blog # url should be '/homepage/static/assets/img/blog' as before
 
 # author -- index page "about me" section
-author: # change following line to your infomation.
+author: # change following line to your information.
   name: RemiGau # Be used at blog posts' author.
   first_name: Remi # Be used at index page about me section.
   last_name: Gau # Be used at index page about me section.
