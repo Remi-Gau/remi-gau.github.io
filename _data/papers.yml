@@ -1,86 +1,29 @@
-# careers section data
-# if you don't have language feature(language.yml is empty), ignore "i18n" items
+- name:
+    Centering inclusivity in the design of online conferences - An OHBM-Open
+    Science perspective
+  authors: Levitis E, Gould van Praag C D, Gau R, Heunis S, et al.
+  date: 2021
+  journal: GigaScience
+  icon: fa-plus-square
+  doi: 10.1093/gigascience/giab051
+  web: https://doi.org/10.1109/5.771073
 
 - name:
-    detail: Cross-modal perception plasticity lab (université catholique de Louvain, Louvain la neuve, Belgium)
-    i18n: company_a
-  desc:
-    detail: Laminar fMRI at 7T
-    i18n: company_a_desc
-  date:
-    detail: Jan. 2019
-    i18n: company_a_date
-  job:
-    detail: Post doctoral fellow
-    i18n: company_a_job
+    "Brainhack: developing a culture of open, inclusive, community-driven
+    neuroscience"
+  authors: Gau R, Noble S, Heuer K, Bottenhorn K L, Bilgin I P, Yang Y, et al
+  date: 2021
+  journal: Neuron
   icon: fa-plus-square
+  doi: 10.1016/j.neuron.2021.04.001
+  osf: 10.31234/osf.io/rytjq
+  web: http://brainhack.org/brainhack_jupyter_book/
+  github: brainhackorg/brainhack_jupyter_book
 
 - name:
-    detail: University of Birmingham (Birmingham, UK)
-    i18n: company_a
-  desc:
-    detail: Laminar fMRI at 7T
-    i18n: company_a_desc
-  date:
-    detail: Jan. 2013
-    i18n: company_a_date
-  job:
-    detail: PhD student
-    i18n: company_a_job
+    "Variability in the analysis of a single neuroimaging dataset by many teams"
+  authors: Botvinik-Nezer R, et al
+  date: 2021
+  journal: Nature
   icon: fa-plus-square
-
-- name:
-    detail: Max Planck Institute for biological cybernetics (Tuebingen, Germany)
-    i18n: company_a
-  desc:
-    detail: Multisensory integration, fMRI
-    i18n: company_a_desc
-  date:
-    detail: Jan. 2012
-    i18n: company_a_date
-  job:
-    detail: PhD student
-    i18n: company_a_job
-  icon: fa-plus-square
-
-- name:
-    detail: Universite Pierre et Marie Curie (Paris, France)
-    i18n: company_a
-  desc:
-    detail: Electrophysiology, Pain, Cardiovascular regulations, Serotonin
-    i18n: company_a_desc
-  date:
-    detail: '2006-2010'
-    i18n: company_a_date
-  job:
-    detail: PhD student
-    i18n: company_a_job
-  icon: fa-plus-square
-
-- name:
-    detail: Universite Pierre et Marie Curie (Paris, France)
-    i18n: company_a
-  desc:
-    detail: Pain, Cardiovascular regulations, Serotonin
-    i18n: company_a_desc
-  date:
-    detail: '2005-2006'
-    i18n: company_a_date
-  job:
-    detail: Master student
-    i18n: company_a_job
-  icon: fa-plus-square
-
-- name:
-    detail: Universite Paul Sabatier (Toulouse, France)
-    i18n: company_a
-  desc:
-    detail: dyslexia, fMRI
-    i18n: company_a_desc
-  date:
-    detail: '2004-2005'
-    i18n: company_a_date
-  job:
-    detail: Master student
-    i18n: company_a_job
-  icon: fa-plus-square
+  doi: 10.1038/s41586-020-2314-9

@@ -7,31 +7,56 @@ permalink: /blog/papers.html
 <div class="row">
     <div class="col-lg-12 text-center">
         <div class="navy-line"></div>
-        <h1>Papers</h1>
+        <h1>Papers WIP</h1>
     </div>
 </div>
 
-<div class="row">
+<div class="row" style="margin-bottom: 75px">
     <div class="col-lg-12">
-        <div id="vertical-timeline" class="vertical-container light-timeline center-orientation">
+        <div id="vertical-timeline"
+             class="vertical-container light-timeline center-orientation">
+
         {% for paper in site.data.papers %}
         {% assign loopindex = forloop.index | modulo: 2 %}
             <div class="vertical-timeline-block">
+
                 <div class="vertical-timeline-icon navy-bg wow rotateIn">
                     <i class="fa {{ paper.icon }}"></i>
                 </div>
+
                 <div class="vertical-timeline-content wow {% if loopindex == 1 %} rotateInUpRight {% else %} rotateInUpLeft {% endif %}">
 
+                    <h2>
+                        <span>
+                        {% if paper.web %}
+                            <a href="{{ paper.web }}">{{ paper.name }}</a>
+                        {% else %}
+                            <a href="https://doi.org/{{ paper.doi }}">{{ paper.name }}</a>
+                        {% endif %}
+                        </span>
+                    </h2>
+                    <p><span>{{ paper.authors }} </span></p>
+                    <div
+                        data-badge-type="donut"
+                        data-doi={{ paper.doi }}
+                        data-condensed="true"
+                        data-badge-popover='left'
+                        data-hide-no-mentions="true"
+                        class="altmetric-embed">
+                    </div>
+                    <span class="vertical-date">
+                        <span>{{ paper.date }}</span>
+                        <br/>
+                        <small>{{ paper.journal }}</span>
+                        </small>
+                    </span>
 
-                    <!-- add altimetric badges https://api.altmetric.com/embeds.html  -->
-
-                    <h2><span data-i18n="paper.{{ paper.name.i18n }}">{{ paper.name.detail }}</span></h2>
-                    <p><span data-i18n="paper.{{ paper.desc.i18n }}">{{ paper.desc.detail }} </span></p>
-                    <span class="vertical-date"><span data-i18n="paper.{{ paper.date.i18n }}"> {{ paper.date.detail }} </span>
-                    <br/> <small><span data-i18n="paper.{{ paper.job.i18n }}">{{ paper.job.detail }}</span></small> </span>
                 </div>
             </div>
         {% endfor %}
+
         </div>
     </div>
 </div>
+
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
