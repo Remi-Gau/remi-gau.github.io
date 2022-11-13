@@ -4,21 +4,85 @@ title: About me
 permalink: /blog/about.html/
 ---
 
-<!DOCTYPE html>
-<html lang="en">
+<div class="row">
+  <div class="col-lg-12 text-center">
+      <div class="navy-line"></div>
+      <h1>Couple of things about me</h1>
+  </div>
+</div>
 
-<head>
+<div class="row" style="margin: 30px">
 
-</head>
+  <div class="col-lg-1 col-lg-offset-3">
+      <img src="{{ site.author.avatar | prepend: site.baseurl }}"
+      height=100%
+      width=auto
+      class="img-responsive img-circle"
+      alt="">
+  </div>
 
-<body>
+  <div class="col-lg-5">
+    <h2>
+      <b>TL;DR:</b><br>
+      I started as a biologist,<br>
+      now I tell people how to name files, folders and variables.
+    </h2>
+  </div>
 
-  <h1>Couple of things about me</h1>
+</div>
 
-  <img src="{{ site.author.avatar | prepend: site.baseurl }}" height="110" width="110" class="img-responsive img-circle" alt="">
+<div class="row" style="margin: 30px">
 
-  <p>Am a cognitive neuroscientist interested in multisensory perception, high-resolution fMRI as well as open and reproducible science.</p>
+  <div class="col-lg-5 col-lg-offset-3 post-content">
 
-</body>
+    <p>
+      I am a postdoctoral fellow in the Crossmodal Perception and Plasticity laboratory (CPP-Lab)
+      of Olivier Collignon at the Université catholique de Louvain (Belgium).
+    </p>
+    <p>
+      I have a background both in biology and psychology.
+    </p>
+    <p>
+      I did my PhD studying the role of serotoninergic neurons
+      in the interplay between pain and cardio-vascular regulations in rodents.
+    </p>
+    <p>
+      I then moved on to the field of cognitive neuroimaging to study multisensory integration in humans.
+    </p>
+    <p>
+      My current work focuses on the perception of motion and uses high-resolution MRI
+      to address this question in blind and sighted controls by investigating the BOLD response
+      at different depths in the cortical sheet.
+    </p>
 
-</html>
+    <p>
+      I am passionate about open science that I see as:
+      <ul>
+        <li>a way to build a more inclusive research community based on sharing
+          and cooperation rather than hoarding and competition,</li>
+        <li>a way to address some of the replicability and reproducibility issues
+          that are affecting many areas of science by making the sharing of code and data more common,</li>
+        <li>a set of tools and practices that can reduce inefficiencies
+          in the research process and can benefit the overall community
+          as well as the individual scientists.</li>
+      </ul>
+    </p>
+
+    <p>
+      I am also one of the maintainers of:
+      <ul>
+        <li>the Brain imaging data structure
+          (<a href="https://bids-specification.readthedocs.io/en/stable/">BIDS - a standard to help organize and share neuroimaging data)</a></li>
+        <li><a href="https://github.com/bids-standard/bids-matlab">BIDS-matlab</a></li>
+      </ul>
+      and actively involved in 2 projects aimed at standardizing the reporting of methods
+      and resulting in neuroimaging:
+      <ul>
+        <li><a href="https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=3728">COBIDAS</a></li>
+        <li><a href="https://osf.io/pvrn6/">ARTEM-IS</a></li>
+      </ul>
+    </p>
+
+  </div>
+
+</div>
