@@ -7,41 +7,48 @@ permalink: /blog/talks.html
 <div class="row">
     <div class="col-lg-12 text-center">
         <div class="navy-line"></div>
-        <h1>Latest Blog</h1>
+        <h1>Talks WIP</h1>
     </div>
 </div>
 
-<div class="row">
-    <div class="col-lg-8 col-lg-offset-2">
-        <div class="wrapper wrapper-content animated fadeInRight">
+<div class="row" style="margin-bottom: 75px">
+    <div class="col-lg-12">
+        <div id="vertical-timeline"
+             class="vertical-container light-timeline center-orientation">
 
-            <!-- latest 10 blog -->
-			{% for post in site.posts limit:10 %}
-            <div class="vote-item">
-                <div class="row">
-                    <div class="col-md-10">
-                        <div class="vote-actions">
-                        </div>
-                        <a href="{{ post.url | prepend: site.baseurl }}" class="vote-title">
-                            {{ post.title }}
-                        </a>
-                        <div class="vote-info">
-                        {% if site.disqus %}
-                            <i class="fa fa-comments-o"> </i> <a>Comments (<span class="disqus-comment-count" data-disqus-url="{{ site.url }}{{ post.url }}">0</span>)</a>
-                        {% endif %}
-                            <i class="fa fa-clock-o"></i> <a>{{ post.date | date: "%-d %b %Y" }}</a>
-                            <i class="fa fa-user"></i> <a>{{ site.author.name }}</a>
-                        </div>
-                    </div>
-                    <div class="col-md-2 ">
-                        <div class="vote-icon">
-                            {% if post.icon %}<i class="fa {{ post.icon }}"> </i>{% endif %}
-                        </div>
-                    </div>
+        {% for talk in site.data.talks %}
+        {% assign loopindex = forloop.index | modulo: 2 %}
+            <div class="vertical-timeline-block">
+
+                <div class="vertical-timeline-icon navy-bg wow rotateIn">
+                    <i class="fa fa-plus-square"></i>
+                </div>
+
+                <div class="vertical-timeline-content wow {% if loopindex == 1 %} rotateInUpRight {% else %} rotateInUpLeft {% endif %}">
+
+                    <h1>
+                        <span>
+                            <i class="fa fa-youtube"></i> <a href="{{ talk.video }}"> {{ talk.name }} </a>
+                        </span>
+                    </h1>
+                    <h2>
+                        <span>
+                            <a href="{{ talk.web }}">Slides</a>
+                        </span>
+                    </h2>
+                    <span class="vertical-date">
+                        <span>{{ talk.date }}</span>
+                        <br/>
+                        <small>{{ talk.conference }}</span>
+                        </small>
+                    </span>
+
                 </div>
             </div>
-            {% endfor %}
+        {% endfor %}
+
         </div>
     </div>
-
 </div>
+
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
