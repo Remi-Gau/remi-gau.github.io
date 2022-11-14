@@ -33,33 +33,59 @@ permalink: /blog/papers.html
 
                 <div class="vertical-timeline-content wow {% if loopindex == 1 %} rotateInUpRight {% else %} rotateInUpLeft {% endif %}">
 
+                        <h2>
+                            <span>
+                            {% if paper.web %}
+                                <a href="{{ paper.web }}">{{ paper.name }}</a>
+                            {% else %}
+                                <a href="https://doi.org/{{ paper.doi }}">{{ paper.name }}</a>
+                            {% endif %}
+                            </span>
+                        </h2>
+                        <p><span>{{ paper.authors }} </span></p>
 
-                    <div
-                    data-badge-type="donut"
-                    data-doi={{ paper.doi }}
-                    data-condensed="true"
-                    data-badge-popover='left'
-                    data-hide-no-mentions="true"
-                    class="altmetric-embed">
-                    </div>
+                            {% if loopindex == 1 %}
+                                <span class="vertical-date" style="justify-content: flex-start">
+                            {% else %}
+                                <span class="vertical-date" style="justify-content: flex-end">
+                            {% endif %}
 
-                    <h2>
-                        <span>
-                        {% if paper.web %}
-                            <a href="{{ paper.web }}">{{ paper.name }}</a>
-                        {% else %}
-                            <a href="https://doi.org/{{ paper.doi }}">{{ paper.name }}</a>
-                        {% endif %}
-                        </span>
-                    </h2>
-                    <p><span>{{ paper.authors }} </span></p>
+                            {% if loopindex == 1 %}
 
-                    <span class="vertical-date">
-                        <span>{{ paper.date }}</span>
-                        <br/>
-                        <small>{{ paper.journal }}</span>
-                        </small>
-                    </span>
+                                <div>
+                                    <span>{{ paper.date }}</span>
+                                    <br/>
+                                    <small>{{ paper.journal }}</small>
+                                </div>
+                                <div
+                                data-badge-type="donut"
+                                data-doi={{ paper.doi }}
+                                data-condensed="true"
+                                data-badge-popover="right"
+                                data-hide-no-mentions="true"
+                                class="altmetric-embed">
+                                </div>
+
+                            {% else %}
+
+                                <div
+                                data-badge-type="donut"
+                                data-doi={{ paper.doi }}
+                                data-condensed="true"
+                                data-badge-popover="left"
+                                data-hide-no-mentions="true"
+                                class="altmetric-embed">
+                                </div>
+                                <div>
+                                    <span>{{ paper.date }}</span>
+                                    <br/>
+                                    <small>{{ paper.journal }}</small>
+                                </div>
+
+                            {% endif %}
+                            </span>
+
+
 
 
                 </div>
@@ -101,13 +127,18 @@ permalink: /blog/papers.html
                         {% endif %}
                         </span>
                     </h2>
-                    <p><span>{{ preprint.authors }} </span></p>
+                    <p><span> {{ preprint.authors }} </span></p>
 
-                    <span class="vertical-date">
-                        <span>{{ preprint.date }}</span>
-                        <br/>
-                        <small>{{ preprint.server }}</span>
-                        </small>
+                    {% if loopindex == 1 %}
+                    <span class="vertical-date" style="justify-content: flex-start">
+                    {% else %}
+                    <span class="vertical-date" style="justify-content: flex-end">
+                    {% endif %}
+                        <div>
+                            <span>{{ preprint.date }}</span>
+                            <br/>
+                            <small>{{ preprint.server }}</small>
+                        </div>
                     </span>
 
                 </div>

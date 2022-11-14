@@ -1137,6 +1137,8 @@ label.error {
     line-height: 1.6;
   }
   .vertical-date {
+    display: flex;
+    column-gap: 30px;
     float: left;
     font-weight: 500;
   }

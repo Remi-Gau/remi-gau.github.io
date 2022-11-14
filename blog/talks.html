@@ -47,11 +47,17 @@ permalink: /blog/talks.html
                             <a href="{{ talk.web }}">Slides</a>
                         </span>
                     </h2>
-                    <span class="vertical-date">
-                        <span>{{ talk.date }}</span>
-                        <br/>
-                        <small>{{ talk.conference }}</span>
-                        </small>
+
+                    {% if loopindex == 1 %}
+                    <span class="vertical-date" style="justify-content: flex-start">
+                    {% else %}
+                    <span class="vertical-date" style="justify-content: flex-end">
+                    {% endif %}
+                        <div>
+                            <span>{{ talk.date }}</span>
+                            <br/>
+                            <small>{{ talk.conference }}</small>
+                        </div>
                     </span>
 
                 </div>
@@ -98,12 +104,19 @@ permalink: /blog/talks.html
                             {{ workshop.desc }}
                         </span>
                     </h4>
-                    <span class="vertical-date">
+
+                    {% if loopindex == 1 %}
+                    <span class="vertical-date" style="justify-content: flex-start">
+                    {% else %}
+                    <span class="vertical-date" style="justify-content: flex-end">
+                    {% endif %}
+                        <div>
                         <h2>
                             <span>
                                 <a href="{{ workshop.web }}">Material</a>
                             </span>
                         </h2>
+                        </div>
                     </span>
 
                 </div>
