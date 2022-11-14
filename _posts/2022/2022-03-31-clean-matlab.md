@@ -60,52 +60,52 @@ Also figured some other people could benefit so here is a post about this.
 
 So clean MATLAB🔒 code, hey?
 
-From most of the scientific MATLAB🔒 code I have read
-[or written](https://github.com/Remi-Gau?tab=repositories&q=&type=source&language=matlab&sort=name)
+From most of the scientific MATLAB🔒 code I have
+[written](https://github.com/Remi-Gau?tab=repositories&q=&type=source&language=matlab&sort=name)
 in my life that "clean MATLAB🔒 code" feels a bit like a contradiction in terms.
 A bit like [civil war](https://www.youtube.com/watch?v=_tsbFbKH0OQ),
 [jumbo shrimp or military intelligence](https://youtu.be/mRdxdFDX3W0?t=113).
 
 <br>
 
-Typical MATLAB🔒 code:
+For most of my life, the MATLAB🔒 code I wrote:
 
-- is made of a bunch of scripts so long you will get carpal tunnel syndrome
+- was made of a bunch of scripts so long you will get carpal tunnel syndrome
   before you are done scrolling through the first file,
 
-- uses indentation and spacing
+- used indentation and spacing
   <span style="word-spacing: 1px;letter-spacing: -2.5px">that you would make
   sardines in a can feel claustrophobic</span>,[^3]
 
-- has an average line-length that must be a significant driver of the demand on
+- had an average line-length that must have been a significant driver of the demand on
   the wide-screen market,
 
-- HAS aVeryInconsistent Approach to_the_use of CaSeS
+- HAd aVeryInconsistent Approach to_the_use of CaSeS
 
-- uses a simple but horrible algorithm to name variables,
+- used a simple but horrible algorithm to name variables,
 
 ```text
 Name your first variable `a`, the second `b`...
 When you reach the end of the alphabet go for `aa`, `ab`...
 ```
 
-- is usually very
+- was usually very
   [WET](https://github.com/dwmkerr/hacker-laws#the-dry-principle) due to an
   extensive use of copy-pasta (turning the whole code base into a spaghetti
   factory),
 
-- sometimes forgets about
+- sometimes forgot about
   [Kernighan's law](https://github.com/dwmkerr/hacker-laws#kernighans-law) and
-  tries to be overly clever,
+  tried to be overly clever,
 
-- is written as
+- was written as
   [throw away](http://ivory.idyll.org/blog/2015-how-should-we-think-about-research-software.html)
   code[^4],
 
-- grows "organically" (like mold) with an ad-hochitecture approach to new
+- grew "organically" (like mold) with an ad-hochitecture approach to new
   feature implementation.
 
-- has
+- had
   - more
     - nesting
       - than
