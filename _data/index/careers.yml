@@ -25,7 +25,7 @@
     detail: Jan. 2013
     i18n: company_a_date
   job:
-    detail: PhD student
+    detail: Post doctoral fellow
     i18n: company_a_job
   icon: fa-plus-square
 
@@ -39,7 +39,7 @@
     detail: Jan. 2012
     i18n: company_a_date
   job:
-    detail: PhD student
+    detail: Post doctoral fellow
     i18n: company_a_job
   icon: fa-plus-square
 

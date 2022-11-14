@@ -41,7 +41,8 @@
               ><i class="fa fa-github"></i
             ></a>
           </li>
-          {% endif %} {% if site.author.linkedin_id %}
+          {% endif %}
+          {% if site.author.linkedin_id %}
           <li>
             <a
               href="https://www.linkedin.com/in/{{ site.author.linkedin_id }}"
@@ -49,7 +50,8 @@
               ><i class="fa fa-linkedin"></i
             ></a>
           </li>
-          {% endif %} {% if site.author.facebook_username %}
+          {% endif %}
+          {% if site.author.facebook_username %}
           <li>
             <a
               href="https://www.facebook.com/{{ site.author.facebook_username }}"
@@ -57,7 +59,8 @@
               ><i class="fa fa-facebook"></i
             ></a>
           </li>
-          {% endif %} {% if site.author.twitter_username %}
+          {% endif %}
+          {% if site.author.twitter_username %}
           <li>
             <a
               href="https://twitter.com/{{ site.author.twitter_username }}"
@@ -65,7 +68,8 @@
               ><i class="fa fa-twitter"></i
             ></a>
           </li>
-          {% endif %} {% if site.author.email %}
+          {% endif %}
+          {% if site.author.email %}
           <li>
             <a href="mailto:{{ site.author.email }}"
               ><i class="fa fa-envelope-o"></i
@@ -84,21 +88,14 @@
             ></a>
           </li>
           {% endif %}
-          <div itemscope itemtype="https://schema.org/Person">
-            <a
-              itemprop="sameAs"
-              content="https://orcid.org/0000-0002-1535-9767"
-              href="https://orcid.org/0000-0002-1535-9767"
-              target="orcid.widget"
-              rel="noopener noreferrer"
-              style="vertical-align: top"
-              ><img
-                src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
-                style="width: 1em; margin-right: 0.5em"
-                alt="ORCID iD icon"
-              />orcid.org/0000-0002-1535-9767</a
-            >
-          </div>
+          <li>
+            <a href="https://orcid.org/0000-0002-1535-9767" target="blank">
+              <img  src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
+                    alt="ORCID iD icon"
+                    width="150%"
+                    style="margin-left: -3px; margin-top: -2px">
+            </a>
+          </li>
         </ul>
       </div>
     </div>
