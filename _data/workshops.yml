@@ -1,0 +1,22 @@
+# - name:
+#   desc:
+#   web:
+
+- name: BIDS workshop
+  desc: Covers BIDS from theory, to conversion, to using BIDS apps
+  web: https://remi-gau.github.io/bids_workshop/
+
+- name: Datalad crash course
+  desc: workshop to help get started with datalad
+  web: https://cpp-lln-lab.github.io/datalad_crash_course/
+
+# \bulletboldunder{November 2019}
+# Co-organizer and instructor at the first neuroimaging workshop
+# at the University Catholique de Louvain (Belgium)
+# \githubicon{cpp-lln-lab/fMRI_workshop_201911}
+# \dataicon{https://doi.org/10.5281/zenodo.3548325}
+
+# \bulletboldunder{2013 to 2016}
+# Teaching assistant for the \textit{Advanced Brain Imaging} masters course
+# at the University of Birmingham (UK)
+# \githubicon{Remi-Gau/advanced_fMRI_course}

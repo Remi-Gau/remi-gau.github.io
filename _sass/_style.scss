@@ -1054,7 +1054,7 @@ label.error {
 
 .vertical-timeline-block {
   position: relative;
-  margin: 0 0;
+  margin: 4em 4em;
   &:after {
     content: "";
     display: table;
@@ -1070,7 +1070,7 @@ label.error {
 
 @media only screen and (min-width: 1170px) {
   .center-orientation .vertical-timeline-block {
-    margin: 1em 0;
+    margin: 4em 4em;
     &:first-child {
       margin-top: 0;
     }
@@ -1122,7 +1122,7 @@ label.error {
   margin-left: 60px;
   background: #fff;
   border-radius: .25em;
-  padding: 1em;
+  padding: 0.3em 1em 1em 1em;
   &:after {
     content: "";
     display: table;
@@ -1173,7 +1173,7 @@ label.error {
   .center-orientation {
     .vertical-timeline-content {
       margin-left: 0;
-      padding: 1.6em;
+      padding: 0.3em 1em 1em 1em;
       width: 45%;
       &::before {
         top: 24px;
