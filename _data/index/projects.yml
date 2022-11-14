@@ -23,16 +23,18 @@
   gh_user: cpp-lln-lab
   repo: bidsMReye
   url: https://github.com/cpp-lln-lab/bidsMReye
-  desc:
-    BIDS app using deepMReye to decode eye motion for fMRI time series data.
+  img: /static/assets/img/landing/bidsMReye_logo.png
+  desc: BIDS app using deepMReye to decode eye motion for fMRI time series data.
 
 - name: Octache
   i18n: Markdown
   gh_user: Remi-Gau
   repo: Octache
   url: https://github.com/Remi-Gau/Octache
+  img: /static/assets/img/landing/octache.png
   desc:
-    An Octave implementation of the mustache templating language for Octave that also happen to work with MATLAB.
+    An Octave implementation of the mustache templating language for Octave that
+    also happen to work with MATLAB.
 
 - name: eCobidas
   i18n: Markdown
@@ -48,8 +50,8 @@
   gh_user: Remi-Gau
   repo: bids2cite
   url: https://github.com/Remi-Gau/bids2cite
-  desc:
-    Create a citation file for a BIDS dataset.
+  img: /static/assets/img/landing/bids2cite_logo.png
+  desc: Create a citation file for a BIDS dataset.
 
 - name: BIDS Starter Kit
   i18n: Markdown
