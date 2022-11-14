@@ -10,16 +10,16 @@ img_path: /remi-gau.github.io/static/assets/img/blog # url should be '/homepage/
 
 # author -- index page "about me" section
 author: # change following line to your information.
-  name: RemiGau # Be used at blog posts' author.
-  first_name: Remi # Be used at index page about me section.
-  last_name: Gau # Be used at index page about me section.
+  name: RemiGau
+  first_name: Remi
+  last_name: Gau
   avatar: /static/assets/img/landing/avatar.jpg # upload your avatar at directory and edit it.
-  github_username: Remi-Gau # Leave blank if you don't have now
-  linkedin_id: remi-gau-bb73141 # Leave blank if you don't have now
-  facebook_username: remi.gau1 # Leave blank if you don't have now
-  twitter_username: RemiGau # Leave blank if you don't have now
-  email: # Leave blank if you don't have now
-  cv: https://github.com/Remi-Gau/CV/raw/master/CV_English.pdf # An online CV can be printed as PDF, leave blank if you don't have now
+  github_username: Remi-Gau
+  linkedin_id: remi-gau-bb73141
+  facebook_username: remi.gau1
+  twitter_username: RemiGau
+  email:
+  cv: https://github.com/Remi-Gau/CV/raw/master/CV_English.pdf
   # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
   skill_icon1:
     - name: fa-biohazard
