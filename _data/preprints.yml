@@ -1,0 +1,23 @@
+# - name:
+#   authors:
+#   date:
+#   server:
+#   doi:
+
+- name: Lab manuals for efficient and high quality science in a happy and safe work environment
+  authors: Kovacs M, Jaquiery M, Algermissen J, Arriaga P, Gau R et al.
+  date: 2022
+  server: metaarxiv
+  doi: 10.31222/osf.io/bzcxg
+
+- name: EEG ERP Preregistration Template
+  authors: Govaart G. H. et al.
+  date: 2022
+  server: metaarxiv
+  doi: 10.31222/osf.io/4nvpt
+
+- name: BIDS and the NeuroImaging Data Model (NIDM)
+  authors: Appelhoff S, Bates JF, Ghosh S et al.
+  date: 2019
+  server: F1000Research
+  doi: 10.7490/f1000research.1117650.1

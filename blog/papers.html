@@ -1,6 +1,6 @@
 ---
-layout: talks
-title: Talks
+layout: default
+title: Papers
 permalink: /blog/papers.html
 ---
 
@@ -8,7 +8,13 @@ permalink: /blog/papers.html
     <div class="col-lg-12 text-center">
         <div class="navy-line"></div>
         <h1>Papers & preprints</h1>
-        <p>work in progress</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12 text-center">
+        <div class="navy-line"></div>
+        <h2>Papers</h2>
     </div>
 </div>
 
@@ -22,10 +28,20 @@ permalink: /blog/papers.html
             <div class="vertical-timeline-block">
 
                 <div class="vertical-timeline-icon navy-bg wow rotateIn">
-                    <i class="fa {{ paper.icon }}"></i>
+                    <i class="fa fa-plus-square"></i>
                 </div>
 
                 <div class="vertical-timeline-content wow {% if loopindex == 1 %} rotateInUpRight {% else %} rotateInUpLeft {% endif %}">
+
+
+                    <div
+                    data-badge-type="donut"
+                    data-doi={{ paper.doi }}
+                    data-condensed="true"
+                    data-badge-popover='left'
+                    data-hide-no-mentions="true"
+                    class="altmetric-embed">
+                    </div>
 
                     <h2>
                         <span>
@@ -37,18 +53,60 @@ permalink: /blog/papers.html
                         </span>
                     </h2>
                     <p><span>{{ paper.authors }} </span></p>
-                    <div
-                        data-badge-type="donut"
-                        data-doi={{ paper.doi }}
-                        data-condensed="true"
-                        data-badge-popover='left'
-                        data-hide-no-mentions="true"
-                        class="altmetric-embed">
-                    </div>
+
                     <span class="vertical-date">
                         <span>{{ paper.date }}</span>
                         <br/>
                         <small>{{ paper.journal }}</span>
+                        </small>
+                    </span>
+
+
+                </div>
+            </div>
+        {% endfor %}
+
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12 text-center">
+        <div class="navy-line"></div>
+        <h2>Preprints</h2>
+    </div>
+</div>
+
+<div class="row" style="margin-bottom: 75px">
+    <div class="col-lg-12">
+        <div id="vertical-timeline"
+             class="vertical-container light-timeline center-orientation">
+
+        {% for preprint in site.data.preprints %}
+        {% assign loopindex = forloop.index | modulo: 2 %}
+            <div class="vertical-timeline-block">
+
+                <div class="vertical-timeline-icon navy-bg wow rotateIn">
+                    <i class="fa fa-plus-square"></i>
+                </div>
+
+                <div class="vertical-timeline-content wow {% if loopindex == 1 %} rotateInUpRight {% else %} rotateInUpLeft {% endif %}">
+
+                    <h2>
+                        <span>
+                        {% if preprint.web %}
+                            <a href="{{ preprint.web }}">{{ preprint.name }}</a>
+                        {% else %}
+                            <a href="https://doi.org/{{ preprint.doi }}">{{ preprint.name }}</a>
+                        {% endif %}
+                        </span>
+                    </h2>
+                    <p><span>{{ preprint.authors }} </span></p>
+
+                    <span class="vertical-date">
+                        <span>{{ preprint.date }}</span>
+                        <br/>
+                        <small>{{ preprint.server }}</span>
                         </small>
                     </span>
 
