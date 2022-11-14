@@ -13,18 +13,28 @@ permalink: /404.html
     <link href="{{ "/static/assets/app-20180125.min.css" | prepend: site.baseurl }}" rel="stylesheet">
     <link href="{{ "/static/css/custom.css" | prepend: site.baseurl }}" rel="stylesheet">
 </head>
+
 <body class="gray-bg">
-    <div class="middle-box text-center animated fadeInDown">
-        <h1>404</h1>
-        <h3 class="font-bold">Page Not Found</h3>
-        <div class="error-desc">
-            <p>
-            Sorry, but the page you are looking for has not been found. Try checking the URL for error, then hit the refresh button on your browser or try found something else in my website.
-            </p>
-            <div>
-                <a class="btn btn-primary" href="{{ "/" | prepend: site.baseurl }}">Home</a>
+
+    <div class="container text-center animated fadeInDown">
+
+        <div class="row col-sm-10 col-sm-offset-1" style="position: relative; margin-top: 2em">
+            <div style="position: absolute;" >
+                <img src="https://http.cat/404">
+                <div class="error-desc" style="font-size: 120%;  margin-top: 2em">
+                    <p>
+                    Sorry, but the page you are looking for has not been found.<br>
+                    Try checking the URL for error, then hit the refresh button on your browser
+                    or try found something else in my website.
+                    </p>
+                    <div>
+                        <a class="btn btn-primary" href="{{ "/" | prepend: site.baseurl }}">Home</a>
+                    </div>
+                </div>
             </div>
         </div>
+
+
     </div>
     <!-- Mainly scripts -->
     <script src="{{"/static/assets/app-20180125.min.js"| prepend: site.baseurl }}"></script>
