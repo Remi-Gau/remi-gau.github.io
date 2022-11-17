@@ -136,6 +136,9 @@ MATLAB🔒 does not really have a lot of tools to help us mitigate this situatio
 in an easy and consistent manner. So the best we can do is mostly get by. Very
 often by using tools written in Python.
 
+So if you want to write clean MATLAB🔒 code, you will need to have python installed,
+and be able to install python packages.
+
 ### Code style
 
 > "Code should be easy to understand.” <br> “Code should be written to minimize
