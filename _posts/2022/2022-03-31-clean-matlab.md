@@ -2,7 +2,7 @@
 layout: post
 title: MATLAB clean code
 date: "2022-03-31"
-tags: []
+tags: [matlab, clean code]
 categories: []
 ---
 
@@ -49,7 +49,6 @@ Also figured some other people could benefit so here is a post about this.
     - [Test automation](#test-automation)
   - [Documentation](#documentation)
   - [Demos](#demos)
-  - [Containerize](#containerize)
   - [Dependency management](#dependency-management)
   - [Interoperability and open-source](#interoperability-and-open-source)
   - [Path management](#path-management)
@@ -113,6 +112,10 @@ When you reach the end of the alphabet go for `aa`, `ab`...
           - successful
             - ponzy
               - scheme
+
+- usually ended up in code bases that were a nightmare to maintain and
+  understand, and worst of all, always left me the uncertainty as to whether the code
+  was actually doing what I wanted it to do.
 
 <br>
 
@@ -611,24 +614,28 @@ My doc
 
 The only "inconvenient" of this is that Sphinx uses
 [restructuredText](https://docutils.sourceforge.io/rst.html) as a markup
-language which is less forgiving than markdown in its syntax[^8].
+language which is less forgiving than markdown in its syntax.
+
+You can also Markedly Structured Text ([MyST](https://myst-parser.readthedocs.io/en/latest/))
+which is a markdown flavor that is compatible with Sphinx, but you will still have
+to write your matlab help section using sphinx syntax for it to be rendered properly.
 
 ### Demos
 
 Documenting your code is usually not enough so make sure that you also include
 demos to show how to use your code base.
 
-If you use Octave you can also create those demos in jupyte notebooks and even
+If you use Octave you can also create those demos in jupyter notebooks and even
 run those demos in the cloud using binder.
 
 <!-- explain -->
 
-### Containerize
+<!-- ### Containerize -->
 
 ### Dependency management
 
-MATLAB🔒 has not "built-in" way to install and import external toolboxes. If
-your code that relies on some external library, add it to your repository:
+MATLAB🔒 has not "built-in" way to install and import external toolboxes.
+If your code that relies on some external library, add it to your repository:
 
 - as a git sub-module if that external code exist on Github or Gitlab,
 - in a separate folder from your own code if it only exists on Matlab exchange
@@ -636,7 +643,7 @@ your code that relies on some external library, add it to your repository:
 
 Do not expect your users (most of them are just you in 1, 2, 6, 12 and 18
 months) to know which version of each library. And even if you do list those in
-your README[^9], it is annoying to have to go and get them manually.
+your README[^8], it is annoying to have to go and get them manually.
 
 ### Interoperability and open-source
 
@@ -656,8 +663,16 @@ relevant subfolders of your project to the MATLAB🔒 path.
 ## Template
 
 There is a
-[template github repo WIP](https://github.com/cpp-lln-lab/template_matlab_analysis)
+[template github repo](https://github.com/Remi-Gau/template_matlab_analysis)
 that has already a lot of this set up.
+
+You can also create more personalized version of this template
+by using the cookiecutter python package:
+
+```bash
+pip install -U cookiecutter
+cookiecutter https://github.com/Remi-Gau/cookiecutter_matlab_analysis.git
+```
 
 ## Examples and links
 
@@ -665,7 +680,7 @@ If you want actual examples of all this.
 
 - [BIDS-matlab](https://github.com/bids-standard/bids-matlab) for a light
   version.
-- [CPP_SPM](https://github.com/cpp-lln-lab/CPP_SPM) for a larger code base.
+- [bidspm](https://github.com/cpp-lln-lab/bidspm) for a larger code base.
 - check the [demo repo](https://github.com/agahkarakuzu/eda_organized) and the
   accompanying video by [Agah Karakuzu](https://agahkarakuzu.github.io/) that
   helped me get started with a lot of this.
@@ -681,6 +696,13 @@ If you want actual examples of all this.
         </iframe>
     </div>
 </div>
+
+---
+
+**Acknowledgements**:
+
+I would like to thank [Patrick Mineault](https://twitter.com/patrickmineault) and
+Joana Leitao for feedbacks on earlier drafts of this post.
 
 ---
 
@@ -702,11 +724,7 @@ If you want actual examples of all this.
     expected but it can at least tell that it ran without crashing.
 
 [^7]: I think that they won't run on private repos.
-[^8]:
-    I have not yet checked, if it is possible to use the more user friendly
-    [MyST](https://myst-parser.readthedocs.io/en/latest/syntax/syntax.html) to
-    write Sphinx doc for this.
 
-[^9]:
+[^8]:
     You DO have a README that says how to install and use your code, right?
     RIGHT?
