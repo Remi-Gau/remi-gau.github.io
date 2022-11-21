@@ -16,7 +16,7 @@ categories: []
 Recently, [Anibal Sólon](https://anibalsolon.com/) asked for tips about writing
 clean MATLAB🔒 code.
 
-So when a confirmed wizard asks you for a advices, you try to forget that you
+So when a confirmed wizard asks you for advices, you try to forget that you
 feel like an apprentice sorcerer most of the time and you respond with some of
 the things you learned along the way[^1]<sup>,</sup>[^2].
 
@@ -41,7 +41,7 @@ Also figured some other people could benefit so here is a post about this.
 - [Oxymoronic](#oxymoronic)
 - [Getting by](#getting-by)
   - [Code style](#code-style)
-  - [miss_hit](#miss_hit)
+  - [miss\_hit](#miss_hit)
   - [Only commit clean code](#only-commit-clean-code)
   - [Testing](#testing)
     - [Why tests matter](#why-tests-matter)
@@ -59,7 +59,7 @@ Also figured some other people could benefit so here is a post about this.
 
 So clean MATLAB🔒 code, hey?
 
-From most of the scientific MATLAB🔒 code I have
+Given most of the MATLAB🔒 code I have
 [written](https://github.com/Remi-Gau?tab=repositories&q=&type=source&language=matlab&sort=name)
 in my life that "clean MATLAB🔒 code" feels a bit like a contradiction in terms.
 A bit like [civil war](https://www.youtube.com/watch?v=_tsbFbKH0OQ),
@@ -67,7 +67,7 @@ A bit like [civil war](https://www.youtube.com/watch?v=_tsbFbKH0OQ),
 
 <br>
 
-For most of my life, the MATLAB🔒 code I wrote:
+The majority of MATLAB🔒 code I ever wrote:
 
 - was made of a bunch of scripts so long you will get carpal tunnel syndrome
   before you are done scrolling through the first file,
