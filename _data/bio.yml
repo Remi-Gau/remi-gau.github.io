@@ -1,20 +1,20 @@
 - name: "Remi Gau (he/him)"
   home_page: "https://remi-gau.github.io/"
   affiliation:
-    "Crossmodal Perception and Plasticity laboratory - Université Catholique de
-    Louvain"
-  city: "Louvain-la-Neuve, Belgium"
+    "Origami lab, The Neuro, McGill university"
+  city: "Montreal, Quebec, Canada"
   twitter: "https://www.twitter.com/RemiGau"
   github: "https://github.com/Remi-Gau"
   google_scholar: https://scholar.google.com/citations?user=gXOB3q8AAAAJ&hl=en
   research_gate: "https://www.researchgate.net/profile/Remi_Gau"
   bio: |
-    TL;DR: I started as a biologist, now I tell people how to name files, folders and variables.
+    TL;DR: I started as a biologist who wanted to understand how the brain works,
+    now I tell people how to name files, folders and variables.
 
-    I am a postdoctoral fellow in the Crossmodal Perception and Plasticity laboratory (CPP-Lab) of Olivier Collignon at the Université catholique de Louvain (Belgium).
-    I have a background both in biology and psychology. I did my PhD studying the role of serotoninergic neurons in the interplay between pain and cardio-vascular regulations in rodents.
+    I am a research associate in the [Origami lab](https://neurodatascience.github.io/) at the McGill university (Montreal, Quebec, Canada).
+    I have a background both in biology and psychology.
+    I did my PhD studying the role of serotoninergic neurons in the interplay between pain and cardio-vascular regulations in rodents.
     I then moved on to the field of cognitive neuroimaging to study multisensory integration in humans.
-    My current work focuses on the perception of motion and uses high-resolution MRI to address this question in blind and sighted controls by investigating the BOLD response at different depths in the cortical sheet.
     I am passionate about open science that I see as
     - a) a way to build a more inclusive research community based on sharing and cooperation rather than hoarding and competition,
     - b) a way to address some of the replicability and reproducibility issues that are affecting many areas of science by making the sharing of code and data more common,
