@@ -4,6 +4,17 @@
 #   video:
 #   web:
 
+- name: "BIDS: Open-source standard for the organization of neuro data"
+  date: 22nd November 2023
+  conference: Neuro OpenScience Workshop, Brain institute, Paris
+  web: https://docs.google.com/presentation/d/1vtTTJanRaGLurup74xDLQOy18yKj5mHGdProB_xkEAA/edit?usp=sharing
+
+- name: "BIDS: underlying data management principles"
+  date: 4th October 2023
+  conference: Open Science Office Hours, The Neuro, Montréal, Québec, Canada
+  video: https://www.youtube.com/watch?v=OHxnwzOKqHM
+  web: https://doi.org/10.6084/m9.figshare.24328606
+
 - name: The BIDS Statistical Model
   date: 10th November 2022
   conference: Institut des neurosciences de la Timone, Marseille, France

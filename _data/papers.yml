@@ -8,6 +8,15 @@
 #   web:
 #   github:
 
+
+- name: "Open and reproducible neuroimaging: from study inception to publication"
+  authors: Niso G., Botvinik-Nezer R., Appelhoff S. et al.
+  date: 2022
+  journal: Neuroimage
+  doi: 10.1016/j.neuroimage.2022.119623
+  web: https://oreoni.github.io/
+  github: https://github.com/oreoni/oreoni.github.io
+
 - name: PET-BIDS, an extension to the brain imaging data structure for positron emission tomography
   authors: Norgaard M., Matheson G. J., Hansen H. D., Thomas A., et al.
   date: 2022

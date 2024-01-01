@@ -39,18 +39,7 @@ gem update github-pages
 To construct and test your site locally, go into the directory and type
 
 ```bash
-jekyll build
-```
-
-This will create (or modify) a `_site/` directory, containing everything from
-`assets/`, and then the `index.md` and all `pages/*.md` files, converted to
-html. (So there’ll be `_site/index.html` and the various `_site/pages/*.html`.)
-
-Type the following in order to “serve” the site. This will first run build, and
-so it does not need to be preceded by jekyll build.
-
-```bash
-jekyll serve
+bundle exec jekyll serve
 ```
 
 Now open your browser and go to http://localhost:4000/site-name/

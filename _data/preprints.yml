@@ -4,6 +4,18 @@
 #   server:
 #   doi:
 
+- name: The past, present, and future of the brain imaging data structure (BIDS)
+  authors: Poldrack R, et al.
+  date: 2023
+  server: arxiv
+  doi: 10.48550/arXiv.2309.05768
+
+- name: "ARTEM-IS for ERP: Agreed Reporting Template for EEG Methodology-International Standard for documenting studies on Event-Related Potentials"
+  authors: Šoškić A, Kovic V, Algermissen J, Fischer NL, Ganis G, Gau R et al.
+  date: 2022
+  server: psyarxiv
+  doi: 10.31234/osf.io/mq5sy
+
 - name: Lab manuals for efficient and high quality science in a happy and safe work environment
   authors: Kovacs M, Jaquiery M, Algermissen J, Arriaga P, Gau R et al.
   date: 2022

@@ -4,15 +4,15 @@
 
 # edit following lines to custom your blog page, make sure name is the same as href but capitalized first letter(except HTML)
 - name: Papers
-  href: /blog/papers.html/
+  href: /blog/papers.html
 
 # edit following lines to custom your blog page, make sure name is the same as href but capitalized first letter(except HTML)
 - name: Talks
-  href: /blog/talks.html/
+  href: /blog/talks.html
 
 # edit following lines to custom your blog page, make sure name is the same as href but capitalized first letter(except HTML)
 - name: About me
-  href: /blog/about.html/
+  href: /blog/about.html
 
 
 # Don't display donation page: change donation to off at file '_config.yml'
