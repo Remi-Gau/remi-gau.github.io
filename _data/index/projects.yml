@@ -1,6 +1,22 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
+- name: cohort creator
+  i18n: Markdown
+  gh_user: nilearn
+  repo: nilearn
+  url: https://cohort-creator.readthedocs.io/en/latest/
+  img: https://avatars.githubusercontent.com/u/50719251?s=200&v=4
+  desc: Creates a neuroimaging cohort by aggregating data across datasets.
+
+- name: Nilearn
+  i18n: Markdown
+  gh_user: nilearn
+  repo: nilearn
+  url: https://nilearn.github.io/stable/index.html
+  img: https://avatars.githubusercontent.com/u/4646912?s=200&v=4
+  desc: Machine learning for NeuroImaging in Python.
+
 - name: bidspm
   i18n: Markdown
   gh_user: cpp-lln-lab
@@ -16,7 +32,7 @@
   url: https://github.com/bids-standard/bids-matlab
   img: /static/assets/img/landing/bids_logo.png
   desc:
-    Working repository to turn the COBIDAS report into a user friendly checklist
+    User friendly checklist for MRI methods reporting.
 
 - name: bidsMReye
   i18n: Markdown
@@ -24,7 +40,7 @@
   repo: bidsMReye
   url: https://github.com/cpp-lln-lab/bidsMReye
   img: /static/assets/img/landing/bidsMReye_logo.png
-  desc: BIDS app using deepMReye to decode eye motion for fMRI time series data.
+  desc: BIDS app to decode eye motion for fMRI time series data.
 
 - name: Octache
   i18n: Markdown
@@ -33,8 +49,7 @@
   url: https://github.com/Remi-Gau/Octache
   img: /static/assets/img/landing/octache.png
   desc:
-    An Octave implementation of the mustache templating language for Octave that
-    also happen to work with MATLAB.
+    An Octave/MATLAB implementation of the mustache templating language.
 
 - name: eCobidas
   i18n: Markdown
@@ -43,7 +58,7 @@
   url: https://github.com/Remi-Gau/eCobidas
   img: /static/assets/img/landing/checklist.jpg
   desc:
-    Working repository to turn the COBIDAS report into a user friendly checklist
+    User friendly checklist for MRI methods reporting.
 
 - name: bids2cite
   i18n: Markdown

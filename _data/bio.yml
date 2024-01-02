@@ -20,6 +20,7 @@
     - b) a way to address some of the replicability and reproducibility issues that are affecting many areas of science by making the sharing of code and data more common,
     - c) a set of tools and practices that can reduce inefficiencies in the research process and can benefit the overall community as well as the individual scientists.
     I am also one of the maintainers of:
+    - Nilearn (the main python package for machine learning and visualization in neuroImaging); https://nilearn.github.io/stable/index.html
     - the Brain imaging data structure (BIDS - a standard to help organize and share neuroimaging data; https://bids-specification.readthedocs.io/en/stable/),
     - BIDS-matlab (https://github.com/bids-standard/bids-matlab)
     and actively involved in 2 projects aimed at standardizing the reporting of methods and resulting in neuroimaging:

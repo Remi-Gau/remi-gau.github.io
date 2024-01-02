@@ -18,6 +18,7 @@ author: # change following line to your information.
   linkedin_id: remi-gau-bb73141
   facebook_username: remi.gau1
   twitter_username: RemiGau
+  mastodon: RemiGau
   email:
   cv: https://github.com/Remi-Gau/CV/raw/master/CV_English.pdf
   # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
@@ -27,8 +28,7 @@ author: # change following line to your information.
   skill_icon2:
     - name: fa-biohazard
     - name: fa-biohazard
-  desc: Am a cognitive neuroscientist interested in multisensory perception,
-    high-resolution fMRI as well as open and reproducible science. # Describe yourself.
+  desc: I wanted to understand how the brain works, now I tell people how to name files, folders and variables. # Describe yourself.
 
 # comment
 disqus: # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.

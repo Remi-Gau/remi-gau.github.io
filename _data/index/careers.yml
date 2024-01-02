@@ -2,7 +2,21 @@
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 
 - name:
-    detail: Cross-modal perception plasticity lab (université catholique de Louvain, Louvain la neuve, Belgium)
+    detail: <a href="https://neurodatascience.github.io/" target="_blank">Origami lab</a> (The Neuro, McGill University, Montréal, Québec, Canada)
+    i18n: company_a
+  desc:
+    detail: Nilearn maintainer
+    i18n: company_a_desc
+  date:
+    detail: May 2023
+    i18n: company_a_date
+  job:
+    detail: Research associate
+    i18n: company_a_job
+  icon: fa-plus-square
+
+- name:
+    detail: <a href="https://cpplab.be/index.html" target="_blank">Cross-modal perception plasticity lab</a> (université catholique de Louvain, Louvain la neuve, Belgium)
     i18n: company_a
   desc:
     detail: Laminar fMRI at 7T
