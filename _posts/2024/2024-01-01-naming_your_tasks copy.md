@@ -49,8 +49,8 @@ With a file called:
 sub-01/eeg/sub-01_task-run1_eeg.edf
 ```
 
-you are going to be hard pressed to be able to known what the task was about.
-**YOU**, as the person who acquired the dataset, may know what is in that that file,
+other users are going to be hard pressed to be able to known what the task was about.
+**YOU**, as the person who acquired the dataset, may know what is in that file,
 but future users of that dataset will not.
 
 But if the file is named:
@@ -63,7 +63,7 @@ It will already be a lot easier to get an idea as to what participants were doin
 
 ## Metadata to the rescue
 
-You may be tempted to go overboard and pack as much information as possible in the filenme as possible.
+You may be tempted to go overboard and pack as much information as possible in the filenme.
 
 For example in [one of the bids examples](https://github.com/bids-standard/bids-examples/tree/master/ds006/sub-01/ses-post/func),
 you can come across files with this kind of names:
@@ -72,7 +72,7 @@ you can come across files with this kind of names:
 sub-01/ses-post/func/sub-01_ses-post_task-livingnonlivingdecisionwithplainormirrorreversedtext_run-01_bold.nii.gz
 ```
 
-In this case we know a lot about what was going on jut from the filename... If we can decypher it.
+In this case we know a lot about what was going on just from the filename... If we can decypher it.
 
 If you REALLY want to keep such a long task label, as least use CamelCase to make it easier to read.
 
