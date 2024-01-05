@@ -4,7 +4,7 @@
 title: Remi Gau
 description: Remi's personal website
 keywords: Remi,Gau,blog
-baseurl: # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
+# baseurl: # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
 url: https://remi-gau.github.io # url should be 'http://<github_username>.github.io/homepage' as before
 img_path: /remi-gau.github.io/static/assets/img/blog # url should be '/homepage/static/assets/img/blog' as before
 
@@ -67,3 +67,9 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+
+plugins:
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-redirect-from

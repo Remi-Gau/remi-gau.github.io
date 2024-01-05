@@ -1,9 +1,11 @@
 ---
 layout: post
 title: "How to name you files: task edition"
-date: "2022-03-31"
+date: "2024-01-02"
 tags: [BIDS, Don'ts and dos]
 categories: []
+redirect_from:
+  - 2022/03/31/naming_your_tasks.html
 ---
 
 While browsing datasets on openneuro I came across a couple of BIDS datasets
