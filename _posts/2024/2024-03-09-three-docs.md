@@ -10,7 +10,7 @@ This post contains 3 primers on how to set up some basic documentation with:
 
 - [jekyll + github pages](#jekyll--github-pages)
 - [mkdocs + read the docs](#mkdocs--read-the-docs)
-- sphinx + read the docs
+- [sphinx + read the docs](#sphinx--read-the-docs)
 
 ### Relevant links
 
@@ -34,6 +34,9 @@ Serve the markdown content of repo as a website.
 local set up: installing ruby + jekyll and serving the website
 
 **Examples:**
+
+<!-- TODO add links -->
+
 - most of the brainhack local site events
 - bids website
 - this website
@@ -110,6 +113,9 @@ Create some official looking docuentation website from markdown.
 - less flewibility in terms of looks
 
 **Examples:**
+
+<!-- TODO add links -->
+
 - BIDS specification
 - neurobagel documentation
 
