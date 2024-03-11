@@ -56,32 +56,31 @@ Note you can mix markdown and HTML.
 
 1. add a `config.yml` file in the root of the repo with the theme for your website.
 
-For example
+   For example
 
-```yml
-theme: jekyll-theme-minimal
-```
+   ```yml
+   theme: jekyll-theme-minimal
+   ```
 
-The themes supported by github pages [are listed on this page](https://pages.github.com/themes/).
-You can also preview what they will look like.
+   The themes supported by github pages [are listed on this page](https://pages.github.com/themes/).
+   You can also preview what they will look like.
+
 
 2. Got to the `Settings` tab of the repo, then to the `Pages` menu,
-then under the `Branch` section choose the default branch of your repo
-and then save.
-This should trigger the build and deploy of the website.
-
-![alt text](https://private-user-images.githubusercontent.com/6961185/311474995-f6d0bf22-3797-4706-b3c9-31853128715c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTAwMjkxMDAsIm5iZiI6MTcxMDAyODgwMCwicGF0aCI6Ii82OTYxMTg1LzMxMTQ3NDk5NS1mNmQwYmYyMi0zNzk3LTQ3MDYtYjNjOS0zMTg1MzEyODcxNWMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMxMCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMTBUMDAwMDAwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9M2NjMmFhZGI1ZmQxYjg4NzQzYjcxYzRiYmFkZTdiZWI3MjMzNzMwZWUxYjNlY2UwYzI4YTNmMWVkNmVjYzA4YSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.ZuTTQmUnr9tkJCCAQMBemMMjwhxb5UhOvjWSFOnzBY4)
+   then under the `Branch` section choose the default branch of your repo
+   and then save.
+   This should trigger the build and deploy of the website.
 
 3. Browse your website at this URL: https://`your-github-username`.github.io/`your-repo-name`.
 
-The github action to build the website will be triggered by any new push to the default branch.
+   The github action to build the website will be triggered by any new push to the default branch.
 
-You can always monitor the github action in the `Actions` tab of the repo.
+   You can always monitor the github action in the `Actions` tab of the repo.
 
 ## Outcome
 
-Repo: [https://github.com/Remi-Gau/jekyll-primer](https://github.com/Remi-Gau/jekyll-primer)
-Website: [https://remi-gau.github.io/jekyll-primer/](https://remi-gau.github.io/jekyll-primer/)
+- Repo: [https://github.com/Remi-Gau/jekyll-primer](https://github.com/Remi-Gau/jekyll-primer)
+- Website: [https://remi-gau.github.io/jekyll-primer/](https://remi-gau.github.io/jekyll-primer/)
 
 ### Re-use templates
 
@@ -91,7 +90,8 @@ There are a LOT of available jekyll templates:
 
 ### Create your own academic site in less than 5 minutes
 
-1. Create a new repo using the template https://github.com/academicpages/academicpages.github.io but name it `YOUR-GITHUHB-USERNAME.github.io`.
+1. Create a new repo using the template https://github.com/academicpages/academicpages.github.io
+   but name it `YOUR-GITHUHB-USERNAME.github.io`.
 2. Deploy using github pages.
 3. Start editing the `.config.yml`.
 
@@ -135,53 +135,53 @@ Create some official looking docuentation website from markdown.
 
 2. Install mkdocs.
 
-```bash
-pip install mkdocs
-```
+   ```bash
+   pip install mkdocs
+   ```
 
 3. Create minimal config.
 
-```bash
-mkdocs new .
-```
+   ```bash
+   mkdocs new .
+   ```
 
-Will create a `mkdocs.yml` in the root of the repo
-and a `doc/index.md` which will be the landing page of the website.
+   Will create a `mkdocs.yml` in the root of the repo
+   and a `doc/index.md` which will be the landing page of the website.
 
 
 4. Serve locally.
 
-```bash
-mkdocs serve
-```
+   ```bash
+   mkdocs serve
+   ```
 
-You can then browse the documentation as a website at `http://127.0.0.1:8000/`
+   You can then browse the documentation as a website at `http://127.0.0.1:8000/`
 
-Updating an markdown file, should automatically update the website.
+   Updating an markdown file, should automatically update the website.
 
-Kill the serve with `ctrl + c`.
+   Kill the serve with `ctrl + c`.
 
 5. Change the default theme.
 
-Install mkdocs-material
+   Install mkdocs-material
 
-```bash
-pip install mkdocs-material
-```
+   ```bash
+   pip install mkdocs-material
+   ```
 
-Add it to the `mkdocs.yml` that should now look like this.
+   Add it to the `mkdocs.yml` that should now look like this.
 
-```yml
-site_name: My Docs
-theme:
-  name: material
-```
+   ```yml
+   site_name: My Docs
+   theme:
+   name: material
+   ```
 
-Serve the website again and check the difference.
+   Serve the website again and check the difference.
 
-```bash
-mkdocs serve
-```
+   ```bash
+   mkdocs serve
+   ```
 
 See the [next section](#serve-to-read-the-docs) to see how to use Read The Docs to deploy your doc.
 
@@ -194,59 +194,59 @@ See the [next section](#serve-to-read-the-docs) to see how to use Read The Docs 
 
 1. Add a `requirements.txt` in the root of the repo.
 
-Content:
+   Content:
 
-```
-mkdocs
-mkdocs-material
-```
+   ```
+   mkdocs
+   mkdocs-material
+   ```
 
 2. Add a `.readthedocs.yaml` in the root of the repo.
 
-Content
+   Content
 
-```yml
-version: 2
-build:
-  os: ubuntu-22.04
-  tools:
-    python: "3.11"
-    # You can also specify other tool versions:
-    # nodejs: "16"
+   ```yml
+   version: 2
+   build:
+   os: ubuntu-22.04
+   tools:
+      python: "3.11"
+      # You can also specify other tool versions:
+      # nodejs: "16"
 
-# Build documentation with Mkdocs
-mkdocs:
-   configuration: mkdocs.yml
+   # Build documentation with Mkdocs
+   mkdocs:
+      configuration: mkdocs.yml
 
-# Dependencies required to build your docs
-python:
-   install:
-   - requirements: requirements.txt
-```
+   # Dependencies required to build your docs
+   python:
+      install:
+      - requirements: requirements.txt
+   ```
 
 3. Commit and push.
 
-```bash
-git add --all
-git commit -m 'add requirements and RTD config'
-git push
-```
+   ```bash
+   git add --all
+   git commit -m 'add requirements and RTD config'
+   git push
+   ```
 
 4. Log in to read the docs: [https://readthedocs.org/accounts/login](https://readthedocs.org/accounts/login).
 
 5. Find the repo below `Import a Repository` or go for the `Import Manually` option.
 
-If the latter fill in the `Name`, `Repository URL` and `Default branch` fields and click `Next`
+   If the latter, fill in the `Name`, `Repository URL` and `Default branch` fields and click `Next`
 
 6. Click on `Build Version`.
 
-Once the build is completed, you should be able to see the wesbite at:
+   Once the build is completed, you should be able to see the wesbite at:
 
-https://`REPO_NAME`.readthedocs.io/en/latest/
+   https://`REPO_NAME`.readthedocs.io/en/latest/
 
 7. Make sure a preview of the doc is done on every pull request.
 
-Go to the `Admin` tab, tick the box below `Build pull requests for this project:` and click `Save`
+   Go to the `Admin` tab, tick the box below `Build pull requests for this project:` and click `Save`
 
 #### Relevant links
 
@@ -255,8 +255,8 @@ Go to the `Admin` tab, tick the box below `Build pull requests for this project:
 
 ## Outcome
 
-Repo: [https://github.com/Remi-Gau/mkdocs-primer](https://github.com/Remi-Gau/mkdocs-primer)
-Website: [https://mkdocs-primer.readthedocs.io/en/latest/](https://mkdocs-primer.readthedocs.io/en/latest/)
+- Repo: [https://github.com/Remi-Gau/mkdocs-primer](https://github.com/Remi-Gau/mkdocs-primer)
+- Website: [https://mkdocs-primer.readthedocs.io/en/latest/](https://mkdocs-primer.readthedocs.io/en/latest/)
 
 ## Sphinx + read the docs
 
@@ -290,222 +290,224 @@ Create a documentation website for a python code base.
 
 1. Install sphinx.
 
-```bash
-pip install sphinx
-```
+   ```bash
+   pip install sphinx
+   ```
 
 2. Initial set up.
 
-```bash
-mkdir docs
-cd docs
-sphinx-quickstart
-```
+   ```bash
+   mkdir docs
+   cd docs
+   sphinx-quickstart
+   ```
 
-Respond to the questions.
+   Respond to the questions in the prompt.
 
-```
-├── docs
-│   ├── make.bat
-│   ├── Makefile
-│   └── source
-│       ├── conf.py
-│       ├── index.rst
-│       ├── _static
-│       └── _templates
-└── README.md
-```
+   ```
+   ├── docs
+   │   ├── make.bat
+   │   ├── Makefile
+   │   └── source
+   │       ├── conf.py
+   │       ├── index.rst
+   │       ├── _static
+   │       └── _templates
+   └── README.md
+   ```
 
 3. Build the doc.
 
-
-```bash
-make html
-```
+   ```bash
+   make html
+   ```
 
 4. View the doc.
 
-Open `docs/build/html/index.html`
+   Open `docs/build/html/index.html`
 
 5. Use MySt to render a markdown file.
 
-Install myst.
+   Install myst.
 
-```bash
-pip install myst-parser
-```
+   ```bash
+   pip install myst-parser
+   ```
 
-Add `"myst_parser"` to the list of extensions in `docs/source/conf.py`.
+   Add `"myst_parser"` to the list of extensions in `docs/source/conf.py`.
 
-```python
-extensions = ["myst_parser"]
-```
+   ```python
+   extensions = ["myst_parser"]
+   ```
 
-Add a markdown file in the `source` directory of the doc.
+   Add a markdown file in the `source` directory of the doc.
 
-```
-├── docs
-│   ├── make.bat
-│   ├── Makefile
-│   └── source
-│       ├── conf.py
-│       ├── index.rst
-│       ├── markdown_is_possible.md    <---
-│       ├── _static
-│       └── _templates
-└── README.md
-```
+   ```
+   ├── docs
+   │   ├── make.bat
+   │   ├── Makefile
+   │   └── source
+   │       ├── conf.py
+   │       ├── index.rst
+   │       ├── markdown_is_possible.md    <---
+   │       ├── _static
+   │       └── _templates
+   └── README.md
+   ```
 
-And add it into the `docs/source/index.rst` file.
+   And add it into the `docs/source/index.rst` file.
 
-```rst
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   ```rst
 
-   markdown_is_possible.md
-```
+   .. toctree::
+      :maxdepth: 2
+      :caption: Contents:
+
+      markdown_is_possible.md
+
+   ```
 
 6. Change the theme.
 
-Install the furo theme.
+   Install the furo theme.
 
-```bash
-pip install furo
-```
+   ```bash
+   pip install furo
+   ```
 
-Change html_theme in `docs/source/conf.py`.
+   Change html_theme in `docs/source/conf.py`.
 
-```python
-html_theme = "furo"
-```
+   ```python
+   html_theme = "furo"
+   ```
 
-Rebuild the doc to check the new theme.
+   Rebuild the doc to check the new theme.
 
 7. Auto-document your python code.
 
-Add a python module `src/some_python_code.py`
+   Add a python module `src/some_python_code.py`
 
-```
-├── docs
-│   ├── make.bat
-│   ├── Makefile
-│   └── source
-│       ├── conf.py
-│       ├── index.rst
-│       ├── markdown_is_possible.md
-│       ├── modules
-│       │   └── api.rst
-│       ├── _static
-│       └── _templates
-├── src
-│   └── some_python_code.py    <---
-└── README.md
-```
+   ```
+   ├── docs
+   │   ├── make.bat
+   │   ├── Makefile
+   │   └── source
+   │       ├── conf.py
+   │       ├── index.rst
+   │       ├── markdown_is_possible.md
+   │       ├── modules
+   │       │   └── api.rst
+   │       ├── _static
+   │       └── _templates
+   ├── src
+   │   └── some_python_code.py    <---
+   └── README.md
+   ```
 
-Add some code in it with a few functions.
+   Add some code in it with a few functions.
 
-```python
-def foo() -> None:
-    """Public function should appear in the doc.
+   ```python
+   def foo() -> None:
+      """Public function should appear in the doc.
 
-    Return ``None``.
-    """
-    return None
+      Return ``None``.
+      """
+      return None
 
-def _bar():
-    """Private function should not appear in the doc."""
-    ...
-```
+   def _bar():
+      """Private function should not appear in the doc."""
+      ...
+   ```
 
-Modify `docs/source/conf.py` so that the python code is in its path
-when ti runs, by adding the following lines:
+   Modify `docs/source/conf.py` so that the python code is in its path
+   when ti runs, by adding the following lines:
 
-```python
-import os
-import sys
+   ```python
+   import os
+   import sys
 
-sys.path.insert(0, os.path.abspath("../.."))
-```
+   sys.path.insert(0, os.path.abspath("../.."))
+   ```
 
-Also add the `"sphinx.ext.autodoc"` extension to autodocument code
-to list of active extensions in `docs/source/conf.py`.
+   Also add the `"sphinx.ext.autodoc"` extension to autodocument code
+   to list of active extensions in `docs/source/conf.py`.
 
-```python
-extensions = ["myst_parser", "sphinx.ext.autodoc",]
-```
+   ```python
+   extensions = ["myst_parser", "sphinx.ext.autodoc",]
+   ```
 
-Now create a `.rst` file in the `doc/source` where the doc of your code
-will be rendered.
+   Now create a `.rst` file in the `doc/source` where the doc of your code
+   will be rendered.
 
-```
-├── docs
-│   ├── make.bat
-│   ├── Makefile
-│   └── source
-│       ├── conf.py
-│       ├── index.rst
-│       ├── markdown_is_possible.md
-│       ├── modules
-│       │   └── api.rst    <---
-│       ├── _static
-│       └── _templates
-├── src
-│   └── some_python_code.py
-└── README.md
-```
+   ```
+   ├── docs
+   │   ├── make.bat
+   │   ├── Makefile
+   │   └── source
+   │       ├── conf.py
+   │       ├── index.rst
+   │       ├── markdown_is_possible.md
+   │       ├── modules
+   │       │   └── api.rst    <---
+   │       ├── _static
+   │       └── _templates
+   ├── src
+   │   └── some_python_code.py
+   └── README.md
+   ```
 
-And add in it the sphinx directive to autodocument the code:
+   And add in it the sphinx directive to autodocument the code:
 
-```rst
+   ```rst
 
-api
-===
+   api
+   ===
 
-.. sphinx directives to auto doc code
+   .. sphinx directives to auto doc code
 
-.. automodule:: src.some_python_code
-   :members:
-   :undoc-members:
-   :show-inheritance:
-```
+   .. automodule:: src.some_python_code
+      :members:
+      :undoc-members:
+      :show-inheritance:
 
-Rebuild the doc to check the new theme.
+   ```
+
+   Rebuild the doc to check the new theme.
 
 ### Serve to Read The Docs
 
 1. Add a `requirements.txt` in the root of the repo.
 
-Content:
+   Content:
 
-```
-sphinx
-furo
-myst-parser
-```
+   ```
+   sphinx
+   furo
+   myst-parser
+   ```
 
 2. Add a `.readthedocs.yaml` in the root of the repo.
 
-Content
+   Content
 
-```yml
-version: 2
-build:
-  os: ubuntu-22.04
-  tools:
-    python: "3.11"
-    # You can also specify other tool versions:
-    # nodejs: "16"
+   ```yml
+   version: 2
+   build:
+   os: ubuntu-22.04
+   tools:
+      python: "3.11"
+      # You can also specify other tool versions:
+      # nodejs: "16"
 
-# Build documentation with sphinx
-sphinx:
-  configuration: docs/source/conf.py
+   # Build documentation with sphinx
+   sphinx:
+   configuration: docs/source/conf.py
 
-# Dependencies required to build your docs
-python:
-   install:
-   - requirements: requirements.txt
-```
+   # Dependencies required to build your docs
+   python:
+      install:
+      - requirements: requirements.txt
+   ```
 
 3. The rest of the process is the same [as for MkDocs](#serve-to-read-the-docs).
 
