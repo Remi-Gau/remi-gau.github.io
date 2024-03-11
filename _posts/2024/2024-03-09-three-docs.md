@@ -78,6 +78,11 @@ The github action to build the website will be triggered by any new push to the 
 
 You can always monitor the github action in the `Actions` tab of the repo.
 
+## Outcome
+
+Repo: [https://github.com/Remi-Gau/jekyll-primer](https://github.com/Remi-Gau/jekyll-primer)
+Website: [https://remi-gau.github.io/jekyll-primer/](https://remi-gau.github.io/jekyll-primer/)
+
 ### Re-use templates
 
 There are a LOT of available jekyll templates:
@@ -185,7 +190,7 @@ See the [next section](#serve-to-read-the-docs) to see how to use Read The Docs 
 - https://www.mkdocs.org/
 - https://squidfunk.github.io/mkdocs-material/
 
-## Serve to Read The Docs
+### Serve to Read The Docs
 
 1. Add a `requirements.txt` in the root of the repo.
 
@@ -243,10 +248,15 @@ https://`REPO_NAME`.readthedocs.io/en/latest/
 
 Go to the `Admin` tab, tick the box below `Build pull requests for this project:` and click `Save`
 
-### Relevant links
+#### Relevant links
 
 - [https://docs.readthedocs.io/en/stable/](https://docs.readthedocs.io/en/stable/)
 
+
+## Outcome
+
+Repo: [https://github.com/Remi-Gau/mkdocs-primer](https://github.com/Remi-Gau/mkdocs-primer)
+Website: [https://mkdocs-primer.readthedocs.io/en/latest/](https://mkdocs-primer.readthedocs.io/en/latest/)
 
 ## Sphinx + read the docs
 
@@ -498,6 +508,11 @@ python:
 ```
 
 3. The rest of the process is the same [as for MkDocs](#serve-to-read-the-docs).
+
+## Outcome
+
+Repo: [https://github.com/Remi-Gau/sphinx-primer](https://github.com/Remi-Gau/sphinx-primer)
+<!-- Website: [https://mkdocs-primer.readthedocs.io/en/latest/](https://mkdocs-primer.readthedocs.io/en/latest/) -->
 
 ### Relevant links
 
