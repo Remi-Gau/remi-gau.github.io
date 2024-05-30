@@ -1,4 +1,4 @@
 [codespell]
 skip = *.log,.git,*.svg,*.json,.jekyll*,_site,package*,*.js,*.scss
-ignore-words-list = rouge,
+ignore-words-list = rouge,rollin,groupe
 builtin = clear,rare

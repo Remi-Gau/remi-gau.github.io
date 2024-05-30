@@ -1,6 +1,7 @@
+---
 # links section data
-- last_name: Name 1
-  first_name:
-  desc: CEO
-  website: https://www.google.com
-  email: ceo@google.com
+-   last_name: Name 1
+    first_name:
+    desc: CEO
+    website: https://www.google.com
+    email: ceo@google.com

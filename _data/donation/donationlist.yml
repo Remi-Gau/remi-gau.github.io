@@ -1,7 +1,8 @@
+---
 # donation list
 
-- name: Tim van Mourik
-  account: t***k@gmail.com
-  type: eur
-  value: 99.99
-  date: 1999-12-31
+-   name: Tim van Mourik
+    account: t***k@gmail.com
+    type: eur
+    value: 99.99
+    date: 1999-12-31

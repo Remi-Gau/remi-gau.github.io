@@ -1,95 +1,91 @@
+---
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
-- name: cohort creator
-  i18n: Markdown
-  gh_user: nilearn
-  repo: nilearn
-  url: https://cohort-creator.readthedocs.io/en/latest/
-  img: https://avatars.githubusercontent.com/u/50719251?s=200&v=4
-  desc: Creates a neuroimaging cohort by aggregating data across datasets.
+-   name: cohort creator
+    i18n: Markdown
+    gh_user: nilearn
+    repo: nilearn
+    url: https://cohort-creator.readthedocs.io/en/latest/
+    img: https://avatars.githubusercontent.com/u/50719251?s=200&v=4
+    desc: Creates a neuroimaging cohort by aggregating data across datasets.
 
-- name: Nilearn
-  i18n: Markdown
-  gh_user: nilearn
-  repo: nilearn
-  url: https://nilearn.github.io/stable/index.html
-  img: https://avatars.githubusercontent.com/u/4646912?s=200&v=4
-  desc: Machine learning for NeuroImaging in Python.
+-   name: Nilearn
+    i18n: Markdown
+    gh_user: nilearn
+    repo: nilearn
+    url: https://nilearn.github.io/stable/index.html
+    img: https://avatars.githubusercontent.com/u/4646912?s=200&v=4
+    desc: Machine learning for NeuroImaging in Python.
 
-- name: bidspm
-  i18n: Markdown
-  gh_user: cpp-lln-lab
-  repo: bidspm
-  url: https://github.com/cpp-lln-lab/bidspm
-  img: /static/assets/img/landing/cpp_lab_logo.png
-  desc: A code base to automatically run SPM analysis on BIDS datasets.
+-   name: bidspm
+    i18n: Markdown
+    gh_user: cpp-lln-lab
+    repo: bidspm
+    url: https://github.com/cpp-lln-lab/bidspm
+    img: /static/assets/img/landing/cpp_lab_logo.png
+    desc: A code base to automatically run SPM analysis on BIDS datasets.
 
-- name: BIDS-matlab
-  i18n: Markdown
-  gh_user: bids-standard
-  repo: bids-matlab
-  url: https://github.com/bids-standard/bids-matlab
-  img: /static/assets/img/landing/bids_logo.png
-  desc:
-    User friendly checklist for MRI methods reporting.
+-   name: BIDS-matlab
+    i18n: Markdown
+    gh_user: bids-standard
+    repo: bids-matlab
+    url: https://github.com/bids-standard/bids-matlab
+    img: /static/assets/img/landing/bids_logo.png
+    desc: User friendly checklist for MRI methods reporting.
 
-- name: bidsMReye
-  i18n: Markdown
-  gh_user: cpp-lln-lab
-  repo: bidsMReye
-  url: https://github.com/cpp-lln-lab/bidsMReye
-  img: /static/assets/img/landing/bidsMReye_logo.png
-  desc: BIDS app to decode eye motion for fMRI time series data.
+-   name: bidsMReye
+    i18n: Markdown
+    gh_user: cpp-lln-lab
+    repo: bidsMReye
+    url: https://github.com/cpp-lln-lab/bidsMReye
+    img: /static/assets/img/landing/bidsMReye_logo.png
+    desc: BIDS app to decode eye motion for fMRI time series data.
 
-- name: Octache
-  i18n: Markdown
-  gh_user: Remi-Gau
-  repo: Octache
-  url: https://github.com/Remi-Gau/Octache
-  img: /static/assets/img/landing/octache.png
-  desc:
-    An Octave/MATLAB implementation of the mustache templating language.
+-   name: Octache
+    i18n: Markdown
+    gh_user: Remi-Gau
+    repo: Octache
+    url: https://github.com/Remi-Gau/Octache
+    img: /static/assets/img/landing/octache.png
+    desc: An Octave/MATLAB implementation of the mustache templating language.
 
-- name: eCobidas
-  i18n: Markdown
-  gh_user: Remi-Gau
-  repo: eCobidas
-  url: https://github.com/Remi-Gau/eCobidas
-  img: /static/assets/img/landing/checklist.jpg
-  desc:
-    User friendly checklist for MRI methods reporting.
+-   name: eCobidas
+    i18n: Markdown
+    gh_user: Remi-Gau
+    repo: eCobidas
+    url: https://github.com/Remi-Gau/eCobidas
+    img: /static/assets/img/landing/checklist.jpg
+    desc: User friendly checklist for MRI methods reporting.
 
-- name: bids2cite
-  i18n: Markdown
-  gh_user: Remi-Gau
-  repo: bids2cite
-  url: https://github.com/Remi-Gau/bids2cite
-  img: /static/assets/img/landing/bids2cite_logo.png
-  desc: Create a citation file for a BIDS dataset.
+-   name: bids2cite
+    i18n: Markdown
+    gh_user: Remi-Gau
+    repo: bids2cite
+    url: https://github.com/Remi-Gau/bids2cite
+    img: /static/assets/img/landing/bids2cite_logo.png
+    desc: Create a citation file for a BIDS dataset.
 
-- name: BIDS Starter Kit
-  i18n: Markdown
-  gh_user: bids-standard
-  repo: bids-starter-kit
-  url: https://github.com/bids-standard/bids-starter-kit
-  img: /static/assets/img/landing/bids_logo.png
-  desc:
-    If you don't know anything about the Brain Imaging Data Structure but wish
-    you did.
+-   name: BIDS Starter Kit
+    i18n: Markdown
+    gh_user: bids-standard
+    repo: bids-starter-kit
+    url: https://github.com/bids-standard/bids-starter-kit
+    img: /static/assets/img/landing/bids_logo.png
+    desc: If you don't know anything about the Brain Imaging Data Structure but wish you did.
 
-- name: Online neuroimaging resources
-  i18n: Markdown
-  gh_user: Remi-Gau
-  repo: online_neuroimaging_resources
-  url: https://github.com/Remi-Gau/online_neuroimaging_resources
-  img: /static/assets/img/landing/fMRI.png
-  desc: A list of resources for neuroimaging
+-   name: Online neuroimaging resources
+    i18n: Markdown
+    gh_user: Remi-Gau
+    repo: online_neuroimaging_resources
+    url: https://github.com/Remi-Gau/online_neuroimaging_resources
+    img: /static/assets/img/landing/fMRI.png
+    desc: A list of resources for neuroimaging
 
-- name: The hitchhacker's guide to the brain
-  i18n: Markdown
-  gh_user: learn-neuroimaging
-  repo: hitchhackers_guide_brain
-  url: https://github.com/learn-neuroimaging/hitchhackers_guide_brain
-  img: /static/assets/img/landing/dont_panic.png
-  desc: Doing brain science is complicated but DON'T PANIC
+-   name: The hitchhacker's guide to the brain
+    i18n: Markdown
+    gh_user: learn-neuroimaging
+    repo: hitchhackers_guide_brain
+    url: https://github.com/learn-neuroimaging/hitchhackers_guide_brain
+    img: /static/assets/img/landing/dont_panic.png
+    desc: Doing brain science is complicated but DON'T PANIC

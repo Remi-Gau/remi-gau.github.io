@@ -1,6 +1,7 @@
+---
 # skills section data
 
 label: Ability
-id : cs
+id: cs
 aspects: GitHub, Git, Datalad, MATLAB/Octave, Python, bash, technical writing, SPM, Freesurfer, Presentation, PsychToolBox, LaTeX, HTML/CSS
 percentage: 75, 75, 75, 80, 90, 40, 60, 80, 30, 70, 80, 30, 40

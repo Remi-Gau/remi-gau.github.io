@@ -19,7 +19,7 @@ good to have many teams analyse the same data
 
 - good to know that the work will be published no matter what you find. Gee that must be how people who do a registered report feel like. I mean imagine that: knowing that your effort will be rewarded without having to rely on the powers of the allmighty gods of analytical flexibility to find something worth publishing in your heap of data.
 
-Sure the idea of having an "easy" paper out is attractive and I would be a hypocrite to deny that it did not play a role in me wanting to participate in this, but knowning your results will be out there and that if they are completely out of whack with the rest of the teams this might make you look like a big dumb doofy doof. So even for the most cynical out there there is still a push to do well unless they wanna burn any kind scientific street cred they might have.
+Sure the idea of having an "easy" paper out is attractive and I would be a hypocrite to deny that it did not play a role in me wanting to participate in this, but knowing your results will be out there and that if they are completely out of whack with the rest of the teams this might make you look like a big dumb doofy doof. So even for the most cynical out there there is still a push to do well unless they wanna burn any kind scientific street cred they might have.
 
 - pre-reg can speed up your work
 - so can using standard data structure

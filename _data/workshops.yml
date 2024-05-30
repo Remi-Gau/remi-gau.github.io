@@ -1,18 +1,19 @@
+---
 # - name:
 #   desc:
 #   web:
 
-- name: Matlab clean code
-  desc: Show some good coding practices to use with MATLAB.
-  web: https://remi-gau.github.io/matlab_clean_code_workshop/
+-   name: Matlab clean code
+    desc: Show some good coding practices to use with MATLAB.
+    web: https://remi-gau.github.io/matlab_clean_code_workshop/
 
-- name: BIDS workshop
-  desc: Covers BIDS from theory, to conversion, to using BIDS apps
-  web: https://remi-gau.github.io/bids_workshop/
+-   name: BIDS workshop
+    desc: Covers BIDS from theory, to conversion, to using BIDS apps
+    web: https://remi-gau.github.io/bids_workshop/
 
-- name: Datalad crash course
-  desc: workshop to help get started with datalad
-  web: https://cpp-lln-lab.github.io/datalad_crash_course/
+-   name: Datalad crash course
+    desc: workshop to help get started with datalad
+    web: https://cpp-lln-lab.github.io/datalad_crash_course/
 
 # \bulletboldunder{November 2019}
 # Co-organizer and instructor at the first neuroimaging workshop

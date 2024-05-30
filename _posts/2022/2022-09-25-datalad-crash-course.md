@@ -49,7 +49,7 @@ Note: this was first originally published [here](https://cpp-lln-lab.github.io/d
     - [Backing it up online](#backing-it-up-online)
   - [Oops! I turned my home folder into a datalad dataset... 🙈](#oops-i-turned-my-home-folder-into-a-datalad-dataset-)
     - [🚨 Under the hood: the `.git` folder 🚨](#-under-the-hood-the-git-folder-)
-  - [Oops! I accidentaly deleted some files. How can I bring them back?](#oops-i-accidentaly-deleted-some-files-how-can-i-bring-them-back)
+  - [Oops! I accidentally deleted some files. How can I bring them back?](#oops-i-accidentally-deleted-some-files-how-can-i-bring-them-back)
   - [Useful tips](#useful-tips)
   - [Useful links](#useful-links)
 
@@ -467,7 +467,7 @@ difference on the color of the file whose content you just got.
 
 You can now browse the actual content of that file.
 
-![fsl_happy](/static/assets/img/blog/fsl_happy.png)
+<img src="/static/assets/img/blog/fsl_happy.png" width="100%">
 
 <hr>
 <br>
@@ -1079,7 +1079,7 @@ If you want an hour long deep dive on the content of the `.git` folder,
 <hr>
 <br>
 
-## Oops! I accidentaly deleted some files. How can I bring them back?
+## Oops! I accidentally deleted some files. How can I bring them back?
 
 If you deleted some files but have not yet saved those changes, there is an easy
 way to bring them back.

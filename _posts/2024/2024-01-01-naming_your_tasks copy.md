@@ -72,7 +72,7 @@ you can come across files with this kind of names:
 sub-01/ses-post/func/sub-01_ses-post_task-livingnonlivingdecisionwithplainormirrorreversedtext_run-01_bold.nii.gz
 ```
 
-In this case we know a lot about what was going on just from the filename... If we can decypher it.
+In this case we know a lot about what was going on just from the filename... If we can decipher it.
 
 If you REALLY want to keep such a long task label, as least use CamelCase to make it easier to read.
 

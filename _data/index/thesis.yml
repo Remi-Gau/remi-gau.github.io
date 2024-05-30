@@ -1,4 +1,5 @@
+---
 # chapters section data
-- title: 'Chapter 1: Lorem ipsum '
-  description: Lorem ipsum
-  id: ch_LoremIpsum
+-   title: 'Chapter 1: Lorem ipsum '
+    description: Lorem ipsum
+    id: ch_LoremIpsum

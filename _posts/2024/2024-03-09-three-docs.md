@@ -82,7 +82,7 @@ Note you can mix markdown and HTML.
 - Repo: [https://github.com/Remi-Gau/jekyll-primer](https://github.com/Remi-Gau/jekyll-primer)
 - Website: [https://remi-gau.github.io/jekyll-primer/](https://remi-gau.github.io/jekyll-primer/)
 
-### Re-use templates
+### Reuse templates
 
 There are a LOT of available jekyll templates:
 
@@ -105,7 +105,7 @@ There are a LOT of available jekyll templates:
 Mkdocs is a python package to help create documentation website from markdown files.
 
 **Use case:**
-Create some official looking docuentation website from markdown.
+Create some official looking documentation website from markdown.
 
 **Advantages:**
 - integrate easily with github
@@ -240,7 +240,7 @@ See the [next section](#serve-to-read-the-docs) to see how to use Read The Docs 
 
 6. Click on `Build Version`.
 
-   Once the build is completed, you should be able to see the wesbite at:
+   Once the build is completed, you should be able to see the website at:
 
    https://`REPO_NAME`.readthedocs.io/en/latest/
 

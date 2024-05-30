@@ -1,35 +1,36 @@
+---
 # - name:
 #   authors:
 #   date:
 #   server:
 #   doi:
 
-- name: The past, present, and future of the brain imaging data structure (BIDS)
-  authors: Poldrack R, et al.
-  date: 2023
-  server: arxiv
-  doi: 10.48550/arXiv.2309.05768
+-   name: The past, present, and future of the brain imaging data structure (BIDS)
+    authors: Poldrack R, et al.
+    date: 2023
+    server: arxiv
+    doi: 10.48550/arXiv.2309.05768
 
-- name: "ARTEM-IS for ERP: Agreed Reporting Template for EEG Methodology-International Standard for documenting studies on Event-Related Potentials"
-  authors: Šoškić A, Kovic V, Algermissen J, Fischer NL, Ganis G, Gau R et al.
-  date: 2022
-  server: psyarxiv
-  doi: 10.31234/osf.io/mq5sy
+-   name: 'ARTEM-IS for ERP: Agreed Reporting Template for EEG Methodology-International Standard for documenting studies on Event-Related Potentials'
+    authors: Šoškić A, Kovic V, Algermissen J, Fischer NL, Ganis G, Gau R et al.
+    date: 2022
+    server: psyarxiv
+    doi: 10.31234/osf.io/mq5sy
 
-- name: Lab manuals for efficient and high quality science in a happy and safe work environment
-  authors: Kovacs M, Jaquiery M, Algermissen J, Arriaga P, Gau R et al.
-  date: 2022
-  server: metaarxiv
-  doi: 10.31222/osf.io/bzcxg
+-   name: Lab manuals for efficient and high quality science in a happy and safe work environment
+    authors: Kovacs M, Jaquiery M, Algermissen J, Arriaga P, Gau R et al.
+    date: 2022
+    server: metaarxiv
+    doi: 10.31222/osf.io/bzcxg
 
-- name: EEG ERP Preregistration Template
-  authors: Govaart G. H. et al.
-  date: 2022
-  server: metaarxiv
-  doi: 10.31222/osf.io/4nvpt
+-   name: EEG ERP Preregistration Template
+    authors: Govaart G. H. et al.
+    date: 2022
+    server: metaarxiv
+    doi: 10.31222/osf.io/4nvpt
 
-- name: BIDS and the NeuroImaging Data Model (NIDM)
-  authors: Appelhoff S, Bates JF, Ghosh S et al.
-  date: 2019
-  server: F1000Research
-  doi: 10.7490/f1000research.1117650.1
+-   name: BIDS and the NeuroImaging Data Model (NIDM)
+    authors: Appelhoff S, Bates JF, Ghosh S et al.
+    date: 2019
+    server: F1000Research
+    doi: 10.7490/f1000research.1117650.1

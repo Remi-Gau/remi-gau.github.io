@@ -1,135 +1,112 @@
+---
 # - name:
 #   date:
 #   conference:
 #   video:
 #   web:
 
-- name: "BIDS: Open-source standard for the organization of neuro data"
-  date: 22nd November 2023
-  conference: Neuro OpenScience Workshop, Brain institute, Paris
-  web: https://docs.google.com/presentation/d/1vtTTJanRaGLurup74xDLQOy18yKj5mHGdProB_xkEAA/edit?usp=sharing
+-   name: 'BIDS: Open-source standard for the organization of neuro data'
+    date: 22nd November 2023
+    conference: Neuro OpenScience Workshop, Brain institute, Paris
+    web: https://docs.google.com/presentation/d/1vtTTJanRaGLurup74xDLQOy18yKj5mHGdProB_xkEAA/edit?usp=sharing
 
-- name: "BIDS: underlying data management principles"
-  date: 4th October 2023
-  conference: Open Science Office Hours, The Neuro, Montréal, Québec, Canada
-  video: https://www.youtube.com/watch?v=OHxnwzOKqHM
-  web: https://doi.org/10.6084/m9.figshare.24328606
+-   name: 'BIDS: underlying data management principles'
+    date: 4th October 2023
+    conference: Open Science Office Hours, The Neuro, Montréal, Québec, Canada
+    video: https://www.youtube.com/watch?v=OHxnwzOKqHM
+    web: https://doi.org/10.6084/m9.figshare.24328606
 
-- name: The BIDS Statistical Model
-  date: 10th November 2022
-  conference: Institut des neurosciences de la Timone, Marseille, France
-  web: https://osf.io/jpfrh
+-   name: The BIDS Statistical Model
+    date: 10th November 2022
+    conference: Institut des neurosciences de la Timone, Marseille, France
+    web: https://osf.io/jpfrh
 
-- name: A github workshop
-  date: 29th September 2022
-  conference: GLIMR annual meeting, Kuşadasi, Turkey
-  web: https://docs.google.com/presentation/d/1508GI_iLxyRwzJtWmnSQuSnfuGEUCaVXHguu8FRA4dI/
+-   name: A github workshop
+    date: 29th September 2022
+    conference: GLIMR annual meeting, Kuşadasi, Turkey
+    web: https://docs.google.com/presentation/d/1508GI_iLxyRwzJtWmnSQuSnfuGEUCaVXHguu8FRA4dI/
 
-- name:
-    Fully transparent ERP & MRI study methodology descriptions with ARTEM-IS and
-    eCOBIDAS
-  date: 12th September 2022
-  conference: INCF annual assembly 2022
+-   name: Fully transparent ERP & MRI study methodology descriptions with ARTEM-IS and eCOBIDAS
+    date: 12th September 2022
+    conference: INCF annual assembly 2022
   # video:
-  web: https://docs.google.com/presentation/d/1z1aixJTiUl6plDOPEIobntSKUgspVaN6Doby5EDMubI/
+    web: https://docs.google.com/presentation/d/1z1aixJTiUl6plDOPEIobntSKUgspVaN6Doby5EDMubI/
 
-- name: "BIDS: A standardized way to organize “neuroimaging” data"
-  date: 24th May 2022
-  conference:
-    Inauguration of the data embassador network of the Brussels-Wallonia
-    federation, Brussels, Belgium
-  web: https://osf.io/h7gcm
+-   name: 'BIDS: A standardized way to organize “neuroimaging” data'
+    date: 24th May 2022
+    conference: Inauguration of the data embassador network of the Brussels-Wallonia federation, Brussels, Belgium
+    web: https://osf.io/h7gcm
 
-- name: "BIDS: underlying data management principles"
-  date: 17th January 2022
-  conference:
-    Open Research at the Wellcome Centre for Integrative Neuroimaging (WIN)
-  video: https://vimeo.com/showcase/7645853/video/668642973
-  web: https://osf.io/h6gsr/
+-   name: 'BIDS: underlying data management principles'
+    date: 17th January 2022
+    conference: Open Research at the Wellcome Centre for Integrative Neuroimaging (WIN)
+    video: https://vimeo.com/showcase/7645853/video/668642973
+    web: https://osf.io/h6gsr/
 
-- name: "BIDS: a cookbook"
-  date: 12th October 2021
-  conference: ACCS and OHBM Webinar and Workshop Series
-  video: https://www.youtube.com/watch?v=m7vEHGpqQIw&list=PLvYm9o6tx99MVhynzejNPfs3hOpqWnUxW&index=2
-  web: https://remi-gau.github.io/bids_cookbook/
+-   name: 'BIDS: a cookbook'
+    date: 12th October 2021
+    conference: ACCS and OHBM Webinar and Workshop Series
+    video: https://www.youtube.com/watch?v=m7vEHGpqQIw&list=PLvYm9o6tx99MVhynzejNPfs3hOpqWnUxW&index=2
+    web: https://remi-gau.github.io/bids_cookbook/
 
-- name: "Open science: what is it? why do it?"
-  date: 10th June 2021
-  conference: Dutch Neuroscience meeting 2021
-  video: https://www.youtube.com/watch?v=Fl7C_z6lX30&list=PLvYm9o6tx99MVhynzejNPfs3hOpqWnUxW&index=3
-  web: https://osf.io/ce7tn/
+-   name: 'Open science: what is it? why do it?'
+    date: 10th June 2021
+    conference: Dutch Neuroscience meeting 2021
+    video: https://www.youtube.com/watch?v=Fl7C_z6lX30&list=PLvYm9o6tx99MVhynzejNPfs3hOpqWnUxW&index=3
+    web: https://osf.io/ce7tn/
 
-- name: "New Trends in Open Science: Code and Data Sharing"
-  date: 27th May 2021
-  conference: Belgian Association of Psychological Science 2021 - Junior day
-  video: https://www.youtube.com/watch?v=lubXob4_cPE&list=PLvYm9o6tx99MVhynzejNPfs3hOpqWnUxW&index=1
-  web: https://osf.io/6kzn2/
+-   name: 'New Trends in Open Science: Code and Data Sharing'
+    date: 27th May 2021
+    conference: Belgian Association of Psychological Science 2021 - Junior day
+    video: https://www.youtube.com/watch?v=lubXob4_cPE&list=PLvYm9o6tx99MVhynzejNPfs3hOpqWnUxW&index=1
+    web: https://osf.io/6kzn2/
 
-- name:
-    "eCobidas: because methods writing is too important (and boring) to let
-    humans do it!"
-  date: 8th January 2021
-  conference: Repronim webinars
-  video: https://www.youtube.com/watch?v=bQd-e_v2iCc&list=PLs3CA4ShM1DUX0nTMKfoB8Z6kdrZpByLa&index=2
-  web: https://osf.io/fb7tx/
+-   name: 'eCobidas: because methods writing is too important (and boring) to let humans do it!'
+    date: 8th January 2021
+    conference: Repronim webinars
+    video: https://www.youtube.com/watch?v=bQd-e_v2iCc&list=PLs3CA4ShM1DUX0nTMKfoB8Z6kdrZpByLa&index=2
+    web: https://osf.io/fb7tx/
 
-- name: Things I wish I knew when I started coding
-  date: 12th December 2020
-  conference: Brainhack Ankara
-  video: https://www.youtube.com/watch?v=pRRw8ZW9grk
-  web: https://osf.io/vdgua/
+-   name: Things I wish I knew when I started coding
+    date: 12th December 2020
+    conference: Brainhack Ankara
+    video: https://www.youtube.com/watch?v=pRRw8ZW9grk
+    web: https://osf.io/vdgua/
 
-- name:
-    "CPP BIDS: a lightweight toolbox for behavioral experiments to help you with
-    good data management practices"
-  date: 18th November 2020
-  conference:
-    Young researchers' day of the institute of Neuroscience of the université
-    catholique de Louvain
-  web: https://osf.io/y7cjn/
+-   name: 'CPP BIDS: a lightweight toolbox for behavioral experiments to help you with good data management practices'
+    date: 18th November 2020
+    conference: Young researchers' day of the institute of Neuroscience of the université catholique de Louvain
+    web: https://osf.io/y7cjn/
 
-- name:
-    The Brain Imaging Data Structure (BIDS) as an example of data organization
-  date: 9th October 2020
-  conference: Louvain bionics, Université catholique de Louvain, Belgium
-  video: https://www.youtube.com/watch?v=hZkGz3sj0Zw
-  web: https://osf.io/zf5x8/
+-   name: The Brain Imaging Data Structure (BIDS) as an example of data organization
+    date: 9th October 2020
+    conference: Louvain bionics, Université catholique de Louvain, Belgium
+    video: https://www.youtube.com/watch?v=hZkGz3sj0Zw
+    web: https://osf.io/zf5x8/
 
-- name:
-    "Symposium on the Neuroimaging Analysis Replication and Prediction Study:
-    From the eyes of an analysis team"
-  date: June 2020
-  conference: Annual Meeting of the Organization for Human Brain Mapping
-  web: https://osf.io/b8p9e/
+-   name: 'Symposium on the Neuroimaging Analysis Replication and Prediction Study: From the eyes of an analysis team'
+    date: June 2020
+    conference: Annual Meeting of the Organization for Human Brain Mapping
+    web: https://osf.io/b8p9e/
 
-- name: More brain droppings on the replication crisis in psychology
-  date: 11th April 2019
-  conference:
-    brown bag meeting at the department of psychology of the université
-    Catholique de Louvain (Belgium)
-  web: https://osf.io/vu327/
+-   name: More brain droppings on the replication crisis in psychology
+    date: 11th April 2019
+    conference: brown bag meeting at the department of psychology of the université Catholique de Louvain (Belgium)
+    web: https://osf.io/vu327/
 
-- name:
-    Laminar profiles dissociate attentional and crossmodal influences in sensory
-    cortices
-  date: 31rst May 2018
-  conference: Brain in Depth, Magdeburg, Germany
-  video:
-  web: https://osf.io/b8p9e/
+-   name: Laminar profiles dissociate attentional and crossmodal influences in sensory cortices
+    date: 31rst May 2018
+    conference: Brain in Depth, Magdeburg, Germany
+    video:
+    web: https://osf.io/b8p9e/
 
-- name: Brain droppings on the replication crisis in psychology
-  date: 24th November 2016
-  conference:
-    post-graduate seminar of the School of Psychology at the University of
-    Birmingham (UK)
-  web: https://dx.doi.org/10.6084/m9.figshare.4257992.v1
+-   name: Brain droppings on the replication crisis in psychology
+    date: 24th November 2016
+    conference: post-graduate seminar of the School of Psychology at the University of Birmingham (UK)
+    web: https://dx.doi.org/10.6084/m9.figshare.4257992.v1
 
-- name:
-    Implication du groupe sérotoninergique B3 dans le contrôle des circuits de
-    la douleur et des réactions neurovégétatives associées
-  date: 18th November 2010
-  conference:
-    10th congress of the French society for the study and treatment of pain,
-    Marseille, France
-  video:
-  web: https://osf.io/r7gfm/
+-   name: Implication du groupe sérotoninergique B3 dans le contrôle des circuits de la douleur et des réactions neurovégétatives associées
+    date: 18th November 2010
+    conference: 10th congress of the French society for the study and treatment of pain, Marseille, France
+    video:
+    web: https://osf.io/r7gfm/

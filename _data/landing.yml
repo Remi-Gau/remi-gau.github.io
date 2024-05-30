@@ -1,16 +1,17 @@
+---
 # index page sections
 # custom following lines to edit your index page
-- id: about-me
-  i18n: nav.about_me
-  name: About
-  tpl: about.html
-  css:
+-   id: about-me
+    i18n: nav.about_me
+    name: About
+    tpl: about.html
+    css:
 
-- id: projects
-  i18n: nav.projects
-  name: Projects
-  tpl: projects.html
-  css: project
+-   id: projects
+    i18n: nav.projects
+    name: Projects
+    tpl: projects.html
+    css: project
 
 # - id: papers
 #   i18n: nav.papers
@@ -18,11 +19,11 @@
 #   tpl: papers.html
 #   css: timeline
 
-- id: career
-  i18n: nav.career
-  name: Career
-  tpl: career.html
-  css: timeline
+-   id: career
+    i18n: nav.career
+    name: Career
+    tpl: career.html
+    css: timeline
 
 # - id: thesis
 #   i18n: nav.thesis
@@ -30,29 +31,29 @@
 #   tpl: thesis.html
 #   css: thesis
 
-- id: skills
-  i18n: nav.skills
-  name: Skills
-  tpl: skills.html
-  css: team
+-   id: skills
+    i18n: nav.skills
+    name: Skills
+    tpl: skills.html
+    css: team
 
-- id: blog
-  i18n: nav.blog
-  name: Blog
-  tpl: dummy.html
-  page: blog/
+-   id: blog
+    i18n: nav.blog
+    name: Blog
+    tpl: dummy.html
+    page: blog/
 
-- id: papers
-  i18n: nav.papers
-  name: Papers
-  tpl: dummy.html
-  page: blog/papers.html
+-   id: papers
+    i18n: nav.papers
+    name: Papers
+    tpl: dummy.html
+    page: blog/papers.html
 
-- id: talks
-  i18n: nav.talks
-  name: Talks
-  tpl: dummy.html
-  page: blog/talks.html
+-   id: talks
+    i18n: nav.talks
+    name: Talks
+    tpl: dummy.html
+    page: blog/talks.html
 
 
 #
