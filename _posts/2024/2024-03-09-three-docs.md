@@ -1,18 +1,26 @@
 ---
 layout: post
-title: "primer to 3 documentation frameworks"
+title: "A primer to 3... Hum, no! Four documentation frameworks!!!!"
 date: "2024-03-09"
 tags: [tuto]
 categories: []
 ---
 
-This post contains 3 primers on how to set up some basic documentation with:
+This post contains 4 primers on how to set up some basic documentation with:
 
 - [jekyll + github pages](#jekyll--github-pages)
 - [mkdocs + read the docs](#mkdocs--read-the-docs)
 - [sphinx + read the docs](#sphinx--read-the-docs)
+- [jupyter book + github pages](#sphinx--read-the-docs)
 
-### Relevant links
+**Table of content**
+
+* TOC
+{:toc}
+
+---
+
+## Relevant links
 
 - The awesome [Write the docs](https://www.writethedocs.org/). Make sure to check out their slack workspace!
 
@@ -32,6 +40,15 @@ Serve the markdown content of repo as a website.
 
 **Not covered:**
 local set up: installing ruby + jekyll and serving the website
+
+<div class="admonition">
+<div class="admonition-title">
+<p>FOO</p>
+</div>
+<div class="admonition-content">
+<p>BAR gjdglksgjlsgj jgksdjgl;jsg gjds;gjl;sd</p>
+</div>
+</div>
 
 **Examples:**
 
@@ -77,7 +94,7 @@ Note you can mix markdown and HTML.
 
    You can always monitor the github action in the `Actions` tab of the repo.
 
-## Outcome
+### Outcome
 
 - Repo: [https://github.com/Remi-Gau/jekyll-primer](https://github.com/Remi-Gau/jekyll-primer)
 - Website: [https://remi-gau.github.io/jekyll-primer/](https://remi-gau.github.io/jekyll-primer/)
@@ -253,7 +270,7 @@ See the [next section](#serve-to-read-the-docs) to see how to use Read The Docs 
 - [https://docs.readthedocs.io/en/stable/](https://docs.readthedocs.io/en/stable/)
 
 
-## Outcome
+### Outcome
 
 - Repo: [https://github.com/Remi-Gau/mkdocs-primer](https://github.com/Remi-Gau/mkdocs-primer)
 - Website: [https://mkdocs-primer.readthedocs.io/en/latest/](https://mkdocs-primer.readthedocs.io/en/latest/)
@@ -511,7 +528,7 @@ Create a documentation website for a python code base.
 
 3. The rest of the process is the same [as for MkDocs](#serve-to-read-the-docs).
 
-## Outcome
+### Outcome
 
 Repo: [https://github.com/Remi-Gau/sphinx-primer](https://github.com/Remi-Gau/sphinx-primer)
 <!-- Website: [https://mkdocs-primer.readthedocs.io/en/latest/](https://mkdocs-primer.readthedocs.io/en/latest/) -->

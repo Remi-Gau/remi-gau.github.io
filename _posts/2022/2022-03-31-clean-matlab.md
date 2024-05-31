@@ -36,24 +36,10 @@ Also figured some other people could benefit so here is a post about this.
 </div>
 </div>
 
-**TOC**
+**Table of content**
 
-- [Oxymoronic](#oxymoronic)
-- [Getting by](#getting-by)
-  - [Code style](#code-style)
-  - [miss\_hit](#miss_hit)
-  - [Only commit clean code](#only-commit-clean-code)
-  - [Testing](#testing)
-    - [Why tests matter](#why-tests-matter)
-    - [Testing in practice](#testing-in-practice)
-    - [Test automation](#test-automation)
-  - [Documentation](#documentation)
-  - [Demos](#demos)
-  - [Dependency management](#dependency-management)
-  - [Interoperability and open-source](#interoperability-and-open-source)
-  - [Path management](#path-management)
-- [Template](#template)
-- [Examples and links](#examples-and-links)
+* TOC
+{:toc}
 
 ## Oxymoronic
 

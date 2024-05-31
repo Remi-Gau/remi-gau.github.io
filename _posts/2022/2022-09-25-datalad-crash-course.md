@@ -11,47 +11,16 @@ categories: []
 
 Note: this was first originally published [here](https://cpp-lln-lab.github.io/datalad_crash_course/).
 
+**Table of content**
+
+* TOC
+{:toc}
+
 # Datalad crash course
 
 <!-- insert datalad and crash test dummies image -->
 
 ![datalad_gif](http://handbook.datalad.org/en/latest/_images/datalad-animated.gif)
-
-<h2 id="TOC"> Table of content </h2>
-
-- [Datalad crash course](#datalad-crash-course)
-  - [Goals](#goals)
-  - [Prerequisites](#prerequisites)
-    - [Pre-flight checks](#pre-flight-checks)
-  - [Install a BIDS dataset](#install-a-bids-dataset)
-    - [From GIN 🍸](#from-gin-)
-    - [From openneuro](#from-openneuro)
-    - [Install it](#install-it)
-  - [Try to open a “text” file](#try-to-open-a-text-file)
-  - [Saving data 💾](#saving-data-)
-  - [Renaming a file](#renaming-a-file)
-  - [Try to open a datafile and failing ❌](#try-to-open-a-datafile-and-failing-)
-    - [🚨 Under the hood: remote content 🚨](#-under-the-hood-remote-content-)
-  - [Getting data](#getting-data)
-  - [Try to open a datafile and succeeding ✅](#try-to-open-a-datafile-and-succeeding-)
-  - [Modifying data and failing ❌](#modifying-data-and-failing-)
-    - [🚨 Under the hood: annexed files 🚨](#-under-the-hood-annexed-files-)
-  - [Unlocking data 🔓](#unlocking-data-)
-  - [Modifying data and succeeding ✅](#modifying-data-and-succeeding-)
-  - [Saving data again 💾](#saving-data-again-)
-  - [The history of the dataset](#the-history-of-the-dataset)
-  - [Pushing data and failing ❌](#pushing-data-and-failing-)
-    - [🚨 Under the hood: siblings 🚨](#-under-the-hood-siblings-)
-  - [Creating a remote repo on GIN 🍸](#creating-a-remote-repo-on-gin-)
-  - [Pushing data and succeeding ✅](#pushing-data-and-succeeding-)
-  - [Dropping data](#dropping-data)
-  - [Creating a dataset from scratch](#creating-a-dataset-from-scratch)
-    - [Backing it up online](#backing-it-up-online)
-  - [Oops! I turned my home folder into a datalad dataset... 🙈](#oops-i-turned-my-home-folder-into-a-datalad-dataset-)
-    - [🚨 Under the hood: the `.git` folder 🚨](#-under-the-hood-the-git-folder-)
-  - [Oops! I accidentally deleted some files. How can I bring them back?](#oops-i-accidentally-deleted-some-files-how-can-i-bring-them-back)
-  - [Useful tips](#useful-tips)
-  - [Useful links](#useful-links)
 
 <details><summary> <b>CLICK ME</b> </summary><br>
 
