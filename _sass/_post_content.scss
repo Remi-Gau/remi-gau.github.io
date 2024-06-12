@@ -12,15 +12,15 @@
   font-size: 150%;
 
   h1, h2, h3, h4 {
-    padding-top: 15px;
-    padding-bottom: 10px;
+    padding-top: 16px;
+    padding-bottom: 8px;
     font-weight: 400;
     font-size: 150%;
   }
 
   h4 {
-    padding-top: 15px;
-    padding-bottom: 10px;
+    padding-top: 16px;
+    padding-bottom: 8px;
     font-weight: 400;
     font-size: 130%;
   }
@@ -51,24 +51,24 @@
     width: 80%;
     font-size:90%;
     margin-left: 10%;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 8px;
+    padding-top: 8px;
   }
 
   .quote-ref{
     text-align: right;
     font-size:100%;
     margin-top: 0px;
-    margin-bottom: 15px
+    margin-bottom: 8px
   }
 
   .admonition{
     display: flex;
     flex-direction: column;
     width: 75%;
-    padding: 20px;
-    margin: 20px;
-    border: 3px solid black;
+    padding: 24px;
+    margin: 24px;
+    border: 4px solid black;
     border-radius: 8px;
     background: lightgrey;
     color: black;
@@ -80,7 +80,7 @@
     }
     .admonition-content{
       width: 60%;
-      margin: 5px;
+      margin: 8px;
     }
   }
 
