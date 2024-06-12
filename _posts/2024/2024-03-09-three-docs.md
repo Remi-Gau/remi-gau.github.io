@@ -292,9 +292,11 @@ to check the content of your repository for spelling mistakes.
    ```yml
    # See https://pre-commit.com for more information
    # See https://pre-commit.com/hooks.html for more hooks
+
    repos:
+
    # Checks for spelling errors
-   -   repo: https://github.com/codespell-project/codespell
+   -  repo: https://github.com/codespell-project/codespell
       rev: v2.3.0
       hooks:
       -   id: codespell
@@ -601,15 +603,13 @@ Create a documentation website for a python code base.
    ```yml
    version: 2
    build:
-   os: ubuntu-22.04
-   tools:
-      python: "3.11"
-      # You can also specify other tool versions:
-      # nodejs: "16"
+      os: ubuntu-22.04
+      tools:
+         python: "3.11"
 
    # Build documentation with sphinx
    sphinx:
-   configuration: docs/source/conf.py
+      configuration: docs/source/conf.py
 
    # Dependencies required to build your docs
    python:
