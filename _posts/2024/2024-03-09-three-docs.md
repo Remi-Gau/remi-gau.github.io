@@ -42,12 +42,16 @@ Serve the markdown content of repo as a website.
 local set up: installing ruby + jekyll and serving the website
 
 <div class="admonition">
-<div class="admonition-title">
-<p>FOO</p>
-</div>
-<div class="admonition-content">
-<p>BAR gjdglksgjlsgj jgksdjgl;jsg gjds;gjl;sd</p>
-</div>
+   <div class="admonition-title">
+      <p>Setting up jekyll</p>
+   </div>
+   <div class="admonition-content">
+      <p><a href="https://s-canchi.github.io/2021-04-30-jekyll-conda/"
+            target="_blank"
+            title="install jekyll with conda">This post</a>
+         explains how to set up jekyll if you already have conda on your computer.
+      </p>
+   </div>
 </div>
 
 **Examples:**
@@ -536,3 +540,141 @@ Repo: [https://github.com/Remi-Gau/sphinx-primer](https://github.com/Remi-Gau/sp
 ### Relevant links
 
 - [Sphinx documentation](https://www.sphinx-doc.org/en/master/)
+
+
+## Jupyter book + Github pages
+
+**Use case:**
+
+Create a documentation website for project containing Markdown documents and Jupyter notebooks.
+
+**Advantages:**
+
+- easy to work with locally
+- easy way to integrate executable code in your documentation
+
+**Examples:**
+
+<!-- TODO add links -->
+
+- The Turing way
+
+### Ingredients
+
+- have a github repo with some markdown in it
+- python to serve locally
+
+### Recipe
+
+1. Install jupyter book.
+
+   ```bash
+   pip install -U jupyter-book
+   ```
+
+1. Create a book template
+
+   ```bash
+   jupyter book jupyter-book-primer
+   ```
+
+1. Move into the directory that was created and build the book
+
+   ```bash
+   cd  jupyter-book-primer
+   jupyter book build .
+   ```
+
+1. Browse the book that was created by opening the landing page
+   `_build/html/index.html`.
+
+1. Turn into a repository, gitignore the `_build` and commit all the created
+   content
+
+   ```bash
+   echo _build > .gitignore
+   git add --all
+   git commit -m 'initial commit'
+   ```
+
+1. Add a Github repo as remote and push to github
+
+   ```bash
+   git remote add origin <URL_OF_REMOTE>
+   git push --set-upstream origin main
+   ```
+
+### Serve via GitHub pages
+
+1. Add a github workflow to serve the book via github pages
+
+   On your repository go to `Settings` -> `Pages`, and for `Source` choose
+   `GitHub Actions`.
+
+   Create a file `.github/workflows/deploy.yml` with the following content.
+
+   ```yml
+   name: deploy-book
+
+   # Run this when the master or main branch changes
+   on:
+   push:
+      branches:
+         - main
+
+   # This job installs dependencies, builds the book, and pushes it to `gh-pages`
+   jobs:
+   deploy-book:
+      runs-on: ubuntu-latest
+      permissions:
+         pages: write
+         id-token: write
+      steps:
+         - uses: actions/checkout@v3
+
+         # Install dependencies
+         - name: Set up Python 3.11
+         uses: actions/setup-python@v4
+         with:
+            python-version: 3.11
+
+         - name: Install dependencies
+         run: |
+            pip install -r requirements.txt
+
+         # Build the book
+         - name: Build the book
+         run: |
+            jupyter-book build .
+
+         # Upload the book's HTML as an artifact
+         - name: Upload artifact
+         uses: actions/upload-pages-artifact@v2
+         with:
+            path: "_build/html"
+
+         # Deploy the book's HTML to GitHub Pages
+         - name: Deploy to GitHub Pages
+         id: deployment
+         uses: actions/deploy-pages@v2
+   ```
+
+1. Commit and push the file:
+
+   ```
+   git add .github
+   git commit -m "add build and deploy workflow"
+   git push
+   ```
+
+Github should then take over and serve your documentation.
+
+#### Relevant links
+
+More info in [the jupyter book documentation](https://jupyterbook.org/en/stable/publish/gh-pages.html).
+
+### Outcome
+
+- Repo: [https://github.com/Remi-Gau/jupyter-book-primer](https://github.com/Remi-Gau/jupyter-book-primer)
+
+- Website: [https://remi-gau.github.io/jupyter-book-primer](https://remi-gau.github.io/jupyter-book-primer)
