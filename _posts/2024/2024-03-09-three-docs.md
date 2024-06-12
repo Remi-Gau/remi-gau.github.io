@@ -279,6 +279,95 @@ See the [next section](#serve-to-read-the-docs) to see how to use Read The Docs 
 - Repo: [https://github.com/Remi-Gau/mkdocs-primer](https://github.com/Remi-Gau/mkdocs-primer)
 - Website: [https://mkdocs-primer.readthedocs.io/en/latest/](https://mkdocs-primer.readthedocs.io/en/latest/)
 
+
+## Intermission: dead links and spelling
+
+Quick tip to avoid dead links and spelling mistakes in your documentation.
+
+### pre-commit and coodespell
+
+You can use the [pre-commit](https://pre-commit.com/) git-hook framework to automatically run [codespell](https://github.com/codespell-project/codespell)
+to check the content of your repository for spelling mistakes.
+
+1. Create a `.pre-commit-config.yaml` in your repository with the following content:
+
+   ```yml
+   # See https://pre-commit.com for more information
+   # See https://pre-commit.com/hooks.html for more hooks
+   repos:
+   # Checks for spelling errors
+   -   repo: https://github.com/codespell-project/codespell
+      rev: v2.3.0
+      hooks:
+      -   id: codespell
+   ```
+
+1. Install pre-commit and install the git hooks
+
+   ```bash
+   pip install pre-commit
+   pre-commit install
+   ```
+
+This will make sure that codespell is run every time you commit
+to make you only commit "clean" content.
+
+You may need to add a [config file for codespell](https://github.com/codespell-project/codespell?tab=readme-ov-file#using-a-config-file) that looks like this:
+
+```text
+[codespell]
+skip = .git
+ignore-words-list = list,of,words,separated,by,commas
+builtin = clear,rare
+```
+
+### markdown check links
+
+If the framework that you use does not have any build in way to check
+if the links in your documentation are valid,
+you can use a [github action](https://github.com/gaurav-nelson/github-action-markdown-link-check/) that runs [markdown-link-check](https://github.com/tcort/markdown-link-check)
+on the content of your markdown files.
+
+Create a `.github/workflows/check_md_links.yml` with the following content
+
+```yml
+name: Check markdown links
+
+on:
+    push:
+        branches: [main]
+
+jobs:
+    markdown-link-check:
+        runs-on: ubuntu-latest
+        steps:
+        -   uses: actions/checkout@master
+        -   uses: gaurav-nelson/github-action-markdown-link-check@v1
+            with:
+                use-quiet-mode: yes
+                use-verbose-mode: yes
+                # extra config file to ignore some links
+                config-file: md_link_check_config.json
+                # folder containing your doc
+                folder-path: docs
+                # extra files to validate
+                file-path: ./README.md
+```
+
+The configuration file would look like this.
+
+```json
+{
+  "ignorePatterns": [
+    {
+      "pattern": "^https://doi.org\/"
+    },
+  ],
+  "timeout": "20s",
+  "retryOn429": true
+}
+```
+
 ## Sphinx + read the docs
 
 Sphinx is a python package to help create documentation website from files written using restructured text / markdown.
