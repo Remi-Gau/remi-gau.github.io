@@ -195,7 +195,7 @@ Create some official looking documentation website from markdown.
    ```yml
    site_name: My Docs
    theme:
-   name: material
+      name: material
    ```
 
    Serve the website again and check the difference.
@@ -229,11 +229,9 @@ See the [next section](#serve-to-read-the-docs) to see how to use Read The Docs 
    ```yml
    version: 2
    build:
-   os: ubuntu-22.04
-   tools:
-      python: "3.11"
-      # You can also specify other tool versions:
-      # nodejs: "16"
+      os: ubuntu-22.04
+      tools:
+         python: "3.11"
 
    # Build documentation with Mkdocs
    mkdocs:
@@ -284,7 +282,7 @@ See the [next section](#serve-to-read-the-docs) to see how to use Read The Docs 
 
 Quick tip to avoid dead links and spelling mistakes in your documentation.
 
-### pre-commit and coodespell
+### pre-commit and codespell
 
 You can use the [pre-commit](https://pre-commit.com/) git-hook framework to automatically run [codespell](https://github.com/codespell-project/codespell)
 to check the content of your repository for spelling mistakes.
