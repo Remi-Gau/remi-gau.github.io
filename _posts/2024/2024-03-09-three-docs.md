@@ -635,7 +635,7 @@ Repo: [https://github.com/Remi-Gau/sphinx-primer](https://github.com/Remi-Gau/sp
 - [Sphinx documentation](https://www.sphinx-doc.org/en/master/)
 
 
-## Jupyter book + Github pages
+## Jupyter book + GitHub pages
 
 **Use case:**
 
@@ -690,7 +690,7 @@ Create a documentation website for project containing Markdown documents and Jup
    git commit -m 'initial commit'
    ```
 
-1. Add a Github repo as remote and push to github
+1. Add a GitHub repo as remote and push to github
 
    ```bash
    git remote add origin <URL_OF_REMOTE>
@@ -760,7 +760,7 @@ Create a documentation website for project containing Markdown documents and Jup
    git push
    ```
 
-Github should then take over and serve your documentation.
+GitHub should then take over and serve your documentation.
 
 #### Relevant links
 
