@@ -6,7 +6,13 @@ tags: [tuto]
 categories: []
 ---
 
-This post contains 4 primers on how to set up some basic documentation with:
+If "untested code is broken code" then "undocumented code is no code at all".
+You may have created the most useful tool but if you have no documentation explaining how to use it,
+then it is almost as if you had not written any code.
+
+<!-- more -->
+
+Here I will show how to get started with several documentation frameworks:
 
 - [jekyll + github pages](#jekyll--github-pages)
 - [mkdocs + read the docs](#mkdocs--read-the-docs)
