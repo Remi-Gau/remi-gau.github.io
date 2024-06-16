@@ -22,10 +22,11 @@ the things you learned along the way[^1]<sup>,</sup>[^2].
 
 Also figured some other people could benefit so here is a post about this.
 
-<div class="row">
-<div class="col-lg-10 col-lg-offset-1"
-     style="border: solid; margin-top:10px; margin-bottom:10px;  border-radius: 25px;">
-    <h2>TL;DR</h2>
+<div class="admonition">
+   <div class="admonition-title">
+      <p>TL;DR</p>
+   </div>
+   <div class="admonition-content">
     <p> Here is a
         <a href="https://github.com/cpp-lln-lab/template_matlab_analysis">
             template github repo [WIP]
@@ -33,13 +34,17 @@ Also figured some other people could benefit so here is a post about this.
         that has already a lot of things set up to get you started on your clean MATLAB🔒
         code journey.
     </p>
+   </div>
 </div>
-</div>
+
+---
 
 **Table of content**
 
 * TOC
 {:toc}
+
+---
 
 ## Oxymoronic
 
@@ -553,7 +558,7 @@ This can be done using the
 [extension for MATLAB🔒](https://github.com/sphinx-contrib/matlabdomain).
 
 As very well described in the
-[[The Good Research Code Handbook]](https://goodresearch.dev/docs.html#publish-docs-on-readthedocs),
+[The Good Research Code Handbook](https://goodresearch.dev/docs.html#publish-docs-on-readthedocs),
 setting and building the basic doc is a 4 commands affair and it is also
 possible to fairly easily serve the documentation on
 [read the docs](https://sphinx-rtd-tutorial.readthedocs.io/en/latest/index.html)

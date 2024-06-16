@@ -11,10 +11,14 @@ categories: []
 
 Note: this was first originally published [here](https://cpp-lln-lab.github.io/datalad_crash_course/).
 
+---
+
 **Table of content**
 
 * TOC
 {:toc}
+
+---
 
 # Datalad crash course
 
@@ -22,13 +26,15 @@ Note: this was first originally published [here](https://cpp-lln-lab.github.io/d
 
 ![datalad_gif](http://handbook.datalad.org/en/latest/_images/datalad-animated.gif)
 
-<details><summary> <b>CLICK ME</b> </summary><br>
+<details><summary> <b>CLICK ME</b> </summary>
 
+<p>
 ... to see what I hide !!!
+</p>
 
 </details>
 
-<br>
+
 
 ## Goals
 
@@ -39,7 +45,7 @@ The examples taken here on an MRI dataset but feel free to try this on dataset
 with any other type of data.
 
 <hr>
-<br>
+
 
 ## Prerequisites
 
@@ -100,7 +106,7 @@ rm -rf ~/CPP_visMotion-raw
 ```
 
 <hr>
-<br>
+
 
 ## Install a BIDS dataset
 
@@ -136,19 +142,20 @@ In its simplest form it just requires a source URL to install a dataset from.
 datalad install -s ${url}
 ```
 
-<details><summary> <b>What's with the dollar <code>$</code> and the curly braces <code>{}</code>?</b> </summary><br>
+<details><summary> <b>What's with the dollar <code>$</code> and the curly braces <code>{}</code>?</b> </summary>
 
+<p>
 This is how you can call previously stored variables in bash (the language used
 by default in most terminals).
-
+</p>
+<p>
 <pre>
 url="git@gin.g-node.org:/cpp-lln-lab/CPP_visMotion-raw.git"
 datalad install -s ${url}
 </pre>
+</p>
 
 </details>
-
-<br>
 
 So if the URL you copied is
 `git@gin.g-node.org:/cpp-lln-lab/CPP_visMotion-raw.git`, then you just need to
@@ -179,7 +186,6 @@ your computer and you can browse them in your file explorer or via your
 terminal.
 
 <hr>
-<br>
 
 ## Try to open a “text” file
 
@@ -193,15 +199,16 @@ cd ~/gin/CPP_visMotion-raw
 tree -L 1
 ```
 
-<details><summary> <b>What's this <code>tree 🌳</code> command?</b> </summary><br>
+<details><summary> <b>What's this <code>tree 🌳</code> command?</b> </summary>
+
+<p>
 
 See this
 <a href="http://handbook.datalad.org/en/latest/basics/101-102-populate.html#f1">footnote</a>
 in case you don't have it.
+</p>
 
 </details>
-
-<br>
 
 **Example output**
 
@@ -225,7 +232,7 @@ those anyway).
 You see you can open, modify and save that file.
 
 <hr>
-<br>
+
 
 ## Saving data 💾
 
@@ -269,29 +276,35 @@ action summary:
   save (ok: 1)
 ```
 
-<details><summary> <b>How often should I save? What should I save?</b> </summary><br>
+<details><summary> <b>How often should I save? What should I save?</b> </summary>
 
+<p>
 Note that you can save specific files only with datalad
-
+</p>
+<p>
 <pre style="margin-bottom: 10px">
   datalad save -m ${your_message} ${path_to_file_or_folder_to_save}
 </pre>
-
+</p>
+<p>
 An advice that you might hear is:
 
 <blockquote style="margin-bottom: 10px">
   Commit early. Commit often. A version control advice, not a relationship advice.
 </blockquote>
-
+</p>
+<p>
 More serious advices can be found in the
 <a href="https://the-turing-way.netlify.app/reproducible-research/vcs/vcs-git-compare.html#good-practice" target="_blank">Turing
 way book</a>
+</p>
+
 
 </details>
 
-<br>
 
-<details><summary> <b>For the GIT users out there...</b> </summary><br>
+
+<details><summary> <b>For the GIT users out there...</b> </summary>
 
 <p>
   Datalad does not have what is called a "staging area" in GIT. So there is no
@@ -313,7 +326,7 @@ way book</a>
 
 </details>
 
-<br>
+
 
 ## Renaming a file
 
@@ -351,7 +364,7 @@ action summary:
 ```
 
 <hr>
-<br>
+
 
 ## Try to open a datafile and failing ❌
 
@@ -384,7 +397,7 @@ actually downloaded.
 To fix this issue, we must get the content from where the dataset was installed.
 
 <hr>
-<br>
+
 
 ## Getting data
 
@@ -401,18 +414,21 @@ datalad get ${path_to_the_folder_or_file}
 datalad get sub-con07/anat/*T1w.nii
 ```
 
-<details><summary> <b>What's with the star <code>*</code>?</b> </summary><br>
+<details><summary> <b>What's with the star <code>*</code>?</b> </summary>
 
+<p>
 That's a bash thing to allow you to say "any sequence of characters". So in our
 case that would mean any file in the <code>anat</code> folder that ends in
 <code>T1w.nii</code>.
-
+</p>
+<p>
 More on bash "globbing"
 <a href="https://linuxhint.com/bash_globbing_tutorial/" target="_blank">here</a>
+</p>
 
 </details>
 
-<br>
+
 
 **Example output**
 
@@ -439,7 +455,7 @@ You can now browse the actual content of that file.
 <img src="/static/assets/img/blog/fsl_happy.png" width="100%">
 
 <hr>
-<br>
+
 
 ## Modifying data and failing ❌
 
@@ -453,7 +469,7 @@ select the images to apply this change to.
 SPM will try to modify the header of the image to implement the requested change
 and will _fail majestically_ in the process.
 
-![spm_not_happy](/static/assets/img/blog/spm_not_happy.png)
+<img src="/static/assets/img/blog/spm_not_happy.png" width="100%">
 
 ```matlab
 ------------------------------------------------------------------------
@@ -536,7 +552,7 @@ a bit as as "a wrapper" around:
 To be able to edit this file, we must first unlock it.
 
 <hr>
-<br>
+
 
 ## Unlocking data 🔓
 
@@ -595,7 +611,7 @@ been modified because it was taken out of the annex.
 ```
 
 <hr>
-<br>
+
 
 ## Modifying data and succeeding ✅
 
@@ -629,7 +645,7 @@ Now datalad tells us about the files that have been modified and also about the
 new file created by SPM.
 
 <hr>
-<br>
+
 
 ## Saving data again 💾
 
@@ -668,7 +684,7 @@ sub-con07/ses-01/anat
 See also how the new `.mat` file was annexed as well.
 
 <hr>
-<br>
+
 
 ## The history of the dataset
 
@@ -694,7 +710,7 @@ is your "best destination".
 ![](/static/assets/img/blog/tardis.gif)
 
 <hr>
-<br>
+
 
 ## Pushing data and failing ❌
 
@@ -737,21 +753,21 @@ The good news is that **unless the data owner has given you the right to do
 so**, it is extremely unlikely you will break or destroy someone else's data.
 
 <hr>
-<br>
+
 
 ## Creating a remote repo on GIN 🍸
 
 So let's create a repository on GIN.
 
-![](/static/assets/img/blog/gin_new.png)
+<img src="/static/assets/img/blog/gin_new.png" width="100%">
 
 To make your life easier do not initialize any file in this repository.
 
-![](/static/assets/img/blog/gin_new_2.png)
+<img src="/static/assets/img/blog/gin_new_2.png" width="100%">
 
 You must then copy the SSH URL.
 
-![](/static/assets/img/blog/gin_new_3.png)
+<img src="/static/assets/img/blog/gin_new_3.png" width="100%">
 
 You then need to let your local sibling that there is another repository. This
 is done with the `datalad siblings add` command.
@@ -775,7 +791,7 @@ datalad siblings add --name a_new_hope --url git@gin.g-node.org:/RemiGau/a_new_h
 ```
 
 <hr>
-<br>
+
 
 ## Pushing data and succeeding ✅
 
@@ -808,17 +824,17 @@ action summary:
 If you now refresh the web page of your GIN repository, it should display the
 content of your data set.
 
-<details><summary> <b>My repo in GIN looks nothing like what I have on my computer!!</b> </summary><br>
-
+<details><summary> <b>My repo in GIN looks nothing like what I have on my computer!!</b> </summary>
+<p>
 This might be because you are actually viewing the annexed content of your
 dataset that lives on the "git-annex branch":
 <a href="http://handbook.datalad.org/en/latest/basics/101-180-FAQ.html#help-why-does-github-display-my-dataset-with-git-annex-as-the-default-branch" target="_blank">click
 here to see how to fix it</a> (the fix relates to GitHub repositories but works
 on GIN too).
-
+</p>
 </details>
 
-<br>
+
 
 Note however that your remote siblings contains the content for the data you had
 in your local sibling.
@@ -861,7 +877,7 @@ We are not going to do that now, otherwise we are going to be at this until the
 cows come home. 🐮 ➡️ 🏠
 
 <hr>
-<br>
+
 
 ## Dropping data
 
@@ -921,7 +937,7 @@ action summary:
 ```
 
 <hr>
-<br>
+
 
 ## Creating a dataset from scratch
 
@@ -997,7 +1013,7 @@ Grab a coffee and look at that progress bar go! 🚀
 -->
 
 <hr>
-<br>
+
 
 ## Oops! I turned my home folder into a datalad dataset... 🙈
 
@@ -1046,7 +1062,7 @@ If you want an hour long deep dive on the content of the `.git` folder,
 [check this video](https://www.youtube.com/watch?v=gdY_RpY2oyU).
 
 <hr>
-<br>
+
 
 ## Oops! I accidentally deleted some files. How can I bring them back?
 
@@ -1080,7 +1096,7 @@ git restore images/use_the_force.jpg
 ```
 
 <hr>
-<br>
+
 
 ## Useful tips
 
@@ -1102,9 +1118,6 @@ More
 
 <footer>
     <hr>
-    <br />
-    <button style="margin-bottom: 10px"><a href="#TOC">back to the top</a></button>
-    <br />
     <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
         <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/>
     </a>

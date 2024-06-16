@@ -6,7 +6,7 @@ tags: [tuto]
 categories: []
 ---
 
-If "untested code is broken code" then "undocumented code is no code at all".
+If "[untested code is broken code](https://youtu.be/xOKPKiAhey4?t=540)" then "undocumented code is no code at all".
 You may have created the most useful tool but if you have no documentation explaining how to use it,
 then it is almost as if you had not written any code.
 
@@ -19,6 +19,8 @@ Here I will show how to get started with several documentation frameworks:
 - [sphinx + read the docs](#sphinx--read-the-docs)
 - [jupyter book + github pages](#sphinx--read-the-docs)
 
+---
+
 **Table of content**
 
 * TOC
@@ -26,26 +28,26 @@ Here I will show how to get started with several documentation frameworks:
 
 ---
 
-## Relevant links
+### Relevant links
 
 - The awesome [Write the docs](https://www.writethedocs.org/). Make sure to check out their slack workspace!
 
 ## Jekyll + GitHub pages
 
-Jekyll is a static website generator based on ruby.
+[Jekyll]((https://jekyllrb.com/)) is a static website generator based on ruby.
 Static websites: HTML + CSS but no database.
 
-**Use case:**
-Serve the markdown content of repo as a website.
+-  **Use case:**
+   -  Serve the markdown content of repo as a website.
 
-**Advantages:**
-- integrate REALLY easily with github
-- easy way to get started with html / css
-- lots of templates to choose from for personal website, events...
-- can use the [liquid templating language](https://shopify.github.io/liquid/)
+-  **Advantages:**
+   -  integrate REALLY easily with github
+   -  easy way to get started with html / css
+   -  lots of templates to choose from for personal website, events...
+   -  can use the [liquid templating language](https://shopify.github.io/liquid/)
 
-**Not covered:**
-local set up: installing ruby + jekyll and serving the website
+-  **Not covered:**
+   - local set up: installing ruby + jekyll and serving the website
 
 <div class="admonition">
    <div class="admonition-title">
@@ -60,13 +62,10 @@ local set up: installing ruby + jekyll and serving the website
    </div>
 </div>
 
-**Examples:**
-
+-  **Examples:**
 <!-- TODO add links -->
-
-- most of the brainhack local site events
-- bids website
-- this website
+   -  most of the brainhack local site events
+   -  the website you are currently readinbg
 
 ### Ingredients
 
@@ -81,9 +80,7 @@ Note you can mix markdown and HTML.
 
 ### Recipe
 
-1. add a `config.yml` file in the root of the repo with the theme for your website.
-
-   For example
+1. add a `config.yml` file in the root of the repo with the theme for your website with the following content:
 
    ```yml
    theme: jekyll-theme-minimal
@@ -124,32 +121,29 @@ There are a LOT of available jekyll templates:
 
 ### Relevant links
 
-- [jekyll documentation](https://jekyllrb.com/)
 - [Setting up a GitHub Pages site with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll)
 
 ## Mkdocs + read the docs
 
-Mkdocs is a python package to help create documentation website from markdown files.
+[Mkdocs](https://www.mkdocs.org/) is a python package to help create documentation website from markdown files.
 
-**Use case:**
-Create some official looking documentation website from markdown.
+-  **Use case:**
+   -  Create some official looking documentation website from markdown.
 
-**Advantages:**
-- integrate easily with github
-- integrate easily with read the docs (allow easy preview on pull requests)
-- easy to work with locally
-- many extensions and plugins
-- the use of macros makes it a very powerful framework
+-  **Advantages:**
+   -  integrate easily with github
+   -  integrate easily with read the docs (allow easy preview on pull requests)
+   -  easy to work with locally
+   -  many extensions and plugins
+   -  the use of macros makes it a very powerful framework
 
-**Inconvenients:**
-- less flewibility in terms of looks
+-  **Inconvenients:**
+   -  less flewibility in terms of looks
 
-**Examples:**
-
+-  **Examples:**
 <!-- TODO add links -->
-
-- BIDS specification
-- neurobagel documentation
+   -  BIDS specification
+   -  neurobagel documentation
 
 ### Ingredients
 
@@ -190,7 +184,7 @@ Create some official looking documentation website from markdown.
 
 5. Change the default theme.
 
-   Install mkdocs-material
+   Install [mkdocs-material](https://squidfunk.github.io/mkdocs-material/)
 
    ```bash
    pip install mkdocs-material
@@ -212,16 +206,11 @@ Create some official looking documentation website from markdown.
 
 See the [next section](#serve-to-read-the-docs) to see how to use Read The Docs to deploy your doc.
 
-### Relevant links
-
-- https://www.mkdocs.org/
-- https://squidfunk.github.io/mkdocs-material/
-
 ### Serve to Read The Docs
 
-1. Add a `requirements.txt` in the root of the repo.
+[Read the docs](https://docs.readthedocs.io/en/stable/) is a service that allows you to host your documentation.
 
-   Content:
+1. Add a `requirements.txt` in the root of the repo.
 
    ```
    mkdocs
@@ -229,8 +218,6 @@ See the [next section](#serve-to-read-the-docs) to see how to use Read The Docs 
    ```
 
 2. Add a `.readthedocs.yaml` in the root of the repo.
-
-   Content
 
    ```yml
    version: 2
@@ -273,27 +260,22 @@ See the [next section](#serve-to-read-the-docs) to see how to use Read The Docs 
 
    Go to the `Admin` tab, tick the box below `Build pull requests for this project:` and click `Save`
 
-#### Relevant links
-
-- [https://docs.readthedocs.io/en/stable/](https://docs.readthedocs.io/en/stable/)
-
-
 ### Outcome
 
 - Repo: [https://github.com/Remi-Gau/mkdocs-primer](https://github.com/Remi-Gau/mkdocs-primer)
-- Website: [https://mkdocs-primer.readthedocs.io/en/latest/](https://mkdocs-primer.readthedocs.io/en/latest/)
 
+- Website: [https://mkdocs-primer.readthedocs.io/en/latest/](https://mkdocs-primer.readthedocs.io/en/latest/)
 
 ## Intermission: dead links and spelling
 
-Quick tip to avoid dead links and spelling mistakes in your documentation.
+Quick tips to avoid dead links and spelling mistakes in your documentation.
 
 ### pre-commit and codespell
 
 You can use the [pre-commit](https://pre-commit.com/) git-hook framework to automatically run [codespell](https://github.com/codespell-project/codespell)
 to check the content of your repository for spelling mistakes.
 
-1. Create a `.pre-commit-config.yaml` in your repository with the following content:
+1. Create a `.pre-commit-config.yaml` in your repository:
 
    ```yml
    # See https://pre-commit.com for more information
@@ -329,10 +311,9 @@ builtin = clear,rare
 
 ### markdown check links
 
-If the framework that you use does not have any build in way to check
-if the links in your documentation are valid,
+If the framework you use cannot easily check for dead link links in your documentation,
 you can use a [github action](https://github.com/gaurav-nelson/github-action-markdown-link-check/) that runs [markdown-link-check](https://github.com/tcort/markdown-link-check)
-on the content of your markdown files.
+on your markdown files.
 
 Create a `.github/workflows/check_md_links.yml` with the following content
 
@@ -376,26 +357,25 @@ The configuration file would look like this.
 
 ## Sphinx + read the docs
 
-Sphinx is a python package to help create documentation website from files written using restructured text / markdown.
+[Sphinx](https://www.sphinx-doc.org/en/master/) is a python package to help create documentation website from files written using restructured text / markdown.
 
-**Use case:**
-Create a documentation website for a python code base.
+-  **Use case:**
+   -  Create a documentation website for a python code base.
 
-**Advantages:**
-- autodoc functionality renders the doc strings of python code
-- possible to work with markdown files using the MyST plugin.
-- integrate easily with read the docs (allow easy preview on pull requests)
-- support other languages than python (e.g Matlab / Octave).
-- easy to work with locally
-- many extensions and plugins
-- a decent selection of themes
+-  **Advantages:**
+   -  autodoc functionality renders the doc strings of python code
+   -  possible to work with markdown files using the MyST plugin.
+   -  integrate easily with read the docs (allow easy preview on pull requests)
+   -  support other languages than python (e.g Matlab / Octave).
+   -  easy to work with locally
+   -  many extensions and plugins
+   -  a decent selection of themes
 
-**Inconvenients:**
-- the restructured text syntax is less forgiving than that of markdown
+-  **Inconvenients:**
+   -  the restructured text syntax is less forgiving than that of markdown
 
-**Examples:**
-- pretty much the doc website of any python package
-
+-  **Examples:**
+   -  pretty much the doc website of any python package
 
 ### Ingredients
 
@@ -594,8 +574,6 @@ Create a documentation website for a python code base.
 
 1. Add a `requirements.txt` in the root of the repo.
 
-   Content:
-
    ```
    sphinx
    furo
@@ -603,8 +581,6 @@ Create a documentation website for a python code base.
    ```
 
 2. Add a `.readthedocs.yaml` in the root of the repo.
-
-   Content
 
    ```yml
    version: 2
@@ -627,30 +603,20 @@ Create a documentation website for a python code base.
 
 ### Outcome
 
-Repo: [https://github.com/Remi-Gau/sphinx-primer](https://github.com/Remi-Gau/sphinx-primer)
+- Repo: [https://github.com/Remi-Gau/sphinx-primer](https://github.com/Remi-Gau/sphinx-primer)
 <!-- Website: [https://mkdocs-primer.readthedocs.io/en/latest/](https://mkdocs-primer.readthedocs.io/en/latest/) -->
-
-### Relevant links
-
-- [Sphinx documentation](https://www.sphinx-doc.org/en/master/)
-
 
 ## Jupyter book + GitHub pages
 
-**Use case:**
+- **Use cases:**
+   - Create a documentation website for project containing Markdown documents and Jupyter notebooks.
 
-Create a documentation website for project containing Markdown documents and Jupyter notebooks.
+- **Advantages**
+   - easy to work with locally
+   - easy way to integrate executable code in your documentation
 
-**Advantages:**
-
-- easy to work with locally
-- easy way to integrate executable code in your documentation
-
-**Examples:**
-
-<!-- TODO add links -->
-
-- The Turing way
+- **Examples:**
+   - [The Turing way](https://book.the-turing-way.org/index.html)
 
 ### Ingredients
 
@@ -726,30 +692,30 @@ Create a documentation website for project containing Markdown documents and Jup
          - uses: actions/checkout@v3
 
          # Install dependencies
-         - name: Set up Python 3.11
-         uses: actions/setup-python@v4
-         with:
-            python-version: 3.11
+         -  name: Set up Python 3.11
+            uses: actions/setup-python@v4
+            with:
+               python-version: 3.11
 
-         - name: Install dependencies
-         run: |
-            pip install -r requirements.txt
+         -  name: Install dependencies
+            run: |
+               pip install -r requirements.txt
 
          # Build the book
-         - name: Build the book
-         run: |
-            jupyter-book build .
+         -  name: Build the book
+            run: |
+               jupyter-book build .
 
          # Upload the book's HTML as an artifact
-         - name: Upload artifact
-         uses: actions/upload-pages-artifact@v2
-         with:
-            path: "_build/html"
+         -  name: Upload artifact
+            uses: actions/upload-pages-artifact@v2
+            with:
+               path: "_build/html"
 
          # Deploy the book's HTML to GitHub Pages
-         - name: Deploy to GitHub Pages
-         id: deployment
-         uses: actions/deploy-pages@v2
+         -  name: Deploy to GitHub Pages
+            id: deployment
+            uses: actions/deploy-pages@v2
    ```
 
 1. Commit and push the file:
@@ -764,10 +730,14 @@ GitHub should then take over and serve your documentation.
 
 #### Relevant links
 
-More info in [the jupyter book documentation](https://jupyterbook.org/en/stable/publish/gh-pages.html).
+- More info in [the jupyter book documentation](https://jupyterbook.org/en/stable/publish/gh-pages.html).
 
 ### Outcome
 
 - Repo: [https://github.com/Remi-Gau/jupyter-book-primer](https://github.com/Remi-Gau/jupyter-book-primer)
 
 - Website: [https://remi-gau.github.io/jupyter-book-primer](https://remi-gau.github.io/jupyter-book-primer)
+
+### Relevant links
+
+- [Gallery of jupyter book](https://executablebooks.org/en/latest/gallery/).
