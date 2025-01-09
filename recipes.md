@@ -1,6 +1,3 @@
-# **DESSERTS**
-
-
 1.
 **Pancakes**
 2 œufs
@@ -747,7 +744,7 @@ coulis de framboise
 
 framboises entières
 
-Dans un bol, assemblez les jaunes d'oeuf, le sucre en poudre et 3 cuillères a soupe d'eau froide \
+Dans un bol, assemblez les jaunes d'oeuf, le sucre en poudre et 3 cuillères a soupe d'eau froide
 Placez le bol au bain marie assez chaud
 
 Fouettez au batteur électrique pendant 15min
@@ -758,7 +755,7 @@ Fouettez encore 12min en laissant refroidir.
 
 Dans un saladier, faire fondre le chocolat blanc au micro onde a 500W par tranche de 30s en remuant a chaque interruption.
 
-Faire fondre le beurre avec le chocolat blanc liquide au micro onde par tranche de 30s en remuant. \
+Faire fondre le beurre avec le chocolat blanc liquide au micro onde par tranche de 30s en remuant.
 Dans un saladier battre la crème liquide en chantilly très ferme (avec un batteur électrique, sinon plus de bras et plus de chocolat)
 
 Incorporez le mélange de jaune d'oeuf battus avec le chocolat fondu et le beurre.
@@ -1121,20 +1118,10 @@ Moi j’avais un grand moule et j’ai doublé les quantités
 
 
 
-    1.
+1.
 ***kouign_amann***
 
-
-    2.
-
-
-
-    3.
-
-
-## ***Ingredients***
-
-
+Ingredients
 
 * 300g/10½oz strong [plain flour](http://www.bbc.co.uk/food/plain_flour), plus extra for dusting
 * 5g fast-action [yeast](http://www.bbc.co.uk/food/yeast)
@@ -1143,11 +1130,6 @@ Moi j’avais un grand moule et j’ai doublé les quantités
 * 25g/1oz unsalted [butter](http://www.bbc.co.uk/food/butter), melted
 * 250g/9oz cold unsalted [butter](http://www.bbc.co.uk/food/butter), in a block
 * 100g/3½oz [caster sugar](http://www.bbc.co.uk/food/caster_sugar), plus extra for sprinkling
-
-
-
-    4.
-***Preparation method***
 
 
 1. Put the flour into the bowl of a freestanding mixer fitted with a dough hook. Add the yeast to one side of the bowl and the salt to the other. Add the water and melted butter and mix on a slow speed for two minutes, then on a medium speed for six minutes.
@@ -1170,8 +1152,6 @@ Moi j’avais un grand moule et j’ai doublé les quantités
 
     Serve warm or cold.
 
-
-    ```
 310g sugar
 150g grounded almonds
 200 ml water
@@ -1181,7 +1161,6 @@ Moi j’avais un grand moule et j’ai doublé les quantités
 icing sugar for the top
 puff dough or short crust dough whichever you prefer
 
-```
 
 
 
@@ -1217,109 +1196,112 @@ Whip the cream until they are consistent and creamy like. Add the caramel and wh
 
 Put it in the fridge, preferentially from one day to the next (otherwise just put it a bit in the freezer and then in the fridge). Save two cookies, crumble them and decorate the top when serving.
 
-Galette des rois briochée
+666.
+**Galette des rois briochée
 
-Type de cuisson : Four \
+Type de cuisson : Four
 Puissance de cuisson : Thermostat 5
 
- \
-**Temps de préparation** : 30 minutes \
+
+**Temps de préparation** : 30 minutes
 **Temps de cuisson** : 15 minutes
 
- \
-**Ingrédients** (pour 8 personnes) : \
- \
-Pour le levain : \
-- 65 g de farine  \
-- 4 cl d'eau \
-- 8 g de levure de boulanger \
- \
-Pour le sirop : \
-- 4 cl d'eau \
-- 20 g de fleur d'oranger (plus ou moins selon les goûts) \
-- 65 g de sucre \
-- 65 g de beurre \
-- 4 g de beurre \
- \
-Pour la pâte : \
-- 250 g de farine \
-- 2 œufs \
- \
-Pour décorer : \
-- 1 œuf \
-- sucre en grains (ou pépites de chocolat, pralin...) \
+
+**Ingrédients** (pour 8 personnes) :
+
+Pour le levain :
+- 65 g de farine
+- 4 cl d'eau
+- 8 g de levure de boulanger
+
+Pour le sirop :
+- 4 cl d'eau
+- 20 g de fleur d'oranger (plus ou moins selon les goûts)
+- 65 g de sucre
+- 65 g de beurre
+- 4 g de beurre
+
+Pour la pâte :
+- 250 g de farine
+- 2 œufs
+
+Pour décorer :
+- 1 œuf
+- sucre en grains (ou pépites de chocolat, pralin...)
 - sucre glace
 
- \
-**Préparation de la recette** : \
- \
-La recette est longue du fait des temps de repos de la pâte. Le temps donné est donc indicatif car plus la pâte lève et mieux c'est... \
- \
-Le levain : \
- \
-Délayez la levure dans l'eau tempérée et l'incorporez dans la farine.  \
- \
-Pétrissez le tout jusqu'à l'obtention d'une pâte élastique (ne colle pas aux mains). Laissez lever, il faut qu'il double au moins de volume. Pendant ce temps, faire l'étape 2 \
- \
-Le sirop : \
- \
-Faîtes fondre doucement le beurre avec l'eau, le sucre, le sel et la fleur d'oranger. Laissez tiédir et réservez. \
- \
-La pâte : \
- \
-Mettez sur le levain la farine et les œufs ainsi que 2/3 du sirop environ. Pétrissez le tout jusqu'à ce que la pâte se décolle du saladier. \
- \
-Ajoutez ensuite le tiers restant du sirop et pétrissez de nouveau (ne pas hésiter à bien pétrir, la pâte n'en sera que plus élastique et la galette meilleure !) \
- \
-Une fois le pétrissage terminé, formez une boule et laissez doubler de volume (au minimum). \
- \
-La galette : \
- \
-Faîtes le trou de la galette en appuyant votre coude au milieu de la boule et élargissez en étirant la pâte petit à petit. \
- \
-Aplatissez la galette, incisez la sur un bord intérieur pour y glisser la fève et refermez. Laissez de nouveau gonfler. \
- \
-Badigeonnez la galette avec un œuf battu et saupoudrez de sucre grain (ou autre) puis enfournez 15 min à 170°C.  \
+
+**Préparation de la recette** :
+
+La recette est longue du fait des temps de repos de la pâte. Le temps donné est donc indicatif car plus la pâte lève et mieux c'est...
+
+Le levain :
+
+Délayez la levure dans l'eau tempérée et l'incorporez dans la farine.
+
+Pétrissez le tout jusqu'à l'obtention d'une pâte élastique (ne colle pas aux mains). Laissez lever, il faut qu'il double au moins de volume. Pendant ce temps, faire l'étape 2
+
+Le sirop :
+
+Faîtes fondre doucement le beurre avec l'eau, le sucre, le sel et la fleur d'oranger. Laissez tiédir et réservez.
+
+La pâte :
+
+Mettez sur le levain la farine et les œufs ainsi que 2/3 du sirop environ. Pétrissez le tout jusqu'à ce que la pâte se décolle du saladier.
+
+Ajoutez ensuite le tiers restant du sirop et pétrissez de nouveau (ne pas hésiter à bien pétrir, la pâte n'en sera que plus élastique et la galette meilleure !)
+
+Une fois le pétrissage terminé, formez une boule et laissez doubler de volume (au minimum).
+
+La galette :
+
+Faîtes le trou de la galette en appuyant votre coude au milieu de la boule et élargissez en étirant la pâte petit à petit.
+
+Aplatissez la galette, incisez la sur un bord intérieur pour y glisser la fève et refermez. Laissez de nouveau gonfler.
+
+Badigeonnez la galette avec un œuf battu et saupoudrez de sucre grain (ou autre) puis enfournez 15 min à 170°C.
 
 
-Galette a la frangipane
+666.
+**Galette a la frangipane
 
-**Temps de préparation** : 10 minutes \
+**Temps de préparation** : 10 minutes
 **Temps de cuisson** : 20 minutes
 
- \
-**Ingrédients** (pour 6 personnes) : \
- \
-- 2 pâtes feuilletées \
-- 140 g de poudre d'amandes \
-- 100 g de sucre fin \
-- 2 oeufs \
-- 75 g de beurre mou \
-- 1 jaune d'oeuf \
+
+**Ingrédients** (pour 6 personnes) :
+
+- 2 pâtes feuilletées
+- 140 g de poudre d'amandes
+- 100 g de sucre fin
+- 2 oeufs
+- 75 g de beurre mou
+- 1 jaune d'oeuf
 - 1 fève
 
- \
-**Préparation de la recette** : \
- \
- \
- \
-Placer une pâte feuilletée dans un moule à tarte, piquer la pâte avec une fourchette.  \
- \
-Dans un saladier, mélanger la poudre d'amandes, le sucre, les 2 oeufs et le beurre mou. \
- \
- \
- \
-Placer la pâte obtenue dans le moule à tarte et y cacher la fève. \
- \
- \
- \
-Recouvrir avec la 2ème pâte feuilletée, en collant bien les bords.  \
- \
-Faire des dessins sur le couvercle et badigeonner avec le jaune d'oeuf.  \
- \
+
+**Préparation de la recette** :
+
+
+
+Placer une pâte feuilletée dans un moule à tarte, piquer la pâte avec une fourchette.
+
+Dans un saladier, mélanger la poudre d'amandes, le sucre, les 2 oeufs et le beurre mou.
+
+
+
+Placer la pâte obtenue dans le moule à tarte et y cacher la fève.
+
+
+
+Recouvrir avec la 2ème pâte feuilletée, en collant bien les bords.
+
+Faire des dessins sur le couvercle et badigeonner avec le jaune d'oeuf.
+
 Enfourner pendant 20 à 30 min à 200°C (thermostat 6-7); vérifier régulièrement la cuisson !
 
-MACARONS
+666.
+**MACARONS
 
 125g de poudre d’amande
 
@@ -1345,7 +1327,8 @@ Se conservent une bonne semaine en boîte métallique
 
 PS : on peut remplacer la poudre de noisette par l’équivalent en poudre d’amande
 
-LES CROQUANTS DU TARN
+666.
+**LES CROQUANTS DU TARN
 
 2 blancs d’œuf
 
@@ -1367,7 +1350,8 @@ Faire cuire au four thermostat 6 , pendant 10 à 15 mn, jusqu’à ce qu’ils s
 
 Attendre qu’ils soient froids pour les mettre dans un plat, sinon ils vont coller .
 
-GATEAU BLANC
+666.
+**GATEAU BLANC
 
 6 blancs d’œuf
 
@@ -1381,7 +1365,8 @@ Mélanger les blancs d’œuf battus en neige ferme avec le sucre comme pour une
 
 Four 180° environ pendant 30minutes
 
-MERINGUES
+666.
+**MERINGUES
 
 Pour 2 blancs d’œuf il faut 125 g de sucre en poudre
 
@@ -1409,7 +1394,8 @@ Cuisson 1heure 10 (70min mais 1h10, c’est plus facile à retenir)  à 110°.
 
 Et surtout ne pas ouvrir le four jusqu’à refroidissement complet. Donc, je préfère le faire la veille au soir ….
 
-CREME BRULEE au piment d’Espelette
+666.
+**CREME BRULEE au piment d’Espelette
 
 (prép : 10 min) pour 6 personnes
 
@@ -1441,7 +1427,8 @@ Cuire au four à 120°pendant 25 minutes jusqu’à ce que la crème soit ferme 
 
 Laisser refroidir une nuit au frigidaire . Saupoudrer de sucre cassonade et caraméliser sous le gril du four bien chaud .
 
-GATEAU AUX FRAMBOISES D’ANNIK
+666.
+**GATEAU AUX FRAMBOISES D’ANNIK
 
 70g de farine
 
@@ -1467,7 +1454,8 @@ Mettre dans un moule la moitié de la pate , puis 250g de framboises décongelé
 
 Four 180° pendant au moins 30 minutes.
 
-FINANCIERS
+666.
+**FINANCIERS
 
 6 blancs d’œuf
 
@@ -1499,7 +1487,8 @@ Enfourner pour15 min environ.
 
 Laisser refroidir
 
-COUPES AUX FRAMBOISES
+666.
+**COUPES AUX FRAMBOISES
 
 250g de mascarpone
 
