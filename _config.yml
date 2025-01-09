@@ -74,3 +74,9 @@ plugins:
 
 whitelist:
 -   jekyll-redirect-from
+
+
+collections:
+    recipes:
+        output: true
+        permalink: /:collection/:name/
