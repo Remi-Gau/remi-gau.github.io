@@ -4,7 +4,7 @@
 (prép : 10 min) pour 6 personnes
 
 
-            Ingrédients : 120 g de sucre
+            Requirements : 120 g de sucre
 
 
                                      240 g de lait entier

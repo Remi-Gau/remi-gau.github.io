@@ -22,6 +22,6 @@ Mélanger les jaunes et le sucre.
 
 Faire fondre le chocolat.
 
-Mélange les autres ingrédients et incorporer les blancs battus en neige.
+Mélange les autres Requirements et incorporer les blancs battus en neige.
 
 Faire cuire @ 175 à 200 °C pdt 20-30 minutes.

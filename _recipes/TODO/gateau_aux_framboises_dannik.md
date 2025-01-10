@@ -13,7 +13,7 @@
 
 6 blancs d’œuf
 
-Mélanger les ingrédients dans l’ordre.
+Mélanger les Requirements dans l’ordre.
 
 Monter les 6 blancs en neige ferme, rajouter du sel si le beurre n’est pas salé.
 

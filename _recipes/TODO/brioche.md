@@ -18,7 +18,7 @@
 
 125 g de beurre.
 
-Mélanger tous les ingrédients (adapter les quantités de sucre, sucre vanillé et arôme de fleur d'oranger en fonction des goûts).
+Mélanger tous les Requirements (adapter les quantités de sucre, sucre vanillé et arôme de fleur d'oranger en fonction des goûts).
 
 Rajouter de la farine jusqu'à obtenir une pâte homogène pas trop collante.
 

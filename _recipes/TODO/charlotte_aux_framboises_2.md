@@ -24,7 +24,7 @@ Faire une crème anglaise avec 3 jaunes d'oeufs, 100 G de sucres et le 1/3 de la
 
 Incorporer les plaques de gélatine dans les framboises préchauffées.
 
-Faire une chantilly avec le sucre vanillé et la crème fraîche (mettre tous les ingrédients et récipients au froid).
+Faire une chantilly avec le sucre vanillé et la crème fraîche (mettre tous les Requirements et récipients au froid).
 
 Monter les blancs en neige et y incorporer le sirop fait avec 50 g de sucres et 25 ml d'eau.
 

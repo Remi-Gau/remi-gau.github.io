@@ -9,7 +9,7 @@ Puissance de cuisson : Thermostat 5
 **Temps de cuisson** : 15 minutes
 
 
-**Ingrédients** (pour 8 personnes) :
+**Requirements** (pour 8 personnes) :
 
 Pour le levain :
 - 65 g de farine

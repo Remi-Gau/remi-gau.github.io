@@ -28,7 +28,7 @@ Four 200°
 
 *faire macérer les pommes coupées dans le rhum
 
-Préparer la pâte en mélangeant tous les ingrédients et passer au mixeur plongeant
+Préparer la pâte en mélangeant tous les Requirements et passer au mixeur plongeant
 
 Ajouter les pommes et bien les enrober de pâte
 

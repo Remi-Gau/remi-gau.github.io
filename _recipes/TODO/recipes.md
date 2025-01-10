@@ -168,7 +168,7 @@ Mélanger les jaunes et le sucre.
 
 Faire fondre le chocolat.
 
-Mélange les autres ingrédients et incorporer les blancs battus en neige.
+Mélange les autres Requirements et incorporer les blancs battus en neige.
 
 Faire cuire @ 175 à 200 °C pdt 20-30 minutes.
 
@@ -304,7 +304,7 @@ Faire une crème anglaise avec 3 jaunes d'oeufs, 100 G de sucres et le 1/3 de la
 
 Incorporer les plaques de gélatine dans les framboises préchauffées.
 
-Faire une chantilly avec le sucre vanillé et la crème fraîche (mettre tous les ingrédients et récipients au froid).
+Faire une chantilly avec le sucre vanillé et la crème fraîche (mettre tous les Requirements et récipients au froid).
 
 Monter les blancs en neige et y incorporer le sirop fait avec 50 g de sucres et 25 ml d'eau.
 
@@ -338,7 +338,7 @@ Démouler avant servir et recouvrir avec couche de confiture de framboise avec p
 
 125 g de beurre.
 
-Mélanger tous les ingrédients (adapter les quantités de sucre, sucre vanillé et arôme de fleur d'oranger en fonction des goûts).
+Mélanger tous les Requirements (adapter les quantités de sucre, sucre vanillé et arôme de fleur d'oranger en fonction des goûts).
 
 Rajouter de la farine jusqu'à obtenir une pâte homogène pas trop collante.
 
@@ -1100,7 +1100,7 @@ Four 200°
 
 *faire macérer les pommes coupées dans le rhum
 
-Préparer la pâte en mélangeant tous les ingrédients et passer au mixeur plongeant
+Préparer la pâte en mélangeant tous les Requirements et passer au mixeur plongeant
 
 Ajouter les pommes et bien les enrober de pâte
 
@@ -1207,7 +1207,7 @@ Puissance de cuisson : Thermostat 5
 **Temps de cuisson** : 15 minutes
 
 
-**Ingrédients** (pour 8 personnes) :
+**Requirements** (pour 8 personnes) :
 
 Pour le levain :
 - 65 g de farine
@@ -1269,7 +1269,7 @@ Badigeonnez la galette avec un œuf battu et saupoudrez de sucre grain (ou autre
 **Temps de cuisson** : 20 minutes
 
 
-**Ingrédients** (pour 6 personnes) :
+**Requirements** (pour 6 personnes) :
 
 - 2 pâtes feuilletées
 - 140 g de poudre d'amandes
@@ -1400,7 +1400,7 @@ Et surtout ne pas ouvrir le four jusqu’à refroidissement complet. Donc, je pr
 (prép : 10 min) pour 6 personnes
 
 
-            Ingrédients : 120 g de sucre
+            Requirements : 120 g de sucre
 
 
                                      240 g de lait entier
@@ -1442,7 +1442,7 @@ Laisser refroidir une nuit au frigidaire . Saupoudrer de sucre cassonade et cara
 
 6 blancs d’œuf
 
-Mélanger les ingrédients dans l’ordre.
+Mélanger les Requirements dans l’ordre.
 
 Monter les 6 blancs en neige ferme, rajouter du sel si le beurre n’est pas salé.
 
