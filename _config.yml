@@ -75,6 +75,9 @@ plugins:
 whitelist:
 -   jekyll-redirect-from
 
+relative_links:
+    enabled: true
+    collections: true
 
 collections:
     recipes:

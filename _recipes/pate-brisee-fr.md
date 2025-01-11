@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: recipe
 title: Pâte brisée
 tags: [base]
 categories: [recipe]

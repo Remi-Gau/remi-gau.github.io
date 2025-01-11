@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: recipe
 title: Crème pâtissière
 tags: [base]
 categories: [recipe]

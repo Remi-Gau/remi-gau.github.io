@@ -8,6 +8,9 @@ permalink: /blog/recipes.html
     <div class="col-lg-12 text-center">
         <div class="navy-line"></div>
         <h1>Recipes</h1>
+        <a href="https://x.com/rkoutnik/status/1085633512839888896">
+            <img src="{{ site.url }}/static/assets/img/recipes/why-programmers-like-cooking.png" alt="why-programmers-like-cooking">
+        </a>
     </div>
 </div>
 
@@ -22,15 +25,33 @@ permalink: /blog/recipes.html
                     <div class="col-md-10">
                         <div class="vote-actions">
                         </div>
-                        <a href="{{ post.url | prepend: site.baseurl }}" class="vote-title">
-                            {{ post.title }}
-                        </a>
+                        <div class="row">
+                            <div class="col-md">
+
+                                    <a href="{{ post.url | prepend: site.baseurl }}" class="vote-title">
+                                        {{ post.title }}
+                                    </a>
+                                    {% if post.blurb %}
+                                    <p>{{ post.blurb }}</p>
+                                    {% endif %}
+
+
+                            </div>
+                            <div class="col-md">
+
+                                {% if post.image %}
+                                <img
+                                    src="{{ site.url }}/static/assets/img/recipes/{{ post.image }}"
+                                    class="img-responsive"
+                                    width="200px">
+                                {% endif %}
+
+                            </div>
+                        </div>
                         <div class="vote-info">
                         {% if site.disqus %}
                             <i class="fa fa-comments-o"> </i> <a>Comments (<span class="disqus-comment-count" data-disqus-url="{{ site.url }}{{ post.url }}">0</span>)</a>
                         {% endif %}
-                            <i class="fa fa-clock-o"></i> <a>{{ post.date | date: "%-d %b %Y" }}</a>
-                            <i class="fa fa-user"></i> <a>{{ site.author.name }}</a>
                         </div>
                     </div>
                     <div class="col-md-2 ">
