@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Best of SciFi books: a list"
-date: "2024-06-29"
+date: "2025-01-11"
 tags: [list, books, scifi]
 categories: []
 ---
