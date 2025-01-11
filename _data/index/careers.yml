@@ -3,6 +3,20 @@
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 
 -   name:
+        detail: <a href="https://team.inria.fr/mind/" target="_blank">MIND</a> team (INRIA, Paris, France)
+        i18n: company_a
+    desc:
+        detail: Nilearn maintainer
+        i18n: company_a_desc
+    date:
+        detail: September 2024
+        i18n: company_a_date
+    job:
+        detail: Research Software Engineer
+        i18n: company_a_job
+    icon: fa-plus-square
+
+-   name:
         detail: <a href="https://neurodatascience.github.io/" target="_blank">Origami lab</a> (The Neuro, McGill University, Montréal, Québec, Canada)
         i18n: company_a
     desc:
