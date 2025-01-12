@@ -4,7 +4,7 @@ title: Galette à la frangipane
 tags: [pie]
 categories: [recipe]
 prep time : 10 min
-cooking time : 20 min
+cooking time : 30 min
 image: galette-frangipane.jpg
 ---
 

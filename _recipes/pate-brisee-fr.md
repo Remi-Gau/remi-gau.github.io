@@ -3,6 +3,7 @@ layout: recipe
 title: Pâte brisée
 tags: [base]
 categories: [recipe]
+prep time : 5 min
 ---
 
 ## Requirements

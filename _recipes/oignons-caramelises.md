@@ -3,6 +3,8 @@ layout: recipe
 title: Oignons caramélisés
 tags: [dish]
 categories: [recipe]
+prep time : 5 min
+cooking time : 2 hrs
 ---
 
 ## Requirements

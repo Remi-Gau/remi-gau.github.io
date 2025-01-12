@@ -8,7 +8,7 @@ image: tarte-aux-noix.jpg
 
 ## Requirements
 
--   1 pâte brisé
+-   [1 pâte brisé](../pate-brisee-fr)
 
 -   250 g de noix décortiquées hachées
 -   250 g de sucre
