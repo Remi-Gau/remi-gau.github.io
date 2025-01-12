@@ -11,6 +11,44 @@
     <img src="{{ "/static/assets/img/search/cb-search.png" | prepend : site.baseurl }}"  id="search-btn"  title="Double click Ctrl"/>
 </div>
 
+<nav class="navbar navbar-expand-lg" role="navigation">
+
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#page-top" id="i18_title">
+        <span data-i18n="website.title">{{ site.title }}</span>
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"*
+        aria-label="Toggle navigation"
+        >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav navbar-right">
+          {% for section in site.data.landing %}
+            {% if section.page %}
+            <a class="nav-link page-scroll" href="{{ section.page}} ">
+            {% else %}
+            <a class="nav-link page-scroll" href="{{ section.id | prepend: '#'}} ">
+            {% endif %}
+              <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+
+    </div>
+
+  </nav>
+
 <div class="navbar-wrapper">
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">

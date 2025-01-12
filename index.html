@@ -5,7 +5,47 @@ permalink: /
 ---
 
 <div class="navbar-wrapper">
+
+  <nav class="navbar navbar-expand-lg" role="navigation">
+
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#page-top" id="i18_title">
+        <span data-i18n="website.title">{{ site.title }}</span>
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"*
+        aria-label="Toggle navigation"
+        >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav navbar-right">
+          {% for section in site.data.landing %}
+            {% if section.page %}
+            <a class="nav-link page-scroll" href="{{ section.page}} ">
+            {% else %}
+            <a class="nav-link page-scroll" href="{{ section.id | prepend: '#'}} ">
+            {% endif %}
+              <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+
+    </div>
+
+  </nav>
+
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
     <div class="container">
       <div class="navbar-header page-scroll">
         <button type="button"
@@ -23,8 +63,11 @@ permalink: /
           <span data-i18n="website.title">{{ site.title }}</span>
         </a>
       </div>
+
       <div id="navbar" class="navbar-collapse collapse">
+
         <ul class="nav navbar-nav navbar-right" id="i18_navbar">
+
           {% for section in site.data.landing %}
           <li>
             {% if section.page %}
@@ -36,6 +79,7 @@ permalink: /
             </a>
           </li>
           {% endfor %}
+
           {% for language in site.data.index.language %}
           <li>
             <a  id="set_lang_{{ language.locale }}"
@@ -45,11 +89,14 @@ permalink: /
             </a>
           </li>
           {% endfor %}
+
         </ul>
+
       </div>
     </div>
   </nav>
 </div>
+
 {% if site.index_carousel %}
 {% include carousel.html %}
 {% endif %}
