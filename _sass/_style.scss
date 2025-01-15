@@ -70,6 +70,9 @@ h3, h4, h5 {
 
 .navbar-default {
   background-color: transparent;
+  border-color: #2f4050;
+  margin-top: 0px;
+  padding-top: 0px;
 }
 
 .nav > li > a i {
@@ -78,10 +81,6 @@ h3, h4, h5 {
 
 .navbar {
   border: 0;
-}
-
-.navbar-default {
-  border-color: #2f4050;
 }
 
 .navbar-top-links li {
@@ -2703,7 +2702,6 @@ body {
 @media (min-width: 768px) {
   .landing-page {
     .navbar-wrapper {
-      margin-top: 20px;
       .container {
         padding-right: 15px;
         padding-left: 15px;
