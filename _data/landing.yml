@@ -5,7 +5,7 @@
     i18n: nav.about_me
     name: About
     tpl: about.html
-    css:
+    css: about
 
 -   id: projects
     i18n: nav.projects
@@ -13,23 +13,11 @@
     tpl: projects.html
     css: project
 
-# - id: papers
-#   i18n: nav.papers
-#   name: Papers
-#   tpl: papers.html
-#   css: timeline
-
 -   id: career
     i18n: nav.career
     name: Career
     tpl: career.html
     css: timeline
-
-# - id: thesis
-#   i18n: nav.thesis
-#   name: Thesis
-#   tpl: thesis.html
-#   css: thesis
 
 -   id: skills
     i18n: nav.skills
@@ -37,28 +25,32 @@
     tpl: skills.html
     css: team
 
+-   id: papers
+    i18n: nav.papers
+    name: Papers
+    tpl: dummy.html
+    page: papers.html
+
+-   id: talks
+    i18n: nav.talks
+    name: Talks
+    tpl: dummy.html
+    page: talks.html
+
 -   id: blog
     i18n: nav.blog
     name: Blog
     tpl: dummy.html
     page: blog/
 
--   id: papers
-    i18n: nav.papers
-    name: Papers
+-   id: recipes
+    i18n: nav.recipes
+    name: Recipes
     tpl: dummy.html
-    page: blog/papers.html
+    page: recipes.html
 
--   id: talks
-    i18n: nav.talks
-    name: Talks
-    tpl: dummy.html
-    page: blog/talks.html
-
-
-#
-# - id: links
-#   i18n: nav.link
-#   name: Links
-#   tpl: links.html
-#   css: contact
+-   id: about-me
+    i18n: nav.about_me
+    name: About
+    tpl: about.html
+    page: about.html

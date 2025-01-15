@@ -1,0 +1,59 @@
+<div class="navbar-wrapper">
+
+    <nav class="navbar navbar-expand-lg navbar-default navbar-fixed-top">
+
+        <div class="container">
+            <div class="navbar-header page-scroll d-flex flex-row justify-content-between">
+
+                <a class="navbar-brand" href="{{ site.url }}" id="i18_title">
+                    <span data-i18n="website.title">{{ site.title }}</span>
+                </a>
+
+                <button type="button"
+                        class="navbar-toggler navbar-toggle collapsed"
+                        data-toggle="collapse"
+                        data-target="#navbar"
+                        aria-expanded="false"
+                        aria-controls="navbar"
+                        aria-label="Toggle navigation"
+                        >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            </div>
+
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right" id="i18_navbar">
+
+                    {% for section in site.data.landing %}
+                    <li>
+                        {% if section.page %}
+                        <a class="page-scroll" href="{{  site.url  }}/{{ section.page }}">
+                            <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
+                        </a>
+                        {% elsif page.title == "index" and section.name != "About" %}
+                        <a class="page-scroll" href="{{ section.id | prepend: '#'}} ">
+                            <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
+                        </a>
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+
+                    {% for language in site.data.index.language %}
+                    <li>
+                        <a  id="set_lang_{{ language.locale }}"
+                            class="btn btn-sm set_{{ language.locale }}"
+                            data-locale="{{ language.locale }}">
+                            <img src="{{ language.flag | prepend: site.baseurl }}" height="16" width="16">
+                        </a>
+                    </li>
+                    {% endfor %}
+
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+
+</div>

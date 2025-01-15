@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Recipes
-permalink: /blog/recipes.html
+permalink: /recipes.html
 ---
 
 <div class="row">
@@ -20,6 +20,7 @@ permalink: /blog/recipes.html
 
             {% assign sorted = site.recipes | sort: 'title' %}
 			{% for post in sorted %}
+            {{ post.path }}
             <div class="vote-item">
                 <div class="row">
                     <div class="col-md-10">
