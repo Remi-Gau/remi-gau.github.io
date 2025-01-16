@@ -8,6 +8,16 @@
 #   web:
 #   github:
 
+# 2024
+
+-   name: The past, present, and future of the brain imaging data structure (BIDS)
+    authors: Poldrack R, et al.
+    date: 2024
+    journal: Imaging Neuroscience
+    preprint: 10.48550/arXiv.2309.05768
+    doi: 10.1162/imag_a_00103
+
+# 2022
 
 -   name: 'Open and reproducible neuroimaging: from study inception to publication'
     authors: Niso G., Botvinik-Nezer R., Appelhoff S. et al.
@@ -35,27 +45,21 @@
     journal: Frontiers in Neuroscience
     doi: 10.3389/fnins.2022.871228
 
--   name: 'Open and reproducible neuroimaging: from study inception to publication'
-    authors: Niso, G., Botvinik-Nezer, R., Appelhoff, S., et al.
-    date: 2022
-    journal: Neuroimage
-    doi: 10.1016/j.neuroimage.2022.119623
-    web: https://oreoni.github.io/
-    github: https://github.com/oreoni/oreoni.github.io
+# 2021
 
 -   name: Centering inclusivity in the design of online conferences - An OHBM-Open Science perspective
     authors: Levitis E, Gould van Praag C D, Gau R, Heunis S, et al.
     date: 2021
     journal: GigaScience
     doi: 10.1093/gigascience/giab051
-    web: https://doi.org/10.1109/5.771073
+    preprint: 10.1109/5.771073
 
 -   name: 'Brainhack: developing a culture of open, inclusive, community-driven neuroscience'
     authors: Gau R, Noble S, Heuer K, Bottenhorn K L, Bilgin I P, Yang Y, et al
     date: 2021
     journal: Neuron
     doi: 10.1016/j.neuron.2021.04.001
-    osf: 10.31234/osf.io/rytjq
+    preprint: 10.31234/osf.io/rytjq
     web: http://brainhack.org/brainhack_jupyter_book/
     github: brainhackorg/brainhack_jupyter_book
 
@@ -65,14 +69,15 @@
     journal: Nature
     doi: 10.1038/s41586-020-2314-9
 
+# 2018
+
 -   name: Resolving multisensory and attentional influences across cortical depth in sensory cortices
     authors: Gau R, Bazin PL, Trampel R, Turner R, Noppeney U
     date: 2018
     journal: eLife
     doi: 10.7554/eLife.46856
-# \href{https://osf.io/x3uak/}{};
-# \materialicon{https://doi.org/10.5281/zenodo.3581319}
-# \dataicon{https://osf.io/7ka5j/}
+
+# 2016
 
 -   name: How prior expectations shape multisensory perception
     authors: Gau R, Noppeney, U
@@ -80,8 +85,8 @@
     journal: Neuroimage
     doi: 10.1016/j.neuroimage.2015.09.045
     github: https://github.com/Remi-Gau/McGurk_prior_code
-# \href{https://osf.io/8frkq/}{};
-# \dataicon{https://identifiers.org/neurovault.collection:4172}
+
+# 2013
 
 -   name: 'Noxious stimulation excites serotonergic neurons: a comparison between the lateral paragigantocellular reticular and the raphe magnus nuclei'
     authors: Gau R, Sevoz-Couche C, Hamon M, Bernard JF
@@ -90,12 +95,16 @@
     doi: 10.1016/j.pain.2012.09.012
     web: https://osf.io/ktcv9/
 
+# 2009
+
 -   name: 'Inhibition of Baroreflex by Nociception: A Key Role for Lateral Paragigantocellular Serotonergic Cells'
     authors: Gau R, Sevoz-Couche C, Laguzzi R, Hamon M, Bernard JF
     date: 2009
     journal: Pain
     doi: 10.1016/j.pain.2009.09.018
     web: https://osf.io/cqhvb/
+
+# 2008
 
 -   name: Critical role of B3 serotonergic cells in baroreflex inhibition during the defense reaction triggered by dorsal periaqueductal gray stimulation
     authors: Bernard JF, Netzer F, Gau R, Hamon M, Laguzzi R, Sevoz-Couche C

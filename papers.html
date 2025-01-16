@@ -43,6 +43,9 @@ permalink: /papers.html
                             </span>
                         </h2>
                         <p><span>{{ paper.authors }} </span></p>
+                        {% if paper.preprint %}
+                        <p><small><a href="https://doi.org/{{ paper.preprint }}" tagert="_blank">preprint</a></small></p>
+                        {% endif %}
 
                             {% if loopindex == 1 %}
                                 <span class="vertical-date" style="justify-content: flex-start">

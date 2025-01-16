@@ -5,20 +5,44 @@
 #   server:
 #   doi:
 
--   name: The past, present, and future of the brain imaging data structure (BIDS)
-    authors: Poldrack R, et al.
-    date: 2023
+# 2024
+
+-   name: Impact of a transient neonatal visual deprivation on the development of the ventral occipito-temporal cortex in humans
+    authors: Mattioni S, Rezk M, Gao X, et al.
+    date: 2024
+    server: bioarxiv
+    doi: 10.1101/2024.11.30.625697
+
+-   name: Expertise in reading visual Braille co-opts the reading network
+    authors: Cerpelloni F, Audenhaege A, Matuszewski J, et al.
+    date: 2024
+    server: bioarxiv
+    doi: 10.1101/2024.05.08.593104
+
+-   name: "Predicting Parkinson's disease trajectory using clinical and functional MRI features: a reproduction and replication study"
+    authors: Germani E, Baghwat N, Dugré M, et al.
+    date: 2024
     server: arxiv
-    doi: 10.48550/arXiv.2309.05768
+    doi: 10.48550/arXiv.2403.15405
+
+# 2023
+
+-   name: fNIRS-BIDS, the brain imaging data structure extended to functional near-infrared spectroscopy
+    authors: Luke R, Oostenveld R, Cockx H, et al.
+    date: 2023
+    server: psyarxiv
+    doi: 10.31219/osf.io/7nmcp
+
+# 2022
 
 -   name: 'ARTEM-IS for ERP: Agreed Reporting Template for EEG Methodology-International Standard for documenting studies on Event-Related Potentials'
-    authors: Šoškić A, Kovic V, Algermissen J, Fischer NL, Ganis G, Gau R et al.
+    authors: Šoškić A, Kovic V, Algermissen J, et al.
     date: 2022
     server: psyarxiv
     doi: 10.31234/osf.io/mq5sy
 
 -   name: Lab manuals for efficient and high quality science in a happy and safe work environment
-    authors: Kovacs M, Jaquiery M, Algermissen J, Arriaga P, Gau R et al.
+    authors: Kovacs M, Jaquiery M, Algermissen J, et al.
     date: 2022
     server: metaarxiv
     doi: 10.31222/osf.io/bzcxg
