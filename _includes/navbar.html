@@ -25,17 +25,19 @@
                 <ul class="nav navbar-nav navbar-right" id="i18_navbar">
 
                     {% for section in site.data.landing %}
+                    {% if section.page %}
                     <li>
-                        {% if section.page %}
                         <a class="page-scroll" href="{{  site.url  }}/{{ section.page }}">
                             <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
                         </a>
-                        {% elsif page.title == "index" and section.name != "About" %}
+                    </li>
+                    {% elsif page.title == "index" and section.name != "About" %}
+                    <li>
                         <a class="page-scroll" href="{{ section.id | prepend: '#'}} ">
                             <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
                         </a>
-                        {% endif %}
                     </li>
+                    {% endif %}
                     {% endfor %}
 
                     {% for language in site.data.index.language %}

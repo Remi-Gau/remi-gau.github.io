@@ -45,7 +45,7 @@ h3, h4, h5 {
   > li > a {
     color: #a7b1c2;
     font-weight: 600;
-    padding: 14px 20px 14px 25px;
+    padding: 14px 0px 14px 0px;
   }
   &.navbar-right > li > a {
     color: #999c9e;
@@ -95,7 +95,7 @@ h3, h4, h5 {
 }
 
 .navbar-top-links li a {
-  padding: 20px 10px;
+  padding: 20px 0px;
   min-height: 50px;
 }
 
@@ -2464,11 +2464,13 @@ body {
       background: inherit;
     }
     > a {
-      padding: 25px 10px 15px;
+      padding: 0px 10px 0px;
+      margin: 0px 0px;
     }
   }
   .navbar-scroll .navbar-nav > li > a {
-    padding: 20px 10px;
+    padding: 0px 0px;
+    margin: 0px 0px;
   }
   .navbar-fixed-top {
     border: none !important;
