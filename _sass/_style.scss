@@ -286,15 +286,13 @@ body.canvas-menu .nav-header {
 }
 
 .navbar-toggler {
-  background-color: #3385FF;
-  color: #fff;
   padding: 6px 12px;
   font-size: 14px;
+  color: transparent;
 }
 
 @media (max-width: 768px) {
   .top-navigation .navbar-header {
-    display: block;
     float: none;
   }
 }
@@ -2433,7 +2431,6 @@ body {
       }
       color: #fff;
       height: auto;
-      display: block;
       font-size: 14px;
       background: #3385FF;
       padding: 15px 20px;
@@ -2460,13 +2457,13 @@ body {
       background: inherit;
     }
     > a {
-      padding: 0px 14px 0px;
-      margin: 0px 14px 0px;
+      padding: 0px 7px 0px;
+      margin: 0px 7px 0px;
     }
   }
   .navbar-scroll .navbar-nav > li > a {
-    padding: 0px 14px 0px;
-    margin: 0px 14px 0px;
+    padding: 0px 7px 0px;
+    margin: 0px 7px 0px;
   }
   .navbar-fixed-top {
     border: none !important;
@@ -2787,12 +2784,10 @@ body {
       display: none;
     }
     .navbar .navbar-header {
-      display: block;
       float: none;
       .navbar-toggle {
         background-color: #fff;
         padding: 9px 10px;
-        border: none;
       }
     }
   }
