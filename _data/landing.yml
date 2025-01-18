@@ -52,5 +52,5 @@
 -   id: about-me
     i18n: nav.about_me
     name: About
-    tpl: about.html
+    tpl: dummy.html
     page: about.html
