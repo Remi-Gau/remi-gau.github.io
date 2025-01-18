@@ -11,17 +11,18 @@ permalink: /recipes.html
     </div>
 </div>
 <div class="row d-flex justify-content-center">
-    <div class="col-8 text-center">
+    <div class="col-12 text-center">
         <a href="https://x.com/rkoutnik/status/1085633512839888896">
             <img src="{{ site.url }}/static/assets/img/recipes/why-programmers-like-cooking.png"
                  alt="why-programmers-like-cooking"
-                 width="100%">
+                 width="400px"
+                 >
         </a>
     </div>
 </div>
 
 <div class="row d-flex justify-content-center">
-    <div class="col-10">
+    <div class="col-12">
         <div class="wrapper wrapper-content animated fadeInRight">
 
             {% assign sorted = site.recipes | sort: 'title' %}
@@ -29,20 +30,18 @@ permalink: /recipes.html
             <div class="vote-item">
                 <div class="row">
                     <div class="col-12">
-                        <div class="row vote-actions">
-                        </div>
                         <div class="row">
-                            <a href="{{ post.url | prepend: site.baseurl }}" class="vote-title">
+                            <a href="{{ post.url | prepend: site.baseurl }}" class="recipe-title">
                                 {{ post.title }}
                             </a>
                         </div>
-                        <div class="row d-flex justify-content-between">
+                        <div class="row d-flex justify-content-between recipe-short">
                             <div class="col-8 align-self-center fs-6">
                                 {% if post.blurb %}
-                                <p style="margin-left: 45px;">{{ post.blurb }}</p>
+                                <p>{{ post.blurb }}</p>
                                 {% endif %}
                             </div>
-                            <div class="col-4 d-flex justify-content-center">
+                            <div class="col-4 d-flex align-self-center justify-content-center">
 
                                 {% if post.image %}
                                 <img
@@ -52,16 +51,6 @@ permalink: /recipes.html
                                 {% endif %}
 
                             </div>
-                        </div>
-                        <div class="row vote-info">
-                        {% if site.disqus %}
-                            <i class="fa fa-comments-o"> </i> <a>Comments (<span class="disqus-comment-count" data-disqus-url="{{ site.url }}{{ post.url }}">0</span>)</a>
-                        {% endif %}
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="vote-icon">
-                            {% if post.icon %}<i class="fa {{ post.icon }}"> </i>{% endif %}
                         </div>
                     </div>
                 </div>

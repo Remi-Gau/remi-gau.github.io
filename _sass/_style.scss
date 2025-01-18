@@ -1958,6 +1958,23 @@ ul.clear-list:first-child {
   margin-bottom: 2px;
 }
 
+.recipe-title {
+  color: inherit;
+  &:focus, &:hover {
+    color: inherit;
+  }
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px){
+  .recipe-short {
+    flex-direction: column;
+  }
+}
+
 .vote-info {
   color: #b4b6b8;
   font-size: 12px;
