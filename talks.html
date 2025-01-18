@@ -33,20 +33,13 @@ permalink: /talks.html
 
                 <div class="vertical-timeline-content wow {% if loopindex == 1 %} rotateInUpRight {% else %} rotateInUpLeft {% endif %}">
 
-                    <h1>
-                        <span>
-                            {% if talk.video %}
-                                <h1> <i class="fa fa-youtube"></i> <a href="{{ talk.video }}"> {{ talk.name }} </a> </h1>
-                            {% else %}
-                                <h1> {{ talk.name }} </h1>
-                            {% endif %}
-                        </span>
-                    </h1>
-                    <h2>
-                        <span>
-                            <a href="{{ talk.web }}">Slides</a>
-                        </span>
-                    </h2>
+                    {% if talk.video %}
+                    <h2> <i class="fa fa-youtube"></i> <a href="{{ talk.video }}"> {{ talk.name }} </a> </h2>
+                    {% else %}
+                    <h2> {{ talk.name }} </h2>
+                    {% endif %}
+
+                    <h3> <a href="{{ talk.web }}">Slides</a> </h3>
 
                     {% if loopindex == 1 %}
                     <span class="vertical-date" style="justify-content: flex-start">
@@ -90,33 +83,20 @@ permalink: /talks.html
 
                 <div class="vertical-timeline-content wow {% if loopindex == 1 %} rotateInUpRight {% else %} rotateInUpLeft {% endif %}">
 
-                    <h1>
-                        <span>
-                            {% if workshop.video %}
-                                <h1> <i class="fa fa-youtube"></i> <a href="{{ workshop.video }}"> {{ talk.name }} </a> </h1>
-                            {% else %}
-                                <h1> {{ workshop.name }} </h1>
-                            {% endif %}
-                        </span>
-                    </h1>
-                    <h4>
-                        <span>
-                            {{ workshop.desc }}
-                        </span>
-                    </h4>
+                    {% if workshop.video %}
+                    <h2> <i class="fa fa-youtube"></i> <a href="{{ workshop.video }}"> {{ talk.name }} </a> </h2>
+                    {% else %}
+                    <h2> {{ workshop.name }} </h2>
+                    {% endif %}
+
+                    <h3> {{ workshop.desc }} </h3>
 
                     {% if loopindex == 1 %}
                     <span class="vertical-date" style="justify-content: flex-start">
                     {% else %}
                     <span class="vertical-date" style="justify-content: flex-end">
                     {% endif %}
-                        <div>
-                        <h2>
-                            <span>
-                                <a href="{{ workshop.web }}">Material</a>
-                            </span>
-                        </h2>
-                        </div>
+                        <h3> <a href="{{ workshop.web }}">Material</a> </h3>
                     </span>
 
                 </div>

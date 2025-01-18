@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 28px;
 }
 
 h2 {
@@ -21,11 +21,11 @@ h2 {
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 h4 {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 h5 {
@@ -33,12 +33,11 @@ h5 {
 }
 
 h6 {
-  font-size: 10px;
+  font-size: 8px;
 }
 
 h3, h4, h5 {
   margin-top: 5px;
-  font-weight: 600;
 }
 
 .nav {
@@ -1144,9 +1143,6 @@ label.error {
 
 @media only screen and (min-width: 768px) {
   .vertical-timeline-content {
-    h2 {
-      font-size: 18px;
-    }
     p {
       font-size: 13px;
     }
@@ -2464,13 +2460,13 @@ body {
       background: inherit;
     }
     > a {
-      padding: 0px 10px 0px;
-      margin: 0px 0px;
+      padding: 0px 14px 0px;
+      margin: 0px 14px 0px;
     }
   }
   .navbar-scroll .navbar-nav > li > a {
-    padding: 0px 0px;
-    margin: 0px 0px;
+    padding: 0px 14px 0px;
+    margin: 0px 14px 0px;
   }
   .navbar-fixed-top {
     border: none !important;
@@ -2590,7 +2586,6 @@ body {
       color: #3385FF;
     }
     h2 {
-      font-size: 18px;
       margin-top: 5px;
     }
   }
