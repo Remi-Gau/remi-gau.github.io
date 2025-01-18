@@ -19,5 +19,5 @@ cooking time : 2 hrs
 ## Préparation
 
 1.  Tout mélanger dans une casserole.
-2.  Laisser cuire à **très** feu doux pendant... longtemps. Très longtemps (> 2 heures).
+2.  Laisser cuire à feu **très** doux pendant... longtemps. Très longtemps (> 2 heures).
 3.  Gouter régulièrement pour ajuster l'assaisonnement à votre goût.
