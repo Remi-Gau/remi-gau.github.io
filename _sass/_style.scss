@@ -98,7 +98,7 @@ h3, h4, h5 {
   min-height: 50px;
 }
 
-.dd-item > button, code {
+.dd-item > button {
   white-space: nowrap;
 }
 
@@ -1329,12 +1329,9 @@ img.circle-border {
   margin-bottom: 10px;
 }
 
-code {
-  background-color: #F9F2F4;
-  border-radius: 4px;
-  color: #ca4440;
+pre {
   font-size: 90%;
-  padding: 2px 4px;
+  padding: 16px
 }
 
 .ibox-content, .ibox-title {

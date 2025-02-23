@@ -6,7 +6,7 @@ categories: [recipe]
 image: rochers-coco.jpg
 prep time : 5 min
 cooking time : 10-15 min
-blurb: Depuis que l'on m'a dit qu'ils ressemblent à des tétons, c'est devenu "my greatest tits" !
+introduction: Depuis que l'on m'a dit qu'ils ressemblent à des tétons, c'est devenu "my greatest tits" !
 ---
 
 ## Requirements

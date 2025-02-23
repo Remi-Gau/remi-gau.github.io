@@ -7,3 +7,4 @@ _site
 node_modules
 npm-debug.log
 .vscode/*.log
+tmp

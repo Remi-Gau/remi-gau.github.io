@@ -3,7 +3,7 @@ layout: recipe
 title: Dundee
 tags: [cake]
 categories: [recipe]
-blurb: |
+introduction: |
     C'est ma recette de gâteau rapide, quasi inratable "même avec 2 grammes d'alcool dans chaque oeil".
     A aussi l'avantage d'être sans gluten vu que la poudre d'amandes s'occupe de la consistence.
 ---
