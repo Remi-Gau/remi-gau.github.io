@@ -4,8 +4,8 @@
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
 -   name: cohort creator
     i18n: Markdown
-    gh_user: nilearn
-    repo: nilearn
+    gh_user: neurodatascience
+    repo: cohort_creator
     url: https://cohort-creator.readthedocs.io/en/latest/
     img: https://avatars.githubusercontent.com/u/50719251?s=200&v=4
     desc: Creates a neuroimaging cohort by aggregating data across datasets.
@@ -65,14 +65,6 @@
     url: https://github.com/Remi-Gau/bids2cite
     img: /static/assets/img/landing/bids2cite_logo.png
     desc: Create a citation file for a BIDS dataset.
-
--   name: BIDS Starter Kit
-    i18n: Markdown
-    gh_user: bids-standard
-    repo: bids-starter-kit
-    url: https://github.com/bids-standard/bids-starter-kit
-    img: /static/assets/img/landing/bids_logo.png
-    desc: If you don't know anything about the Brain Imaging Data Structure but wish you did.
 
 -   name: Online neuroimaging resources
     i18n: Markdown

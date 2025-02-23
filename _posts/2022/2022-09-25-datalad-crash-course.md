@@ -294,7 +294,7 @@ An advice that you might hear is:
 </blockquote>
 </p>
 <p>
-More serious advices can be found in the
+More serious advice can be found in the
 <a href="https://the-turing-way.netlify.app/reproducible-research/vcs/vcs-git-compare.html#good-practice" target="_blank">Turing
 way book</a>
 </p>

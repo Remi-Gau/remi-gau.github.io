@@ -16,7 +16,7 @@ categories: []
 Recently, [Anibal Sólon](https://anibalsolon.com/) asked for tips about writing
 clean MATLAB🔒 code.
 
-So when a confirmed wizard asks you for advices, you try to forget that you
+So when a confirmed wizard asks you for advice, you try to forget that you
 feel like an apprentice sorcerer most of the time and you respond with some of
 the things you learned along the way[^1]<sup>,</sup>[^2].
 
