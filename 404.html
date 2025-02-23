@@ -1,29 +1,18 @@
 ---
-layout: null
+layout: default
 title: 404
 permalink: /404.html
 ---
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 Error</title>
-    <!-- Mainly CSS -->
-    <link href="{{ "/static/assets/app-20180125.min.css" | prepend: site.baseurl }}" rel="stylesheet">
-    <link href="{{ "/static/css/custom.css" | prepend: site.baseurl }}" rel="stylesheet">
-</head>
 
-<body class="gray-bg">
 
-    <div class="container text-center animated fadeInDown">
+    <div class="container text-center">
 
-        <div class="row col-sm-10 col-sm-offset-1" style="position: relative; margin-top: 2em">
-            <div style="position: absolute;" >
-                <img src="https://http.cat/404">
-                <div class="error-desc" style="font-size: 120%;  margin-top: 2em">
+        <div class="row mt-1">
+            <div class="col-12">
+                <img src="https://http.cat/404" width=100%>
+                <div class="mt-1">
+                    <p>Sorry, but the page you are looking for has not been found.</p>
                     <p>
-                    Sorry, but the page you are looking for has not been found.<br>
                     Try checking the URL for error, then hit the refresh button on your browser
                     or try found something else in my website.
                     </p>
@@ -34,9 +23,4 @@ permalink: /404.html
             </div>
         </div>
 
-
     </div>
-    <!-- Mainly scripts -->
-    <script src="{{"/static/assets/app-20180125.min.js"| prepend: site.baseurl }}"></script>
-</body>
-</html>
