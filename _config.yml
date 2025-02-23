@@ -1,6 +1,4 @@
 ---
-# Welcome to Jekyll!
-
 # Website settings
 title: Remi Gau
 description: Remi's personal website
@@ -8,6 +6,12 @@ keywords: Remi,Gau,blog
 # baseurl: # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
 url: https://remi-gau.github.io # url should be 'http://<github_username>.github.io/homepage' as before
 img_path: /remi-gau.github.io/static/assets/img/blog # url should be '/homepage/static/assets/img/blog' as before
+
+exclude:
+-   cooklang_recipes
+-   maint_tools
+-   vendor
+
 
 # author -- index page "about me" section
 author: # change following line to your information.
@@ -22,7 +26,8 @@ author: # change following line to your information.
     mastodon: RemiGau
     email:
     cv: https://github.com/Remi-Gau/CV/raw/master/CV_English.pdf
-  # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
+    # skill icons are on avatar's left and right side.
+    # Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
     skill_icon1:
     -   name: fa-biohazard
     -   name: fa-biohazard

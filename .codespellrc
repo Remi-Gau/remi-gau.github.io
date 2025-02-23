@@ -1,4 +1,4 @@
 [codespell]
-skip = *.log,.git,*.svg,*.json,.jekyll*,_site,package*,*.js,*.scss,*-fr.md,recipes/TODO/*,recipes/*-fr.cook
+skip = *.log,.git,*.svg,*.json,.jekyll*,_site,package*,*.js,*.scss,*-fr.md,cooklang_recipes/TODO/*,cooklang_recipes/*-fr.cook
 ignore-words-list = rouge,rollin,groupe
 builtin = clear,rare

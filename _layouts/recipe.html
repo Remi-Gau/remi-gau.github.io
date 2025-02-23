@@ -12,13 +12,29 @@ layout: default
                 {% endfor %}
             </div>
 
-            <div class="text-center article-title">
+            <div class="article-title d-flex flex-col align-items-center">
                 <h1>
                     {{ page.title }}
                 </h1>
-                <h3>
+
+                {% if page.prep_time %}
+                <p class="px-1 border border-1 border-secondary rounded rounded-1 fw-medium"
+                    style="width: fit-content; font-size: 90%;">
+                    prep time : {{ page.prep_time }}
+                </p>
+                {% endif %}
+
+                {% if page.cook_time %}
+                <p  class="px-1 border border-1 border-secondary rounded rounded-1 fw-medium"
+                style="width: fit-content; font-size: 90%;">
+                    cooking time : {{ page.cook_time }}</p>
+                {% endif %}
+
+
+                <h4>
                     <a href="https://github.com/Remi-Gau/remi-gau.github.io/blob/main/{{ page.path }}">source</a>
-                </h3>
+                </h4>
+
                 <div class="navy-line"></div>
             </div>
 
