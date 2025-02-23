@@ -271,7 +271,6 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-redirect-from
-  jekyll-relative-links
   webrick
 
 BUNDLED WITH
