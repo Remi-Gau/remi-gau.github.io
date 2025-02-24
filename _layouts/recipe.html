@@ -66,14 +66,14 @@ layout: default
 
             <hr>
 
-            <div class="row">
-                <div class="col-md-6">
+            <div class="row justify-content-center">
+                <div class="col-5">
                         <h5 style="display: inline;">Tags:</h5>
                         {% for tag in page.tags %}
                             <button class="btn btn-white btn-xs" type="button">{{ tag }}</button>
                         {% endfor %}
                 </div>
-                <div class="col-md-6">
+                <div class="col-5">
                     <div class="small text-right">
                         <div>
                         {% if site.disqus %}
@@ -86,8 +86,8 @@ layout: default
 
             <br>
 
-            <div class="row">
-                <div class="col-lg-12">
+            <div class="row justify-content-center">
+                <div class="col-10">
                     <!-- donate -->
                     {% if site.donation %}
                     {% include donate.html %}
