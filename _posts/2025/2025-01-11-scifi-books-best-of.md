@@ -3,7 +3,7 @@ layout: post
 title: "Best of SciFi books: a list"
 date: "2025-01-11"
 tags: [list, books, scifi]
-categories: []
+category: []
 ---
 
 I often get asked for SciFi book recommendations.

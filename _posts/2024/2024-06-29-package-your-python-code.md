@@ -3,7 +3,7 @@ layout: post
 title: "Stop using notebooks and package your python code instead."
 date: "2024-06-29"
 tags: [how-to]
-categories: []
+category: []
 ---
 
 If you are drowning in notebooks

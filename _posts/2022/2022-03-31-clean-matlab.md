@@ -3,7 +3,7 @@ layout: post
 title: MATLAB clean code
 date: "2022-03-31"
 tags: [matlab, clean code]
-categories: []
+category: []
 ---
 
 <div class="row" style="margin-bottom: 50px;">

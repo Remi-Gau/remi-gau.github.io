@@ -3,7 +3,7 @@ layout: post
 title: "Hey MATLAB! Check my code!"
 date: "2020-05-29 00:00"
 tags: []
-categories: []
+category: []
 ---
 
 Taken from this

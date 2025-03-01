@@ -3,7 +3,7 @@ layout: post
 title: Datalad crash course
 date: "2022-09-25"
 tags: [datalad, tutorial, data management]
-categories: []
+category: []
 ---
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7110374.svg)](https://doi.org/10.5281/zenodo.7110374)

@@ -7,11 +7,6 @@ layout: default
         <div class="col-sm-12">
             <div class="ibox">
                 <div class="ibox-content">
-                    <div class="pull-right">
-                    	{% for category in page.categories %}
-                        	<a class="btn btn-white btn-xs" href="{{ category | downcase | prepend: '/' | prepend: site.baseurl }}">{{ category }}</a>
-                        {% endfor %}
-                    </div>
                     <div class="text-center article-title">
                         <span class="text-muted"><i class="fa fa-clock-o"></i> {{ page.date | date: "%-d %b %Y" }}</span>
                         <h1>

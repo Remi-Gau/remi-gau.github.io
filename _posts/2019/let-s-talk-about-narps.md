@@ -3,7 +3,7 @@ layout: post
 title: Let's talk about NARPS
 date: '2019-09-06 14:58'
 tags: []
-categories: []
+category: []
 ---
 
 So there is a new study in neuroimaging that has more authors than pages. It is called Neuroimaging Analysis Replication and Prediction Study ([NARPS](www.narps.info)).

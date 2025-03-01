@@ -3,7 +3,7 @@ layout: post
 title: "A primer to 3... Hum, no! Four documentation frameworks!!!!"
 date: "2024-03-09"
 tags: [tuto]
-categories: []
+category: []
 ---
 
 If "[untested code is broken code](https://youtu.be/xOKPKiAhey4?t=540)" then "undocumented code is no code at all".
