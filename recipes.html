@@ -30,10 +30,10 @@ permalink: /recipes.html
             {% assign categories = categories | uniq %}
 
             {% assign sorted = site.recipes | sort: 'title' %}
-            
+
             {% for category in categories %}
             <h2 class="fs-2 mt-4 fw-bold">{{ category }}</h2>
-            
+
             {% for post in sorted %}
             {% if post.category != category %}
             {% continue %}

@@ -16,9 +16,9 @@ output_yaml = root_folder / "_data" / "podcasts.yml"
 def parse_opml(file_path):
     tree = ET.parse(file_path)
     root = tree.getroot()
-    
+
     podcasts = []
-    
+
     for outline in root.findall(".//outline"):
         podcast = {
             "title": outline.get("text"),
@@ -29,7 +29,7 @@ def parse_opml(file_path):
         }
         if podcast["title"] != "Comments on":
             podcasts.append(podcast)
-    
+
     return podcasts
 
 def save_to_yaml(data, output_file):
@@ -39,4 +39,3 @@ def save_to_yaml(data, output_file):
 
 podcasts = parse_opml(opml_file)
 save_to_yaml(podcasts, output_yaml)
-

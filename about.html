@@ -73,7 +73,7 @@ permalink: /about.html
         </ul>
       </p>
 
-      
+
       <h3 id="podcasts">Podcasts I listen to <a href="{{ page.url }}#podcasts">#</a></h3>
 
       <div class="col-8">
@@ -82,17 +82,17 @@ permalink: /about.html
         <ul>
           {% for podcast in site.data.podcasts %}
           <li>
-            <div>  
+            <div>
               <a href="{{ podcast.html_url }}" target="_blank">{{ podcast.title }}</a>
             </div>
-            <div class="mt-2 mx-5 mb-4">  
+            <div class="mt-2 mx-5 mb-4">
               <img src="{{ podcast.image_url }}" alt="" height="96" width="96"
-        
+
               >
             </div>
           </li>
           {% endfor %}
-        </ul> 
+        </ul>
 
       </div>
 
