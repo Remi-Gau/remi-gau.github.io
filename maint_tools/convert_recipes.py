@@ -12,7 +12,7 @@ for recipe in recipe_folder.glob("*.cook"):
     recipe = recipe.relative_to(recipe_folder)
     output_file = output_folder.relative_to(root_folder) / f"{recipe.stem}.md"
     cmd = f"cook recipe {recipe} -o ../{output_file}"
-    print(cmd)
+    print(f" {cmd}")
     run(cmd.split())
 
 for recipe in output_folder.glob("*.md"):

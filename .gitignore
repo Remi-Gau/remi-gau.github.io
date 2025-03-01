@@ -1,10 +1,11 @@
 _site
-.sass-cache
-.jekyll-metadata
-.jekyll-cache
-.idea
 .DS_Store
+.idea
+.jekyll-cache
+.jekyll-metadata
+.sass-cache
+.vscode/*.log
 node_modules
 npm-debug.log
-.vscode/*.log
+podcasts.html
 tmp
