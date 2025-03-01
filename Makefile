@@ -1,4 +1,4 @@
-all: clean get_cook_cli convert_recipe podcasts.html
+all: clean get_cook_cli convert_recipe
 
 clean:
 	rm -rf _site
