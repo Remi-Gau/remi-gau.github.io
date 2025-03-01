@@ -6,12 +6,6 @@ layout: default
     <div class="row">
         <div class="col-12">
 
-            <div class="pull-right">
-                {% for category in page.categories %}
-                    <a class="btn btn-white btn-xs" href="{{ category | downcase | prepend: '/' | prepend: site.baseurl }}">{{ category }}</a>
-                {% endfor %}
-            </div>
-
             <div class="article-title d-flex flex-col align-items-center">
                 <h1>
                     {{ page.title }}
@@ -25,11 +19,10 @@ layout: default
                 {% endif %}
 
                 {% if page.cook_time %}
-                <p  class="px-1 border border-1 border-secondary rounded rounded-1 fw-medium"
-                style="width: fit-content; font-size: 90%;">
+                <p class="px-1 border border-1 border-secondary rounded rounded-1 fw-medium"
+                    style="width: fit-content; font-size: 90%;">
                     cooking time : {{ page.cook_time }}</p>
                 {% endif %}
-
 
                 <h4>
                     <a
@@ -43,11 +36,8 @@ layout: default
                 {% if page.image %}
                 <div class="row d-flex justify-content-center align-items-center">
                     <div class="col-4">
-                        <img
-                        src="{{ site.url }}/static/assets/img/recipes/{{ page.image }}"
-                        class="img-responsive"
-                        alt="{{ page.title }}"
-                        width="100%">
+                        <img src="{{ site.url }}/static/assets/img/recipes/{{ page.image }}" class="img-responsive"
+                            alt="{{ page.title }}" width="100%">
                     </div>
                 </div>
                 {% endif %}
@@ -55,7 +45,7 @@ layout: default
                     <div class="col-10">
                         {% if page.makeQRCode %}
                         <!-- see http://www.theemptyset.co.uk/2020/12/28/Making-QR-codes-for-Jekyll-pages.html -->
-                        _QR-"{{page.title}}".png  "https://remi-gau.github.io{{ page.url }}"
+                        _QR-"{{page.title}}".png "https://remi-gau.github.io{{ page.url }}"
                         {% endif %}
                         {% if page.introduction %}
                         <p>{{ page.introduction }}</p>
@@ -65,21 +55,30 @@ layout: default
                 </div>
             </div>
 
+            <div class="row text-center justify-content-center">
+                <div class="col-lg-10">
+                    <h5>
+                        Recipe powered with <a href="https://cooklang.org/">CookLang markup</a>.
+                    </h5>
+                </div>
+            </div>
+
             <hr>
 
             <div class="row justify-content-center">
                 <div class="col-5">
-                        <h5 style="display: inline;">Tags:</h5>
-                        {% for tag in page.tags %}
-                            <button class="btn btn-white btn-xs" type="button">{{ tag }}</button>
-                        {% endfor %}
+                    <h5 style="display: inline;">Tags:</h5>
+                    {% for tag in page.tags %}
+                    <button class="btn btn-white btn-xs" type="button">{{ tag }}</button>
+                    {% endfor %}
                 </div>
                 <div class="col-5">
                     <div class="small text-right">
                         <div>
-                        {% if site.disqus %}
-                        <i class="fa fa-comments-o"> </i> <span class="disqus-comment-count" data-disqus-url="{{ site.url }}{{ page.url }}">0</span> comments
-                        {% endif %}
+                            {% if site.disqus %}
+                            <i class="fa fa-comments-o"> </i> <span class="disqus-comment-count"
+                                data-disqus-url="{{ site.url }}{{ page.url }}">0</span> comments
+                            {% endif %}
                         </div>
                     </div>
                 </div>
