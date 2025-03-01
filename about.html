@@ -8,17 +8,14 @@ permalink: /about.html
 
   <div class="row">
     <div class="col-12 text-center">
-        <div class="navy-line"></div>
-        <h1>Couple of things about me</h1>
+      <div class="navy-line"></div>
+      <h1>Couple of things about me</h1>
     </div>
   </div>
 
   <div class="row d-flex justify-content-center" style="margin: 30px">
     <div class="col-3">
-        <img src="{{ site.author.avatar | prepend: site.baseurl }}"
-        width=100%
-        class="img-responsive img-circle"
-        alt="">
+      <img src="{{ site.author.avatar | prepend: site.baseurl }}" width=100% class="img-responsive img-circle" alt="">
     </div>
   </div>
 
@@ -34,7 +31,7 @@ permalink: /about.html
 
   <div class="row d-flex justify-content-center" style="margin: 30px">
 
-    <div class="col-10 post-content">
+    <div class="col-12 post-content">
 
       <p>
         I have a background both in biology and psychology.
@@ -48,47 +45,47 @@ permalink: /about.html
       </p>
       <p>
         I am passionate about open science that I see as:
-        <ul>
-          <li>a way to build a more inclusive research community based on sharing
-            and cooperation rather than hoarding and competition,</li>
-          <li>a way to address some of the replicability and reproducibility issues
-            that are affecting many areas of science by making the sharing of code and data more common,</li>
-          <li>a set of tools and practices that can reduce inefficiencies
-            in the research process and can benefit the overall community
-            as well as the individual scientists.</li>
-        </ul>
+      <ul>
+        <li>a way to build a more inclusive research community based on sharing
+          and cooperation rather than hoarding and competition,</li>
+        <li>a way to address some of the replicability and reproducibility issues
+          that are affecting many areas of science by making the sharing of code and data more common,</li>
+        <li>a set of tools and practices that can reduce inefficiencies
+          in the research process and can benefit the overall community
+          as well as the individual scientists.</li>
+      </ul>
       </p>
       <p>
         I am also one of the maintainers of:
-        <ul>
-          <li><a href="https://nilearn.github.io/stable/index.html" target="_blank">Nilearn</a> the main python package for machine learning and visualization in neuroImaging.</li>
-          <li>the Brain imaging data structure (<a href="https://bids-specification.readthedocs.io/en/stable/" target="_blank">BIDS - a standard to help organize and share neuroimaging data)</a></li>
-          <li><a href="https://github.com/bids-standard/bids-matlab" target="_blank">BIDS-matlab</a></li>
-        </ul>
-        and actively involved in 2 projects aimed at standardizing the reporting of methods
-        and resulting in neuroimaging:
-        <ul>
-          <li><a href="https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=3728" target="_blank">COBIDAS</a></li>
-          <li><a href="https://osf.io/pvrn6/" target="_blank">ARTEM-IS</a></li>
-        </ul>
+      <ul>
+        <li><a href="https://nilearn.github.io/stable/index.html" target="_blank">Nilearn</a> the main python package
+          for machine learning and visualization in neuroImaging.</li>
+        <li>the Brain imaging data structure (<a href="https://bids-specification.readthedocs.io/en/stable/"
+            target="_blank">BIDS - a standard to help organize and share neuroimaging data)</a></li>
+        <li><a href="https://github.com/bids-standard/bids-matlab" target="_blank">BIDS-matlab</a></li>
+      </ul>
+      and actively involved in 2 projects aimed at standardizing the reporting of methods
+      and resulting in neuroimaging:
+      <ul>
+        <li><a href="https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=3728" target="_blank">COBIDAS</a></li>
+        <li><a href="https://osf.io/pvrn6/" target="_blank">ARTEM-IS</a></li>
+      </ul>
       </p>
 
 
       <h3 id="podcasts">Podcasts I listen to <a href="{{ page.url }}#podcasts">#</a></h3>
 
-      <div class="col-8">
-          <p>I use <a href="https://podcastaddict.com/">PodcastAddict</a> to manage my subscriptions.</p>
+      <div class="col-12">
+        <p>I use <a href="https://podcastaddict.com/">PodcastAddict</a> to manage my subscriptions.</p>
 
-        <ul>
+        <ul class="d-flex flex-wrap justify-content-center" style="list-style-type: none;">
           {% for podcast in site.data.podcasts %}
-          <li>
-            <div>
+          <li class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-4 list-group-item">
+            <div class="text-center text-wrap">
               <a href="{{ podcast.html_url }}" target="_blank">{{ podcast.title }}</a>
             </div>
-            <div class="mt-2 mx-5 mb-4">
-              <img src="{{ podcast.image_url }}" alt="" height="96" width="96"
-
-              >
+            <div class="pb-5 pt-3 text-center">
+              <img src="{{ podcast.image_url }}" alt="" height="128" width="128">
             </div>
           </li>
           {% endfor %}
