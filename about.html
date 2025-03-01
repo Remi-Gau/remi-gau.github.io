@@ -73,6 +73,29 @@ permalink: /about.html
         </ul>
       </p>
 
+      
+      <h3 id="podcasts">Podcasts I listen to <a href="{{ page.url }}#podcasts">#</a></h3>
+
+      <div class="col-8">
+          <p>I use <a href="https://podcastaddict.com/">PodcastAddict</a> to manage my subscriptions.</p>
+
+        <ul>
+          {% for podcast in site.data.podcasts %}
+          <li>
+            <div>  
+              <a href="{{ podcast.html_url }}" target="_blank">{{ podcast.title }}</a>
+            </div>
+            <div class="mt-2 mx-5 mb-4">  
+              <img src="{{ podcast.image_url }}" alt="" height="96" width="96"
+        
+              >
+            </div>
+          </li>
+          {% endfor %}
+        </ul> 
+
+      </div>
+
     </div>
 
   </div>
