@@ -2,27 +2,72 @@
 
 import os
 import pathlib
+import re
 from subprocess import run
+
+import yaml
+from rich import print
 
 root_folder = pathlib.Path(__file__).parents[1]
 recipe_folder = root_folder / "cooklang_recipes"
 output_folder = root_folder / "_recipes"
 
-os.chdir(recipe_folder)
 
-for recipe in recipe_folder.glob("*.cook"):
-    recipe = recipe.relative_to(recipe_folder)
-    output_file = output_folder.relative_to(root_folder) / f"{recipe.stem}.md"
-    cmd = f"cook recipe {recipe} -o ../{output_file}"
-    print(f" {cmd}")
-    run(cmd.split())
+def extract_frontmatter(md_text: str):
+    """
+    Extract frontmatter from a Markdown string and returns it as a dictionary.
 
-for recipe in output_folder.glob("*.md"):
-    with recipe.open("r", encoding="utf-8") as file:
-        lines = file.readlines()
+    Args:
+        md_text (str): The Markdown content as a string.
 
-    # Remove lines that only contain "# "
-    cleaned_lines = [line for line in lines if line.strip() != "#"]
+    Returns
+    -------
+        dict: A dictionary containing frontmatter data,
+              or an empty dict if no frontmatter is found.
+    """
+    match = re.match(r"^---\n(.*?)\n---\n", md_text, re.DOTALL)
+    if match:
+        frontmatter = match.group(1)
+        return yaml.safe_load(frontmatter)  # Convert YAML to dict
+    return {}
 
-    with recipe.open("w", encoding="utf-8") as file:
-        file.writelines(cleaned_lines)
+
+def validate_frontmatter(frontmatter: dict):
+    """Validate the frontmatter of a recipe."""
+    for key in ["category", "prep_time"]:
+        if key not in frontmatter:
+            raise ValueError(f"Frontmatter must contain a {key} key.")
+
+
+def main():
+    """Convert cooklang recipes to markdown and clean them up."""
+    os.chdir(recipe_folder)
+
+    for recipe in recipe_folder.glob("*.cook"):
+        recipe = recipe.relative_to(recipe_folder)
+        output_file = (
+            output_folder.relative_to(root_folder) / f"{recipe.stem}.md"
+        )
+        cmd = f"cook recipe {recipe} -o ../{output_file}"
+        print(f" {cmd}")
+        run(cmd.split())
+
+    for recipe in output_folder.glob("*.md"):
+        print(f"Cleaning {recipe}")
+
+        with recipe.open("r", encoding="utf-8") as file:
+            content = file.read()
+        frontmatter = extract_frontmatter(content)
+        validate_frontmatter(frontmatter)
+
+        with recipe.open("r", encoding="utf-8") as file:
+            lines = file.readlines()
+
+        cleaned_lines = [line for line in lines if line.strip() != "#"]
+
+        with recipe.open("w", encoding="utf-8") as file:
+            file.writelines(cleaned_lines)
+
+
+if __name__ == "__main__":
+    main()

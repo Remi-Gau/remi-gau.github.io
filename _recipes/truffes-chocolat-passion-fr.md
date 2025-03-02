@@ -1,9 +1,9 @@
 ---
 layout: recipe
 title: Truffes chocolat-passion
-tags: ["?"]
-categories: [recipe]
+category: dessert
 image: truffes-passion.jpg
+prep_time: 20 min
 ---
 
 ## Requirements

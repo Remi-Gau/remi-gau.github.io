@@ -1,8 +1,9 @@
 ---
 layout: recipe
 title: Crème brulée au piment d’Espelette
-tags: [cake]
-categories: [recipe]
+prep_time : 20 min
+cook_time : 25 min
+category: cake
 ---
 
 <!-- (prép : 10 min) pour 6 personnes -->
