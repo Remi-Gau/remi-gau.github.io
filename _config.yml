@@ -8,8 +8,11 @@ url: https://remi-gau.github.io # url should be 'http://<github_username>.github
 img_path: /remi-gau.github.io/static/assets/img/blog # url should be '/homepage/static/assets/img/blog' as before
 
 exclude:
+-   .pre-commit-config.yaml
 -   cooklang_recipes
 -   maint_tools
+-   makefile
+-   pyproject.toml
 -   vendor
 
 

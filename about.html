@@ -78,17 +78,21 @@ permalink: /about.html
       <div class="col-12">
         <p>I use <a href="https://podcastaddict.com/">PodcastAddict</a> to manage my subscriptions.</p>
 
-        <ul class="d-flex flex-wrap justify-content-center" style="list-style-type: none;">
+        <ul class="row d-flex flex-wrap justify-content-center">
+
           {% for podcast in site.data.podcasts %}
-          <li class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-4 list-group-item">
-            <div class="text-center text-wrap">
-              <a href="{{ podcast.html_url }}" target="_blank">{{ podcast.title }}</a>
-            </div>
-            <div class="pb-5 pt-3 text-center">
-              <img src="{{ podcast.image_url }}" alt="" height="128" width="128">
-            </div>
+          <li class="col-lg-3 col-md-4 col-sm-4 col-xs-4 list-group-item mb-5">
+              <div class="d-flex flex-column" style="height: 200px;">
+                <div class="text-center text-wrap my-auto">
+                  <a href="{{ podcast.html_url }}" target="_blank">{{ podcast.title }}</a>
+                </div>
+                <div class="text-center">
+                  <img src="{{ podcast.image_url }}" alt="" height="128" width="128">
+                </div>
+              </div>
           </li>
           {% endfor %}
+
         </ul>
 
       </div>

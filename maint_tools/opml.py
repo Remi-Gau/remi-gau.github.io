@@ -5,6 +5,7 @@ TODO:
 """
 
 import xml.etree.ElementTree as ET
+from collections import OrderedDict
 from pathlib import Path
 
 import requests
@@ -12,7 +13,7 @@ import yaml
 
 root_folder = Path(__file__).parents[1]
 
-opml_file = root_folder / "OPML_export_20250301_202833.opml"
+opml_file = root_folder / "data" / "OPML_export_20250301_202833.opml"
 
 output_yaml = root_folder / "_data" / "podcasts.yml"
 
@@ -27,19 +28,25 @@ def parse_opml(file_path):
     for outline in root.findall(".//outline"):
         # check htmlUrl with request to see if it still exists
         request = requests.get(outline.get("htmlUrl"))
-        if request.status_code != 200:
+        if request.status_code not in [200, 404]:
             print(f"Error: {request.status_code} - {outline.get('htmlUrl')}")
+            if request.status_code in [404]:
+                continue
+
+        podcast = OrderedDict(
+            {
+                "title": outline.get("text"),
+                "type": outline.get("type"),
+                "rss_url": outline.get("xmlUrl"),
+                "html_url": outline.get("htmlUrl"),
+                "image_url": outline.get("imageUrl"),
+            }
+        )
+
+        if podcast["title"] in ["Comments on"]:
             continue
 
-        podcast = {
-            "title": outline.get("text"),
-            "type": outline.get("type"),
-            "rss_url": outline.get("xmlUrl"),
-            "html_url": outline.get("htmlUrl"),
-            "image_url": outline.get("imageUrl"),
-        }
-        if podcast["title"] != "Comments on":
-            podcasts.append(podcast)
+        podcasts.append(podcast)
 
     return podcasts
 
