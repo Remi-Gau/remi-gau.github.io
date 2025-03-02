@@ -3,6 +3,7 @@
 import os
 import pathlib
 import re
+import shutil
 from subprocess import run
 
 import yaml
@@ -46,8 +47,9 @@ def copy_images():
         output_image = (
             static_folder / "assets" / "img" / "recipes" / image.name
         )
-        print(f"Copying {image} to {output_image}")
-        image.rename(output_image)
+        print(f" Copying {image} to {output_image}")
+        # copy not move
+        shutil.copy(image, output_image)
 
 
 def main():
@@ -64,7 +66,7 @@ def main():
         run(cmd.split())
 
     for recipe in output_folder.glob("*.md"):
-        print(f"Cleaning {recipe}")
+        print(f" Cleaning {recipe}")
 
         with recipe.open("r", encoding="utf-8") as file:
             content = file.read()
@@ -87,6 +89,8 @@ def main():
 
         with recipe.open("w", encoding="utf-8") as file:
             file.writelines(cleaned_lines)
+
+    copy_images()
 
 
 if __name__ == "__main__":
