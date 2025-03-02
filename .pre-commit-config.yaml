@@ -37,3 +37,15 @@ repos:
     hooks:
     -   id: pretty-format-toml
         args: [--autofix, --indent, '4']
+
+
+-   repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.9.7
+    hooks:
+    # Run the linter.
+    -   id: ruff
+        # args: [--statistics]
+        args: [--fix, --show-fixes]
+    # Run the formatter.
+    -   id: ruff-format
+        # args: [--diff]

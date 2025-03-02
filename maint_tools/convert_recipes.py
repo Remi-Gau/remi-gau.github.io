@@ -1,10 +1,12 @@
+"""Convert recipes from cooklang to markdown using the cook CLI."""
+
+import os
 import pathlib
 from subprocess import run
-import os
 
 root_folder = pathlib.Path(__file__).parents[1]
 recipe_folder = root_folder / "cooklang_recipes"
-output_folder  = root_folder / "_recipes"
+output_folder = root_folder / "_recipes"
 
 os.chdir(recipe_folder)
 
