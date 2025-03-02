@@ -32,7 +32,7 @@ permalink: /recipes.html
             {% assign sorted = site.recipes | sort: 'title' %}
 
             {% for category in categories %}
-            <h2 id="{{ category }}" class="fs-2 mt-4 fw-bold">{{ category }}</h2>
+            <h2 id="{{ category }}" class="fs-2 mt-4 fw-bold">{{ category | capitalize }}</h2>
 
             {% for post in sorted %}
             {% if post.category != category %}
@@ -73,7 +73,10 @@ permalink: /recipes.html
 
                                 {% if post.image %}
                                 <img src="{{ site.url }}/static/assets/img/recipes/{{ post.image }}"
-                                    class="img-responsive" width="200px">
+                                    class="img-responsive"
+                                    width="200px"
+                                    alt="image {{ post.title }}"
+                                    >
                                 {% endif %}
 
                             </div>

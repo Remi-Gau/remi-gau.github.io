@@ -11,6 +11,7 @@ from rich import print
 root_folder = pathlib.Path(__file__).parents[1]
 recipe_folder = root_folder / "cooklang_recipes"
 output_folder = root_folder / "_recipes"
+static_folder = root_folder / "static"
 
 
 def extract_frontmatter(md_text: str):
@@ -37,6 +38,16 @@ def validate_frontmatter(frontmatter: dict):
     for key in ["category", "prep_time", "locale"]:
         if key not in frontmatter:
             raise ValueError(f"Frontmatter must contain a '{key}' key.")
+
+
+def copy_images():
+    """Copy images from the cooklang folder to the output folder."""
+    for image in recipe_folder.glob("*.jpg"):
+        output_image = (
+            static_folder / "assets" / "img" / "recipes" / image.name
+        )
+        print(f"Copying {image} to {output_image}")
+        image.rename(output_image)
 
 
 def main():
