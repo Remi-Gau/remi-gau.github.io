@@ -2409,7 +2409,6 @@ body {
   }
   .navbar-nav > li > a {
     padding-top: 25px;
-    border-top: 6px solid transparent;
   }
   .navbar-default {
     .navbar-nav > {
@@ -2432,6 +2431,10 @@ body {
       .active > a:focus {
         background: 0 0;
         color: #fff;
+      }
+      li > ul{
+        background: inherit;
+        color: inherit;
       }
     }
     &.navbar-scroll .navbar-nav > .active > a:focus {
