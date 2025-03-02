@@ -26,11 +26,37 @@
 
                     {% for section in site.data.landing %}
                     {% if section.page %}
-                    <li>
-                        <a class="page-scroll" href="{{  site.url  }}/{{ section.page }}">
-                            <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
-                        </a>
-                    </li>
+                        {% if section.name == "Recipes" %}
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle page-scroll"
+                               data-bs-toggle="dropdown"
+                               href="#"
+                               role="button"
+                               aria-expanded="false">
+                               Recipes
+                            </a>
+                            {% assign categories = "" | split: ',' %}
+                            {% for recipe in site.recipes %}
+                                {% assign categories = categories | push: recipe.category %}
+                            {% endfor %}
+                            {% assign categories = categories | uniq %}
+                            <ul class="dropdown-menu">
+                                {% for category in categories %}
+                                <li>
+                                    <a class="dropdown-item"
+                                        href="{{  site.url  }}/{{ section.page }}#{{ category }}">{{ category }}
+                                    </a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        {% else %}
+                        <li>
+                            <a class="page-scroll" href="{{  site.url  }}/{{ section.page }}">
+                                <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
+                            </a>
+                        </li>
+                        {% endif %}
                     {% elsif page.title == "index" and section.name != "About" %}
                     <li>
                         <a class="page-scroll" href="{{ section.id | prepend: '#'}} ">
@@ -39,6 +65,7 @@
                     </li>
                     {% endif %}
                     {% endfor %}
+
 
                     {% for language in site.data.index.language %}
                     <li>
