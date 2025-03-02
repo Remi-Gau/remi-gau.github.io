@@ -34,9 +34,9 @@ def extract_frontmatter(md_text: str):
 
 def validate_frontmatter(frontmatter: dict):
     """Validate the frontmatter of a recipe."""
-    for key in ["category", "prep_time"]:
+    for key in ["category", "prep_time", "locale"]:
         if key not in frontmatter:
-            raise ValueError(f"Frontmatter must contain a {key} key.")
+            raise ValueError(f"Frontmatter must contain a '{key}' key.")
 
 
 def main():
@@ -63,7 +63,16 @@ def main():
         with recipe.open("r", encoding="utf-8") as file:
             lines = file.readlines()
 
-        cleaned_lines = [line for line in lines if line.strip() != "#"]
+        cleaned_lines = []
+        for line in lines:
+            if line.strip() == "#":
+                continue
+            if frontmatter["locale"] == "fr":
+                if line.strip() == "## Ingredients":
+                    line = "## Ingrédients\n"
+                elif line.strip() == "## Steps":
+                    line = "## Étapes\n"
+            cleaned_lines.append(line)
 
         with recipe.open("w", encoding="utf-8") as file:
             file.writelines(cleaned_lines)
