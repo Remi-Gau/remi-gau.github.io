@@ -2,11 +2,11 @@
 **Macarons citron et pavot**
 Pour 45 à 50 petits macarons
 
-190 g de poudre d’amande
+190 g de poudre d'amande
 
 310 g de sucre glace
 
-150 g de blancs d’œufs
+150 g de blancs d'oeufs
 
 95 g de sucre semoule
 
@@ -32,7 +32,7 @@ Le zeste de 1 citron râpé
 
 Préchauffez le four à 150°c.
 
-Tamisez la poudre d’amandes et le sucre glace, puis mélangez-les soigneusement.
+Tamisez la poudre d'amande et le sucre glace, puis mélangez-les soigneusement.
 
 Montez les blancs en neige, en y ajoutant le sucre semoule en trois fois.
 

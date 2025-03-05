@@ -8,13 +8,13 @@
 
 une pincée de sel
 
-5 jaunes d’œufs
+5 jaunes d'oeufs
 
 ½ l de lait
 
 125 g de beurre
 
-5 blancs d’œufs
+5 blancs d'oeufs
 
 Tout mélanger sauf les blancs et le sel.
 

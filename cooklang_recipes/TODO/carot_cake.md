@@ -2,7 +2,7 @@
 **Carot Cake**
 Tu rappes 400/500g(1) de carottes en faisant fondre 100g de beurre
 
-Tu mixes 2 œufs avec 100/200g de sucre (2)
+Tu mixes 2 oeufs avec 100/200g de sucre (2)
 
 Tu rajoutes le beurre fondu, une grosse cuillère de cannelle et 200g de farine.
 

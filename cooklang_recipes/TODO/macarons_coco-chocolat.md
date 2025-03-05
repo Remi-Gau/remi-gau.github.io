@@ -2,13 +2,13 @@
 **Macarons coco-chocolat**
 Pour 45 à 50 petits macarons
 
-95 g de poudre d’amande
+95 g de poudre d'amande
 
 95 g de poudre de coco
 
 310 g de sucre glace
 
-150g de blancs d’œufs
+150g de blancs d'oeufs
 
 95 g de sucre semoule
 
@@ -20,7 +20,7 @@ Pour 45 à 50 petits macarons
 
 Préchauffez le four à 150°c.
 
-Tamisez la poudre d’amandes et le sucre glace, puis mélangez-les soigneusement et ajoutez la poudre de coco.
+Tamisez la poudre d'amande et le sucre glace, puis mélangez-les soigneusement et ajoutez la poudre de coco.
 
 Montez les blancs en neige, en y ajoutant le sucre semoule en trois fois.
 

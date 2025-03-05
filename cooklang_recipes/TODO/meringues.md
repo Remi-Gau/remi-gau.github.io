@@ -1,7 +1,7 @@
 
 **MERINGUES
 
-Pour 2 blancs d’œuf il faut 125 g de sucre en poudre
+Pour 2 blancs d’œuf il faut 125 g de sucre
 
 Battre en neige très ferme les blancs.
 

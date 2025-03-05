@@ -1,8 +1,8 @@
 
 **Gâteau au chocolat 3**
-5 jaunes d’œufs
+5 jaunes d'oeufs
 
-4 blancs d’œufs
+4 blancs d'oeufs
 
 50 g sucre
 

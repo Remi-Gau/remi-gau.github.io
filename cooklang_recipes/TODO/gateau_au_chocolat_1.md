@@ -4,7 +4,7 @@
 
 240 g de chocolat
 
-5 œufs entiers
+5 oeufs entiers
 
 240 g de sucre
 
@@ -16,7 +16,7 @@
 
 Faire fondre au micro onde 240 g de beurre et 240 g de chocolat.
 
-Ajouter à 6 œufs entiers et à 240 g de sucre.
+Ajouter à 6 oeufs entiers et à 240 g de sucre.
 
 Ajouter 3 CàS de farine, 1 sachet de levure, ½ verre de lait.
 

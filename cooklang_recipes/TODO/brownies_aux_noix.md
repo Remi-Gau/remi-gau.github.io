@@ -10,7 +10,7 @@
 
 200 g de cerneau de noix
 
-4 œufs
+4 oeufs
 
 1 CàC d'extrait de vanille
 
@@ -20,7 +20,7 @@ Beurrer un grand plat.
 
 Faite fondre le chocolat et le beurre mélangés.
 
-Battre les œufs entiers avec le sucre jusqu'à avoir un mélange mousseux et blanchi.
+Battre les oeufs entiers avec le sucre jusqu'à avoir un mélange mousseux et blanchi.
 
 Mélanger le tout en ajoutant l'extrait de vanille.
 

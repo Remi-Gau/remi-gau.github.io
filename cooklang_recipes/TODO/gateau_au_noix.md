@@ -1,6 +1,6 @@
 
 **Gâteau au noix**
-4 œufs
+4 oeufs
 
 50 g de farine
 
@@ -12,7 +12,7 @@
 
 1 sachet de sucre vanillé
 
-2 blancs d’œufs
+2 blancs d'oeufs
 
 1 pincée de sel
 

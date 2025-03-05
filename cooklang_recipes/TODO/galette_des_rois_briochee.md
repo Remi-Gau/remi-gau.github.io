@@ -25,7 +25,7 @@ Pour le sirop :
 
 Pour la pâte :
 - 250 g de farine
-- 2 œufs
+- 2 oeufs
 
 Pour décorer :
 - 1 œuf
@@ -49,7 +49,7 @@ Faîtes fondre doucement le beurre avec l'eau, le sucre, le sel et la fleur d'or
 
 La pâte :
 
-Mettez sur le levain la farine et les œufs ainsi que 2/3 du sirop environ. Pétrissez le tout jusqu'à ce que la pâte se décolle du saladier.
+Mettez sur le levain la farine et les oeufs ainsi que 2/3 du sirop environ. Pétrissez le tout jusqu'à ce que la pâte se décolle du saladier.
 
 Ajoutez ensuite le tiers restant du sirop et pétrissez de nouveau (ne pas hésiter à bien pétrir, la pâte n'en sera que plus élastique et la galette meilleure !)
 

@@ -16,7 +16,7 @@ coulis de framboise
 
 framboises entières
 
-Dans un bol, assemblez les jaunes d'oeuf, le sucre en poudre et 3 cuillères a soupe d'eau froide
+Dans un bol, assemblez les jaunes d'oeufs, le sucre et 3 cuillères a soupe d'eau froide
 Placez le bol au bain marie assez chaud
 
 Fouettez au batteur électrique pendant 15min
@@ -30,7 +30,7 @@ Dans un saladier, faire fondre le chocolat blanc au micro onde a 500W par tranch
 Faire fondre le beurre avec le chocolat blanc liquide au micro onde par tranche de 30s en remuant.
 Dans un saladier battre la crème liquide en chantilly très ferme (avec un batteur électrique, sinon plus de bras et plus de chocolat)
 
-Incorporez le mélange de jaune d'oeuf battus avec le chocolat fondu et le beurre.
+Incorporez le mélange de jaunes d'oeufs battus avec le chocolat fondu et le beurre.
 
 Ajouter ensuite ce mélange a la crème battue et incorporez les.
 

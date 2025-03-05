@@ -16,7 +16,7 @@ un pot de confiture de framboise et/ou du coulis de framboises.
 
 Faire une crème avec ½ litre de lait et un flanc du commerce « flanc sans cuisson » à faire en premier et laisser refroidir.
 
-Tapisser le fond et la paroi d'un moule avec des biscuits « boudoirs » après les avoir trempés dans un sirop ainsi fait : 2 verres d'eau et ½ verre de grand marnier et 10 morceaux de sucres (ou 50 g de sucre en poudre).
+Tapisser le fond et la paroi d'un moule avec des biscuits « boudoirs » après les avoir trempés dans un sirop ainsi fait : 2 verres d'eau et ½ verre de grand marnier et 10 morceaux de sucres (ou 50 g de sucre).
 
 Utiliser des framboises congelées bien égouttées.
 

@@ -1,6 +1,6 @@
 
 **Pancakes**
-2 œufs
+2 oeufs
 
 150 ml de lait
 

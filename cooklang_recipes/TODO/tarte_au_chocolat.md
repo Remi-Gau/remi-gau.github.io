@@ -8,7 +8,7 @@
 
 250 g farine
 
-2 jaunes d’œufs
+2 jaunes d'oeufs
 
 4 CàS de lait ou d'eau
 
@@ -20,7 +20,7 @@ Blanchir la pâte 
 
 8 CàS de poudre de cacao
 
-4 œufs
+4 oeufs
 
 200 g de sucre
 
@@ -30,7 +30,7 @@ Blanchir la pâte 
 
 Mélanger beurre, chocolat, poudre
 
-Battre les œufs et le sucre, puis ajouter crème et sirop
+Battre les oeufs et le sucre, puis ajouter crème et sirop
 
 Tout mélanger.
 

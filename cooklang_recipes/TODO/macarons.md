@@ -2,25 +2,25 @@
 **Macarons**
 <span style="text-decoration:underline;">Recette des coques au chocolat:</span>
 
-110 g de poudre d’amande
+110 g de poudre d'amande
 
 225 g de sucre glace
 
-25 g de cacao non sucre en poudre (van houten)
+25 g de cacao non sucre (van houten)
 
-120 g de blancs d’œuf (environ 4 œufs)
+120 g de blancs d’œuf (environ 4 oeufs)
 
-50 g de sucre en poudre (plutôt sucre blanc)
+50 g de sucre (plutôt sucre blanc)
 
 Mixer les amandes, le sucre glace et le cacao pour en obtenir une poudre très fine
 
 Repartir le mélange sur une plaque et la mettre dans un four chaud à 80°C pendant 5min
 
-Tamiser le mélange casser les œufs et séparer les blancs des jaunes
+Tamiser le mélange casser les oeufs et séparer les blancs des jaunes
 
-Battez les blancs d’œufs avec une cuillère de jus de citron, une pince de sel et 4 cuillères à soupes d'eau (d'abord battre à vitesse réduite jusqu’à ce que le mélange devienne mousseux, puis monter à vitesse maximale)
+Battez les blancs d'oeufs avec une cuillère de jus de citron, une pince de sel et 4 cuillères à soupes d'eau (d'abord battre à vitesse réduite jusqu’à ce que le mélange devienne mousseux, puis monter à vitesse maximale)
 
-Lorsque le mélange commence à bien monter, rajouter le sucre en poudre, continuer de monter les blancs en neige jusqu’à ce qu'ils soit bien fermes
+Lorsque le mélange commence à bien monter, rajouter le sucre, continuer de monter les blancs en neige jusqu’à ce qu'ils soit bien fermes
 
 A l'aide d'une maryse mélanger la poudre d'amande/sucre/cacao avec les blancs jusqu’à ce que le mélange soit lisse,brillant mais pas liquide (la pâte doit reprendre sa position initiale au bout de 20s).
 
@@ -82,13 +82,13 @@ Prendre deux coques de même gabarit, enfoncer l'une des coque du cote intérieu
 
 **MACARONS
 
-125g de poudre d’amande
+125g de poudre d'amande
 
 125g de poudre de noisettes
 
 150g de sucre semoule
 
-3 blancs d’œufs légèrement battus à la fourchette
+3 blancs d'oeufs légèrement battus à la fourchette
 
 1 sachet de sucre vanillé
 
@@ -104,4 +104,4 @@ Attendre le refroidissement complet.
 
 Se conservent une bonne semaine en boîte métallique
 
-PS : on peut remplacer la poudre de noisette par l’équivalent en poudre d’amande
+PS : on peut remplacer la poudre de noisette par l’équivalent en poudre d'amande

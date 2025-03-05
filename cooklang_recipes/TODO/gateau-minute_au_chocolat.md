@@ -8,6 +8,6 @@
 
 100 g de sucre
 
-et 3 œufs
+et 3 oeufs
 
 Mettre au micro onde pdt 2 min à puissance max.

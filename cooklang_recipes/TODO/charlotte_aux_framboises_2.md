@@ -2,7 +2,7 @@
 **Charlotte aux framboises 2**
 400 g pulpe de framboises
 
-3 œufs
+3 oeufs
 
 100 g de sucres
 

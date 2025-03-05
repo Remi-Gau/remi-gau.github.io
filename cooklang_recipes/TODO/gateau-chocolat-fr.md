@@ -1,8 +1,8 @@
 
 **Gâteau au chocolat 2**
-6 jaunes d’œufs
+6 jaunes d'oeufs
 
-3 blancs d’œufs
+3 blancs d'oeufs
 
 250 g sucre
 

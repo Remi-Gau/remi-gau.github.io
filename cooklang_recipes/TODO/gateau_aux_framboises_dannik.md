@@ -7,7 +7,7 @@
 
 100g de sucre glace
 
-100g de poudre d’amande
+100g de poudre d'amande
 
 125g de beurre fondu
 

@@ -2,17 +2,17 @@
 **Gâteau amande ananas**
 200 g amandes en poudre
 
-200 g sucre en poudre
+200 g sucre
 
-4 œufs
+4 oeufs
 
 1 CàS de maïzena
 
 1 boîte d'ananas au sirop ou frais
 
-Mélanger sucre et œufs et faire blanchir.
+Mélanger sucre et oeufs et faire blanchir.
 
-Ajouter maïzena e poudre d'amandes
+Ajouter maïzena e poudre d'amande
 
 Égoutter l'ananas et disposer des rondelles au fond du plat.
 

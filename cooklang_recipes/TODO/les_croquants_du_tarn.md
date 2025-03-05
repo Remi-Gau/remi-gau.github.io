@@ -3,7 +3,7 @@
 
 2 blancs d’œuf
 
-230g de sucre en poudre
+230g de sucre
 
 50g de farine
 

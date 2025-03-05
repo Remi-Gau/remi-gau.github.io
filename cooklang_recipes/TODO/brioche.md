@@ -14,7 +14,7 @@
 
 1 CàS d'arôme de fleur d'oranger
 
-3 œufs
+3 oeufs
 
 125 g de beurre.
 
@@ -38,4 +38,4 @@ Si la brioche dore trop vite, recouvrez d'un papier sulfurisé ou aluminium.
 
 Démoulez aussitôt après cuisson et laisser refroidir sur une grille.
 
-Décoration : il est possible de rajouter des fruits confits dans ou sur la brioche avant cuisson. Il est aussi possible de la badigeonner de jaune d'oeufs et re la saupoudrer de sucre avant la cuisson.
+Décoration : il est possible de rajouter des fruits confits dans ou sur la brioche avant cuisson. Il est aussi possible de la badigeonner de jaunes d'oeufss et re la saupoudrer de sucre avant la cuisson.
