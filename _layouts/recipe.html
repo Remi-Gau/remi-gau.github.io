@@ -24,6 +24,22 @@ layout: default
                     cooking time : {{ page.cook_time }}</p>
                 {% endif %}
 
+                <div class="dropdown">
+                    <button
+                        class="btn btn-sm btn-secondary dropdown-toggle"
+                        type="button"
+                        id="dropdownMenuButton"
+                        data-bs-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false">
+                      Units
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Metric</a>
+                      <a class="dropdown-item" href="{{ "/unit_unknown" | prepend: site.baseurl }}">Cups</a>
+                    </div>
+                </div>
+
                 <h4>
                     <a
                         href="https://github.com/Remi-Gau/remi-gau.github.io/blob/main/cooklang_recipes/{{ page.path | split: '/' | last | replace:'md','cook'}}">source</a>
