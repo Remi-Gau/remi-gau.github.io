@@ -87,15 +87,17 @@ def main():
             file.writelines(cleaned_lines)
 
 
-def compute_calories(ingredient, known_ingredients):
+def compute_calories(ingredient, known_ingredients) -> int | float:
     """Compute calories for recipe.
 
     Adapt if ingredients have calories expressed per unit or per 100 gr.
     """
+    if ingredient["quantity"] is None:
+        return 0
     name = ingredient["name"]
     unit = ingredient["quantity"]["unit"]
 
-    cal = None
+    cal = 0
     if name in known_ingredients and (unit == known_ingredients[name]["unit"]):
         dose = 1
         if unit == "gr":
