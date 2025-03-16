@@ -1,3 +1,8 @@
+[tool.codespell]
+builtin = "clear,rare"
+ignore-words-list = "rouge,rollin,groupe"
+skip = "*.log,.git,*.svg,*.json,.jekyll*,_site,package*,*.js,*.scss,*-fr.md,cooklang_recipes/TODO/*,cooklang_recipes/fr/*.cook,*.opml,*/podcasts.yml,cooklang_recipes/ingredients.tsv"
+
 [tool.ruff]
 include = ["maint_tools"]
 indent-width = 4
