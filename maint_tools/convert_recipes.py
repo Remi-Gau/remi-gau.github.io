@@ -27,21 +27,21 @@ def main():
 
     os.chdir(recipe_folder)
 
-    for recipe in recipe_folder.glob("*.cook"):
-        recipe = recipe.relative_to(recipe_folder)
-
-        markdown_file = output_folder / f"{recipe.stem}.md"
-
+    for recipe in _list_recipes(recipe_folder):
+        markdown_file = root_folder / _output_file(
+            output_folder, recipe, ".md"
+        )
+        json_file = root_folder / _output_file(output_folder, recipe, ".json")
         print(f"\n Cleaning {markdown_file.name}")
 
-        with (markdown_file.with_suffix(".json")).open("r") as f:
+        with json_file.open("r") as f:
             recipe = json.load(f)
-
-        locale = recipe.get("metadata").get("map").get("locale")
+        locale = json_file.parents[0].stem
         servings = recipe.get("metadata").get("map").get("servings")
 
+        calories = 0
         if servings:
-            calories = _compute_calories_recipe(recipe) / servings
+            calories = _compute_calories_recipe(recipe, locale) / servings
 
         with markdown_file.open("r", encoding="utf-8") as file:
             lines = file.readlines()
@@ -71,9 +71,15 @@ def main():
             file.writelines(cleaned_lines)
 
 
-def _compute_calories_recipe(recipe):
-    locale = recipe.get("metadata").get("map").get("locale")
+def _list_recipes(recipe_folder):
+    return [
+        recipe
+        for recipe in recipe_folder.glob("**/*.cook")
+        if recipe.parents[0].stem != "TODO"
+    ]
 
+
+def _compute_calories_recipe(recipe, locale):
     with calories_json.open("r") as f:
         calories_json_content = json.load(f)
     known_ingredients = {
@@ -89,6 +95,7 @@ def _compute_calories_recipe(recipe):
         if cal := _compute_calories(x, known_ingredients):
             calories += cal
         print(f"  {x['name']}: {cal}")
+    return calories
 
 
 def _compute_calories(ingredient, known_ingredients) -> int | float:
@@ -118,49 +125,50 @@ def convert():
     """Convert recipes to markdown and json."""
     os.chdir(recipe_folder)
 
-    for recipe in recipe_folder.glob("**/*.cook"):
+    for recipe in _list_recipes(recipe_folder):
         locale = recipe.parents[0].stem
-
         if locale == "TODO":
             continue
 
-        (output_folder / locale).mkdir(parents=True, exist_ok=True)
+        markdown_file = _output_file(output_folder, recipe, ".md")
+        json_file = _output_file(output_folder, recipe, ".json")
+
+        markdown_file.parent.mkdir(parents=True, exist_ok=True)
 
         recipe = recipe.relative_to(recipe_folder)
 
-        json_file = (
-            output_folder.relative_to(root_folder)
-            / locale
-            / f"{recipe.stem}.json"
-        )
         cmd = f"cook recipe {recipe} -o ../{json_file} -f json"
         print(f" {cmd}")
         run(cmd.split())
 
-        markdown_file = (
-            output_folder.relative_to(root_folder)
-            / locale
-            / f"{recipe.stem}.md"
-        )
         cmd = f"cook recipe {recipe} -o ../{markdown_file} -f md"
         print(f" {cmd}")
         run(cmd.split())
+
+
+def _output_file(output_folder, recipe, suffix):
+    locale = recipe.parents[0].stem
+    recipe = recipe.relative_to(recipe_folder)
+
+    return (
+        output_folder.relative_to(root_folder)
+        / locale
+        / f"{recipe.stem}{suffix}"
+    )
 
 
 def validate_recipes():
     """Validate the frontmatter of a recipe."""
     os.chdir(recipe_folder)
 
-    for recipe in recipe_folder.glob("*.cook"):
-        json_file = (
-            output_folder.relative_to(root_folder) / f"{recipe.stem}.json"
-        )
+    for recipe in _list_recipes(recipe_folder):
+        json_file = root_folder / _output_file(output_folder, recipe, ".json")
         # read json and get list of ingredients
-        with (root_folder / json_file).open("r") as f:
+        with json_file.open("r") as f:
             content = json.load(f)
 
         metadata = content.get("metadata").get("map")
-        for key in ["category", "prep_time", "locale"]:
+        for key in ["category", "prep_time"]:
             if key not in metadata:
                 raise ValueError(
                     f"Recipe must contain a '{key}' key.\nIn {recipe}"
@@ -180,12 +188,10 @@ def list_ingredients():
 
     ingredients = []
 
-    for recipe in recipe_folder.glob("*.cook"):
-        json_file = (
-            output_folder.relative_to(root_folder) / f"{recipe.stem}.json"
-        )
+    for recipe in _list_recipes(recipe_folder):
+        json_file = root_folder / _output_file(output_folder, recipe, ".json")
         # read json and get list of ingredients
-        with (root_folder / json_file).open("r") as f:
+        with json_file.open("r") as f:
             content = json.load(f)
 
         ingredients.extend(x["name"] for x in content["ingredients"])
