@@ -91,3 +91,15 @@ collections:
     recipes:
         output: true
         permalink: /:collection/:name/
+
+defaults:
+-   scope:
+        path: _recipes/en
+    values:
+        layout: recipe
+        permalink: /recipe/en/:slug
+-   scope:
+        path: _recipes/fr
+    values:
+        layout: recipe
+        permalink: /recipe/fr/:slug

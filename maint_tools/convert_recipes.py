@@ -40,24 +40,8 @@ def main():
         locale = recipe.get("metadata").get("map").get("locale")
         servings = recipe.get("metadata").get("map").get("servings")
 
-        calories = 0
         if servings:
-            with calories_json.open("r") as f:
-                calories_json_content = json.load(f)
-            known_ingredients = {
-                x["locale"][locale]: {
-                    "calories": x["calories"],
-                    "unit": x["unit"],
-                }
-                for x in calories_json_content
-            }
-
-            for x in recipe["ingredients"]:
-                if cal := compute_calories(x, known_ingredients):
-                    calories += cal
-                print(f"  {x['name']}: {cal}")
-
-            calories /= servings
+            calories = _compute_calories_recipe(recipe) / servings
 
         with markdown_file.open("r", encoding="utf-8") as file:
             lines = file.readlines()
@@ -87,7 +71,27 @@ def main():
             file.writelines(cleaned_lines)
 
 
-def compute_calories(ingredient, known_ingredients) -> int | float:
+def _compute_calories_recipe(recipe):
+    locale = recipe.get("metadata").get("map").get("locale")
+
+    with calories_json.open("r") as f:
+        calories_json_content = json.load(f)
+    known_ingredients = {
+        x["locale"][locale]: {
+            "calories": x["calories"],
+            "unit": x["unit"],
+        }
+        for x in calories_json_content
+    }
+
+    calories = 0
+    for x in recipe["ingredients"]:
+        if cal := _compute_calories(x, known_ingredients):
+            calories += cal
+        print(f"  {x['name']}: {cal}")
+
+
+def _compute_calories(ingredient, known_ingredients) -> int | float:
     """Compute calories for recipe.
 
     Adapt if ingredients have calories expressed per unit or per 100 gr.
@@ -114,20 +118,31 @@ def convert():
     """Convert recipes to markdown and json."""
     os.chdir(recipe_folder)
 
-    for recipe in recipe_folder.glob("*.cook"):
+    for recipe in recipe_folder.glob("**/*.cook"):
+        locale = recipe.parents[0].stem
+
+        if locale == "TODO":
+            continue
+
+        (output_folder / locale).mkdir(parents=True, exist_ok=True)
+
         recipe = recipe.relative_to(recipe_folder)
 
-        markdown_file = (
-            output_folder.relative_to(root_folder) / f"{recipe.stem}.json"
+        json_file = (
+            output_folder.relative_to(root_folder)
+            / locale
+            / f"{recipe.stem}.json"
         )
-        cmd = f"cook recipe {recipe} -o ../{markdown_file} -f json"
+        cmd = f"cook recipe {recipe} -o ../{json_file} -f json"
         print(f" {cmd}")
         run(cmd.split())
 
-        json_file = (
-            output_folder.relative_to(root_folder) / f"{recipe.stem}.md"
+        markdown_file = (
+            output_folder.relative_to(root_folder)
+            / locale
+            / f"{recipe.stem}.md"
         )
-        cmd = f"cook recipe {recipe} -o ../{json_file}"
+        cmd = f"cook recipe {recipe} -o ../{markdown_file} -f md"
         print(f" {cmd}")
         run(cmd.split())
 

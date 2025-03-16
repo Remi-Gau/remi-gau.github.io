@@ -2,6 +2,10 @@ all: clean install convert_recipe
 
 clean:
 	rm -rf _site
+	rm -rf _recipes/*.md
+	rm -rf _recipes/*.json
+	rm -rf _recipes/**/*.md
+	rm -rf _recipes/**/*.json
 
 install: get_cook_cli
 	pip install -r maint_tools/requirements.txt

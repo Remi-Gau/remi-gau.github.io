@@ -76,7 +76,11 @@
                     <li>
                         <a  id="set_lang_{{ language.locale }}"
                             class="btn btn-sm set_{{ language.locale }}"
-                            data-locale="{{ language.locale }}">
+                            data-locale="{{ language.locale }}"
+                            {% if page.layout == 'recipe' %}
+                            href="{{ site.baseurl }}/recipe/{{ language.locale }}/{{ page.slug }}.html"
+                            {%endif%}
+                            >
                             <img src="{{ language.flag | prepend: site.baseurl }}" height="16" width="16">
                         </a>
                     </li>

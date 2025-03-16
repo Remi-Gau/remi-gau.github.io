@@ -24,9 +24,15 @@ permalink: /recipes.html
         <div class="wrapper wrapper-content">
             <!-- get all categories for all recipes -->
             {% assign categories = "" | split: ',' %}
-            {% for recipe in site.recipes %}
-                {% assign categories = categories | push: recipe.category %}
+            {% for language in site.data.index.language %}
+                {% for recipe in site.recipes %}
+                    {% if recipe.locale != language.locale %}
+                        {% continue %}
+                    {% endif %}
+                    {% assign categories = categories | push: recipe.category %}
+                {% endfor %}
             {% endfor %}
+
             {% assign categories = categories | uniq %}
 
             {% assign sorted = site.recipes | sort: 'title' %}
@@ -35,9 +41,9 @@ permalink: /recipes.html
             <h2 id="{{ category }}" class="fs-2 mt-4 fw-bold">{{ category | capitalize }}</h2>
 
             {% for post in sorted %}
-            {% if post.category != category %}
-            {% continue %}
-            {% endif %}
+                {% if post.category != category %}
+                    {% continue %}
+                {% endif %}
             <div class="vote-item">
                 <div class="row">
                     <div class="col-12">
@@ -73,10 +79,7 @@ permalink: /recipes.html
 
                                 {% if post.image %}
                                 <img src="{{ site.url }}/static/assets/img/recipes/{{ post.image }}"
-                                    class="img-responsive"
-                                    width="200px"
-                                    alt="image {{ post.title }}"
-                                    >
+                                    class="img-responsive" width="200px" alt="image {{ post.title }}">
                                 {% endif %}
 
                             </div>
