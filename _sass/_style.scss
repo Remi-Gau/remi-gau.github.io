@@ -2411,6 +2411,15 @@ body {
     padding-top: 25px;
   }
   .navbar-default {
+    .dropdown-menu{
+        background: white !important;
+        li > a {
+          color: #676a6c;
+          &:focus, &:hover {
+            color: #3385FF;
+          }
+      }
+    }
     .navbar-nav > {
       .active > a {
         background: 0 0;
@@ -2655,12 +2664,7 @@ body {
     background-repeat: no-repeat;
     margin-top: 60px;
   }
-  .thesis {
-    // background-image: url(../assets/img/landing/word_map.png);
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    margin-top: 60px;
-  }
+
   section {
     &.timeline {
       padding-bottom: 30px;
