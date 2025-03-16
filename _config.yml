@@ -9,6 +9,7 @@ img_path: /remi-gau.github.io/static/assets/img/blog # url should be '/homepage/
 
 exclude:
 -   .pre-commit-config.yaml
+-   .ruff_cache
 -   .venv
 -   cooklang_recipes
 -   maint_tools
