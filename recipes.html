@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Recipes
-lang: en
 permalink: /recipes.html
 ---
 
@@ -26,9 +25,9 @@ permalink: /recipes.html
             <!-- get all categories for all recipes -->
             {% assign categories = "" | split: ',' %}
             {% for language in site.data.index.language %}
-                {% for recipe in site.recipes %}
-                    {% assign categories = categories | push: recipe.category %}
-                {% endfor %}
+            {% for recipe in site.recipes %}
+            {% assign categories = categories | push: recipe.category %}
+            {% endfor %}
             {% endfor %}
 
             {% assign categories = categories | uniq %}
@@ -40,58 +39,53 @@ permalink: /recipes.html
                 <span data-i18n="recices.{{ category }}">{{ category | capitalize }}</span>
             </h2>
 
-            {% for post in sorted %}
+            <div class="row">
+                {% for post in sorted %}
                 {% if post.category != category %}
-                    {% continue %}
+                {% continue %}
                 {% endif %}
-            <div class="vote-item recipe-item {{ post.locale }}">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="row">
-                            <a href="{{ post.url | prepend: site.baseurl }}" class="recipe-title">
-                                {{ post.title }}
-                            </a>
-                        </div>
-                        <div class="row d-flex justify-content-between recipe-short">
+                <div class="col-sm-6 mb-2 mb-sm-0 border-0 vote-item recipe-item {{ post.locale }}">
+                    <div class="card">
+                        {% if post.image %}
+                        <a href="{{ post.url | prepend: site.baseurl }}">
+                            <img src="{{ site.url }}/static/assets/img/recipes/{{ post.image }}"
+                                class="card-img-top img-responsive" alt="image {{ post.title }}">
+                        </a>
+                        {% endif %}
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="{{ post.url | prepend: site.baseurl }}" class="recipe-title">
+                                    {{ post.title }}
+                                </a>
+                            </h5>
                             <div class="col-12 align-self-center fs-6">
-                                <div class="p-0 m-1 mb-3">
+                                <div class="vote-info d-flex flex-col m-1 mb-3">
                                     {% if post.prep_time %}
-                                    <p class="p-1 m-1 border border-1 border-secondary rounded rounded-1 fw-medium"
-                                        style="width: fit-content; font-size: 90%;">
-                                        prep time : {{ post.prep_time }}
-                                    </p>
+                                    <div>
+                                        <i class="fa fa-clock-o"></i> <a>prep time: {{ post.prep_time }}</a>
+                                    </div>
                                     {% endif %}
                                     {% if post.cook_time %}
-                                    <p class="p-1 m-1 border border-1 border-secondary rounded rounded-1 fw-medium"
-                                        style="width: fit-content; font-size: 90%;">
-                                        cooking time : {{ post.cook_time }}</p>
-                                    {% endif %}
-                                </div>
-                                <div class="p-0 m-1">
-                                    {% if post.blurb %}
-                                    <p>{{ post.blurb }}</p>
-                                    {% elsif post.introduction %}
-                                    {{ post.introduction }}
+                                    <div>
+                                        <i class="fa fa-clock-o"></i> <a>cooking time: {{ post.cook_time }}</a>
+                                    </div>
                                     {% endif %}
                                 </div>
                             </div>
-                            <div class="col-4 d-flex align-self-center justify-content-center">
-
-                                {% if post.image %}
-                                <img src="{{ site.url }}/static/assets/img/recipes/{{ post.image }}"
-                                    class="img-responsive" width="200px" alt="image {{ post.title }}">
+                            <p class="card-text">
+                                {% if post.blurb %}
+                                {{ post.blurb }}
+                                {% elsif post.introduction %}
+                                {{ post.introduction }}
                                 {% endif %}
-
-                            </div>
+                            </p>
                         </div>
                     </div>
+
                 </div>
+                {% endfor %}
             </div>
             {% endfor %}
-
-            {% endfor %}
-
-
         </div>
     </div>
 
