@@ -2007,7 +2007,7 @@ body {
 
 @-webkit-keyframes sk-rotatePlane {
   0% {
-    -webkit-transform: perspective(120px) rotateX(0) rotateY(0);
+    -webkit-transform: perspective(120px) rotateX(0) rotacontactteY(0);
     transform: perspective(120px) rotateX(0) rotateY(0);
   }
 
@@ -2651,12 +2651,6 @@ body {
   .btn-primary {
     font-weight: 600;
     font-size: 14px;
-  }
-  .testimonials {
-    padding-top: 80px;
-    padding-bottom: 90px;
-    background-color: #3385FF;
-    background-image: url(../assets/img/landing/avatar_all.png);
   }
   .contact {
     background-image: url(../assets/img/landing/word_map.png);

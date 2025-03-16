@@ -1,7 +1,9 @@
 ---
-# carousel banners section
-# Add items for each banner image in the carousel
-#
-# Images are expected to be located in `static/assets/img/`.
--   src: landing/header_one.jpg
+-   src: carousel/DSC_6997.jpg
+    title: DSC_6997
+-   src: carousel/DSC_6998.jpg
+    title: DSC_6998
+-   src: carousel/Peyrepertuse.jpg
     title: Peyrepertuse
+-   src: carousel/DSC_7009.jpg
+    title: DSC_7009

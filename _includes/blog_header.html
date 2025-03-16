@@ -13,6 +13,7 @@
 
 {% include navbar.html %}
 
-{% if site.blog_carousel %}
+{% if site.blog_carousel and page.blog_carousel %}
+{{page.blog_carousel}}
 {% include carousel.html %}
 {% endif %}

@@ -58,9 +58,6 @@ disqus: # if you wanna comment feature, go to https://disqus.com/ to get your co
 # gio:  # if you wanna this feature, go to https://www.growingio.com/ to get your configuration; if not, comment following line.
 # id:
 
-## donation
-donation: off # type 'on'/'off' to choice display donation button at post page or not
-
 ## carousels
 index_carousel: on # index page carousel switch
 blog_carousel: on # blog page carousel switch
@@ -95,6 +92,10 @@ collections:
         permalink: /:collection/:name/
 
 defaults:
+-   scope:
+        path: '' # an empty string here means all files in the project
+    values:
+        blog_carousel: on
 -   scope:
         path: _recipes/en
     values:

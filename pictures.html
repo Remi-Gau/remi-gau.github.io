@@ -1,0 +1,42 @@
+---
+layout: default
+title: pictures
+permalink: /pictures.html
+blog_carousel: off
+---
+<div class="wrapper wrapper-content article mt-4 pt-4 mb-0 pb-0" style="height: 90vh;">
+    <div class="row mt-4" >
+        <div class="col-12 d-flex justify-content-center">
+            <div id="myCarousel" class="carousel slide">
+                <div class="carousel-inner">
+                    {% for banner in site.data.index.banners offset:1 %}
+                    {%if banner.title == "Peyrepertuse"%}
+                    <div class="carousel-item active">
+                        {% else %}
+                        <div class="carousel-item" style="max-height: 10vh;">
+                            {%endif%%}
+                            <img src="{{ '/static/assets/img/'  | prepend: site.baseurl }}{{ banner.src }}"
+                            style="max-height: 85vh;">
+                        </div>
+                        {% endfor %}
+
+                    </div>
+                    <button class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#myCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#myCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -2,20 +2,20 @@
 
 import json
 import os
-import pathlib
 import shutil
 from subprocess import run
 from warnings import warn
 
 import pandas as pd
 from rich import print
-
-root_folder = pathlib.Path(__file__).parents[1]
-recipe_folder = root_folder / "cooklang_recipes"
-output_folder = root_folder / "_recipes"
-static_folder = root_folder / "static"
-ingredients_tsv = recipe_folder / "ingredients.tsv"
-calories_json = recipe_folder / "calories.json"
+from utils import (
+    calories_json,
+    ingredients_tsv,
+    output_folder,
+    recipe_folder,
+    root_folder,
+    static_folder,
+)
 
 
 def main():
