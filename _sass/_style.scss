@@ -2581,6 +2581,19 @@ body {
     margin-top: 60px;
   }
 
+.zoom-in {
+  opacity: 0.9;
+  -webkit-transition: -webkit-transform 0.1s, opacity 0.1s;
+  transition: transform 0.1s, opacity 0.1s;
+}
+
+.zoom-in:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    transform: scale(1.01);
+}
+
   section {
     &.timeline {
       padding-bottom: 30px;
