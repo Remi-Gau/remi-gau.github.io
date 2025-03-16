@@ -46,9 +46,5 @@
   },
   "blog":{
     "my_blog": "A p-hacker's guide to the galaxy"
-  },
-  "recipes": {
-    "repices": "Recipes",
-    "cake": "gateau"
   }
 }
