@@ -100,8 +100,10 @@ defaults:
     values:
         layout: recipe
         permalink: /recipe/en/:slug
+        locale: en
 -   scope:
         path: _recipes/fr
     values:
         layout: recipe
         permalink: /recipe/fr/:slug
+        locale: fr

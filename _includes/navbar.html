@@ -37,6 +37,7 @@
                                 aria-expanded="false">
                                 <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
                             </a>
+
                             {% assign categories = "" | split: ',' %}
                             {% for recipe in site.recipes %}
                                 {% assign categories = categories | push: recipe.category %}
@@ -51,6 +52,7 @@
                                 </li>
                                 {% endfor %}
                             </ul>
+
                         </li>
 
                         {% else %}
@@ -78,7 +80,7 @@
                             class="btn btn-sm set_{{ language.locale }}"
                             data-locale="{{ language.locale }}"
                             {% if page.layout == 'recipe' %}
-                            href="{{ site.baseurl }}/recipe/{{ language.locale }}/{{ page.slug }}.html"
+                            href="{{ site.url }}/recipe/{{ language.locale }}/{{ page.slug }}"
                             {%endif%}
                             >
                             <img src="{{ language.flag | prepend: site.baseurl }}" height="16" width="16">

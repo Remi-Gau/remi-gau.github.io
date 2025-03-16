@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Recipes
+lang: en
 permalink: /recipes.html
 ---
 
@@ -26,9 +27,6 @@ permalink: /recipes.html
             {% assign categories = "" | split: ',' %}
             {% for language in site.data.index.language %}
                 {% for recipe in site.recipes %}
-                    {% if recipe.locale != language.locale %}
-                        {% continue %}
-                    {% endif %}
                     {% assign categories = categories | push: recipe.category %}
                 {% endfor %}
             {% endfor %}
@@ -46,7 +44,7 @@ permalink: /recipes.html
                 {% if post.category != category %}
                     {% continue %}
                 {% endif %}
-            <div class="vote-item">
+            <div class="vote-item recipe-item {{ post.locale }}">
                 <div class="row">
                     <div class="col-12">
                         <div class="row">
