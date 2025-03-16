@@ -28,46 +28,46 @@
 
                     {% if section.page %}
 
-                    {% if section.name == "Recipes" %}
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle"
-                            data-bs-toggle="dropdown"
-                            href="#"
-                            role="button"
-                            aria-expanded="false">
-                            <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
-                        </a>
-                        {% assign categories = "" | split: ',' %}
-                        {% for recipe in site.recipes %}
-                            {% assign categories = categories | push: recipe.category %}
-                        {% endfor %}
-                        {% assign categories = categories | uniq %}
-                        <ul class="dropdown-menu">
-                            {% for category in categories %}
-                            <li>
-                                <a class="dropdown-item"
-                                    href="{{  site.url  }}/{{ section.page }}#{{ category }}">{{ category }}
-                                </a>
-                            </li>
+                        {% if section.name == "Recipes" %}
+                        <li class="nav-item dropdown page-scroll">
+                            <a class="nav-link dropdown-toggle"
+                                data-bs-toggle="dropdown"
+                                href="#"
+                                role="button"
+                                aria-expanded="false">
+                                <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
+                            </a>
+                            {% assign categories = "" | split: ',' %}
+                            {% for recipe in site.recipes %}
+                                {% assign categories = categories | push: recipe.category %}
                             {% endfor %}
-                        </ul>
-                    </li>
+                            {% assign categories = categories | uniq %}
+                            <ul class="dropdown-menu">
+                                {% for category in categories %}
+                                <li>
+                                    <a class="dropdown-item"
+                                        href="{{  site.url  }}/{{ section.page }}#{{ category }}">{{ category }}
+                                    </a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </li>
 
-                    {% else %}
-                    <li>
-                        <a class="page-scroll" href="{{  site.url  }}/{{ section.page }}">
-                            <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
-                        </a>
-                    </li>
+                        {% else %}
+                        <li>
+                            <a class="page-scroll" href="{{  site.url  }}/{{ section.page }}">
+                                <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
+                            </a>
+                        </li>
 
-                    {% endif %}
+                        {% endif %}
 
                     {% elsif page.title == "index" and section.name != "About" %}
-                    <li>
-                        <a class="page-scroll" href="{{ section.id | prepend: '#'}} ">
-                            <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
-                        </a>
-                    </li>
+                        <li>
+                            <a class="page-scroll" href="{{ section.id | prepend: '#'}} ">
+                                <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
+                            </a>
+                        </li>
                     {% endif %}
 
                     {% endfor %}

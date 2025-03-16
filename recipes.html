@@ -19,7 +19,7 @@ permalink: /recipes.html
     </div>
 </div>
 
-<div class="row d-flex justify-content-center">
+<div class="row d-flex justify-content-center" id="i18_recipes">
     <div class="col-lg-6 col-md-8 col-10">
         <div class="wrapper wrapper-content">
             <!-- get all categories for all recipes -->
@@ -38,7 +38,9 @@ permalink: /recipes.html
             {% assign sorted = site.recipes | sort: 'title' %}
 
             {% for category in categories %}
-            <h2 id="{{ category }}" class="fs-2 mt-4 fw-bold">{{ category | capitalize }}</h2>
+            <h2 id="{{ category }}" class="fs-2 mt-4 fw-bold">
+                <span data-i18n="recices.{{ category }}">{{ category | capitalize }}</span>
+            </h2>
 
             {% for post in sorted %}
                 {% if post.category != category %}
