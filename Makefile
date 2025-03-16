@@ -4,8 +4,8 @@ clean:
 	rm -rf _site
 	rm -rf _recipes/*.md
 	rm -rf _recipes/*.json
-	rm -rf _recipes/**/*.md
-	rm -rf _recipes/**/*.json
+	rm -rf _recipes/fr
+	rm -rf _recipes/en
 
 install: get_cook_cli
 	pip install -r maint_tools/requirements.txt

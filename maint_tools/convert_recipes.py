@@ -133,7 +133,7 @@ def convert():
         markdown_file = _output_file(output_folder, recipe, ".md")
         json_file = _output_file(output_folder, recipe, ".json")
 
-        markdown_file.parent.mkdir(parents=True, exist_ok=True)
+        (root_folder / markdown_file).parent.mkdir(parents=True, exist_ok=True)
 
         recipe = recipe.relative_to(recipe_folder)
 
