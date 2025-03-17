@@ -59,10 +59,6 @@ disqus: # if you wanna comment feature, go to https://disqus.com/ to get your co
 # gio:  # if you wanna this feature, go to https://www.growingio.com/ to get your configuration; if not, comment following line.
 # id:
 
-## carousels
-index_carousel: on # index page carousel switch
-blog_carousel: on # blog page carousel switch
-
 # scss
 sass:
     style: compressed
@@ -96,7 +92,7 @@ defaults:
 -   scope:
         path: '' # an empty string here means all files in the project
     values:
-        blog_carousel: on
+        top_carousel: on
 -   scope:
         path: _recipes/en
     values:

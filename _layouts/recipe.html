@@ -1,5 +1,6 @@
 ---
 layout: default
+top_carousel: off
 ---
 
 <div class="wrapper wrapper-content article">
@@ -51,9 +52,12 @@ layout: default
             <div class="post-content">
                 {% if page.image %}
                 <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col-4">
-                        <img src="{{ site.url }}/static/assets/img/recipes/{{ page.image }}" class="img-responsive"
-                            alt="{{ page.title }}" width="100%">
+                    <div class="col-lg-4 col-md-8 col-sm-10">
+                        <img src="{{ site.url }}/static/assets/img/recipes/{{ page.image }}"
+                             alt="{{ page.title }}"
+                             width="100%"
+                             class="rounded-2"
+                             >
                     </div>
                 </div>
                 {% endif %}

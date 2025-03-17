@@ -2,15 +2,15 @@
   "website":{
     "title": "A p-hacker's guide to the galaxy"
   },
-  "nav":{
+  "nav": {
     "home": "Home",
-    "about_me": "À propos de moi",
+    "about_me": "About",
     "skills": "Skills",
-    "projects": "Projets",
-    "career": "Carrière",
+    "projects": "Projects",
+    "career": "Career",
     "blog": "Blog",
-    "papers": "Publications",
-    "recipes": "Recettes"
+    "papers": "Papers",
+    "recipes": "Recipes"
   },
   "about_me":{
     "about_me": "About Me",

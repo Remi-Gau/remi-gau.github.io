@@ -2,7 +2,7 @@
   <div class="carousel-inner">
     {% for banner in site.data.index.banners %}
     <div class="carousel-item {%if banner.title == "Peyrepertuse" %} active {%endif%} header-back"
-      style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url({{ '/static/assets/img/'  | prepend: site.baseurl }}{{ banner.src }});"
+      style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url({{ '/static/assets/img/'  | prepend: site.baseurl }}{{ banner.src }});"
       title="{{ banner.title }}">
     </div>
     {% endfor %}
