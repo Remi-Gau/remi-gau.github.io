@@ -20,7 +20,12 @@ so here we go in no particular order.
 
 - [niivue](https://marketplace.visualstudio.com/items?itemName=KorbinianEckstein.niivue) to directly view you brain images when you click on them
 
-  ![](/static/assets/img/blog/nivvue.png)
+  <div class="row" style="margin-bottom: 50px;">
+      <div class="col-12">
+          <img width="100%"
+              src="/static/assets/img/blog/nivvue.png">
+      </div>
+  </div>
 
 - [power-mode](https://marketplace.visualstudio.com/items?itemName=hoovercj.vscode-power-mode) to add flames, sparkles or fireworks to your cursor as you are typing. You can also add a combo tracker to keep track of long typing streaks and many other completely useless but very cool usual effects.
 
