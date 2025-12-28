@@ -31,8 +31,8 @@
     icon: fa-plus-square
 
 -   name:
-        detail: <a href="https://cpplab.be/index.html" target="_blank">Cross-modal perception plasticity lab</a> (université catholique de Louvain, Louvain
-            la neuve, Belgium)
+        detail: <a href="https://cpplab.be" target="_blank">Cross-modal perception plasticity lab</a> (université catholique de Louvain, Louvain la neuve,
+            Belgium)
         i18n: company_a
     desc:
         detail: Laminar fMRI at 7T
