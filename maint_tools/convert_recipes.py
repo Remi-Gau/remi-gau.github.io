@@ -54,10 +54,14 @@ def main():
 
             if line.strip() == "---":
                 front_matter_delim_count += 1
-                if calories and front_matter_delim_count == 2:
-                    line = f"calories: {round(calories)}\n{line}"
-                    cleaned_lines.append(line)
-                    continue
+
+                if front_matter_delim_count == 2:
+                    cleaned_lines.append(f"lang: {locale}\n")
+
+                    if calories:
+                        line = f"calories: {round(calories)}\n{line}"
+                        cleaned_lines.append(line)
+                        continue
 
             if locale == "fr":
                 if line.strip() == "## Ingredients":

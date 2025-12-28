@@ -82,6 +82,7 @@
                             {% if page.layout == 'recipe' %}
                             href="{{ site.url }}/recipe/{{ language.locale }}/{{ page.slug }}"
                             {%endif%}
+                            data-proofer-ignore
                             >
                             <img src="{{ language.flag | prepend: site.baseurl }}" height="16" width="16">
                         </a>

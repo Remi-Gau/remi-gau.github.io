@@ -18,3 +18,7 @@ convert_recipe:
 
 serve:
 	bundle exec jekyll serve
+
+
+link_check:
+	bundle exec htmlproofer --log-level :debug ./_site

@@ -4,13 +4,19 @@
         placeholder="Search Blog">
 
     <div style="position: fixed; top: 16px; right: 16px; z-index: 9999;">
-        <img src="{{ " /static/assets/img/search/cb-close.png" | prepend: site.baseurl }}" id="close-btn" />
+        <img    src="{{ " /static/assets/img/search/cb-close.png" | prepend: site.baseurl }}"
+                id="close-btn"
+                alt=""
+        />
     </div>
 </div>
 
 <div style="position: fixed; right: 16px; bottom: 20px; z-index: 9999;">
-    <img src="{{ " /static/assets/img/search/cb-search.png" | prepend : site.baseurl }}" id="search-btn"
-        title="Double click Ctrl" />
+    <img    src="{{ " /static/assets/img/search/cb-search.png" | prepend : site.baseurl }}"
+            id="search-btn"
+            title="Double click Ctrl"
+            alt=""
+    />
 </div>
 
 {% include navbar.html %}

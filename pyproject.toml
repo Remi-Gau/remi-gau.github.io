@@ -51,5 +51,8 @@ select = [
 ]
 unfixable = []
 
+[tool.ruff.lint.mccabe]
+max-complexity = 23
+
 [tool.ruff.lint.pydocstyle]
 convention = "numpy"
