@@ -1,18 +1,23 @@
 <div id="myCarousel" class="carousel slide">
-  <div class="carousel-inner">
-    {% for banner in site.data.index.banners %}
-    <div class="carousel-item {%if banner.title == "Peyrepertuse" %} active {%endif%} header-back"
-      style="background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0)), url({{ '/static/assets/img/'  | prepend: site.baseurl }}{{ banner.src }});"
-      title="{{ banner.title }}">
+    <div class="carousel-inner">
+        {% for banner in site.data.index.banners %}
+            <div class="carousel-item {% if banner.title == "Peyrepertuse" %}active{% endif %} header-back"
+                 style="background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0)), url({{ '/static/assets/img/'  | prepend: site.baseurl }}{{ banner.src }})"
+                 title="{{ banner.title }}"></div>
+        {% endfor %}
     </div>
-    {% endfor %}
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+    <button class="carousel-control-prev"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
 </div>

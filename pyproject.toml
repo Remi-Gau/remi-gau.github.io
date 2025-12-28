@@ -3,6 +3,12 @@ builtin = "clear,rare"
 ignore-words-list = "rouge,rollin,groupe"
 skip = "*.log,.git,*.svg,*.json,.jekyll*,_site,package*,*.js,*.scss,*-fr.md,cooklang_recipes/TODO/*,cooklang_recipes/fr/*.cook,*.opml,*/podcasts.yml,cooklang_recipes/ingredients.tsv"
 
+[tool.djlint]
+format_css = true
+ignore = "H016,H021,H006,H013,H030,H031"
+max_line_length = 79
+use_gitignore = true
+
 [tool.ruff]
 include = ["maint_tools"]
 indent-width = 4

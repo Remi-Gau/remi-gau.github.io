@@ -10,148 +10,118 @@ permalink: /papers.html
         <h1>Papers & preprints</h1>
     </div>
 </div>
-
 <div class="row">
     <div class="col-12 text-center">
         <div class="navy-line"></div>
         <h2>Papers</h2>
     </div>
 </div>
-
 <div class="row" style="margin-bottom: 75px">
     <div class="col-12">
         <div id="vertical-timeline"
              class="vertical-container light-timeline center-orientation">
-
-        {% for paper in site.data.papers %}
-        {% assign loopindex = forloop.index | modulo: 2 %}
-            <div class="vertical-timeline-block">
-
-                <div class="vertical-timeline-icon navy-bg wow rotateIn">
-                    <i class="fa fa-plus-square"></i>
-                </div>
-
-                <div class="vertical-timeline-content wow {% if loopindex == 1 %} rotateInUpRight {% else %} rotateInUpLeft {% endif %}">
-
+            {% for paper in site.data.papers %}
+                {% assign loopindex = forloop.index | modulo: 2 %}
+                <div class="vertical-timeline-block">
+                    <div class="vertical-timeline-icon navy-bg wow rotateIn">
+                        <i class="fa fa-plus-square"></i>
+                    </div>
+                    <div class="vertical-timeline-content wow {% if loopindex == 1 %} rotateInUpRight {% else %} rotateInUpLeft {% endif %}">
                         <h2>
                             <span data-proofer-ignore>
-                            {% if paper.web %}
-                                <a href="{{ paper.web }}">{{ paper.name }}</a>
-                            {% else %}
-                                <a href="https://doi.org/{{ paper.doi }}">{{ paper.name }}</a>
-                            {% endif %}
+                                {% if paper.web %}
+                                    <a href="{{ paper.web }}">{{ paper.name }}</a>
+                                {% else %}
+                                    <a href="https://doi.org/{{ paper.doi }}">{{ paper.name }}</a>
+                                {% endif %}
                             </span>
                         </h2>
-                        <p><span>{{ paper.authors }} </span></p>
+                        <p>
+                            <span>{{ paper.authors }}</span>
+                        </p>
                         {% if paper.preprint %}
-                        <p><small><a href="https://doi.org/{{ paper.preprint }}" tagert="_blank">preprint</a></small></p>
+                            <p>
+                                <small><a href="https://doi.org/{{ paper.preprint }}" tagert="_blank">preprint</a></small>
+                            </p>
                         {% endif %}
-
+                        <span class="vertical-date"
+                              {% if loopindex == 1 %} style="justify-content: flex-start" {% else %}style="justify-content: flex-end"{% endif %}>
                             {% if loopindex == 1 %}
-                                <span class="vertical-date" style="justify-content: flex-start">
-                            {% else %}
-                                <span class="vertical-date" style="justify-content: flex-end">
-                            {% endif %}
-
-                            {% if loopindex == 1 %}
-
                                 <div>
                                     <span>{{ paper.date }}</span>
-                                    <br/>
+                                    <br />
                                     <small>{{ paper.journal }}</small>
                                 </div>
-                                <div
-                                data-proofer-ignore
-                                data-badge-type="donut"
-                                data-doi={{ paper.doi }}
-                                data-condensed="true"
-                                data-badge-popover="right"
-                                data-hide-no-mentions="true"
-                                class="altmetric-embed">
-                                </div>
-
+                                <div data-proofer-ignore
+                                     data-badge-type="donut"
+                                     data-doi="{{ paper.doi }}"
+                                     data-condensed="true"
+                                     data-badge-popover="right"
+                                     data-hide-no-mentions="true"
+                                     class="altmetric-embed"></div>
                             {% else %}
-
-                                <div
-                                data-proofer-ignore
-                                data-badge-type="donut"
-                                data-doi={{ paper.doi }}
-                                data-condensed="true"
-                                data-badge-popover="left"
-                                data-hide-no-mentions="true"
-                                class="altmetric-embed">
-                                </div>
+                                <div data-proofer-ignore
+                                     data-badge-type="donut"
+                                     data-doi="{{ paper.doi }}"
+                                     data-condensed="true"
+                                     data-badge-popover="left"
+                                     data-hide-no-mentions="true"
+                                     class="altmetric-embed"></div>
                                 <div>
                                     <span>{{ paper.date }}</span>
-                                    <br/>
+                                    <br />
                                     <small>{{ paper.journal }}</small>
                                 </div>
-
                             {% endif %}
-                            </span>
-
-
-
-
+                        </span>
+                    </div>
                 </div>
-            </div>
-        {% endfor %}
-
+            {% endfor %}
         </div>
     </div>
 </div>
-
 <div class="row">
     <div class="col-12 text-center">
         <div class="navy-line"></div>
         <h2>Preprints</h2>
     </div>
 </div>
-
 <div class="row" style="margin-bottom: 75px">
     <div class="col-12">
         <div id="vertical-timeline"
              class="vertical-container light-timeline center-orientation">
-
-        {% for preprint in site.data.preprints %}
-        {% assign loopindex = forloop.index | modulo: 2 %}
-            <div class="vertical-timeline-block">
-
-                <div class="vertical-timeline-icon navy-bg wow rotateIn">
-                    <i class="fa fa-plus-square"></i>
-                </div>
-
-                <div class="vertical-timeline-content wow {% if loopindex == 1 %} rotateInUpRight {% else %} rotateInUpLeft {% endif %}">
-
-                    <h2>
-                        <span>
-                        {% if preprint.web %}
-                            <a href="{{ preprint.web }}">{{ preprint.name }}</a>
-                        {% else %}
-                            <a href="https://doi.org/{{ preprint.doi }}">{{ preprint.name }}</a>
-                        {% endif %}
+            {% for preprint in site.data.preprints %}
+                {% assign loopindex = forloop.index | modulo: 2 %}
+                <div class="vertical-timeline-block">
+                    <div class="vertical-timeline-icon navy-bg wow rotateIn">
+                        <i class="fa fa-plus-square"></i>
+                    </div>
+                    <div class="vertical-timeline-content wow {% if loopindex == 1 %} rotateInUpRight {% else %} rotateInUpLeft {% endif %}">
+                        <h2>
+                            <span>
+                                {% if preprint.web %}
+                                    <a href="{{ preprint.web }}">{{ preprint.name }}</a>
+                                {% else %}
+                                    <a href="https://doi.org/{{ preprint.doi }}">{{ preprint.name }}</a>
+                                {% endif %}
+                            </span>
+                        </h2>
+                        <p>
+                            <span>{{ preprint.authors }}</span>
+                        </p>
+                        <span class="vertical-date"
+                              {% if loopindex == 1 %}style="justify-content: flex-start"{% else %} style="justify-content: flex-end"  {% endif %}>
+                            <div>
+                                <span>{{ preprint.date }}</span>
+                                <br />
+                                <small>{{ preprint.server }}</small>
+                            </div>
                         </span>
-                    </h2>
-                    <p><span> {{ preprint.authors }} </span></p>
-
-                    {% if loopindex == 1 %}
-                    <span class="vertical-date" style="justify-content: flex-start">
-                    {% else %}
-                    <span class="vertical-date" style="justify-content: flex-end">
-                    {% endif %}
-                        <div>
-                            <span>{{ preprint.date }}</span>
-                            <br/>
-                            <small>{{ preprint.server }}</small>
-                        </div>
-                    </span>
-
+                    </div>
                 </div>
-            </div>
-        {% endfor %}
-
+            {% endfor %}
         </div>
     </div>
 </div>
-
-<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+<script type='text/javascript'
+        src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>

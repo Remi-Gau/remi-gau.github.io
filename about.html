@@ -5,99 +5,108 @@ permalink: /about.html
 ---
 
 <div class="container">
-
-  <div class="row">
-    <div class="col-12 text-center">
-      <div class="navy-line"></div>
-      <h1>Couple of things about me</h1>
+    <div class="row">
+        <div class="col-12 text-center">
+            <div class="navy-line"></div>
+            <h1>Couple of things about me</h1>
+        </div>
     </div>
-  </div>
-
-  <div class="row d-flex justify-content-center" style="margin: 30px">
-    <div class="col-3">
-      <img src="{{ site.author.avatar | prepend: site.baseurl }}" width=100% class="img-responsive img-circle" alt="">
+    <div class="row d-flex justify-content-center" style="margin: 30px">
+        <div class="col-3">
+            <img src="{{ site.author.avatar | prepend: site.baseurl }}"
+                 width="100"
+                 class="img-responsive img-circle"
+                 alt="">
+        </div>
     </div>
-  </div>
-
-  <div class="row d-flex justify-content-center" style="margin: 30px">
-    <div class="col-8">
-      <h2>
-        <b>TL;DR:</b><br>
-        I wanted to understand how the brain works, <br>
-        now I tell people how to name files, folders and variables.
-      </h2>
+    <div class="row d-flex justify-content-center" style="margin: 30px">
+        <div class="col-8">
+            <h2>
+                <b>TL;DR:</b>
+                <br>
+                I wanted to understand how the brain works,
+                <br>
+                now I tell people how to name files, folders and variables.
+            </h2>
+        </div>
     </div>
-  </div>
-
-  <div class="row d-flex justify-content-center" style="margin: 30px">
-
-    <div class="col-12 post-content">
-
-      <p>
-        I have a background both in biology and psychology.
-      </p>
-      <p>
-        I did my PhD studying the role of serotoninergic neurons
-        in the interplay between pain and cardio-vascular regulations in rodents.
-      </p>
-      <p>
-        I then moved on to the field of cognitive neuroimaging to study multisensory integration in humans.
-      </p>
-      <p>
-        I am passionate about open science that I see as:
-      <ul>
-        <li>a way to build a more inclusive research community based on sharing
-          and cooperation rather than hoarding and competition,</li>
-        <li>a way to address some of the replicability and reproducibility issues
-          that are affecting many areas of science by making the sharing of code and data more common,</li>
-        <li>a set of tools and practices that can reduce inefficiencies
-          in the research process and can benefit the overall community
-          as well as the individual scientists.</li>
-      </ul>
-      </p>
-      <p>
-        I am also one of the maintainers of:
-      <ul>
-        <li><a href="https://nilearn.github.io/stable/index.html" target="_blank">Nilearn</a> the main python package
-          for machine learning and visualization in neuroImaging.</li>
-        <li>the Brain imaging data structure (<a href="https://bids-specification.readthedocs.io/en/stable/"
-            target="_blank">BIDS - a standard to help organize and share neuroimaging data)</a></li>
-        <li><a href="https://github.com/bids-standard/bids-matlab" target="_blank">BIDS-matlab</a></li>
-      </ul>
-      and actively involved in 2 projects aimed at standardizing the reporting of methods
-      and resulting in neuroimaging:
-      <ul>
-        <li><a href="https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=3728" target="_blank">COBIDAS</a></li>
-        <li><a href="https://osf.io/pvrn6/" target="_blank">ARTEM-IS</a></li>
-      </ul>
-      </p>
-
-
-      <h3 id="podcasts">Podcasts I listen to <a href="{{ page.url }}#podcasts">#</a></h3>
-
-      <div class="col-12">
-        <p>I use <a href="https://podcastaddict.com/">PodcastAddict</a> to manage my subscriptions.</p>
-
-        <ul class="row d-flex flex-wrap justify-content-center">
-
-          {% for podcast in site.data.podcasts %}
-          <li class="col-lg-3 col-md-4 col-sm-4 col-xs-4 list-group-item mb-5">
-              <div class="d-flex flex-column" style="height: 200px;" data-proofer-ignore>
-                <div class="text-center text-wrap my-auto">
-                  <a href="{{ podcast.html_url }}" target="_blank">{{ podcast.title }}</a>
-                </div>
-                <div class="text-center">
-                  <img src="{{ podcast.image_url }}" alt="" height="128" width="128">
-                </div>
-              </div>
-          </li>
-          {% endfor %}
-
-        </ul>
-
-      </div>
-
+    <div class="row d-flex justify-content-center" style="margin: 30px">
+        <div class="col-12 post-content">
+            <p>I have a background both in biology and psychology.</p>
+            <p>
+                I did my PhD studying the role of serotoninergic neurons
+                in the interplay between pain and cardio-vascular regulations in rodents.
+            </p>
+            <p>
+                I then moved on to the field of cognitive neuroimaging to study multisensory integration in humans.
+            </p>
+            <p>
+                I am passionate about open science that I see as:
+                <ul>
+                    <li>
+                        a way to build a more inclusive research community based on sharing
+                        and cooperation rather than hoarding and competition,
+                    </li>
+                    <li>
+                        a way to address some of the replicability and reproducibility issues
+                        that are affecting many areas of science by making the sharing of code and data more common,
+                    </li>
+                    <li>
+                        a set of tools and practices that can reduce inefficiencies
+                        in the research process and can benefit the overall community
+                        as well as the individual scientists.
+                    </li>
+                </ul>
+            </p>
+            <p>
+                I am also one of the maintainers of:
+                <ul>
+                    <li>
+                        <a href="https://nilearn.github.io/stable/index.html" target="_blank">Nilearn</a> the main python package
+                        for machine learning and visualization in neuroImaging.
+                    </li>
+                    <li>
+                        the Brain imaging data structure (<a href="https://bids-specification.readthedocs.io/en/stable/"
+   target="_blank">BIDS - a standard to help organize and share neuroimaging data)</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/bids-standard/bids-matlab" target="_blank">BIDS-matlab</a>
+                    </li>
+                </ul>
+                and actively involved in 2 projects aimed at standardizing the reporting of methods
+                and resulting in neuroimaging:
+                <ul>
+                    <li>
+                        <a href="https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=3728"
+                           target="_blank">COBIDAS</a>
+                    </li>
+                    <li>
+                        <a href="https://osf.io/pvrn6/" target="_blank">ARTEM-IS</a>
+                    </li>
+                </ul>
+            </p>
+            <h3 id="podcasts">
+                Podcasts I listen to <a href="{{ page.url }}#podcasts">#</a>
+            </h3>
+            <div class="col-12">
+                <p>
+                    I use <a href="https://podcastaddict.com/">PodcastAddict</a> to manage my subscriptions.
+                </p>
+                <ul class="row d-flex flex-wrap justify-content-center">
+                    {% for podcast in site.data.podcasts %}
+                        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-4 list-group-item mb-5">
+                            <div class="d-flex flex-column" style="height: 200px;" data-proofer-ignore>
+                                <div class="text-center text-wrap my-auto">
+                                    <a href="{{ podcast.html_url }}" target="_blank">{{ podcast.title }}</a>
+                                </div>
+                                <div class="text-center">
+                                    <img src="{{ podcast.image_url }}" alt="" height="128" width="128">
+                                </div>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
     </div>
-
-  </div>
 </div>
