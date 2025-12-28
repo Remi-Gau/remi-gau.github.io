@@ -6,6 +6,7 @@ __pycache__
 .jekyll-metadata
 .sass-cache
 .vscode/*.log
+links.log
 node_modules
 npm-debug.log
 tmp

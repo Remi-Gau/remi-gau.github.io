@@ -34,7 +34,7 @@ permalink: /papers.html
                 <div class="vertical-timeline-content wow {% if loopindex == 1 %} rotateInUpRight {% else %} rotateInUpLeft {% endif %}">
 
                         <h2>
-                            <span>
+                            <span data-proofer-ignore>
                             {% if paper.web %}
                                 <a href="{{ paper.web }}">{{ paper.name }}</a>
                             {% else %}
@@ -61,6 +61,7 @@ permalink: /papers.html
                                     <small>{{ paper.journal }}</small>
                                 </div>
                                 <div
+                                data-proofer-ignore
                                 data-badge-type="donut"
                                 data-doi={{ paper.doi }}
                                 data-condensed="true"
@@ -72,6 +73,7 @@ permalink: /papers.html
                             {% else %}
 
                                 <div
+                                data-proofer-ignore
                                 data-badge-type="donut"
                                 data-doi={{ paper.doi }}
                                 data-condensed="true"
