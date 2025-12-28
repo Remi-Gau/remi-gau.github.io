@@ -71,7 +71,7 @@ jobs:
             uses: actions/upload-pages-artifact@v3
 
         -   name: Archive log links
-            uses: actions/upload-artifact@v1
+            uses: actions/upload-artifact@v6
             with:
                 name: links-check.log
                 path: links.log
