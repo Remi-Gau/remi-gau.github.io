@@ -3,6 +3,7 @@
 import json
 import os
 import shutil
+from pathlib import Path
 from subprocess import run
 from warnings import warn
 
@@ -125,14 +126,21 @@ def _compute_calories(ingredient, known_ingredients) -> int | float:
     return cal
 
 
-def convert():
+def convert() -> None:
     """Convert recipes to markdown and json."""
     os.chdir(recipe_folder)
+
+    missing_translations = []
 
     for recipe in _list_recipes(recipe_folder):
         locale = recipe.parents[0].stem
         if locale == "TODO":
             continue
+
+        if "/fr/" in str(recipe):
+            corresponding_en = Path(str(recipe).replace("/fr/", "/en/"))
+            if not corresponding_en.exists():
+                missing_translations.append(recipe.name)
 
         markdown_file = _output_file(output_folder, recipe, ".md")
         json_file = _output_file(output_folder, recipe, ".json")
@@ -148,6 +156,12 @@ def convert():
         cmd = f"cook recipe {recipe} -o ../{markdown_file} -f md"
         print(f" {cmd}")
         run(cmd.split())
+
+    if missing_translations:
+        raise ValueError(
+            "Missing translations for the following recipes:\n\t-"
+            + "\n\t-".join(missing_translations)
+        )
 
 
 def _output_file(output_folder, recipe, suffix):
