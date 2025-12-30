@@ -24,7 +24,7 @@ Note: this was first originally published [here](https://cpp-lln-lab.github.io/d
 
 <!-- insert datalad and crash test dummies image -->
 
-![datalad_gif](http://handbook.datalad.org/en/latest/_images/datalad-animated.gif)
+![datalad_gif](https://handbook.datalad.org/en/latest/_images/datalad-animated.gif)
 
 <details><summary> <b>CLICK ME</b> </summary>
 
@@ -54,9 +54,9 @@ Git basics might help but are not required.
 
 But there are things you need to install and do before the workshop:
 
-- [install datalad](http://handbook.datalad.org/en/latest/intro/installation.html)
+- [install datalad](https://handbook.datalad.org/en/latest/intro/installation.html)
   - for Windows, it is preferable to use the
-    [Windows Subsystem Linux install](http://handbook.datalad.org/en/latest/intro/installation.html#ww-wsl2)
+    [Windows Subsystem Linux install](https://handbook.datalad.org/en/latest/intro/installation.html#ww-wsl2)
   - if you have a Mac M1, please check
     [this issue](https://github.com/datalad/datalad/issues/5701) for a
     workaround in case you run into problems
@@ -64,8 +64,8 @@ But there are things you need to install and do before the workshop:
 - [create an SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 - add it to your GIN account:
   - [see the github doc](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
-  - [see the datalad handbook](http://handbook.datalad.org/en/latest/basics/101-139-gin.html#prerequisites)
-- [basic configuration](http://handbook.datalad.org/en/latest/intro/installation.html#initial-configuration)
+  - [see the datalad handbook](https://handbook.datalad.org/en/latest/basics/101-139-gin.html#prerequisites)
+- [basic configuration](https://handbook.datalad.org/en/latest/intro/installation.html#initial-configuration)
 
 ### Pre-flight checks
 
@@ -204,7 +204,7 @@ tree -L 1
 <p>
 
 See this
-<a href="http://handbook.datalad.org/en/latest/basics/101-102-populate.html#f1">footnote</a>
+<a href="https://handbook.datalad.org/en/latest/basics/101-102-populate.html#f1">footnote</a>
 in case you don't have it.
 </p>
 
@@ -255,7 +255,7 @@ You should also add a specific message to your save, to describe the content of
 the save.
 
 Here are some
-[tips on how to write good save messages](http://handbook.datalad.org/en/latest/basics/101-102-populate.html#fom-commit-message-guidance).
+[tips on how to write good save messages](https://handbook.datalad.org/en/latest/basics/101-102-populate.html#fom-commit-message-guidance).
 
 Note that "saves" are often referred to as "commits" and that are thus
 accompanied by a "commit message".
@@ -309,7 +309,7 @@ way book</a>
 <p>
   Datalad does not have what is called a "staging area" in GIT. So there is no
   need to "add" a file before it can be committed. More info on this
-  <a href="http://handbook.datalad.org/en/latest/basics/101-180-FAQ.html#where-is-git-s-staging-area-in-datalad-datasets" target="_blank">here.</a>
+  <a href="https://handbook.datalad.org/en/latest/basics/101-180-FAQ.html#where-is-git-s-staging-area-in-datalad-datasets" target="_blank">here.</a>
 </p>
 
 <p>
@@ -724,7 +724,7 @@ datalad push --to ${sibling_name}
 When you install a dataset from somewhere, the dataset that lives on your
 computer is usually called the local copy (when you talk to another human being)
 or the local clone (when you talk to a git user) or a local
-[sibling](http://handbook.datalad.org/en/latest/glossary.html?highlight=sibling#term-sibling)
+[sibling](https://handbook.datalad.org/en/latest/glossary.html?highlight=sibling#term-sibling)
 (when you talk to a datalad user). The sibling you installed from is usually
 called a remote sibling and often nicknamed `origin`.
 
@@ -746,7 +746,7 @@ where you got a dataset from.
 
 If however you wanted to keep track of your own changes, you can have your own
 copy of that dataset on GIN by creating a
-[sibling](http://handbook.datalad.org/en/latest/glossary.html?highlight=sibling#term-sibling)
+[sibling](https://handbook.datalad.org/en/latest/glossary.html?highlight=sibling#term-sibling)
 repository on GIN.
 
 The good news is that **unless the data owner has given you the right to do
@@ -828,7 +828,7 @@ content of your data set.
 <p>
 This might be because you are actually viewing the annexed content of your
 dataset that lives on the "git-annex branch":
-<a href="http://handbook.datalad.org/en/latest/basics/101-180-FAQ.html#help-why-does-github-display-my-dataset-with-git-annex-as-the-default-branch" target="_blank">click
+<a href="https://handbook.datalad.org/en/latest/basics/101-180-FAQ.html#help-why-does-github-display-my-dataset-with-git-annex-as-the-default-branch" target="_blank">click
 here to see how to fix it</a> (the fix relates to GitHub repositories but works
 on GIN too).
 </p>
@@ -1104,16 +1104,16 @@ If you don't remember the specifics of a command, type the name of that command
 followed by `--help`. For example `datalad create --help`.
 
 More
-[info on how to get help](http://handbook.datalad.org/en/latest/basics/101-135-help.html).
+[info on how to get help](https://handbook.datalad.org/en/latest/basics/101-135-help.html).
 
 ## Useful links
 
-- [Datalad handbook](http://handbook.datalad.org/en/latest/index.html)
+- [Datalad handbook](https://handbook.datalad.org/en/latest/index.html)
   - Read at least the 2 first chapters. This will save from a lot of pain and
     confusion.
 - [Datalad cheat sheet](https://raw.githubusercontent.com/datalad-handbook/artwork/master/src/datalad-cheatsheet.pdf)
 - [Datalad research data management course](https://psychoinformatics-de.github.io/rdm-course/)
-- [Basic file system operations with Datalad](http://handbook.datalad.org/en/latest/basics/101-136-filesystem.html)
+- [Basic file system operations with Datalad](https://handbook.datalad.org/en/latest/basics/101-136-filesystem.html)
 - [Datalad aliases - unofficial](https://github.com/Remi-Gau/datalad_aliases)
 
 <footer>
