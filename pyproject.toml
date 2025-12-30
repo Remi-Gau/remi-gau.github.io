@@ -1,7 +1,7 @@
 [tool.codespell]
 builtin = "clear,rare"
 ignore-words-list = "rouge,rollin,groupe"
-skip = "*.log,.git,*.svg,*.json,.jekyll*,_site,package*,*.js,*.scss,*-fr.md,cooklang_recipes/TODO/*,cooklang_recipes/fr/*.cook,*.opml,*/podcasts.yml,cooklang_recipes/ingredients.tsv"
+skip = "*.log,.git,*.svg,*.json,.jekyll*,_site,package*,*.js,*.scss,cooklang_recipes/TODO/*,cooklang_recipes/fr/*.cook,*.opml,*/podcasts.yml,cooklang_recipes/ingredients.tsv"
 
 [tool.djlint]
 format_css = true
