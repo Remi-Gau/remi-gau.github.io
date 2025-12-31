@@ -68,11 +68,7 @@ permalink: /recipes.html
                                         </div>
                                     </div>
                                     <p class="card-text">
-                                        {% if post.blurb %}
-                                            {{ post.blurb }}
-                                            {% elsif post.introduction %}
-                                            {{ post.introduction }}
-                                        {% endif %}
+                                        {% if post.blurb %}{{ post.blurb }}{% endif %}
                                     </p>
                                 </div>
                             </div>

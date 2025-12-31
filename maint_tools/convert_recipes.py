@@ -67,6 +67,8 @@ def main():
             if locale == "fr":
                 if line.strip() == "## Ingredients":
                     line = "## Ingrédients\n"
+                elif line.strip() == "## Cookware":
+                    line = "## Ustensiles\n"
                 elif line.strip() == "## Steps":
                     line = "## Étapes\n"
 

@@ -59,6 +59,13 @@ top_carousel: off
                         {% endif %}
                         {% if page.introduction %}<div>{{ page.introduction }}</div>{% endif %}
                         {{ content }}
+                        {% if page.variant %}
+                            {% assign title = 'variants' %}
+                            {% if page.lang == "fr" %}
+                                {% assign title = 'variantes' %}
+                            {% endif %}
+                            {% include admonition.html title=title content=page.variant %}
+                        {% endif %}
                     </div>
                 </div>
             </div>
