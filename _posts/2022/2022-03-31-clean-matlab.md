@@ -22,20 +22,14 @@ the things you learned along the way[^1]<sup>,</sup>[^2].
 
 Also figured some other people could benefit so here is a post about this.
 
-<div class="admonition">
-   <div class="admonition-title">
-      <p>TL;DR</p>
-   </div>
-   <div class="admonition-content">
-    <p> Here is a
+{% include admonition.html
+      title='TL;DR'
+      content='Here is a
         <a href="https://github.com/cpp-lln-lab/template_matlab_analysis">
             template github repo [WIP]
         </a>
         that has already a lot of things set up to get you started on your clean MATLAB🔒
-        code journey.
-    </p>
-   </div>
-</div>
+        code journey.' %}
 
 ---
 

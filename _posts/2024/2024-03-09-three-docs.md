@@ -49,18 +49,12 @@ Static websites: HTML + CSS but no database.
 -  **Not covered:**
    - local set up: installing ruby + jekyll and serving the website
 
-<div class="admonition">
-   <div class="admonition-title">
-      <p>Setting up jekyll</p>
-   </div>
-   <div class="admonition-content">
-      <p><a href="https://s-canchi.github.io/2021-04-30-jekyll-conda/"
+{% include admonition.html
+      title='Setting up jekyll'
+      content='<a href="https://s-canchi.github.io/2021-04-30-jekyll-conda/"
             target="_blank"
             title="install jekyll with conda">This post</a>
-         explains how to set up jekyll if you already have conda on your computer.
-      </p>
-   </div>
-</div>
+         explains how to set up jekyll if you already have conda on your computer.' %}
 
 -  **Examples:**
 <!-- TODO add links -->
