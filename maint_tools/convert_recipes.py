@@ -8,6 +8,7 @@ from subprocess import run
 from warnings import warn
 
 import pandas as pd
+import yaml
 from rich import print
 from utils import (
     calories_json,
@@ -17,12 +18,14 @@ from utils import (
     root_folder,
     static_folder,
 )
+from yaml import Dumper, Loader
 
 
 def main():
     """Convert cooklang recipes to markdown and clean them up."""
     convert()
     validate_recipes()
+    format_recipes()
     list_ingredients()
     copy_images()
 
@@ -78,7 +81,7 @@ def main():
             file.writelines(cleaned_lines)
 
 
-def _list_recipes(recipe_folder):
+def _list_recipes(recipe_folder) -> list[Path]:
     return [
         recipe
         for recipe in recipe_folder.glob("**/*.cook")
@@ -182,6 +185,9 @@ def validate_recipes():
     os.chdir(recipe_folder)
 
     for recipe in _list_recipes(recipe_folder):
+        if "_" in recipe.name:
+            raise ValueError(f"no '_' allowed in file name: {recipe}")
+
         json_file = root_folder / _output_file(output_folder, recipe, ".json")
         # read json and get list of ingredients
         with json_file.open("r") as f:
@@ -200,6 +206,55 @@ def validate_recipes():
                     f"Recipe should contain a '{key}' key.\nIn {recipe}",
                     stacklevel=2,
                 )
+
+
+def format_recipes():
+    """Format the recipe.
+
+    Clean up front matter.
+    """
+    os.chdir(recipe_folder)
+
+    for recipe in _list_recipes(recipe_folder):
+        locale = recipe.parents[0].stem
+        if locale == "TODO":
+            continue
+
+        with recipe.open("r", encoding="utf-8") as f:
+            lines = f.readlines()
+
+        with recipe.open("w") as f:
+            frontmatter = False
+
+            frontmatter_content = []
+
+            for li in lines:
+                if li == "---\n":
+                    if frontmatter:
+                        # dump frontmatter back into file.
+
+                        data = yaml.load(
+                            "".join(frontmatter_content), Loader=Loader
+                        )
+                        sorted_data = dict(sorted(data.items()))
+
+                        new_frontmatter = yaml.dump(
+                            sorted_data, Dumper=Dumper, indent=4, width=120
+                        )
+                        f.write(new_frontmatter)
+
+                    frontmatter = not frontmatter
+
+                # remove empty lines
+                if frontmatter:
+                    if li == "\n":
+                        continue
+
+                    if li != "---\n":
+                        frontmatter_content.append(li)
+                        continue
+
+                f.write(li)
 
 
 def list_ingredients():
