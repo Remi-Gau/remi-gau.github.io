@@ -12,4 +12,4 @@ vanille
 
 90 ml d'huile
 
-1 œuf
+1 oeuf

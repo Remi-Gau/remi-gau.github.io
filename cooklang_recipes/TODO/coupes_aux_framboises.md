@@ -5,13 +5,13 @@
 
 80g de sucre glace
 
-3 blancs d’œuf
+3 blancs d’oeuf
 
 framboises (ou autres)
 
 Battre le mascarpone et le sucre glace pendant très longtemps.
 
-Au dernier moment , battre les blancs d’œuf en neige ferme, et les mélanger au mélange sucre/mascarpone . servir par dessus les framboises dans des coupes.<span style="text-decoration:underline;">my fitness pal</span>
+Au dernier moment , battre les blancs d’oeuf en neige ferme, et les mélanger au mélange sucre/mascarpone . servir par dessus les framboises dans des coupes.<span style="text-decoration:underline;">my fitness pal</span>
 
 
 # **<span style="text-decoration:underline;">APÉRITIFS ET ENTRÉES</span>**

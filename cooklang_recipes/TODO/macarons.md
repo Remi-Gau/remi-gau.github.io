@@ -8,7 +8,7 @@
 
 25 g de cacao non sucre (van houten)
 
-120 g de blancs d’œuf (environ 4 oeufs)
+120 g de blancs d’oeuf (environ 4 oeufs)
 
 50 g de sucre (plutôt sucre blanc)
 
@@ -92,7 +92,7 @@ Prendre deux coques de même gabarit, enfoncer l'une des coque du cote intérieu
 
 1 sachet de sucre vanillé
 
-Mélanger les 2 poudres avec le sucre vanillé et le sucre semoule. Ajouter les blancs d’œuf, mêler intimement.
+Mélanger les 2 poudres avec le sucre vanillé et le sucre semoule. Ajouter les blancs d’oeuf, mêler intimement.
 
 Recouvrir la ^laque du four de papier sulfurisé beurré.
 

@@ -11,7 +11,7 @@
 
 125g de beurre fondu
 
-6 blancs d’œuf
+6 blancs d’oeuf
 
 Mélanger les Requirements dans l’ordre.
 

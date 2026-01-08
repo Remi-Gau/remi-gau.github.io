@@ -10,7 +10,7 @@ Pour la pâte
 
 45g de beurre mou
 
-1 œuf
+1 oeuf
 
 1 pincée de sel
 
@@ -36,7 +36,7 @@ Cuire au four 20 minutes
 
 Pendant la cuisson, faire chauffer le beurre et le sucre dans une casserole.
 
-Laisser tiédir avant de rajouter l’œuf.
+Laisser tiédir avant de rajouter l’oeuf.
 
 Verser sur le gâteau et remettre au four pour 20 minutes de plus.
 

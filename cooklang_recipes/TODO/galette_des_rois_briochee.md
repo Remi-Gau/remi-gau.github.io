@@ -28,7 +28,7 @@ Pour la pâte :
 - 2 oeufs
 
 Pour décorer :
-- 1 œuf
+- 1 oeuf
 - sucre en grains (ou pépites de chocolat, pralin...)
 - sucre glace
 
@@ -61,4 +61,4 @@ Faîtes le trou de la galette en appuyant votre coude au milieu de la boule et �
 
 Aplatissez la galette, incisez la sur un bord intérieur pour y glisser la fève et refermez. Laissez de nouveau gonfler.
 
-Badigeonnez la galette avec un œuf battu et saupoudrez de sucre grain (ou autre) puis enfournez 15 min à 170°C.
+Badigeonnez la galette avec un oeuf battu et saupoudrez de sucre grain (ou autre) puis enfournez 15 min à 170°C.

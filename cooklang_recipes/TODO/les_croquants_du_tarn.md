@@ -1,7 +1,7 @@
 
 **LES CROQUANTS DU TARN
 
-2 blancs d’œuf
+2 blancs d’oeuf
 
 230g de sucre
 
@@ -11,7 +11,7 @@
 
 Mélanger farine et sucre
 
-Incorporer les blancs d’œuf non battus
+Incorporer les blancs d’oeuf non battus
 
 Remélanger, puis ajouter les amandes effilées.
 

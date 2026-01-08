@@ -1,7 +1,7 @@
 
 **MERINGUES
 
-Pour 2 blancs d’œuf il faut 125 g de sucre
+Pour 2 blancs d’oeuf il faut 125 g de sucre
 
 Battre en neige très ferme les blancs.
 
@@ -15,7 +15,7 @@ Eteindre le four quand elles sont dures en périphérie, et les laisser dans le 
 
 MERINGUE GEANTE ou BASE DE LA PAVOLVA :
 
-Même principe, avec 6 blancs d’œuf  ou au max 8 blancs.
+Même principe, avec 6 blancs d’oeuf  ou au max 8 blancs.
 
 Même dose de sucre.
 
