@@ -23,6 +23,7 @@ def main():
     """Convert cooklang recipes to markdown and clean them up."""
     convert()
     validate_recipes()
+    format_recipes()
     list_ingredients()
     copy_images()
 
@@ -78,7 +79,7 @@ def main():
             file.writelines(cleaned_lines)
 
 
-def _list_recipes(recipe_folder):
+def _list_recipes(recipe_folder) -> list[Path]:
     return [
         recipe
         for recipe in recipe_folder.glob("**/*.cook")
@@ -200,6 +201,35 @@ def validate_recipes():
                     f"Recipe should contain a '{key}' key.\nIn {recipe}",
                     stacklevel=2,
                 )
+
+
+def format_recipes():
+    """Format the recipe.
+
+    Clean up front matter.
+    """
+    os.chdir(recipe_folder)
+
+    for recipe in _list_recipes(recipe_folder):
+        locale = recipe.parents[0].stem
+        if locale == "TODO":
+            continue
+
+        with recipe.open("r") as f:
+            lines = f.readlines()
+
+        with recipe.open("w") as f:
+            frontmatter = False
+
+            for li in lines:
+                if li == "---\n":
+                    frontmatter = not frontmatter
+
+                # remove empty lines
+                if frontmatter and li == "\n":
+                    continue
+
+                f.write(li)
 
 
 def list_ingredients():
