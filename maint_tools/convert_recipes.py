@@ -185,6 +185,9 @@ def validate_recipes():
     os.chdir(recipe_folder)
 
     for recipe in _list_recipes(recipe_folder):
+        if "_" in recipe.name:
+            raise ValueError(f"no '_' allowed in file name: {recipe}")
+
         json_file = root_folder / _output_file(output_folder, recipe, ".json")
         # read json and get list of ingredients
         with json_file.open("r") as f:
