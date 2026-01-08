@@ -8,6 +8,7 @@ from subprocess import run
 from warnings import warn
 
 import pandas as pd
+import yaml
 from rich import print
 from utils import (
     calories_json,
@@ -17,6 +18,7 @@ from utils import (
     root_folder,
     static_folder,
 )
+from yaml import Dumper, Loader
 
 
 def main():
@@ -215,19 +217,39 @@ def format_recipes():
         if locale == "TODO":
             continue
 
-        with recipe.open("r") as f:
+        with recipe.open("r", encoding="utf-8") as f:
             lines = f.readlines()
 
         with recipe.open("w") as f:
             frontmatter = False
 
+            frontmatter_content = []
+
             for li in lines:
                 if li == "---\n":
+                    if frontmatter:
+                        # dump frontmatter back into file.
+
+                        data = yaml.load(
+                            "".join(frontmatter_content), Loader=Loader
+                        )
+                        sorted_data = dict(sorted(data.items()))
+
+                        new_frontmatter = yaml.dump(
+                            sorted_data, Dumper=Dumper, indent=4, width=120
+                        )
+                        f.write(new_frontmatter)
+
                     frontmatter = not frontmatter
 
                 # remove empty lines
-                if frontmatter and li == "\n":
-                    continue
+                if frontmatter:
+                    if li == "\n":
+                        continue
+
+                    if li != "---\n":
+                        frontmatter_content.append(li)
+                        continue
 
                 f.write(li)
 
