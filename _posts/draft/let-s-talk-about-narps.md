@@ -14,7 +14,7 @@ The idea is quite simple: give the same data to a bunch of people and tell them 
 
 The idea behind that type of study is to get an idea of how analytical flexibility affects results in the real world. When scientist analyze their data they have to make bazillions of choices: how to preprocess the data, how to denoise it, what data to include/exclude, how to model it... In many cases each set of decision is justifiable but in the worst case scenario, this flexibility in terms of analysis can be used (more or less consciously) to find the result we want or to the find the result that will make a nice coherent story that will be easy to sell. In neuroimaging the number of analytical decisions we have to make is so vast that it is conceivable that with enough patience one could in theory find activation in almost any part of the brain. In practice though most researchers do
 
-good to have many teams analyse the same data
+good to have many teams analyze the same data
  - less issues of getting it "wrong" especially when new to the field
 
 - good to know that the work will be published no matter what you find. Gee that must be how people who do a registered report feel like. I mean imagine that: knowing that your effort will be rewarded without having to rely on the powers of the allmighty gods of analytical flexibility to find something worth publishing in your heap of data.

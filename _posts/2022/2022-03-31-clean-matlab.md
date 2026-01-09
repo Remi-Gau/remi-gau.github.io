@@ -684,7 +684,7 @@ If you want actual examples of all this.
 
 ---
 
-**Acknowledgements**:
+**Acknowledgments**:
 
 I would like to thank [Patrick Mineault](https://twitter.com/patrickmineault) and
 Joana Leitao for feedbacks on earlier drafts of this post.

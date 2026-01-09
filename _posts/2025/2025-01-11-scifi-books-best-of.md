@@ -34,7 +34,7 @@ The moon is a prison state that will fight a war of independence against earth.
 ### Stranger in a strange land
 
 A earthling raised by martians comes back to live on earth.
-Got the author to be labelled an anarchistic hippie!
+Got the author to be labeled an anarchistic hippie!
 
 ### Starship trooper
 
@@ -42,7 +42,7 @@ A young man joins the infantery to fight a war against some alien species in a s
 Inspired the similarly titled movie.
 MUCH better.
 Some socratic discussion lead you to accept scary conclusions.
-Got the same author to be labelled a fascist!
+Got the same author to be labeled a fascist!
 
 ## Isaac Asimov
 
@@ -120,7 +120,7 @@ equipped with super smart AI and very diverse personalities.
 ### The dispossessed
 
 An anarchistic utopia set on a barren planet.
-One of their goes as an emissary on their neighbouring planet where a communist and a capitalist civilisation fight a cold war.
+One of their goes as an emissary on their neighboring planet where a communist and a capitalist civilisation fight a cold war.
 
 ### The left hand of darkness
 
