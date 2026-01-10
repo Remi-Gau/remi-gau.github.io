@@ -97,6 +97,7 @@ def _all_known_ingredients() -> list[str]:
     with ingredients_json.open("r") as f:
         ingredients_json_content = json.load(f)
 
+    # rewrite json in sorted order
     tmp = {}
     for x in sorted(ingredients_json_content):
         tmp[x] = ingredients_json_content[x]
