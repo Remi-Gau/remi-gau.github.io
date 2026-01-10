@@ -8,18 +8,28 @@ top_carousel: off
         <div class="col-12">
             <div class="article-title d-flex flex-col align-items-center">
                 <h1>{{ page.title }}</h1>
-                {% if page.prep_time %}
-                    <p class="px-1 border border-1 border-secondary rounded rounded-1 fw-medium"
-                       style="width: fit-content;
-                              font-size: 90%">
-                        prep time : {{ page.prep_time }}
-                    </p>
-                {% endif %}
+                <p class="px-1 border border-1 border-secondary rounded rounded-1 fw-medium"
+                   style="width: fit-content;
+                          font-size: 90%">prep time : {{ page.prep_time }}</p>
                 {% if page.cook_time %}
                     <p class="px-1 border border-1 border-secondary rounded rounded-1 fw-medium"
                        style="width: fit-content;
                               font-size: 90%">
                         cooking time : {{ page.cook_time }}
+                    </p>
+                {% endif %}
+                {% if page.servings %}
+                    <p class="px-1 border border-1 border-secondary rounded rounded-1 fw-medium"
+                       style="width: fit-content;
+                              font-size: 90%">
+                        servings : {{ page.servings }}
+                    </p>
+                {% endif %}
+                {% if page.calories %}
+                    <p class="px-1 border border-1 border-secondary rounded rounded-1 fw-medium"
+                       style="width: fit-content;
+                              font-size: 90%">
+                        calories / serving : {{ page.calories }}
                     </p>
                 {% endif %}
                 <div class="dropdown">
@@ -78,19 +88,6 @@ top_carousel: off
             </div>
             <hr>
             <div class="row justify-content-center">
-                <div class="col-5">
-                    <div class="small text-right">
-                        <div>
-                            {% if site.disqus %}
-                                <i class="fa fa-comments-o"> </i> <span class="disqus-comment-count"
-       data-disqus-url="{{ site.url }}{{ page.url }}">0</span> comments
-                            {% endif %}
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="row justify-content-center">
                 <div class="col-10">
                     <!-- donate -->
                     {% if site.donation %}
@@ -99,9 +96,6 @@ top_carousel: off
                     <br>
                     <!-- share -->
                     {% include share.html %}
-                    <br>
-                    <!-- comment -->
-                    {% include comments.html %}
                 </div>
             </div>
         </div>

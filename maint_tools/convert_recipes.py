@@ -38,16 +38,19 @@ def main():
             output_folder, recipe, ".md"
         )
         json_file = root_folder / _output_file(output_folder, recipe, ".json")
-        print(f"\n Cleaning {markdown_file.name}")
+        print(f"\nCleaning {markdown_file.name}")
 
         with json_file.open("r") as f:
             recipe = json.load(f)
         locale = json_file.parents[0].stem
         servings = recipe.get("metadata").get("map").get("servings")
 
-        calories = None
-        if calories := _compute_calories_recipe(recipe) and servings:
+        calories = _compute_calories_recipe(recipe)
+        if calories is not None and servings is not None:
             calories /= servings
+            calories = int(calories)
+        else:
+            calories = None
 
         with markdown_file.open("r", encoding="utf-8") as file:
             lines = file.readlines()
@@ -65,7 +68,8 @@ def main():
                     cleaned_lines.append(f"lang: {locale}\n")
 
                     if calories is not None:
-                        line = f"calories: {round(calories)}\n{line}"
+                        line = f"calories: {calories}\n{line}"
+                        print(f"calories / serving: {calories}")
                         cleaned_lines.append(line)
                         continue
 
@@ -94,15 +98,16 @@ def _list_recipes(recipe_folder) -> list[Path]:
 
 
 def _all_known_ingredients() -> list[str]:
-    with ingredients_json.open("r") as f:
+    with ingredients_json.open("r", encoding="utf-8") as f:
         ingredients_json_content = json.load(f)
 
     # rewrite json in sorted order
     tmp = {}
     for x in sorted(ingredients_json_content):
         tmp[x] = ingredients_json_content[x]
-    with ingredients_json.open("w") as f:
-        json.dump(tmp, f)
+        tmp[x]["other_names"] = sorted(tmp[x]["other_names"])
+    with ingredients_json.open("w", encoding="utf-8") as f:
+        json.dump(tmp, f, indent=4, ensure_ascii=False)
 
     known_ingredients = []
     for x in ingredients_json_content:
@@ -117,20 +122,22 @@ def _compute_calories_recipe(recipe: dict) -> float | None:
 
     all_ingredients = [x["name"] for x in recipe["ingredients"]]
 
-    if set(all_ingredients).intersection(set(unknown_ingredient)):
-        return None
     if missing_ingredients := list(
         set(all_ingredients) - set(known_ingredients)
     ):
-        unknown_ingredient.extend(missing_ingredients)
-        print(f"unknown ingredients for this recipe: {missing_ingredients}")
+        print(f"\tunknown ingredients for this recipe: {missing_ingredients}")
+        tmp = list(
+            set(all_ingredients)
+            - set(known_ingredients)
+            - (set(unknown_ingredient))
+        )
+        unknown_ingredient.extend(tmp)
         return None
 
     calories = 0.0
     for ingredient in recipe["ingredients"]:
         if cal := _compute_calories(ingredient):
             calories += cal
-        print(f"  {ingredient['name']}: {cal}")
 
     return calories
 
@@ -154,19 +161,24 @@ def _compute_calories(ingredient) -> int | float:
             ingredient_key = x
             break
 
-    cal = 0
-    if unit == ingredients_json_content[ingredient_key]["unit"]:
-        dose = 1
-        if unit == "g":
-            dose = 100
-
+    if ingredients_json_content[ingredient_key]["calories"] == 0:
+        cal = 0
+    elif unit == ingredients_json_content[ingredient_key]["unit"]:
         quantity = ingredient["quantity"]["value"]["value"]["value"]
-
+        cal = quantity * ingredients_json_content[ingredient_key]["calories"]
+    elif (
+        unit == "Kg"
+        and ingredients_json_content[ingredient_key]["unit"] == "g"
+    ):
+        quantity = ingredient["quantity"]["value"]["value"]["value"]
         cal = (
             quantity
-            / dose
+            * 1000
             * ingredients_json_content[ingredient_key]["calories"]
         )
+    else:
+        print(f"\tunknonw unit for {name}: {unit}")
+        cal = 0
 
     return cal
 

@@ -6,13 +6,13 @@
 
 4 oeufs
 
-1 CàS de maïzena
+1 CàS de maizena
 
 1 boîte d'ananas au sirop ou frais
 
 Mélanger sucre et oeufs et faire blanchir.
 
-Ajouter maïzena e poudre d'amande
+Ajouter maizena e poudre d'amande
 
 Égoutter l'ananas et disposer des rondelles au fond du plat.
 
