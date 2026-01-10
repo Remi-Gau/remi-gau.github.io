@@ -12,7 +12,7 @@
 
 Mélanger sucre et oeufs et faire blanchir.
 
-Ajouter maizena e poudre d'amande
+Ajouter maizena et poudre d'amande
 
 Égoutter l'ananas et disposer des rondelles au fond du plat.
 
