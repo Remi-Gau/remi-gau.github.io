@@ -11,7 +11,7 @@ import pandas as pd
 import yaml
 from rich import print
 from utils import (
-    calories_json,
+    ingredients_json,
     ingredients_tsv,
     output_folder,
     recipe_folder,
@@ -19,6 +19,8 @@ from utils import (
     static_folder,
 )
 from yaml import Dumper, Loader
+
+unknown_ingredient = []
 
 
 def main():
@@ -43,9 +45,9 @@ def main():
         locale = json_file.parents[0].stem
         servings = recipe.get("metadata").get("map").get("servings")
 
-        calories = 0
-        if servings:
-            calories = _compute_calories_recipe(recipe, locale) / servings
+        calories = None
+        if calories := _compute_calories_recipe(recipe) and servings:
+            calories /= servings
 
         with markdown_file.open("r", encoding="utf-8") as file:
             lines = file.readlines()
@@ -62,7 +64,7 @@ def main():
                 if front_matter_delim_count == 2:
                     cleaned_lines.append(f"lang: {locale}\n")
 
-                    if calories:
+                    if calories is not None:
                         line = f"calories: {round(calories)}\n{line}"
                         cleaned_lines.append(line)
                         continue
@@ -80,6 +82,8 @@ def main():
         with markdown_file.open("w", encoding="utf-8") as file:
             file.writelines(cleaned_lines)
 
+    print(sorted(unknown_ingredient))
+
 
 def _list_recipes(recipe_folder) -> list[Path]:
     return [
@@ -89,44 +93,79 @@ def _list_recipes(recipe_folder) -> list[Path]:
     ]
 
 
-def _compute_calories_recipe(recipe, locale):
-    with calories_json.open("r") as f:
-        calories_json_content = json.load(f)
-    known_ingredients = {
-        x["locale"][locale]: {
-            "calories": x["calories"],
-            "unit": x["unit"],
-        }
-        for x in calories_json_content
-    }
+def _all_known_ingredients() -> list[str]:
+    with ingredients_json.open("r") as f:
+        ingredients_json_content = json.load(f)
 
-    calories = 0
-    for x in recipe["ingredients"]:
-        if cal := _compute_calories(x, known_ingredients):
+    tmp = {}
+    for x in sorted(ingredients_json_content):
+        tmp[x] = ingredients_json_content[x]
+    with ingredients_json.open("w") as f:
+        json.dump(tmp, f)
+
+    known_ingredients = []
+    for x in ingredients_json_content:
+        known_ingredients.extend(
+            [x, *ingredients_json_content[x]["other_names"]]
+        )
+    return known_ingredients
+
+
+def _compute_calories_recipe(recipe: dict) -> float | None:
+    known_ingredients = _all_known_ingredients()
+
+    all_ingredients = [x["name"] for x in recipe["ingredients"]]
+
+    if set(all_ingredients).intersection(set(unknown_ingredient)):
+        return None
+    if missing_ingredients := list(
+        set(all_ingredients) - set(known_ingredients)
+    ):
+        unknown_ingredient.extend(missing_ingredients)
+        print(f"unknown ingredients for this recipe: {missing_ingredients}")
+        return None
+
+    calories = 0.0
+    for ingredient in recipe["ingredients"]:
+        if cal := _compute_calories(ingredient):
             calories += cal
-        print(f"  {x['name']}: {cal}")
+        print(f"  {ingredient['name']}: {cal}")
+
     return calories
 
 
-def _compute_calories(ingredient, known_ingredients) -> int | float:
+def _compute_calories(ingredient) -> int | float:
     """Compute calories for recipe.
 
     Adapt if ingredients have calories expressed per unit or per 100 gr.
     """
     if ingredient["quantity"] is None:
         return 0
+
     name = ingredient["name"]
     unit = ingredient["quantity"]["unit"]
 
+    with ingredients_json.open("r") as f:
+        ingredients_json_content = json.load(f)
+
+    for x in ingredients_json_content:
+        if name in [x, *ingredients_json_content[x]["other_names"]]:
+            ingredient_key = x
+            break
+
     cal = 0
-    if name in known_ingredients and (unit == known_ingredients[name]["unit"]):
+    if unit == ingredients_json_content[ingredient_key]["unit"]:
         dose = 1
-        if unit == "gr":
+        if unit == "g":
             dose = 100
 
         quantity = ingredient["quantity"]["value"]["value"]["value"]
 
-        cal = quantity / dose * known_ingredients[name]["calories"]
+        cal = (
+            quantity
+            / dose
+            * ingredients_json_content[ingredient_key]["calories"]
+        )
 
     return cal
 

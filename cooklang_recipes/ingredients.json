@@ -1,0 +1,123 @@
+{
+    "butter": {
+        "other_names": [
+            "beurre"
+        ],
+        "unit": "g",
+        "calories": 715,
+        "price_euro": 0.017
+    },
+    "maizena": {
+        "other_names": [
+            "corn flour",
+            "maïzena",
+            "corn flour"
+        ],
+        "unit": "g",
+        "calories": 380,
+        "price_euro": 0.00655
+    },
+    "sucre": {
+        "other_names": [
+            "sugar",
+            "cassonade",
+            "brown sugar",
+            "sucre vanillé",
+            "sugar cube",
+            "sugar cubes",
+            "sucre en morceaux",
+            "sucre glace",
+            "icing sugar",
+            "vanilla sugar"
+        ],
+        "unit": "g",
+        "calories": 385,
+        "price_euro": 0.00085
+    },
+    "farine": {
+        "other_names": [
+            "flour"
+        ],
+        "unit": "g",
+        "calories": 365,
+        "price_euro": 0.001
+    },
+    "oeuf": {
+        "other_names": [
+            "oeufs",
+            "egg",
+            "eggs"
+        ],
+        "unit": null,
+        "calories": 70,
+        "price_euro": 0.35
+    },
+    "blancs d'oeuf": {
+        "other_names": [
+            "egg white",
+            "blancs d'oeufs",
+            "egg whites"
+        ],
+        "unit": null,
+        "calories": 15,
+        "price_euro": 0.35
+    },
+    "jaune d'oeuf": {
+        "other_names": [
+            "egg yolk",
+            "egg yolks",
+            "yolk",
+            "jaune d'oeuf",
+            "jaunes d'oeufs"
+        ],
+        "unit": null,
+        "calories": 55,
+        "price_euro": 0.35
+    },
+    "mascarpone": {
+        "other_names": [],
+        "unit": "g",
+        "calories": 408,
+        "price_euro": 0.01
+    },
+    "levure chimique": {
+        "other_names": [
+            "baking powder"
+        ],
+        "unit": "g",
+        "calories": 0,
+        "price_euro": null
+    },
+    "eau": {
+        "other_names": [
+            "water"
+        ],
+        "unit": "g",
+        "calories": 0,
+        "price_euro": null
+    },
+    "gingembre": {
+        "other_names": [
+            "ginger"
+        ],
+        "unit": "g",
+        "calories": 0,
+        "price_euro": null
+    },
+    "poudre d'amande" :{
+        "other_names": [
+            "almond powder"
+        ],
+        "unit": "g",
+        "calories": 615,
+        "price_euro": 0.04
+    },
+    "lait":{
+        "other_names": [
+            "milk"
+        ],
+        "unit": "ml",
+        "calories": 6.2,
+        "price_euro": 0.001
+    }
+}
