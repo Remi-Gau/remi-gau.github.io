@@ -177,7 +177,7 @@ def _compute_calories(ingredient) -> int | float:
             * ingredients_json_content[ingredient_key]["calories"]
         )
     else:
-        print(f"[red]\tunknonw unit for {name}: {unit}")
+        print(f"\tunknown unit for {name}: {unit}")
         cal = 0
 
     return cal
