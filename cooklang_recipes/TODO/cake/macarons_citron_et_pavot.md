@@ -24,7 +24,7 @@ Quelques gouttes de colorant jaune
 
 1 oeuf
 
-10 g de maïzena
+10 g de maizena
 
 Le zeste de 1 citron râpé
 
@@ -52,7 +52,7 @@ Laissez refroidir les macarons sur la plaque avant de les détacher du papier.
 
 Préparez la crème au citron.
 
-Dans une casserole, battez ensemble l’oeuf, le sucre, le jus de citron, le zeste de citron râpé et la maïzena.
+Dans une casserole, battez ensemble l’oeuf, le sucre, le jus de citron, le zeste de citron râpé et la maizena.
 
 Faites cuire à feux doux, jusqu’à l’ébullition sans cesser de remuer au fouet.
 

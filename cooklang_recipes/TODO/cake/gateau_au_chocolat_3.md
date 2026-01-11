@@ -12,7 +12,7 @@
 
 100 g poudre amande
 
-3 CàS de maïzena
+3 CàS de maizena
 
 2 sachets de sucre vanillé
 

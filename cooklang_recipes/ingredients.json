@@ -1,0 +1,354 @@
+{
+    "ail": {
+        "other_names": [
+            "garlic"
+        ],
+        "unit": "g",
+        "calories": 0,
+        "price_euro": null
+    },
+    "alcool": {
+        "other_names": [
+            "amaretto",
+            "rhum"
+        ],
+        "unit": "ml",
+        "calories": 7.0,
+        "price_euro": null
+    },
+    "aneth": {
+        "other_names": [
+            "dill"
+        ],
+        "unit": "g",
+        "calories": 0,
+        "price_euro": null
+    },
+    "aromes": {
+        "other_names": [
+            "bitter orange extract",
+            "extrait d'orange amère",
+            "fleur d'oranger",
+            "orange blossom water"
+        ],
+        "unit": "ml",
+        "calories": 0,
+        "price_euro": null
+    },
+    "blancs d'oeuf": {
+        "other_names": [
+            "blancs d'oeufs",
+            "egg white",
+            "egg whites"
+        ],
+        "unit": null,
+        "calories": 15,
+        "price_euro": 0.35
+    },
+    "butter": {
+        "other_names": [
+            "beurre"
+        ],
+        "unit": "g",
+        "calories": 7.15,
+        "price_euro": 0.017
+    },
+    "citron": {
+        "other_names": [
+            "citron vert",
+            "citron verts",
+            "citrons",
+            "citrons vert",
+            "jus de citron",
+            "lemon",
+            "lemon juice",
+            "lemons",
+            "lime",
+            "limes"
+        ],
+        "unit": "g",
+        "calories": 0,
+        "price_euro": null
+    },
+    "eau": {
+        "other_names": [
+            "water"
+        ],
+        "unit": "ml",
+        "calories": 0,
+        "price_euro": null
+    },
+    "farine": {
+        "other_names": [
+            "flour"
+        ],
+        "unit": "g",
+        "calories": 3.65,
+        "price_euro": 0.001
+    },
+    "gingembre": {
+        "other_names": [
+            "ginger"
+        ],
+        "unit": "g",
+        "calories": 0,
+        "price_euro": null
+    },
+    "herbes": {
+        "other_names": [
+            "herbe de provence",
+            "romarin",
+            "rosemary"
+        ],
+        "unit": "g",
+        "calories": 0,
+        "price_euro": null
+    },
+    "huile d'olive": {
+        "other_names": [
+            "olive oil"
+        ],
+        "unit": "ml",
+        "calories": 8.25,
+        "price_euro": null
+    },
+    "jaune d'oeuf": {
+        "other_names": [
+            "egg yolk",
+            "egg yolks",
+            "jaune d'oeuf",
+            "jaunes d'oeufs",
+            "yolk"
+        ],
+        "unit": null,
+        "calories": 55,
+        "price_euro": 0.35
+    },
+    "lait": {
+        "other_names": [
+            "milk"
+        ],
+        "unit": "ml",
+        "calories": 6.2,
+        "price_euro": 0.001
+    },
+    "lait de coco": {
+        "other_names": [
+            "coconut milk"
+        ],
+        "unit": "ml",
+        "calories": 2.02,
+        "price_euro": null
+    },
+    "lentilles": {
+        "other_names": [
+            "lentilles corail",
+            "lentilles corails",
+            "lentils",
+            "red lentils"
+        ],
+        "unit": "g",
+        "calories": 1.3,
+        "price_euro": null
+    },
+    "levure chimique": {
+        "other_names": [
+            "baking powder"
+        ],
+        "unit": "g",
+        "calories": 0,
+        "price_euro": null
+    },
+    "maizena": {
+        "other_names": [
+            "corn flour",
+            "corn flour",
+            "maizena"
+        ],
+        "unit": "g",
+        "calories": 3.8,
+        "price_euro": 0.00655
+    },
+    "marmelade d'orange": {
+        "other_names": [
+            "orange marmalade",
+            "orange marmelade"
+        ],
+        "unit": "g",
+        "calories": 2.7,
+        "price_euro": null
+    },
+    "mascarpone": {
+        "other_names": [],
+        "unit": "g",
+        "calories": 4.1,
+        "price_euro": 0.01
+    },
+    "miel": {
+        "other_names": [
+            "honey"
+        ],
+        "unit": "g",
+        "calories": 3.05,
+        "price_euro": null
+    },
+    "oeuf": {
+        "other_names": [
+            "egg",
+            "eggs",
+            "oeufs"
+        ],
+        "unit": null,
+        "calories": 70,
+        "price_euro": 0.35
+    },
+    "pistaches": {
+        "other_names": [
+            "pistachios"
+        ],
+        "unit": "g",
+        "calories": 5.8,
+        "price_euro": null
+    },
+    "poivre": {
+        "other_names": [
+            "pepper",
+            "poivre concassé"
+        ],
+        "unit": "g",
+        "calories": 0,
+        "price_euro": null
+    },
+    "pomme": {
+        "other_names": [
+            "apple",
+            "apples",
+            "pommes"
+        ],
+        "unit": "g",
+        "calories": 0.5,
+        "price_euro": null
+    },
+    "poudre d'amande": {
+        "other_names": [
+            "almond powder"
+        ],
+        "unit": "g",
+        "calories": 6.15,
+        "price_euro": 0.04
+    },
+    "poudre de noisette": {
+        "other_names": [
+            "hazelnut powder"
+        ],
+        "unit": "g",
+        "calories": 6.65,
+        "price_euro": 0.07
+    },
+    "pâte brisée": {
+        "other_names": [],
+        "unit": "g",
+        "calories": 1806,
+        "price_euro": null
+    },
+    "pâte feuilletée": {
+        "other_names": [
+            "puff pastry"
+        ],
+        "unit": null,
+        "calories": 870,
+        "price_euro": 2
+    },
+    "raisins secs": {
+        "other_names": [
+            "raisins"
+        ],
+        "unit": "g",
+        "calories": 2.65,
+        "price_euro": null
+    },
+    "saumon": {
+        "other_names": [
+            "salmon"
+        ],
+        "unit": "g",
+        "calories": 2.0,
+        "price_euro": null
+    },
+    "sel": {
+        "other_names": [
+            "salt"
+        ],
+        "unit": "g",
+        "calories": 0,
+        "price_euro": null
+    },
+    "sucre": {
+        "other_names": [
+            "brown sugar",
+            "cassonade",
+            "icing sugar",
+            "sucre en morceaux",
+            "sucre glace",
+            "sucre vanillé",
+            "sugar",
+            "sugar cube",
+            "sugar cubes",
+            "vanilla sugar"
+        ],
+        "unit": "g",
+        "calories": 3.85,
+        "price_euro": 0.00085
+    },
+    "tahini": {
+        "other_names": [],
+        "unit": "g",
+        "calories": 6.8,
+        "price_euro": null
+    },
+    "vanille": {
+        "other_names": [
+            "vanilla"
+        ],
+        "unit": "g",
+        "calories": 0,
+        "price_euro": null
+    },
+    "vinaigre": {
+        "other_names": [
+            "balsamic vinegar",
+            "cider vinegar",
+            "red wine vinegar",
+            "vinaigre balsamique",
+            "vinaigre de cidre",
+            "vinaigre de vin blanc",
+            "vinaigre de vin rouge",
+            "vinegar",
+            "white wine vinegar"
+        ],
+        "unit": "ml",
+        "calories": 0,
+        "price_euro": null
+    },
+    "épices": {
+        "other_names": [
+            "black pepper",
+            "chili pepper",
+            "coriandre",
+            "coriandre seeds",
+            "cumin en poudre",
+            "cumin powder",
+            "cumin seeds",
+            "curcuma en poudre",
+            "curry powder",
+            "graines de coriandre",
+            "graines de cumin",
+            "piment",
+            "piment d'Espelette",
+            "tumeric"
+        ],
+        "unit": "g",
+        "calories": 0,
+        "price_euro": null
+    }
+}
