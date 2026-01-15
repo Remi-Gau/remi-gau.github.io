@@ -248,6 +248,7 @@ def validate_recipes():
         metadata = content.get("metadata").get("map")
         for key in ["category", "prep_time"]:
             if key not in metadata:
+                print(metadata)
                 raise ValueError(
                     f"Recipe must contain a '{key}' key.\nIn {recipe}"
                 )
