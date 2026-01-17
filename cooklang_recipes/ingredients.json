@@ -53,6 +53,14 @@
         "calories": 7.15,
         "price_euro": 0.017
     },
+    "chocolat noir": {
+        "other_names": [
+            "dark chocolate"
+        ],
+        "unit": "g",
+        "calories": 5.5,
+        "price_euro": 0.0125
+    },
     "citron": {
         "other_names": [
             "citron vert",
@@ -191,6 +199,14 @@
         "unit": "g",
         "calories": 3.05,
         "price_euro": null
+    },
+    "noix de coco râpée": {
+        "other_names": [
+            "grated coconut"
+        ],
+        "unit": "g",
+        "calories": 6.5,
+        "price_euro": 0.016
     },
     "oeuf": {
         "other_names": [
