@@ -94,6 +94,11 @@ defaults:
     values:
         top_carousel: on
 -   scope:
+        path: _recipes/conversion_table.md
+    values:
+        layout: blog
+        permalink: /conversion_table.html
+-   scope:
         path: _recipes/en
     values:
         layout: recipe

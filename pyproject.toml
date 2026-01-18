@@ -62,3 +62,7 @@ max-complexity = 23
 
 [tool.ruff.lint.pydocstyle]
 convention = "numpy"
+
+[tool.ruff.lint.pylint]
+# https://docs.astral.sh/ruff/settings/#lint_pylint_max-branches
+max-branches = 13

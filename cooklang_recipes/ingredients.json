@@ -78,13 +78,23 @@
         "calories": 0,
         "price_euro": null
     },
+    "crême fraîche épaisse": {
+        "other_names": [
+            "crème fraîche",
+            "double cream",
+            "sour cream"
+        ],
+        "unit": "g",
+        "calories": 2.91,
+        "price_euro": null
+    },
     "eau": {
         "other_names": [
             "water"
         ],
         "unit": "ml",
         "calories": 0,
-        "price_euro": null
+        "price_euro": 0
     },
     "farine": {
         "other_names": [
@@ -200,6 +210,14 @@
         "calories": 3.05,
         "price_euro": null
     },
+    "noix": {
+        "other_names": [
+            "wallnuts"
+        ],
+        "unit": "g",
+        "calories": 6.94,
+        "price_euro": null
+    },
     "noix de coco râpée": {
         "other_names": [
             "grated coconut"
@@ -247,7 +265,9 @@
     },
     "poudre d'amande": {
         "other_names": [
-            "almond powder"
+            "almond powder",
+            "amandes éffilées",
+            "sliced almonds"
         ],
         "unit": "g",
         "calories": 6.15,
@@ -280,7 +300,7 @@
             "raisins"
         ],
         "unit": "g",
-        "calories": 2.65,
+        "calories": 2.63,
         "price_euro": null
     },
     "saumon": {

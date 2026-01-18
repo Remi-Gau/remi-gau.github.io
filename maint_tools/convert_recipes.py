@@ -26,11 +26,17 @@ unknown_ingredient = []
 def main():
     """Convert cooklang recipes to markdown and clean them up."""
     convert()
-    validate_recipes()
     format_recipes()
+    validate_recipes()
     list_ingredients()
     copy_images()
+    update_markdowns()
 
+    print(sorted(unknown_ingredient))
+
+
+def update_markdowns() -> None:
+    """Clean markdown and add calorie per serving."""
     os.chdir(recipe_folder)
 
     for recipe in _list_recipes(recipe_folder):
@@ -45,12 +51,15 @@ def main():
         locale = json_file.parents[0].stem
         servings = recipe.get("metadata").get("map").get("servings")
 
-        calories = _compute_calories_recipe(recipe)
+        calories, price = _compute_details_recipe(recipe)
         if calories is not None and servings is not None:
             calories /= servings
             calories = int(calories)
         else:
             calories = None
+
+        if price is not None:
+            print(f"{price=}")
 
         with markdown_file.open("r", encoding="utf-8") as file:
             lines = file.readlines()
@@ -86,8 +95,6 @@ def main():
         with markdown_file.open("w", encoding="utf-8") as file:
             file.writelines(cleaned_lines)
 
-    print(sorted(unknown_ingredient))
-
 
 def _list_recipes(recipe_folder) -> list[Path]:
     return [
@@ -117,7 +124,8 @@ def _all_known_ingredients() -> list[str]:
     return known_ingredients
 
 
-def _compute_calories_recipe(recipe: dict) -> float | None:
+def _compute_details_recipe(recipe: dict) -> tuple[float | None, float | None]:
+    """Compute calories and price recipe."""
     known_ingredients = _all_known_ingredients()
 
     all_ingredients = [x["name"] for x in recipe["ingredients"]]
@@ -132,23 +140,31 @@ def _compute_calories_recipe(recipe: dict) -> float | None:
             - (set(unknown_ingredient))
         )
         unknown_ingredient.extend(tmp)
-        return None
+        return None, None
 
     calories = 0.0
+    price: float | None = 0.0
     for ingredient in recipe["ingredients"]:
-        if cal := _compute_calories(ingredient):
+        cal, pr = _compute_calories_and_price(ingredient)
+        if cal:
             calories += cal
+        if pr is None:
+            price = None
+        elif price is not None:
+            price += pr
 
-    return calories
+    return calories, price
 
 
-def _compute_calories(ingredient) -> int | float:
-    """Compute calories for recipe.
+def _compute_calories_and_price(
+    ingredient: dict,
+) -> tuple[float, float | None]:
+    """Compute calories and price for a given ingredient.
 
     Adapt if ingredients have calories expressed per unit or per 100 gr.
     """
     if ingredient["quantity"] is None:
-        return 0
+        return 0.0, 0.0
 
     name = ingredient["name"]
     unit = ingredient["quantity"]["unit"]
@@ -161,26 +177,34 @@ def _compute_calories(ingredient) -> int | float:
             ingredient_key = x
             break
 
-    if ingredients_json_content[ingredient_key]["calories"] == 0:
+    ingredient_unit = ingredients_json_content[ingredient_key]["unit"]
+    ingredient_calories = ingredients_json_content[ingredient_key]["calories"]
+    ingredient_price = ingredients_json_content[ingredient_key]["price_euro"]
+
+    ingredient_quantity = ingredient["quantity"]["value"]["value"]["value"]
+
+    if ingredient_calories == 0:
         cal = 0
-    elif unit == ingredients_json_content[ingredient_key]["unit"]:
-        quantity = ingredient["quantity"]["value"]["value"]["value"]
-        cal = quantity * ingredients_json_content[ingredient_key]["calories"]
-    elif (
-        unit == "Kg"
-        and ingredients_json_content[ingredient_key]["unit"] == "g"
-    ):
-        quantity = ingredient["quantity"]["value"]["value"]["value"]
-        cal = (
-            quantity
-            * 1000
-            * ingredients_json_content[ingredient_key]["calories"]
-        )
+    elif unit == ingredient_unit:
+        cal = ingredient_quantity * ingredient_calories
+    elif unit == "Kg" and ingredient_unit == "g":
+        cal = ingredient_quantity * 1000 * ingredient_calories
     else:
         print(f"\tunknown unit for {name}: {unit}")
         cal = 0
 
-    return cal
+    if ingredient_price is None:
+        print(f"\tunknown price for {name}")
+        pr = None
+    elif unit == ingredient_unit:
+        pr = ingredient_quantity * ingredient_price
+    elif unit == "Kg" and ingredient_unit == "g":
+        pr = ingredient_quantity * 1000 * ingredient_price
+    else:
+        print(f"\tunknown unit for {name}: {unit}")
+        pr = None
+
+    return cal, pr
 
 
 def convert() -> None:
@@ -262,7 +286,7 @@ def validate_recipes():
 
 
 def format_recipes():
-    """Format the recipe.
+    """Format .cook recipes.
 
     Clean up front matter.
     """
@@ -289,6 +313,7 @@ def format_recipes():
                         data = yaml.load(
                             "".join(frontmatter_content), Loader=Loader
                         )
+
                         sorted_data = dict(sorted(data.items()))
 
                         new_frontmatter = yaml.dump(
