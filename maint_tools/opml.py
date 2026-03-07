@@ -30,7 +30,7 @@ def parse_opml(file_path):
         request = requests.get(outline.get("htmlUrl"))
         if request.status_code not in [200, 404]:
             print(f"Error: {request.status_code} - {outline.get('htmlUrl')}")
-            if request.status_code in [404]:
+            if request.status_code == 404:
                 continue
 
         podcast = OrderedDict(
@@ -43,7 +43,7 @@ def parse_opml(file_path):
             }
         )
 
-        if podcast["title"] in ["Comments on"]:
+        if podcast["title"] == "Comments on":
             continue
 
         podcasts.append(podcast)
