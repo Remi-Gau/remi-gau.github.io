@@ -5,6 +5,11 @@
 #   video:
 #   web:
 
+-   name: Reproducible processing pipelines using BIDS
+    date: 4th November 2025
+    conference: cogbase
+    web: https://docs.google.com/presentation/d/1YUsrpfixrkSMLg5yJAsDsop6MqvndHi2LwyyYTDkpFw/edit?usp=sharing
+
 -   name: 'BIDS: Open-source standard for the organization of neuro data'
     date: 22nd November 2023
     conference: Neuro OpenScience Workshop, Brain institute, Paris
@@ -29,7 +34,6 @@
 -   name: Fully transparent ERP & MRI study methodology descriptions with ARTEM-IS and eCOBIDAS
     date: 12th September 2022
     conference: INCF annual assembly 2022
-  # video:
     web: https://docs.google.com/presentation/d/1z1aixJTiUl6plDOPEIobntSKUgspVaN6Doby5EDMubI/
 
 -   name: 'BIDS: A standardized way to organize “neuroimaging” data'

@@ -7,6 +7,81 @@
 #   osf:
 #   web:
 #   github:
+#   preprint:
+
+# 2025
+
+-   name: Brain representation of numerosity across the senses and presentation formats
+    authors: Yang Y., Fornaciai M., Togoli I., et al.
+    date: 2025
+    journal: Journal of Neuroscience
+    doi: 10.1523/JNEUROSCI.1264-25.2025
+    preprint: 10.1101/2025.05.29.653470
+
+-   name: Phonological representations of auditory and visual speech in the occipito-temporal cortex and beyond
+    authors: Van Audenhaege A., Mattioni S., Cerpelloni F., et al.
+    date: 2025
+    journal: Journal of Neuroscience
+    doi: 10.1523/JNEUROSCI.1415-24.2025
+    osf: https://gin.g-node.org/avanaudenhae/LipSpeech-RAW
+    github: https://github.com/avanaudenhaege/LipSpeech_analyses
+    preprint: 10.1101/2024.07.25.605084
+
+
+-   name: MRS-BIDS, an extension to the Brain Imaging Data Structure for magnetic resonance spectroscopy
+    authors: Bouchard A. E., Wong D., Bogner W., et al.
+    date: 2025
+    journal: Scientific data
+    doi: 10.1038/s41597-025-05543-2
+    web: https://bids-specification.readthedocs.io/en/latest/modality-specific-files/magnetic-resonance-spectroscopy.html
+
+-   name: How learning to read visual Braille co-opts the reading brain
+    authors: Cerpelloni F, Audenhaege A, Matuszewski J, et al.
+    date: 2025
+    journal: Journal of Cognitive Neuroscience
+    preprint: 10.1101/2024.05.08.593104
+    doi: 10.1162/jocn_a_02341
+    osf: https://gin.g-node.org/cpp_brewery/2022_StLuc_VisBraExpertise_FC_raw
+    github: https://github.com/fcerpe/VBE_data
+
+-   name: Impact of a transient neonatal visual deprivation on the development of the ventral occipito-temporal cortex in humans
+    authors: Mattioni S, Rezk M, Gao X, et al.
+    date: 2025
+    journal: Nature Communications
+    preprint: 10.1101/2024.11.30.625697
+    doi: 10.1038/s41467-025-65468-7
+    github: https://github.com/SteMat9787/Neurocat3
+    osf: https://osf.io/becdr/overview
+
+-   name: 'ARTEM-IS for ERP: Agreed Reporting Template for EEG Methodology—International Standard for Event-Related Potential Experiments'
+    authors: Šoškić A, Kovic V, Algermissen J, et al.
+    date: 2025
+    journal: Psychophysiology
+    preprint: 10.31234/osf.io/mq5sy
+    doi: 10.1111/psyp.70187
+    web: https://artemis.incf.org/
+    github: https://github.com/INCF/artem-is
+
+-   name: 'Standardizing survey data collection to enhance reproducibility: Development and comparative evaluation of the ReproSchema ecosystem'
+    authors: Chen Y., Jarecka D. , Abraham S. A., et al.
+    date: 2025
+    journal: Journal of medical Internet research
+    doi: 10.2196/63343
+    web: https://repronim.org/reproschema/
+
+-   name: "Predicting Parkinson's disease trajectory using clinical and functional MRI features: a reproduction and replication study"
+    authors: Germani E, Baghwat N, Dugré M, et al.
+    date: 2025
+    server: PloS One
+    doi: 10.1371/journal.pone.0317566
+
+-   name: 'Giga Connectome: a BIDS-app for time series and functional connectome extraction'
+    authors: Wang HT , Gau R., Clarke N., et al.
+    date: 2025
+    journal: Journal of Open Source Software
+    doi: 10.21105/joss.07061
+    web: https://giga-connectome.readthedocs.io/en/latest/
+    github: https://github.com/bids-apps/giga_connectome
 
 # 2024
 

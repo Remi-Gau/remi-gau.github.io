@@ -5,25 +5,28 @@
 #   server:
 #   doi:
 
-# 2024
+# 2025
 
--   name: Impact of a transient neonatal visual deprivation on the development of the ventral occipito-temporal cortex in humans
-    authors: Mattioni S, Rezk M, Gao X, et al.
-    date: 2024
+-   name: Representation of emotional expressions across the face and voice brain networks
+    authors: Mattioni S., Falagiarda F., Gau R., et al.
+    date: 2025
+    server: bioRxiv
+    doi: 10.64898/2025.12.22.695403
+
+
+
+-   name: 'Go figure: Transparency in neuroscience images preserves context and clarifies interpretation'
+    authors: Taylor Paul. A., Aggarwal H. , Bandettini P. A., et al.
+    date: 2025
+    server: ArXiv
+    doi: 10.48550/arXiv.2504.07824
+
+-   name: 'Eye-Tracking-BIDS: the Brain Imaging Data Structure extended to gaze position and pupil data'
+    authors: Szinte M., Bach D. R., Draschkow D., et al.
+    date: 2025
     server: bioarxiv
-    doi: 10.1101/2024.11.30.625697
+    doi: 10.64898/2026.02.03.703514
 
--   name: Expertise in reading visual Braille co-opts the reading network
-    authors: Cerpelloni F, Audenhaege A, Matuszewski J, et al.
-    date: 2024
-    server: bioarxiv
-    doi: 10.1101/2024.05.08.593104
-
--   name: "Predicting Parkinson's disease trajectory using clinical and functional MRI features: a reproduction and replication study"
-    authors: Germani E, Baghwat N, Dugré M, et al.
-    date: 2024
-    server: arxiv
-    doi: 10.48550/arXiv.2403.15405
 
 # 2023
 
@@ -34,12 +37,6 @@
     doi: 10.31219/osf.io/7nmcp
 
 # 2022
-
--   name: 'ARTEM-IS for ERP: Agreed Reporting Template for EEG Methodology-International Standard for documenting studies on Event-Related Potentials'
-    authors: Šoškić A, Kovic V, Algermissen J, et al.
-    date: 2022
-    server: psyarxiv
-    doi: 10.31234/osf.io/mq5sy
 
 -   name: Lab manuals for efficient and high quality science in a happy and safe work environment
     authors: Kovacs M, Jaquiery M, Algermissen J, et al.
