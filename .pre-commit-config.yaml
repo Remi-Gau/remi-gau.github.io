@@ -1,66 +1,57 @@
 ---
-# See https://pre-commit.com for more information
-# See https://pre-commit.com/hooks.html for more hooks
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0
     hooks:
     -   id: check-case-conflict
     -   id: check-json
-        exclude: |
-            (?x)^(
-                search.json
-            )$
+        exclude: "(?x)^(\n    search.json\n)$\n"
     -   id: check-merge-conflict
     -   id: check-toml
     -   id: check-yaml
     -   id: end-of-file-fixer
     -   id: mixed-line-ending
     -   id: trailing-whitespace
-
-# Checks for spelling errors
 -   repo: https://github.com/codespell-project/codespell
-    rev: v2.4.1
+    rev: v2.4.2
     hooks:
     -   id: codespell
-
-# Format YAML files
 -   repo: https://github.com/jumanjihouse/pre-commit-hook-yamlfmt
     rev: 0.2.3
     hooks:
     -   id: yamlfmt
-        args: [--mapping, '4', --sequence, '4', --offset, '0']
-
-# Format TOML files
+        args:
+        -   --mapping
+        -   '4'
+        -   --sequence
+        -   '4'
+        -   --offset
+        -   '0'
 -   repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
     rev: v2.16.0
     hooks:
     -   id: pretty-format-toml
-        args: [--autofix, --indent, '4']
-
+        args:
+        -   --autofix
+        -   --indent
+        -   '4'
 -   repo: https://github.com/djlint/djLint
     rev: v1.36.4
     hooks:
     -   id: djlint
-        exclude: |
-            (?x)^(
-                _site/ |
-                _layouts/compress.html
-            )$
+        exclude: "(?x)^(\n    _site/ |\n    _layouts/compress.html\n)$\n"
     -   id: djlint-reformat
-        exclude: |
-            (?x)^(
-                _site/ |
-                _layouts/compress.html
-            )$
-
+        exclude: "(?x)^(\n    _site/ |\n    _layouts/compress.html\n)$\n"
 -   repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.15.4
+    rev: v0.15.5
     hooks:
-    # Run the linter.
     -   id: ruff
-        # args: [--statistics]
-        args: [--fix, --show-fixes, --unsafe-fixes]
-    # Run the formatter.
+        args:
+        -   --fix
+        -   --show-fixes
+        -   --unsafe-fixes
     -   id: ruff-format
-        # args: [--diff]
+ci:
+    autoupdate_commit_msg: 'chore: update pre-commit hooks'
+    autoupdate_schedule: monthly
+    autofix_commit_msg: 'style: pre-commit fixes'
