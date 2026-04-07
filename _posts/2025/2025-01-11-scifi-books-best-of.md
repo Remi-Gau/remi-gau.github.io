@@ -99,12 +99,12 @@ Especially:
 - use of weapons
 - excession
 
-The culture is a very advanced anarchist galactic civilisation.
+The culture is a very advanced anarchist galactic civilization.
 
 #### Player of games
 
 A good one to get familiar with the Culture:
-a game prodigy is sent by the secret service into another civilisation where the ruler is chosen by winning a very hard strategy game.
+a game prodigy is sent by the secret service into another civilization where the ruler is chosen by winning a very hard strategy game.
 
 #### Use of weapons
 
@@ -120,7 +120,7 @@ equipped with super smart AI and very diverse personalities.
 ### The dispossessed
 
 An anarchistic utopia set on a barren planet.
-One of their goes as an emissary on their neighboring planet where a communist and a capitalist civilisation fight a cold war.
+One of their goes as an emissary on their neighboring planet where a communist and a capitalist civilization fight a cold war.
 
 ### The left hand of darkness
 
