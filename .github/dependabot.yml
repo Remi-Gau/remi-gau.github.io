@@ -1,11 +1,18 @@
----
 version: 2
 updates:
--   package-ecosystem: npm
-    directory: /
-    schedule:
-        interval: semiannually
--   package-ecosystem: bundler
-    directory: /
-    schedule:
-        interval: semiannually
+- package-ecosystem: npm
+  directory: /
+  schedule:
+    interval: semiannually
+  groups:
+    node-utilities:
+      patterns:
+      - '*'
+- package-ecosystem: bundler
+  directory: /
+  schedule:
+    interval: semiannually
+  groups:
+    bundler-dependencies:
+      patterns:
+      - '*'
