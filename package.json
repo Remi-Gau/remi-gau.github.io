@@ -28,13 +28,8 @@
     "colors": "^1.2.1",
     "components-font-awesome": "^5.9.0",
     "font-mfizz": "^2.4.1",
-    "gritter": "^1.7.4",
     "jquery": "^4.0.0",
     "normalize.css": "^8.0.1",
-    "npm": "^12.0.1",
-    "purify-css": "^1.1.9",
-    "to": "^0.2.9",
-    "update": "^0.7.4",
     "wowjs": "^1.1.2"
   },
   "devDependencies": {
@@ -46,6 +41,10 @@
     "wait-on": "^9.1.0"
   },
   "allowScripts": {
-    "puppeteer@22.15.0": true
+    "puppeteer@25.10.0": true
+  },
+  "overrides": {
+    "qs": "^6.16.0",
+    "puppeteer": "^25.10.0"
   }
 }
