@@ -2,6 +2,7 @@
 
 import json
 import os
+import re
 import shutil
 from pathlib import Path
 from subprocess import run
@@ -67,7 +68,7 @@ def update_markdowns() -> None:
         cleaned_lines = []
         front_matter_delim_count = 0
         for line in lines:
-            if line.strip() == "#":
+            if re.match("^#[a-zA-Z0-9]", line.strip()) or line.strip() == "#":
                 continue
 
             if line.strip() == "---":
