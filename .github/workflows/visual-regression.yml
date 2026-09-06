@@ -1,0 +1,84 @@
+---
+name: Visual regression
+
+on:
+    pull_request:
+
+permissions:
+    contents: read
+
+jobs:
+    visual-regression:
+        runs-on: ubuntu-latest
+        steps:
+        -   name: Checkout PR branch
+            uses: actions/checkout@v4
+            with:
+                path: pr
+
+        -   name: Checkout base branch
+            uses: actions/checkout@v4
+            with:
+                ref: ${{ github.event.pull_request.base.sha }}
+                path: base
+
+        -   name: Setup Node
+            uses: actions/setup-node@v4
+            with:
+                node-version: 20
+
+        -   name: Setup Ruby (PR)
+            uses: ruby/setup-ruby@4a9ddd6f338a97768b8006bf671dfbad383215f4
+            with:
+                ruby-version: '3.3'
+                bundler-cache: true
+                working-directory: pr
+
+        -   name: Setup Ruby (base)
+            uses: ruby/setup-ruby@4a9ddd6f338a97768b8006bf671dfbad383215f4
+            with:
+                ruby-version: '3.3'
+                bundler-cache: true
+                working-directory: base
+
+        -   name: Build PR site
+            working-directory: pr
+            run: |
+                npm ci
+                npm run build
+                bundle exec jekyll build
+
+        -   name: Build base site
+            working-directory: base
+            run: |
+                npm ci
+                npm run build
+                bundle exec jekyll build
+
+        -   name: Serve both sites
+            run: |
+                npx --prefix pr http-server pr/_site -p 4000 --silent &
+                npx --prefix pr http-server base/_site -p 4001 --silent &
+                npx --prefix pr wait-on http://localhost:4000 http://localhost:4001
+
+        -   name: Capture base-branch screenshots (reference)
+            working-directory: pr
+            run: |
+                node build/backstop_config_for_port.js 4001 backstop_data/ci_bitmaps_reference backstop_data/ci_bitmaps_test \
+                  > backstop.ci.base.json
+                npx backstop reference --config=backstop.ci.base.json
+
+        -   name: Capture PR-branch screenshots and compare
+            working-directory: pr
+            run: |
+                node build/backstop_config_for_port.js 4000 backstop_data/ci_bitmaps_reference backstop_data/ci_bitmaps_test \
+                  > backstop.ci.pr.json
+                npx backstop test --config=backstop.ci.pr.json
+
+        -   name: Upload visual diff report
+            if: always()
+            uses: actions/upload-artifact@v4
+            with:
+                name: backstop-report
+                path: pr/backstop_data/html_report
+                retention-days: 14

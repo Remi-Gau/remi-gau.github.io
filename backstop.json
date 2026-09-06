@@ -1,0 +1,41 @@
+{
+  "id": "remi-gau-github-io",
+  "viewports": [
+    { "label": "phone", "width": 375, "height": 812 },
+    { "label": "tablet", "width": 768, "height": 1024 },
+    { "label": "desktop", "width": 1440, "height": 900 }
+  ],
+  "scenarios": [
+    { "label": "home", "url": "http://localhost:4000/", "delay": 500 },
+    { "label": "about", "url": "http://localhost:4000/about.html", "delay": 1500 },
+    { "label": "papers", "url": "http://localhost:4000/papers.html", "delay": 500 },
+    { "label": "talks", "url": "http://localhost:4000/talks.html", "delay": 500 },
+    { "label": "pictures", "url": "http://localhost:4000/pictures.html", "delay": 500 },
+    { "label": "recipes", "url": "http://localhost:4000/recipes.html", "delay": 500 },
+    { "label": "recipe-detail", "url": "http://localhost:4000/recipe/en/dhal.html", "delay": 500 },
+    { "label": "blog-index", "url": "http://localhost:4000/blog/index.html", "delay": 500 },
+    { "label": "blog-post", "url": "http://localhost:4000/2024/06/29/package-your-python-code.html", "delay": 500 },
+    { "label": "404", "url": "http://localhost:4000/404.html", "delay": 500 }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "onBeforeScript": "onBefore.js",
+  "report": ["browser"],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": ["--no-sandbox"],
+    "gotoParameters": { "waitUntil": "networkidle0" }
+  },
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "misMatchThreshold": 0.3,
+  "resembleOutputOptions": {
+    "ignoreAntialiasing": true
+  }
+}
