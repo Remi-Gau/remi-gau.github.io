@@ -23,10 +23,10 @@ permalink: /papers.html
             {% for paper in site.data.papers %}
                 {% assign loopindex = forloop.index | modulo: 2 %}
                 <div class="vertical-timeline-block">
-                    <div class="vertical-timeline-icon navy-bg wow rotateIn">
+                    <div class="vertical-timeline-icon navy-bg wow animate__rotateIn">
                         <i class="fa fa-plus-square"></i>
                     </div>
-                    <div class="vertical-timeline-content wow {% if loopindex == 1 %} rotateInUpRight {% else %} rotateInUpLeft {% endif %}">
+                    <div class="vertical-timeline-content wow {% if loopindex == 1 %} animate__rotateInUpRight {% else %} animate__rotateInUpLeft {% endif %}">
                         <h2>
                             <span data-proofer-ignore>
                                 {% if paper.web %}
@@ -93,10 +93,10 @@ permalink: /papers.html
             {% for preprint in site.data.preprints %}
                 {% assign loopindex = forloop.index | modulo: 2 %}
                 <div class="vertical-timeline-block">
-                    <div class="vertical-timeline-icon navy-bg wow rotateIn">
+                    <div class="vertical-timeline-icon navy-bg wow animate__rotateIn">
                         <i class="fa fa-plus-square"></i>
                     </div>
-                    <div class="vertical-timeline-content wow {% if loopindex == 1 %} rotateInUpRight {% else %} rotateInUpLeft {% endif %}">
+                    <div class="vertical-timeline-content wow {% if loopindex == 1 %} animate__rotateInUpRight {% else %} animate__rotateInUpLeft {% endif %}">
                         <h2>
                             <span>
                                 {% if preprint.web %}

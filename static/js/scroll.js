@@ -29,5 +29,8 @@ var cbpAnimatedHeader = (function() {
     window.addEventListener('scroll', function() { setTimeout(scrollPage, scrollDebounce); }, false);
 })();
 
-// Activate WOW.js plugin for animation on scroll
-new WOW().init();
+// Activate WOW.js plugin for animation on scroll.
+// animate.css v4 renamed every class with an "animate__" prefix
+// (including the "animated" trigger class WOW.js adds on reveal), so both
+// need to match that convention or the animation silently never applies.
+new WOW({ animateClass: 'animate__animated' }).init();

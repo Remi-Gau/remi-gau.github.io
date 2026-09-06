@@ -23,9 +23,22 @@ module.exports = async (page) => {
       *, *::before, *::after {
         animation-duration: 0s !important;
         animation-delay: 0s !important;
+        animation-name: none !important;
         transition-duration: 0s !important;
         transition-delay: 0s !important;
         scroll-behavior: auto !important;
+      }
+      /* animation-name:none above (not just duration:0) matters: Chrome
+         sizes a container's scrollable-overflow off an animated element's
+         full keyframe range (e.g. animate.css's fadeInRight translating
+         off-screen), not its current computed transform — so even a
+         zero-duration, fully-settled transform-based animation can
+         intermittently inflate the full-page screenshot's width depending
+         on exactly when WOW.js's reveal happens to run relative to
+         capture. Suppressing animation-name entirely avoids the keyframes
+         ever being considered, independent of that timing. */
+      html, body {
+        overflow-x: clip !important;
       }
     `;
     document.documentElement.appendChild(style);

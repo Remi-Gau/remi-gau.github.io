@@ -23,10 +23,10 @@ permalink: /talks.html
             {% for talk in site.data.talks %}
                 {% assign loopindex = forloop.index | modulo: 2 %}
                 <div class="vertical-timeline-block">
-                    <div class="vertical-timeline-icon navy-bg wow rotateIn">
+                    <div class="vertical-timeline-icon navy-bg wow animate__rotateIn">
                         <i class="fa fa-plus-square"></i>
                     </div>
-                    <div class="vertical-timeline-content wow {% if loopindex == 1 %} rotateInUpRight {% else %} rotateInUpLeft {% endif %}">
+                    <div class="vertical-timeline-content wow {% if loopindex == 1 %} animate__rotateInUpRight {% else %} animate__rotateInUpLeft {% endif %}">
                         {% if talk.video %}
                             <h2>
                                 <i class="fa fa-youtube"></i> <a href="{{ talk.video }}">{{ talk.name }}</a>
@@ -73,10 +73,10 @@ permalink: /talks.html
             {% for workshop in site.data.workshops %}
                 {% assign loopindex = forloop.index | modulo: 2 %}
                 <div class="vertical-timeline-block">
-                    <div class="vertical-timeline-icon navy-bg wow rotateIn">
+                    <div class="vertical-timeline-icon navy-bg wow animate__rotateIn">
                         <i class="fa fa-plus-square"></i>
                     </div>
-                    <div class="vertical-timeline-content wow {% if loopindex == 1 %} rotateInUpRight {% else %} rotateInUpLeft {% endif %}">
+                    <div class="vertical-timeline-content wow {% if loopindex == 1 %} animate__rotateInUpRight {% else %} animate__rotateInUpLeft {% endif %}">
                         {% if workshop.video %}
                             <h2>
                                 <i class="fa fa-youtube"></i> <a href="{{ workshop.video }}">{{ talk.name }}</a>
