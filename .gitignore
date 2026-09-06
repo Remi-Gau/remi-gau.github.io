@@ -15,3 +15,11 @@ backstop_data/bitmaps_test
 backstop_data/html_report
 backstop_data/ci_report
 backstop.ci.*.json
+static/assets/app-*.min.css
+static/assets/app-*.min.js
+static/assets/blog-*.min.js
+static/assets/i18-*.min.js
+static/assets/font-mfizz.eot
+static/assets/font-mfizz.svg
+static/assets/font-mfizz.ttf
+static/assets/font-mfizz.woff

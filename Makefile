@@ -17,6 +17,7 @@ convert_recipe:
 	python maint_tools/convert_recipes.py
 
 serve:
+	npm run build
 	bundle exec jekyll serve
 
 link_check:
