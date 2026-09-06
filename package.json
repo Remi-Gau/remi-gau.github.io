@@ -34,8 +34,7 @@
     "npm": "^12.0.1",
     "purify-css": "^1.1.9",
     "to": "^0.2.9",
-    "update": "^0.7.4",
-    "wowjs": "^1.1.2"
+    "update": "^0.7.4"
   },
   "devDependencies": {
     "backstopjs": "^6.3.25",
