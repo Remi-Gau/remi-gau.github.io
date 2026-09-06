@@ -32,10 +32,8 @@ document.querySelectorAll("[data-locale]").forEach(el => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    let storedLang = localStorage.getItem("siteLanguage");
-    if (storedLang) {
-        document.documentElement.setAttribute("lang", storedLang);
-    }
+    let storedLang = localStorage.getItem("siteLanguage") || "en";
+    document.documentElement.setAttribute("lang", storedLang);
     updateLanguageElements(storedLang);
 
     initializeI18n();
