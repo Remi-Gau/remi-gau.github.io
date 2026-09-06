@@ -25,6 +25,7 @@
     "ci_report": "backstop_data/ci_report"
   },
   "onBeforeScript": "onBefore.js",
+  "onReadyScript": "onReady.js",
   "report": ["browser"],
   "engine": "puppeteer",
   "engineOptions": {
