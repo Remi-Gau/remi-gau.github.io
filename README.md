@@ -36,27 +36,38 @@ gem update github-pages
 
 ### Testing your site locally
 
-To construct and test your site locally, go into the directory and type
+You'll also need [Node.js](https://nodejs.org/) to build the site's CSS/JS
+bundle (see below). Install dependencies once with `npm install`, then to
+build and serve the site:
 
 ```bash
+npm run build
 bundle exec jekyll serve
 ```
 
-Now open your browser and go to http://localhost:4000/site-name/
+(`make serve` does both for you.) Now open your browser and go to
+http://localhost:4000/site-name/
 
 ## Compress CSS and JS files
 
-All CSS and JS files are compressed at `/static/assets`.
+`static/assets/{app,blog,i18}-*.min.{css,js}` are **build output, not
+committed to the repo** — `npm run build` generates them fresh from
+`package.json`'s pinned versions (Bootstrap, jQuery, etc.) every time, using
+[UglifyJS](https://github.com/mishoo/UglifyJS) and
+[clean-css](https://github.com/jakubpawlowicz/clean-css). This runs locally
+(above), in the [deploy workflow](.github/workflows/jekyll.yml), and in the
+[visual regression workflow](.github/workflows/visual-regression.yml) — so
+bumping a front-end dependency in `package.json` takes effect everywhere
+automatically, with no separate "rebuild and commit the bundle" step to
+remember (and no risk of the committed bundle silently drifting out of sync
+with `package.json`, which is what happened before this was set up this way).
 
-I use [UglifyJS2](https://github.com/mishoo/UglifyJS2), [clean-css](https://github.com/jakubpawlowicz/clean-css) to compress CSS and JS files, customized CSS files are at `_sass` folder which is feature of [Jekyll](https://jekyllrb.com/docs/assets/). If you want to custom CSS and JS files, you need to do the following:
-
-1. Install [NPM](https://github.com/npm/npm) then install **UglifyJS2** and **clean-css**: `npm install -g uglifyjs; npm install -g clean-css`, then run `npm install` at root dir of project.
-2. Compress script is **build.js**
-3. If you want to add or remove CSS/JS files, just edit **build/build.js** and **build/files.conf.js**, then run `npm run build` at root dir of project, link/src files will use new files.
-
-OR
-
-Edit CSS files at `_sass` folder.
+Customized CSS lives in the `_sass` folder, a [Jekyll
+feature](https://jekyllrb.com/docs/assets/). If you want to add or remove
+which CSS/JS files get bundled, edit `build/build.js` and
+`build/files.conf.js`, then run `npm run build` — the `<link>`/`<script>`
+tags in `_includes/head.html` and `_includes/index_head.html` are
+automatically rewritten to point at the newly generated files.
 
 ## Visual regression testing
 

@@ -10,9 +10,11 @@ $(function(){
     //});
 
     /* apply code highlight */
-    $('pre code').each( function(i, e) {
-        hljs.highlightBlock(e, '    ');
-    });
+    if (typeof hljs !== 'undefined') {
+        $('pre code').each( function(i, e) {
+            hljs.highlightBlock(e, '    ');
+        });
+    }
 
 });
 

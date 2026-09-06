@@ -80,5 +80,8 @@ jobs:
             uses: actions/upload-artifact@v4
             with:
                 name: backstop-report
-                path: pr/backstop_data/html_report
+                path: |
+                    pr/backstop_data/html_report
+                    pr/backstop_data/ci_bitmaps_reference
+                    pr/backstop_data/ci_bitmaps_test
                 retention-days: 14

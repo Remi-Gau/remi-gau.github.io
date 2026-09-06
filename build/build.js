@@ -29,7 +29,13 @@ sed('-i', /(.*)[0-9]{8}(.*)/, '$1' + nowDateStr + '$2', '404.html');
 // compress js files function
 function compressjs(pagename, filename, filelist) {
     console.log('Now compress ' + pagename + ' js files to ' + filename + ' ...')
-    var result = UglifyJS.minify(filelist, {
+    // uglify-js v3 dropped v2's "array of file paths read from disk" support,
+    // so files must be read and passed in as a {filename: source} map.
+    var code = {};
+    filelist.forEach(function(file) {
+        code[file] = fs.readFileSync(file, 'utf8');
+    });
+    var result = UglifyJS.minify(code, {
         mangle: true,
         compress: {
             sequences: true,
@@ -42,6 +48,9 @@ function compressjs(pagename, filename, filelist) {
             drop_console: true
         },
     });
+    if (result.error) {
+        throw result.error;
+    }
 
     fs.writeFileSync('static/assets/' + filename, result.code);
     console.log(pagename.green + " js files compress succeed. You can find it at \"static/assets\".\n".green);
