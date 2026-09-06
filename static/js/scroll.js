@@ -28,3 +28,6 @@ var cbpAnimatedHeader = (function() {
 
     window.addEventListener('scroll', function() { setTimeout(scrollPage, scrollDebounce); }, false);
 })();
+
+// Activate WOW.js plugin for animation on scroll
+new WOW().init();
