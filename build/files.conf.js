@@ -41,7 +41,8 @@ module.exports = {
             'node_modules/normalize.css/normalize.css',
             'node_modules/bootstrap/dist/css/bootstrap.css',
             'node_modules/animate.css/animate.css',
-            'node_modules/components-font-awesome/css/font-awesome.css',
+            'node_modules/components-font-awesome/css/all.css',
+            'node_modules/components-font-awesome/css/v4-shims.css',
             'node_modules/font-mfizz/dist/font-mfizz.css',
         ]
     }]

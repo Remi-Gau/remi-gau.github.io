@@ -780,6 +780,17 @@ button.dim:active:before {
   font-family: FontAwesome;
 }
 
+// This site's markup predates Font Awesome 5's split into fa/fas/far/fab and still
+// uses the old v4-style '<i class="fa fa-xxx">'. font-awesome's own v4-shims.css only
+// overrides the icon-family for names that changed between v4 and v5 (e.g. fa-github);
+// icons whose name is unchanged (fa-rss, fa-star, fa-code-fork, ...) get no font-family
+// at all and render blank. Give bare .fa a solid-style default; more specific rules like
+// .fa.fa-github (added by v4-shims.css) still win on specificity.
+.fa {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+
 .inline {
   display: inline-block !important;
 }
