@@ -19,6 +19,12 @@ cp('-f', 'node_modules/font-mfizz/dist/font-mfizz.svg', 'static/assets/');
 cp('-f', 'node_modules/font-mfizz/dist/font-mfizz.ttf', 'static/assets/');
 cp('-f', 'node_modules/font-mfizz/dist/font-mfizz.woff', 'static/assets/');
 
+// font-awesome's css lives at static/assets/app-*.min.css and references its
+// webfonts with a sibling-relative path ('../webfonts/...'), so the font
+// files need to land one level up from static/assets/, at static/webfonts/.
+mkdir('-p', 'static/webfonts');
+cp('-f', 'node_modules/components-font-awesome/webfonts/*', 'static/webfonts/');
+
 // change link/src files to new file path
 sed('-i', /(.*)[0-9]{8}(.*)/, '$1' + nowDateStr + '$2', '_includes/index_head.html');
 sed('-i', /(.*)[0-9]{8}(.*)/, '$1' + nowDateStr + '$2', '_includes/head.html');
