@@ -28,17 +28,21 @@
                 data: [{{ site.data.index.skills.percentage }}]
                 }]
         };
+        Chart.defaults.font.size = 14;
         var myRadarChart = new Chart(ctx, {
             type: 'radar',
             data: data,
             options: {
-                scale: {
-                    responsive: true,
-                    ticks: {min: 0, max: 100},
-                    lineArc: false,
-                    pointLabels: {fontSize: 14},
+                scales: {
+                    r: {
+                        min: 0,
+                        max: 100,
+                        pointLabels: {
+                            font: {size: 16}
+                        }
+                    },
                 },
-                legend: {display: false},
+                plugins: {legend: {display: false},}
             }
         });
         </script>
