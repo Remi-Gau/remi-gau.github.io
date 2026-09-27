@@ -5,6 +5,32 @@
 #   server:
 #   doi:
 
+# 2026
+
+-   name: Early blindness shifts the feedforward laminar profile of hMT+/V5 from visual to auditory motion
+    authors: Barilari M, Huber L., Matuszewski J., et al.
+    date: 2026
+    server: bioRxiv
+    doi: 10.64898/2026.09.04.749307
+
+-   name: 'Nipoppy: A framework for standardizing neuroimaging studies to facilitate international derived-data sharing'
+    authors: Bhagwat N., Wang M.,  Dugré M., et al.
+    date: 2026
+    server: bioRxiv
+    doi: 10.64898/2026.05.18.723593
+
+-   name: 'NIBS-BIDS: an extension to the brain imaging data structure for non-invasive brain stimulation'
+    authors: Bertazzoli G., Shevtsov O., Maria Bulgari M., et al.
+    date: 2026
+    server: zenodo
+    doi: 10.5281/zenodo.19322568
+
+-   name: 'EMG-BIDS: an extension to the Brain Imaging Data Structure for electromyography'
+    authors: Shirazi S.Y., McCloy D., Oostenveld R., et al.
+    date: 2026
+    server: bioRxiv
+    doi: 10.64898/2026.07.21.739911
+
 # 2025
 
 -   name: Representation of emotional expressions across the face and voice brain networks
@@ -12,12 +38,6 @@
     date: 2025
     server: bioRxiv
     doi: 10.64898/2025.12.22.695403
-
--   name: 'Go figure: Transparency in neuroscience images preserves context and clarifies interpretation'
-    authors: Taylor Paul. A., Aggarwal H. , Bandettini P. A., et al.
-    date: 2025
-    server: ArXiv
-    doi: 10.48550/arXiv.2504.07824
 
 -   name: 'Eye-Tracking-BIDS: the Brain Imaging Data Structure extended to gaze position and pupil data'
     authors: Szinte M., Bach D. R., Draschkow D., et al.

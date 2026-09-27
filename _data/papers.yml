@@ -9,6 +9,17 @@
 #   github:
 #   preprint:
 
+# 2026
+
+-   name: 'Go Figure: Transparency in neuroscience images preserves context and clarifies interpretation'
+    authors: Taylor Paul. A., Aggarwal H. , Bandettini P. A., et al.
+    date: 2026
+    journal: Nature methods
+    doi: 10.1038/s41592-026-03206-7
+    preprint: 10.48550/arXiv.2504.07824
+
+
+
 # 2025
 
 -   name: Brain representation of numerosity across the senses and presentation formats
@@ -26,7 +37,6 @@
     osf: https://gin.g-node.org/avanaudenhae/LipSpeech-RAW
     github: https://github.com/avanaudenhaege/LipSpeech_analyses
     preprint: 10.1101/2024.07.25.605084
-
 
 -   name: MRS-BIDS, an extension to the Brain Imaging Data Structure for magnetic resonance spectroscopy
     authors: Bouchard A. E., Wong D., Bogner W., et al.
