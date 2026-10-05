@@ -13,7 +13,7 @@ repos:
     -   id: mixed-line-ending
     -   id: trailing-whitespace
 -   repo: https://github.com/codespell-project/codespell
-    rev: v2.4.2
+    rev: v2.4.3
     hooks:
     -   id: codespell
 -   repo: https://github.com/jumanjihouse/pre-commit-hook-yamlfmt
@@ -36,14 +36,14 @@ repos:
         -   --indent
         -   '4'
 -   repo: https://github.com/djlint/djLint
-    rev: v1.40.3
+    rev: v1.46.4
     hooks:
     -   id: djlint
         exclude: "(?x)^(\n    _site/ |\n    _layouts/compress.html\n)$\n"
     -   id: djlint-reformat
         exclude: "(?x)^(\n    _site/ |\n    _layouts/compress.html\n)$\n"
 -   repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.15.20
+    rev: v0.16.10
     hooks:
     -   id: ruff
         args:
