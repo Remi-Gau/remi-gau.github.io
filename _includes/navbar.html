@@ -41,14 +41,16 @@
                                 </li>
                             {% else %}
                                 <li>
-                                    <a class="page-scroll" href="{{ site.url }}/{{ section.page }}">
+                                    <a class="page-scroll"
+                                       href="{{ site.url }}/{{ section.page }}">
                                         <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
                                     </a>
                                 </li>
                             {% endif %}
                             {% elsif page.title == "index" and section.name != "About" %}
                             <li>
-                                <a class="page-scroll" href="{{ section.id | prepend: '#' }} ">
+                                <a class="page-scroll"
+                                   href="{{ section.id | prepend: '#' }} ">
                                     <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
                                 </a>
                             </li>

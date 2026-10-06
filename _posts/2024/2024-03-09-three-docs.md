@@ -498,15 +498,16 @@ The configuration file would look like this.
 
    ```python
    def foo() -> None:
-      """Public function should appear in the doc.
+       """Public function should appear in the doc.
 
-      Return ``None``.
-      """
-      return None
+       Return ``None``.
+       """
+       return None
+
 
    def _bar():
-      """Private function should not appear in the doc."""
-      ...
+       """Private function should not appear in the doc."""
+       ...
    ```
 
    Modify `docs/source/conf.py` so that the python code is in its path
@@ -523,7 +524,10 @@ The configuration file would look like this.
    to list of active extensions in `docs/source/conf.py`.
 
    ```python
-   extensions = ["myst_parser", "sphinx.ext.autodoc",]
+   extensions = [
+       "myst_parser",
+       "sphinx.ext.autodoc",
+   ]
    ```
 
    Now create a `.rst` file in the `doc/source` where the doc of your code

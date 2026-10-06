@@ -38,7 +38,8 @@ permalink: /talks.html
                             <a href="{{ talk.web }}">Slides</a>
                         </h3>
                         {% if loopindex == 1 %}
-                            <span class="vertical-date" style="justify-content: flex-start">
+                            <span class="vertical-date"
+                                  style="justify-content: flex-start">
                                 <div>
                                     <span>{{ talk.date }}</span>
                                     <br />
@@ -46,7 +47,8 @@ permalink: /talks.html
                                 </div>
                             </span>
                         {% else %}
-                            <span class="vertical-date" style="justify-content: flex-end">
+                            <span class="vertical-date"
+                                  style="justify-content: flex-end">
                                 <div>
                                     <span>{{ talk.date }}</span>
                                     <br />
@@ -86,13 +88,15 @@ permalink: /talks.html
                         {% endif %}
                         <h3>{{ workshop.desc }}</h3>
                         {% if loopindex == 1 %}
-                            <span class="vertical-date" style="justify-content: flex-start">
+                            <span class="vertical-date"
+                                  style="justify-content: flex-start">
                                 <h3>
                                     <a href="{{ workshop.web }}">Material</a>
                                 </h3>
                             </span>
                         {% else %}
-                            <span class="vertical-date" style="justify-content: flex-end">
+                            <span class="vertical-date"
+                                  style="justify-content: flex-end">
                                 <h3>
                                     <a href="{{ workshop.web }}">Material</a>
                                 </h3>

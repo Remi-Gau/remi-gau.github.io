@@ -39,7 +39,8 @@ top_carousel: off
                             data-bs-toggle="dropdown"
                             aria-haspopup="true"
                             aria-expanded="false">Units</button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <div class="dropdown-menu"
+                         aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" href="#">Metric</a>
                         <a class="dropdown-item"
                            href="{{ "/unit_unknown" | prepend: site.baseurl }}">Cups</a>
@@ -89,7 +90,8 @@ top_carousel: off
             <div class="col-md-6">
                 <h5 style="display: inline;">Tags:</h5>
                 {% for tag in page.tags %}
-                    <button class="btn btn-white btn-xs" type="button">{{ tag }}</button>
+                    <button class="btn btn-white btn-xs"
+                            type="button">{{ tag }}</button>
                 {% endfor %}
             </div>
             <hr>

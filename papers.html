@@ -41,7 +41,8 @@ permalink: /papers.html
                         </p>
                         {% if paper.preprint %}
                             <p>
-                                <small><a href="https://doi.org/{{ paper.preprint }}" tagert="_blank">preprint</a></small>
+                                <small><a href="https://doi.org/{{ paper.preprint }}"
+   tagert="_blank">preprint</a></small>
                             </p>
                         {% endif %}
                         <span class="vertical-date"
@@ -110,7 +111,7 @@ permalink: /papers.html
                             <span>{{ preprint.authors }}</span>
                         </p>
                         <span class="vertical-date"
-                              {% if loopindex == 1 %}style="justify-content: flex-start"{% else %} style="justify-content: flex-end"  {% endif %}>
+                              {% if loopindex == 1 %}style="justify-content: flex-start"{% else %} style="justify-content: flex-end" {% endif %}>
                             <div>
                                 <span>{{ preprint.date }}</span>
                                 <br />
@@ -123,5 +124,4 @@ permalink: /papers.html
         </div>
     </div>
 </div>
-<script type='text/javascript'
-        src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+<script src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>

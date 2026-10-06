@@ -13,47 +13,49 @@
             {% if forloop.last %}
                 {% if forloop.last == forloop.first %}
                     <div class="col-sm-6 wow col-sm-offset-3 animate__zoomIn">
-                    {% else %}
-                        <div class="col-sm-6 wow {% if loopindex == 1 %} animate__fadeInLeft col-sm-offset-3 {% else %} animate__fadeInRight {% endif %}">
+                {% else %}
+                    <div class="col-sm-6 wow {% if loopindex == 1 %} animate__fadeInLeft col-sm-offset-3 {% else %} animate__fadeInRight {% endif %}">
+                {% endif %}
+            {% else %}
+                <div class="col-sm-6 wow {% if loopindex == 1 %} animate__fadeInLeft {% else %} animate__fadeInRight {% endif %}">
+            {% endif %}
+                <div class="team-member">
+                    <img src="{{ project.img | prepend: site.baseurl }}"
+                         class="img-responsive img-circle img-small"
+                         alt="">
+                    <h4>
+                        {% if project.url %}
+                            <a href="{{ project.url }}" target="_blank"><span class="navy">{{ project.name }}</span></a>
+                            {% elsif project.repo %}
+                            <a href="https://github.com/{{ project.gh_user }}/{{ project.repo }}"
+                               target="_blank"><span class="navy">{{ project.name }}</span></a>
+                        {% else %}
+                            <span class="navy">{{ project.name }}</span>
                         {% endif %}
-                    {% else %}
-                        <div class="col-sm-6 wow {% if loopindex == 1 %} animate__fadeInLeft {% else %} animate__fadeInRight {% endif %}">
-                        {% endif %}
-                        <div class="team-member">
-                            <img src="{{ project.img | prepend: site.baseurl }}"
-                                 class="img-responsive img-circle img-small"
-                                 alt="">
-                            <h4>
-                                {% if project.url %}
-                                    <a href="{{ project.url }}" target="_blank"><span class="navy">{{ project.name }}</span></a>
-                                    {% elsif project.repo %}
-                                    <a href="https://github.com/{{ project.gh_user }}/{{ project.repo }}"
-                                       target="_blank"><span class="navy">{{ project.name }}</span></a>
-                                {% else %}
-                                    <span class="navy">{{ project.name }}</span>
-                                {% endif %}
-                            </h4>
-                            <p>
-                                <span data-i18n="projects.{{ project.i18n }}">{{ project.desc }}</span>
-                            </p>
-                            {% if project.repo %}
-                                <div user="{{ project.gh_user }}" repo="{{ project.repo }}" class="ghbtn">
-                                    <a target="_blank"
-                                       style="width: 150px"
-                                       href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/stargazers"
-                                       class="btn btn-white btn-xs star"><i class="fa fa-star"></i> ...</a>
-                                    <a target="_blank"
-                                       style="width: 150px"
-                                       href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/network"
-                                       class="btn btn-white btn-xs fork"><i class="fa fa-code-fork"></i> ...</a>
-                                    <div style="height: 10px;"></div>
-                                </div>
-                            {% endif %}
+                    </h4>
+                    <p>
+                        <span data-i18n="projects.{{ project.i18n }}">{{ project.desc }}</span>
+                    </p>
+                    {% if project.repo %}
+                        <div user="{{ project.gh_user }}"
+                             repo="{{ project.repo }}"
+                             class="ghbtn">
+                            <a target="_blank"
+                               style="width: 150px"
+                               href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/stargazers"
+                               class="btn btn-white btn-xs star"><i class="fa fa-star"></i> ...</a>
+                            <a target="_blank"
+                               style="width: 150px"
+                               href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/network"
+                               class="btn btn-white btn-xs fork"><i class="fa fa-code-fork"></i> ...</a>
+                            <div style="height: 10px;"></div>
                         </div>
-                    </div>
-                {% endfor %}
+                    {% endif %}
+                </div>
             </div>
-        </div>
-        <br>
+        {% endfor %}
     </div>
+</div>
+<br>
+</div>
 </div>
