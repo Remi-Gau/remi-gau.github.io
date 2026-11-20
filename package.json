@@ -44,7 +44,7 @@
     "puppeteer@25.10.0": true
   },
   "overrides": {
-    "qs": "^6.16.0",
+    "qs": "^6.17.1",
     "puppeteer": "^25.10.0"
   }
 }
